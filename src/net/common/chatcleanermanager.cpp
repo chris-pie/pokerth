@@ -29,6 +29,7 @@
  * as that of the covered work.                                              *
  *****************************************************************************/
 
+#define  BOOST_BIND_GLOBAL_PLACEHOLDERS
 #include <net/chatcleanermanager.h>
 #include <net/asiosendbuffer.h>
 #include <boost/bind.hpp>

@@ -52,8 +52,6 @@ public final class ProtoBuf {
     }
 
     /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
@@ -61,10 +59,6 @@ public final class ProtoBuf {
       return forNumber(value);
     }
 
-    /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
-     */
     public static NetGameMode forNumber(int value) {
       switch (value) {
         case 1: return netGameCreated;
@@ -181,8 +175,6 @@ public final class ProtoBuf {
     }
 
     /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
@@ -190,10 +182,6 @@ public final class ProtoBuf {
       return forNumber(value);
     }
 
-    /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
-     */
     public static NetGameState forNumber(int value) {
       switch (value) {
         case 0: return netStatePreflop;
@@ -321,8 +309,6 @@ public final class ProtoBuf {
     }
 
     /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
@@ -330,10 +316,6 @@ public final class ProtoBuf {
       return forNumber(value);
     }
 
-    /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
-     */
     public static NetPlayerAction forNumber(int value) {
       switch (value) {
         case 0: return netActionNone;
@@ -430,8 +412,6 @@ public final class ProtoBuf {
     }
 
     /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
@@ -439,10 +419,6 @@ public final class ProtoBuf {
       return forNumber(value);
     }
 
-    /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
-     */
     public static NetPlayerState forNumber(int value) {
       switch (value) {
         case 0: return netPlayerStateNormal;
@@ -535,8 +511,6 @@ public final class ProtoBuf {
     }
 
     /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
@@ -544,10 +518,6 @@ public final class ProtoBuf {
       return forNumber(value);
     }
 
-    /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
-     */
     public static NetPlayerInfoRights forNumber(int value) {
       switch (value) {
         case 1: return netPlayerRightsGuest;
@@ -640,8 +610,6 @@ public final class ProtoBuf {
     }
 
     /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
@@ -649,10 +617,6 @@ public final class ProtoBuf {
       return forNumber(value);
     }
 
-    /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
-     */
     public static NetAvatarType forNumber(int value) {
       switch (value) {
         case 1: return netAvatarImagePng;
@@ -713,106 +677,87 @@ public final class ProtoBuf {
 
     /**
      * <code>required string gameName = 1;</code>
-     * @return Whether the gameName field is set.
      */
     boolean hasGameName();
     /**
      * <code>required string gameName = 1;</code>
-     * @return The gameName.
      */
     java.lang.String getGameName();
     /**
      * <code>required string gameName = 1;</code>
-     * @return The bytes for gameName.
      */
     com.google.protobuf.ByteString
         getGameNameBytes();
 
     /**
      * <code>required .NetGameInfo.NetGameType netGameType = 2;</code>
-     * @return Whether the netGameType field is set.
      */
     boolean hasNetGameType();
     /**
      * <code>required .NetGameInfo.NetGameType netGameType = 2;</code>
-     * @return The netGameType.
      */
     de.pokerth.protocol.ProtoBuf.NetGameInfo.NetGameType getNetGameType();
 
     /**
      * <code>required uint32 maxNumPlayers = 3;</code>
-     * @return Whether the maxNumPlayers field is set.
      */
     boolean hasMaxNumPlayers();
     /**
      * <code>required uint32 maxNumPlayers = 3;</code>
-     * @return The maxNumPlayers.
      */
     int getMaxNumPlayers();
 
     /**
      * <code>required .NetGameInfo.RaiseIntervalMode raiseIntervalMode = 4;</code>
-     * @return Whether the raiseIntervalMode field is set.
      */
     boolean hasRaiseIntervalMode();
     /**
      * <code>required .NetGameInfo.RaiseIntervalMode raiseIntervalMode = 4;</code>
-     * @return The raiseIntervalMode.
      */
     de.pokerth.protocol.ProtoBuf.NetGameInfo.RaiseIntervalMode getRaiseIntervalMode();
 
     /**
      * <code>optional uint32 raiseEveryHands = 5;</code>
-     * @return Whether the raiseEveryHands field is set.
      */
     boolean hasRaiseEveryHands();
     /**
      * <code>optional uint32 raiseEveryHands = 5;</code>
-     * @return The raiseEveryHands.
      */
     int getRaiseEveryHands();
 
     /**
      * <code>optional uint32 raiseEveryMinutes = 6;</code>
-     * @return Whether the raiseEveryMinutes field is set.
      */
     boolean hasRaiseEveryMinutes();
     /**
      * <code>optional uint32 raiseEveryMinutes = 6;</code>
-     * @return The raiseEveryMinutes.
      */
     int getRaiseEveryMinutes();
 
     /**
      * <code>required .NetGameInfo.EndRaiseMode endRaiseMode = 7;</code>
-     * @return Whether the endRaiseMode field is set.
      */
     boolean hasEndRaiseMode();
     /**
      * <code>required .NetGameInfo.EndRaiseMode endRaiseMode = 7;</code>
-     * @return The endRaiseMode.
      */
     de.pokerth.protocol.ProtoBuf.NetGameInfo.EndRaiseMode getEndRaiseMode();
 
     /**
      * <code>optional uint32 endRaiseSmallBlindValue = 8;</code>
-     * @return Whether the endRaiseSmallBlindValue field is set.
      */
     boolean hasEndRaiseSmallBlindValue();
     /**
      * <code>optional uint32 endRaiseSmallBlindValue = 8;</code>
-     * @return The endRaiseSmallBlindValue.
      */
     int getEndRaiseSmallBlindValue();
 
     /**
      * <code>required uint32 proposedGuiSpeed = 9;</code>
-     * @return Whether the proposedGuiSpeed field is set.
      */
     boolean hasProposedGuiSpeed();
     /**
      * <code>required uint32 proposedGuiSpeed = 9;</code>
-     * @return The proposedGuiSpeed.
      */
     int getProposedGuiSpeed();
 
@@ -822,7 +767,6 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>required uint32 delayBetweenHands = 10;</code>
-     * @return Whether the delayBetweenHands field is set.
      */
     boolean hasDelayBetweenHands();
     /**
@@ -831,7 +775,6 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>required uint32 delayBetweenHands = 10;</code>
-     * @return The delayBetweenHands.
      */
     int getDelayBetweenHands();
 
@@ -841,7 +784,6 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>required uint32 playerActionTimeout = 11;</code>
-     * @return Whether the playerActionTimeout field is set.
      */
     boolean hasPlayerActionTimeout();
     /**
@@ -850,64 +792,53 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>required uint32 playerActionTimeout = 11;</code>
-     * @return The playerActionTimeout.
      */
     int getPlayerActionTimeout();
 
     /**
      * <code>required uint32 firstSmallBlind = 12;</code>
-     * @return Whether the firstSmallBlind field is set.
      */
     boolean hasFirstSmallBlind();
     /**
      * <code>required uint32 firstSmallBlind = 12;</code>
-     * @return The firstSmallBlind.
      */
     int getFirstSmallBlind();
 
     /**
      * <code>required uint32 startMoney = 13;</code>
-     * @return Whether the startMoney field is set.
      */
     boolean hasStartMoney();
     /**
      * <code>required uint32 startMoney = 13;</code>
-     * @return The startMoney.
      */
     int getStartMoney();
 
     /**
      * <code>repeated uint32 manualBlinds = 14 [packed = true];</code>
-     * @return A list containing the manualBlinds.
      */
     java.util.List<java.lang.Integer> getManualBlindsList();
     /**
      * <code>repeated uint32 manualBlinds = 14 [packed = true];</code>
-     * @return The count of manualBlinds.
      */
     int getManualBlindsCount();
     /**
      * <code>repeated uint32 manualBlinds = 14 [packed = true];</code>
-     * @param index The index of the element to return.
-     * @return The manualBlinds at the given index.
      */
     int getManualBlinds(int index);
 
     /**
      * <code>optional bool allowSpectators = 15 [default = true];</code>
-     * @return Whether the allowSpectators field is set.
      */
     boolean hasAllowSpectators();
     /**
      * <code>optional bool allowSpectators = 15 [default = true];</code>
-     * @return The allowSpectators.
      */
     boolean getAllowSpectators();
   }
   /**
    * Protobuf type {@code NetGameInfo}
    */
-  public static final class NetGameInfo extends
+  public  static final class NetGameInfo extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:NetGameInfo)
       NetGameInfoOrBuilder {
@@ -1150,8 +1081,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -1159,10 +1088,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static NetGameType forNumber(int value) {
         switch (value) {
           case 1: return normalGame;
@@ -1248,8 +1173,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -1257,10 +1180,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static RaiseIntervalMode forNumber(int value) {
         switch (value) {
           case 1: return raiseOnHandNum;
@@ -1352,8 +1271,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -1361,10 +1278,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static EndRaiseMode forNumber(int value) {
         switch (value) {
           case 1: return doubleBlinds;
@@ -1424,17 +1337,13 @@ public final class ProtoBuf {
     private volatile java.lang.Object gameName_;
     /**
      * <code>required string gameName = 1;</code>
-     * @return Whether the gameName field is set.
      */
-    @java.lang.Override
     public boolean hasGameName() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required string gameName = 1;</code>
-     * @return The gameName.
      */
-    @java.lang.Override
     public java.lang.String getGameName() {
       java.lang.Object ref = gameName_;
       if (ref instanceof java.lang.String) {
@@ -1451,9 +1360,7 @@ public final class ProtoBuf {
     }
     /**
      * <code>required string gameName = 1;</code>
-     * @return The bytes for gameName.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getGameNameBytes() {
       java.lang.Object ref = gameName_;
@@ -1472,16 +1379,14 @@ public final class ProtoBuf {
     private int netGameType_;
     /**
      * <code>required .NetGameInfo.NetGameType netGameType = 2;</code>
-     * @return Whether the netGameType field is set.
      */
-    @java.lang.Override public boolean hasNetGameType() {
+    public boolean hasNetGameType() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .NetGameInfo.NetGameType netGameType = 2;</code>
-     * @return The netGameType.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetGameInfo.NetGameType getNetGameType() {
+    public de.pokerth.protocol.ProtoBuf.NetGameInfo.NetGameType getNetGameType() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.NetGameInfo.NetGameType result = de.pokerth.protocol.ProtoBuf.NetGameInfo.NetGameType.valueOf(netGameType_);
       return result == null ? de.pokerth.protocol.ProtoBuf.NetGameInfo.NetGameType.normalGame : result;
@@ -1491,17 +1396,13 @@ public final class ProtoBuf {
     private int maxNumPlayers_;
     /**
      * <code>required uint32 maxNumPlayers = 3;</code>
-     * @return Whether the maxNumPlayers field is set.
      */
-    @java.lang.Override
     public boolean hasMaxNumPlayers() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required uint32 maxNumPlayers = 3;</code>
-     * @return The maxNumPlayers.
      */
-    @java.lang.Override
     public int getMaxNumPlayers() {
       return maxNumPlayers_;
     }
@@ -1510,16 +1411,14 @@ public final class ProtoBuf {
     private int raiseIntervalMode_;
     /**
      * <code>required .NetGameInfo.RaiseIntervalMode raiseIntervalMode = 4;</code>
-     * @return Whether the raiseIntervalMode field is set.
      */
-    @java.lang.Override public boolean hasRaiseIntervalMode() {
+    public boolean hasRaiseIntervalMode() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>required .NetGameInfo.RaiseIntervalMode raiseIntervalMode = 4;</code>
-     * @return The raiseIntervalMode.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetGameInfo.RaiseIntervalMode getRaiseIntervalMode() {
+    public de.pokerth.protocol.ProtoBuf.NetGameInfo.RaiseIntervalMode getRaiseIntervalMode() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.NetGameInfo.RaiseIntervalMode result = de.pokerth.protocol.ProtoBuf.NetGameInfo.RaiseIntervalMode.valueOf(raiseIntervalMode_);
       return result == null ? de.pokerth.protocol.ProtoBuf.NetGameInfo.RaiseIntervalMode.raiseOnHandNum : result;
@@ -1529,17 +1428,13 @@ public final class ProtoBuf {
     private int raiseEveryHands_;
     /**
      * <code>optional uint32 raiseEveryHands = 5;</code>
-     * @return Whether the raiseEveryHands field is set.
      */
-    @java.lang.Override
     public boolean hasRaiseEveryHands() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
      * <code>optional uint32 raiseEveryHands = 5;</code>
-     * @return The raiseEveryHands.
      */
-    @java.lang.Override
     public int getRaiseEveryHands() {
       return raiseEveryHands_;
     }
@@ -1548,17 +1443,13 @@ public final class ProtoBuf {
     private int raiseEveryMinutes_;
     /**
      * <code>optional uint32 raiseEveryMinutes = 6;</code>
-     * @return Whether the raiseEveryMinutes field is set.
      */
-    @java.lang.Override
     public boolean hasRaiseEveryMinutes() {
       return ((bitField0_ & 0x00000020) != 0);
     }
     /**
      * <code>optional uint32 raiseEveryMinutes = 6;</code>
-     * @return The raiseEveryMinutes.
      */
-    @java.lang.Override
     public int getRaiseEveryMinutes() {
       return raiseEveryMinutes_;
     }
@@ -1567,16 +1458,14 @@ public final class ProtoBuf {
     private int endRaiseMode_;
     /**
      * <code>required .NetGameInfo.EndRaiseMode endRaiseMode = 7;</code>
-     * @return Whether the endRaiseMode field is set.
      */
-    @java.lang.Override public boolean hasEndRaiseMode() {
+    public boolean hasEndRaiseMode() {
       return ((bitField0_ & 0x00000040) != 0);
     }
     /**
      * <code>required .NetGameInfo.EndRaiseMode endRaiseMode = 7;</code>
-     * @return The endRaiseMode.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetGameInfo.EndRaiseMode getEndRaiseMode() {
+    public de.pokerth.protocol.ProtoBuf.NetGameInfo.EndRaiseMode getEndRaiseMode() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.NetGameInfo.EndRaiseMode result = de.pokerth.protocol.ProtoBuf.NetGameInfo.EndRaiseMode.valueOf(endRaiseMode_);
       return result == null ? de.pokerth.protocol.ProtoBuf.NetGameInfo.EndRaiseMode.doubleBlinds : result;
@@ -1586,17 +1475,13 @@ public final class ProtoBuf {
     private int endRaiseSmallBlindValue_;
     /**
      * <code>optional uint32 endRaiseSmallBlindValue = 8;</code>
-     * @return Whether the endRaiseSmallBlindValue field is set.
      */
-    @java.lang.Override
     public boolean hasEndRaiseSmallBlindValue() {
       return ((bitField0_ & 0x00000080) != 0);
     }
     /**
      * <code>optional uint32 endRaiseSmallBlindValue = 8;</code>
-     * @return The endRaiseSmallBlindValue.
      */
-    @java.lang.Override
     public int getEndRaiseSmallBlindValue() {
       return endRaiseSmallBlindValue_;
     }
@@ -1605,17 +1490,13 @@ public final class ProtoBuf {
     private int proposedGuiSpeed_;
     /**
      * <code>required uint32 proposedGuiSpeed = 9;</code>
-     * @return Whether the proposedGuiSpeed field is set.
      */
-    @java.lang.Override
     public boolean hasProposedGuiSpeed() {
       return ((bitField0_ & 0x00000100) != 0);
     }
     /**
      * <code>required uint32 proposedGuiSpeed = 9;</code>
-     * @return The proposedGuiSpeed.
      */
-    @java.lang.Override
     public int getProposedGuiSpeed() {
       return proposedGuiSpeed_;
     }
@@ -1628,9 +1509,7 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>required uint32 delayBetweenHands = 10;</code>
-     * @return Whether the delayBetweenHands field is set.
      */
-    @java.lang.Override
     public boolean hasDelayBetweenHands() {
       return ((bitField0_ & 0x00000200) != 0);
     }
@@ -1640,9 +1519,7 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>required uint32 delayBetweenHands = 10;</code>
-     * @return The delayBetweenHands.
      */
-    @java.lang.Override
     public int getDelayBetweenHands() {
       return delayBetweenHands_;
     }
@@ -1655,9 +1532,7 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>required uint32 playerActionTimeout = 11;</code>
-     * @return Whether the playerActionTimeout field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerActionTimeout() {
       return ((bitField0_ & 0x00000400) != 0);
     }
@@ -1667,9 +1542,7 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>required uint32 playerActionTimeout = 11;</code>
-     * @return The playerActionTimeout.
      */
-    @java.lang.Override
     public int getPlayerActionTimeout() {
       return playerActionTimeout_;
     }
@@ -1678,17 +1551,13 @@ public final class ProtoBuf {
     private int firstSmallBlind_;
     /**
      * <code>required uint32 firstSmallBlind = 12;</code>
-     * @return Whether the firstSmallBlind field is set.
      */
-    @java.lang.Override
     public boolean hasFirstSmallBlind() {
       return ((bitField0_ & 0x00000800) != 0);
     }
     /**
      * <code>required uint32 firstSmallBlind = 12;</code>
-     * @return The firstSmallBlind.
      */
-    @java.lang.Override
     public int getFirstSmallBlind() {
       return firstSmallBlind_;
     }
@@ -1697,17 +1566,13 @@ public final class ProtoBuf {
     private int startMoney_;
     /**
      * <code>required uint32 startMoney = 13;</code>
-     * @return Whether the startMoney field is set.
      */
-    @java.lang.Override
     public boolean hasStartMoney() {
       return ((bitField0_ & 0x00001000) != 0);
     }
     /**
      * <code>required uint32 startMoney = 13;</code>
-     * @return The startMoney.
      */
-    @java.lang.Override
     public int getStartMoney() {
       return startMoney_;
     }
@@ -1716,24 +1581,19 @@ public final class ProtoBuf {
     private com.google.protobuf.Internal.IntList manualBlinds_;
     /**
      * <code>repeated uint32 manualBlinds = 14 [packed = true];</code>
-     * @return A list containing the manualBlinds.
      */
-    @java.lang.Override
     public java.util.List<java.lang.Integer>
         getManualBlindsList() {
       return manualBlinds_;
     }
     /**
      * <code>repeated uint32 manualBlinds = 14 [packed = true];</code>
-     * @return The count of manualBlinds.
      */
     public int getManualBlindsCount() {
       return manualBlinds_.size();
     }
     /**
      * <code>repeated uint32 manualBlinds = 14 [packed = true];</code>
-     * @param index The index of the element to return.
-     * @return The manualBlinds at the given index.
      */
     public int getManualBlinds(int index) {
       return manualBlinds_.getInt(index);
@@ -1744,17 +1604,13 @@ public final class ProtoBuf {
     private boolean allowSpectators_;
     /**
      * <code>optional bool allowSpectators = 15 [default = true];</code>
-     * @return Whether the allowSpectators field is set.
      */
-    @java.lang.Override
     public boolean hasAllowSpectators() {
       return ((bitField0_ & 0x00002000) != 0);
     }
     /**
      * <code>optional bool allowSpectators = 15 [default = true];</code>
-     * @return The allowSpectators.
      */
-    @java.lang.Override
     public boolean getAllowSpectators() {
       return allowSpectators_;
     }
@@ -2515,14 +2371,12 @@ public final class ProtoBuf {
       private java.lang.Object gameName_ = "";
       /**
        * <code>required string gameName = 1;</code>
-       * @return Whether the gameName field is set.
        */
       public boolean hasGameName() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required string gameName = 1;</code>
-       * @return The gameName.
        */
       public java.lang.String getGameName() {
         java.lang.Object ref = gameName_;
@@ -2540,7 +2394,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string gameName = 1;</code>
-       * @return The bytes for gameName.
        */
       public com.google.protobuf.ByteString
           getGameNameBytes() {
@@ -2557,8 +2410,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string gameName = 1;</code>
-       * @param value The gameName to set.
-       * @return This builder for chaining.
        */
       public Builder setGameName(
           java.lang.String value) {
@@ -2572,7 +2423,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string gameName = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameName() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -2582,8 +2432,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string gameName = 1;</code>
-       * @param value The bytes for gameName to set.
-       * @return This builder for chaining.
        */
       public Builder setGameNameBytes(
           com.google.protobuf.ByteString value) {
@@ -2599,16 +2447,13 @@ public final class ProtoBuf {
       private int netGameType_ = 1;
       /**
        * <code>required .NetGameInfo.NetGameType netGameType = 2;</code>
-       * @return Whether the netGameType field is set.
        */
-      @java.lang.Override public boolean hasNetGameType() {
+      public boolean hasNetGameType() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .NetGameInfo.NetGameType netGameType = 2;</code>
-       * @return The netGameType.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.NetGameInfo.NetGameType getNetGameType() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.NetGameInfo.NetGameType result = de.pokerth.protocol.ProtoBuf.NetGameInfo.NetGameType.valueOf(netGameType_);
@@ -2616,8 +2461,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameInfo.NetGameType netGameType = 2;</code>
-       * @param value The netGameType to set.
-       * @return This builder for chaining.
        */
       public Builder setNetGameType(de.pokerth.protocol.ProtoBuf.NetGameInfo.NetGameType value) {
         if (value == null) {
@@ -2630,7 +2473,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameInfo.NetGameType netGameType = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearNetGameType() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -2642,24 +2484,18 @@ public final class ProtoBuf {
       private int maxNumPlayers_ ;
       /**
        * <code>required uint32 maxNumPlayers = 3;</code>
-       * @return Whether the maxNumPlayers field is set.
        */
-      @java.lang.Override
       public boolean hasMaxNumPlayers() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required uint32 maxNumPlayers = 3;</code>
-       * @return The maxNumPlayers.
        */
-      @java.lang.Override
       public int getMaxNumPlayers() {
         return maxNumPlayers_;
       }
       /**
        * <code>required uint32 maxNumPlayers = 3;</code>
-       * @param value The maxNumPlayers to set.
-       * @return This builder for chaining.
        */
       public Builder setMaxNumPlayers(int value) {
         bitField0_ |= 0x00000004;
@@ -2669,7 +2505,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 maxNumPlayers = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearMaxNumPlayers() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -2681,16 +2516,13 @@ public final class ProtoBuf {
       private int raiseIntervalMode_ = 1;
       /**
        * <code>required .NetGameInfo.RaiseIntervalMode raiseIntervalMode = 4;</code>
-       * @return Whether the raiseIntervalMode field is set.
        */
-      @java.lang.Override public boolean hasRaiseIntervalMode() {
+      public boolean hasRaiseIntervalMode() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>required .NetGameInfo.RaiseIntervalMode raiseIntervalMode = 4;</code>
-       * @return The raiseIntervalMode.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.NetGameInfo.RaiseIntervalMode getRaiseIntervalMode() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.NetGameInfo.RaiseIntervalMode result = de.pokerth.protocol.ProtoBuf.NetGameInfo.RaiseIntervalMode.valueOf(raiseIntervalMode_);
@@ -2698,8 +2530,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameInfo.RaiseIntervalMode raiseIntervalMode = 4;</code>
-       * @param value The raiseIntervalMode to set.
-       * @return This builder for chaining.
        */
       public Builder setRaiseIntervalMode(de.pokerth.protocol.ProtoBuf.NetGameInfo.RaiseIntervalMode value) {
         if (value == null) {
@@ -2712,7 +2542,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameInfo.RaiseIntervalMode raiseIntervalMode = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRaiseIntervalMode() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -2724,24 +2553,18 @@ public final class ProtoBuf {
       private int raiseEveryHands_ ;
       /**
        * <code>optional uint32 raiseEveryHands = 5;</code>
-       * @return Whether the raiseEveryHands field is set.
        */
-      @java.lang.Override
       public boolean hasRaiseEveryHands() {
         return ((bitField0_ & 0x00000010) != 0);
       }
       /**
        * <code>optional uint32 raiseEveryHands = 5;</code>
-       * @return The raiseEveryHands.
        */
-      @java.lang.Override
       public int getRaiseEveryHands() {
         return raiseEveryHands_;
       }
       /**
        * <code>optional uint32 raiseEveryHands = 5;</code>
-       * @param value The raiseEveryHands to set.
-       * @return This builder for chaining.
        */
       public Builder setRaiseEveryHands(int value) {
         bitField0_ |= 0x00000010;
@@ -2751,7 +2574,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional uint32 raiseEveryHands = 5;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRaiseEveryHands() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -2763,24 +2585,18 @@ public final class ProtoBuf {
       private int raiseEveryMinutes_ ;
       /**
        * <code>optional uint32 raiseEveryMinutes = 6;</code>
-       * @return Whether the raiseEveryMinutes field is set.
        */
-      @java.lang.Override
       public boolean hasRaiseEveryMinutes() {
         return ((bitField0_ & 0x00000020) != 0);
       }
       /**
        * <code>optional uint32 raiseEveryMinutes = 6;</code>
-       * @return The raiseEveryMinutes.
        */
-      @java.lang.Override
       public int getRaiseEveryMinutes() {
         return raiseEveryMinutes_;
       }
       /**
        * <code>optional uint32 raiseEveryMinutes = 6;</code>
-       * @param value The raiseEveryMinutes to set.
-       * @return This builder for chaining.
        */
       public Builder setRaiseEveryMinutes(int value) {
         bitField0_ |= 0x00000020;
@@ -2790,7 +2606,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional uint32 raiseEveryMinutes = 6;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRaiseEveryMinutes() {
         bitField0_ = (bitField0_ & ~0x00000020);
@@ -2802,16 +2617,13 @@ public final class ProtoBuf {
       private int endRaiseMode_ = 1;
       /**
        * <code>required .NetGameInfo.EndRaiseMode endRaiseMode = 7;</code>
-       * @return Whether the endRaiseMode field is set.
        */
-      @java.lang.Override public boolean hasEndRaiseMode() {
+      public boolean hasEndRaiseMode() {
         return ((bitField0_ & 0x00000040) != 0);
       }
       /**
        * <code>required .NetGameInfo.EndRaiseMode endRaiseMode = 7;</code>
-       * @return The endRaiseMode.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.NetGameInfo.EndRaiseMode getEndRaiseMode() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.NetGameInfo.EndRaiseMode result = de.pokerth.protocol.ProtoBuf.NetGameInfo.EndRaiseMode.valueOf(endRaiseMode_);
@@ -2819,8 +2631,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameInfo.EndRaiseMode endRaiseMode = 7;</code>
-       * @param value The endRaiseMode to set.
-       * @return This builder for chaining.
        */
       public Builder setEndRaiseMode(de.pokerth.protocol.ProtoBuf.NetGameInfo.EndRaiseMode value) {
         if (value == null) {
@@ -2833,7 +2643,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameInfo.EndRaiseMode endRaiseMode = 7;</code>
-       * @return This builder for chaining.
        */
       public Builder clearEndRaiseMode() {
         bitField0_ = (bitField0_ & ~0x00000040);
@@ -2845,24 +2654,18 @@ public final class ProtoBuf {
       private int endRaiseSmallBlindValue_ ;
       /**
        * <code>optional uint32 endRaiseSmallBlindValue = 8;</code>
-       * @return Whether the endRaiseSmallBlindValue field is set.
        */
-      @java.lang.Override
       public boolean hasEndRaiseSmallBlindValue() {
         return ((bitField0_ & 0x00000080) != 0);
       }
       /**
        * <code>optional uint32 endRaiseSmallBlindValue = 8;</code>
-       * @return The endRaiseSmallBlindValue.
        */
-      @java.lang.Override
       public int getEndRaiseSmallBlindValue() {
         return endRaiseSmallBlindValue_;
       }
       /**
        * <code>optional uint32 endRaiseSmallBlindValue = 8;</code>
-       * @param value The endRaiseSmallBlindValue to set.
-       * @return This builder for chaining.
        */
       public Builder setEndRaiseSmallBlindValue(int value) {
         bitField0_ |= 0x00000080;
@@ -2872,7 +2675,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional uint32 endRaiseSmallBlindValue = 8;</code>
-       * @return This builder for chaining.
        */
       public Builder clearEndRaiseSmallBlindValue() {
         bitField0_ = (bitField0_ & ~0x00000080);
@@ -2884,24 +2686,18 @@ public final class ProtoBuf {
       private int proposedGuiSpeed_ ;
       /**
        * <code>required uint32 proposedGuiSpeed = 9;</code>
-       * @return Whether the proposedGuiSpeed field is set.
        */
-      @java.lang.Override
       public boolean hasProposedGuiSpeed() {
         return ((bitField0_ & 0x00000100) != 0);
       }
       /**
        * <code>required uint32 proposedGuiSpeed = 9;</code>
-       * @return The proposedGuiSpeed.
        */
-      @java.lang.Override
       public int getProposedGuiSpeed() {
         return proposedGuiSpeed_;
       }
       /**
        * <code>required uint32 proposedGuiSpeed = 9;</code>
-       * @param value The proposedGuiSpeed to set.
-       * @return This builder for chaining.
        */
       public Builder setProposedGuiSpeed(int value) {
         bitField0_ |= 0x00000100;
@@ -2911,7 +2707,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 proposedGuiSpeed = 9;</code>
-       * @return This builder for chaining.
        */
       public Builder clearProposedGuiSpeed() {
         bitField0_ = (bitField0_ & ~0x00000100);
@@ -2927,9 +2722,7 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>required uint32 delayBetweenHands = 10;</code>
-       * @return Whether the delayBetweenHands field is set.
        */
-      @java.lang.Override
       public boolean hasDelayBetweenHands() {
         return ((bitField0_ & 0x00000200) != 0);
       }
@@ -2939,9 +2732,7 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>required uint32 delayBetweenHands = 10;</code>
-       * @return The delayBetweenHands.
        */
-      @java.lang.Override
       public int getDelayBetweenHands() {
         return delayBetweenHands_;
       }
@@ -2951,8 +2742,6 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>required uint32 delayBetweenHands = 10;</code>
-       * @param value The delayBetweenHands to set.
-       * @return This builder for chaining.
        */
       public Builder setDelayBetweenHands(int value) {
         bitField0_ |= 0x00000200;
@@ -2966,7 +2755,6 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>required uint32 delayBetweenHands = 10;</code>
-       * @return This builder for chaining.
        */
       public Builder clearDelayBetweenHands() {
         bitField0_ = (bitField0_ & ~0x00000200);
@@ -2982,9 +2770,7 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>required uint32 playerActionTimeout = 11;</code>
-       * @return Whether the playerActionTimeout field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerActionTimeout() {
         return ((bitField0_ & 0x00000400) != 0);
       }
@@ -2994,9 +2780,7 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>required uint32 playerActionTimeout = 11;</code>
-       * @return The playerActionTimeout.
        */
-      @java.lang.Override
       public int getPlayerActionTimeout() {
         return playerActionTimeout_;
       }
@@ -3006,8 +2790,6 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>required uint32 playerActionTimeout = 11;</code>
-       * @param value The playerActionTimeout to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerActionTimeout(int value) {
         bitField0_ |= 0x00000400;
@@ -3021,7 +2803,6 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>required uint32 playerActionTimeout = 11;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerActionTimeout() {
         bitField0_ = (bitField0_ & ~0x00000400);
@@ -3033,24 +2814,18 @@ public final class ProtoBuf {
       private int firstSmallBlind_ ;
       /**
        * <code>required uint32 firstSmallBlind = 12;</code>
-       * @return Whether the firstSmallBlind field is set.
        */
-      @java.lang.Override
       public boolean hasFirstSmallBlind() {
         return ((bitField0_ & 0x00000800) != 0);
       }
       /**
        * <code>required uint32 firstSmallBlind = 12;</code>
-       * @return The firstSmallBlind.
        */
-      @java.lang.Override
       public int getFirstSmallBlind() {
         return firstSmallBlind_;
       }
       /**
        * <code>required uint32 firstSmallBlind = 12;</code>
-       * @param value The firstSmallBlind to set.
-       * @return This builder for chaining.
        */
       public Builder setFirstSmallBlind(int value) {
         bitField0_ |= 0x00000800;
@@ -3060,7 +2835,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 firstSmallBlind = 12;</code>
-       * @return This builder for chaining.
        */
       public Builder clearFirstSmallBlind() {
         bitField0_ = (bitField0_ & ~0x00000800);
@@ -3072,24 +2846,18 @@ public final class ProtoBuf {
       private int startMoney_ ;
       /**
        * <code>required uint32 startMoney = 13;</code>
-       * @return Whether the startMoney field is set.
        */
-      @java.lang.Override
       public boolean hasStartMoney() {
         return ((bitField0_ & 0x00001000) != 0);
       }
       /**
        * <code>required uint32 startMoney = 13;</code>
-       * @return The startMoney.
        */
-      @java.lang.Override
       public int getStartMoney() {
         return startMoney_;
       }
       /**
        * <code>required uint32 startMoney = 13;</code>
-       * @param value The startMoney to set.
-       * @return This builder for chaining.
        */
       public Builder setStartMoney(int value) {
         bitField0_ |= 0x00001000;
@@ -3099,7 +2867,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 startMoney = 13;</code>
-       * @return This builder for chaining.
        */
       public Builder clearStartMoney() {
         bitField0_ = (bitField0_ & ~0x00001000);
@@ -3117,7 +2884,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 manualBlinds = 14 [packed = true];</code>
-       * @return A list containing the manualBlinds.
        */
       public java.util.List<java.lang.Integer>
           getManualBlindsList() {
@@ -3126,24 +2892,18 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 manualBlinds = 14 [packed = true];</code>
-       * @return The count of manualBlinds.
        */
       public int getManualBlindsCount() {
         return manualBlinds_.size();
       }
       /**
        * <code>repeated uint32 manualBlinds = 14 [packed = true];</code>
-       * @param index The index of the element to return.
-       * @return The manualBlinds at the given index.
        */
       public int getManualBlinds(int index) {
         return manualBlinds_.getInt(index);
       }
       /**
        * <code>repeated uint32 manualBlinds = 14 [packed = true];</code>
-       * @param index The index to set the value at.
-       * @param value The manualBlinds to set.
-       * @return This builder for chaining.
        */
       public Builder setManualBlinds(
           int index, int value) {
@@ -3154,8 +2914,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 manualBlinds = 14 [packed = true];</code>
-       * @param value The manualBlinds to add.
-       * @return This builder for chaining.
        */
       public Builder addManualBlinds(int value) {
         ensureManualBlindsIsMutable();
@@ -3165,8 +2923,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 manualBlinds = 14 [packed = true];</code>
-       * @param values The manualBlinds to add.
-       * @return This builder for chaining.
        */
       public Builder addAllManualBlinds(
           java.lang.Iterable<? extends java.lang.Integer> values) {
@@ -3178,7 +2934,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 manualBlinds = 14 [packed = true];</code>
-       * @return This builder for chaining.
        */
       public Builder clearManualBlinds() {
         manualBlinds_ = emptyIntList();
@@ -3190,24 +2945,18 @@ public final class ProtoBuf {
       private boolean allowSpectators_ = true;
       /**
        * <code>optional bool allowSpectators = 15 [default = true];</code>
-       * @return Whether the allowSpectators field is set.
        */
-      @java.lang.Override
       public boolean hasAllowSpectators() {
         return ((bitField0_ & 0x00004000) != 0);
       }
       /**
        * <code>optional bool allowSpectators = 15 [default = true];</code>
-       * @return The allowSpectators.
        */
-      @java.lang.Override
       public boolean getAllowSpectators() {
         return allowSpectators_;
       }
       /**
        * <code>optional bool allowSpectators = 15 [default = true];</code>
-       * @param value The allowSpectators to set.
-       * @return This builder for chaining.
        */
       public Builder setAllowSpectators(boolean value) {
         bitField0_ |= 0x00004000;
@@ -3217,7 +2966,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional bool allowSpectators = 15 [default = true];</code>
-       * @return This builder for chaining.
        */
       public Builder clearAllowSpectators() {
         bitField0_ = (bitField0_ & ~0x00004000);
@@ -3284,91 +3032,75 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 playerId = 1;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 1;</code>
-     * @return The playerId.
      */
     int getPlayerId();
 
     /**
      * <code>required uint32 resultCard1 = 2;</code>
-     * @return Whether the resultCard1 field is set.
      */
     boolean hasResultCard1();
     /**
      * <code>required uint32 resultCard1 = 2;</code>
-     * @return The resultCard1.
      */
     int getResultCard1();
 
     /**
      * <code>required uint32 resultCard2 = 3;</code>
-     * @return Whether the resultCard2 field is set.
      */
     boolean hasResultCard2();
     /**
      * <code>required uint32 resultCard2 = 3;</code>
-     * @return The resultCard2.
      */
     int getResultCard2();
 
     /**
      * <code>repeated uint32 bestHandPosition = 4 [packed = true];</code>
-     * @return A list containing the bestHandPosition.
      */
     java.util.List<java.lang.Integer> getBestHandPositionList();
     /**
      * <code>repeated uint32 bestHandPosition = 4 [packed = true];</code>
-     * @return The count of bestHandPosition.
      */
     int getBestHandPositionCount();
     /**
      * <code>repeated uint32 bestHandPosition = 4 [packed = true];</code>
-     * @param index The index of the element to return.
-     * @return The bestHandPosition at the given index.
      */
     int getBestHandPosition(int index);
 
     /**
      * <code>required uint32 moneyWon = 5;</code>
-     * @return Whether the moneyWon field is set.
      */
     boolean hasMoneyWon();
     /**
      * <code>required uint32 moneyWon = 5;</code>
-     * @return The moneyWon.
      */
     int getMoneyWon();
 
     /**
      * <code>required uint32 playerMoney = 6;</code>
-     * @return Whether the playerMoney field is set.
      */
     boolean hasPlayerMoney();
     /**
      * <code>required uint32 playerMoney = 6;</code>
-     * @return The playerMoney.
      */
     int getPlayerMoney();
 
     /**
      * <code>optional uint32 cardsValue = 7;</code>
-     * @return Whether the cardsValue field is set.
      */
     boolean hasCardsValue();
     /**
      * <code>optional uint32 cardsValue = 7;</code>
-     * @return The cardsValue.
      */
     int getCardsValue();
   }
   /**
    * Protobuf type {@code PlayerResult}
    */
-  public static final class PlayerResult extends
+  public  static final class PlayerResult extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:PlayerResult)
       PlayerResultOrBuilder {
@@ -3503,17 +3235,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 1;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 playerId = 1;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -3522,17 +3250,13 @@ public final class ProtoBuf {
     private int resultCard1_;
     /**
      * <code>required uint32 resultCard1 = 2;</code>
-     * @return Whether the resultCard1 field is set.
      */
-    @java.lang.Override
     public boolean hasResultCard1() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 resultCard1 = 2;</code>
-     * @return The resultCard1.
      */
-    @java.lang.Override
     public int getResultCard1() {
       return resultCard1_;
     }
@@ -3541,17 +3265,13 @@ public final class ProtoBuf {
     private int resultCard2_;
     /**
      * <code>required uint32 resultCard2 = 3;</code>
-     * @return Whether the resultCard2 field is set.
      */
-    @java.lang.Override
     public boolean hasResultCard2() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required uint32 resultCard2 = 3;</code>
-     * @return The resultCard2.
      */
-    @java.lang.Override
     public int getResultCard2() {
       return resultCard2_;
     }
@@ -3560,24 +3280,19 @@ public final class ProtoBuf {
     private com.google.protobuf.Internal.IntList bestHandPosition_;
     /**
      * <code>repeated uint32 bestHandPosition = 4 [packed = true];</code>
-     * @return A list containing the bestHandPosition.
      */
-    @java.lang.Override
     public java.util.List<java.lang.Integer>
         getBestHandPositionList() {
       return bestHandPosition_;
     }
     /**
      * <code>repeated uint32 bestHandPosition = 4 [packed = true];</code>
-     * @return The count of bestHandPosition.
      */
     public int getBestHandPositionCount() {
       return bestHandPosition_.size();
     }
     /**
      * <code>repeated uint32 bestHandPosition = 4 [packed = true];</code>
-     * @param index The index of the element to return.
-     * @return The bestHandPosition at the given index.
      */
     public int getBestHandPosition(int index) {
       return bestHandPosition_.getInt(index);
@@ -3588,17 +3303,13 @@ public final class ProtoBuf {
     private int moneyWon_;
     /**
      * <code>required uint32 moneyWon = 5;</code>
-     * @return Whether the moneyWon field is set.
      */
-    @java.lang.Override
     public boolean hasMoneyWon() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>required uint32 moneyWon = 5;</code>
-     * @return The moneyWon.
      */
-    @java.lang.Override
     public int getMoneyWon() {
       return moneyWon_;
     }
@@ -3607,17 +3318,13 @@ public final class ProtoBuf {
     private int playerMoney_;
     /**
      * <code>required uint32 playerMoney = 6;</code>
-     * @return Whether the playerMoney field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerMoney() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
      * <code>required uint32 playerMoney = 6;</code>
-     * @return The playerMoney.
      */
-    @java.lang.Override
     public int getPlayerMoney() {
       return playerMoney_;
     }
@@ -3626,17 +3333,13 @@ public final class ProtoBuf {
     private int cardsValue_;
     /**
      * <code>optional uint32 cardsValue = 7;</code>
-     * @return Whether the cardsValue field is set.
      */
-    @java.lang.Override
     public boolean hasCardsValue() {
       return ((bitField0_ & 0x00000020) != 0);
     }
     /**
      * <code>optional uint32 cardsValue = 7;</code>
-     * @return The cardsValue.
      */
-    @java.lang.Override
     public int getCardsValue() {
       return cardsValue_;
     }
@@ -4163,24 +3866,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000001;
@@ -4190,7 +3887,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -4202,24 +3898,18 @@ public final class ProtoBuf {
       private int resultCard1_ ;
       /**
        * <code>required uint32 resultCard1 = 2;</code>
-       * @return Whether the resultCard1 field is set.
        */
-      @java.lang.Override
       public boolean hasResultCard1() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 resultCard1 = 2;</code>
-       * @return The resultCard1.
        */
-      @java.lang.Override
       public int getResultCard1() {
         return resultCard1_;
       }
       /**
        * <code>required uint32 resultCard1 = 2;</code>
-       * @param value The resultCard1 to set.
-       * @return This builder for chaining.
        */
       public Builder setResultCard1(int value) {
         bitField0_ |= 0x00000002;
@@ -4229,7 +3919,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 resultCard1 = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearResultCard1() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -4241,24 +3930,18 @@ public final class ProtoBuf {
       private int resultCard2_ ;
       /**
        * <code>required uint32 resultCard2 = 3;</code>
-       * @return Whether the resultCard2 field is set.
        */
-      @java.lang.Override
       public boolean hasResultCard2() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required uint32 resultCard2 = 3;</code>
-       * @return The resultCard2.
        */
-      @java.lang.Override
       public int getResultCard2() {
         return resultCard2_;
       }
       /**
        * <code>required uint32 resultCard2 = 3;</code>
-       * @param value The resultCard2 to set.
-       * @return This builder for chaining.
        */
       public Builder setResultCard2(int value) {
         bitField0_ |= 0x00000004;
@@ -4268,7 +3951,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 resultCard2 = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearResultCard2() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -4286,7 +3968,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 bestHandPosition = 4 [packed = true];</code>
-       * @return A list containing the bestHandPosition.
        */
       public java.util.List<java.lang.Integer>
           getBestHandPositionList() {
@@ -4295,24 +3976,18 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 bestHandPosition = 4 [packed = true];</code>
-       * @return The count of bestHandPosition.
        */
       public int getBestHandPositionCount() {
         return bestHandPosition_.size();
       }
       /**
        * <code>repeated uint32 bestHandPosition = 4 [packed = true];</code>
-       * @param index The index of the element to return.
-       * @return The bestHandPosition at the given index.
        */
       public int getBestHandPosition(int index) {
         return bestHandPosition_.getInt(index);
       }
       /**
        * <code>repeated uint32 bestHandPosition = 4 [packed = true];</code>
-       * @param index The index to set the value at.
-       * @param value The bestHandPosition to set.
-       * @return This builder for chaining.
        */
       public Builder setBestHandPosition(
           int index, int value) {
@@ -4323,8 +3998,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 bestHandPosition = 4 [packed = true];</code>
-       * @param value The bestHandPosition to add.
-       * @return This builder for chaining.
        */
       public Builder addBestHandPosition(int value) {
         ensureBestHandPositionIsMutable();
@@ -4334,8 +4007,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 bestHandPosition = 4 [packed = true];</code>
-       * @param values The bestHandPosition to add.
-       * @return This builder for chaining.
        */
       public Builder addAllBestHandPosition(
           java.lang.Iterable<? extends java.lang.Integer> values) {
@@ -4347,7 +4018,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 bestHandPosition = 4 [packed = true];</code>
-       * @return This builder for chaining.
        */
       public Builder clearBestHandPosition() {
         bestHandPosition_ = emptyIntList();
@@ -4359,24 +4029,18 @@ public final class ProtoBuf {
       private int moneyWon_ ;
       /**
        * <code>required uint32 moneyWon = 5;</code>
-       * @return Whether the moneyWon field is set.
        */
-      @java.lang.Override
       public boolean hasMoneyWon() {
         return ((bitField0_ & 0x00000010) != 0);
       }
       /**
        * <code>required uint32 moneyWon = 5;</code>
-       * @return The moneyWon.
        */
-      @java.lang.Override
       public int getMoneyWon() {
         return moneyWon_;
       }
       /**
        * <code>required uint32 moneyWon = 5;</code>
-       * @param value The moneyWon to set.
-       * @return This builder for chaining.
        */
       public Builder setMoneyWon(int value) {
         bitField0_ |= 0x00000010;
@@ -4386,7 +4050,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 moneyWon = 5;</code>
-       * @return This builder for chaining.
        */
       public Builder clearMoneyWon() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -4398,24 +4061,18 @@ public final class ProtoBuf {
       private int playerMoney_ ;
       /**
        * <code>required uint32 playerMoney = 6;</code>
-       * @return Whether the playerMoney field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerMoney() {
         return ((bitField0_ & 0x00000020) != 0);
       }
       /**
        * <code>required uint32 playerMoney = 6;</code>
-       * @return The playerMoney.
        */
-      @java.lang.Override
       public int getPlayerMoney() {
         return playerMoney_;
       }
       /**
        * <code>required uint32 playerMoney = 6;</code>
-       * @param value The playerMoney to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerMoney(int value) {
         bitField0_ |= 0x00000020;
@@ -4425,7 +4082,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerMoney = 6;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerMoney() {
         bitField0_ = (bitField0_ & ~0x00000020);
@@ -4437,24 +4093,18 @@ public final class ProtoBuf {
       private int cardsValue_ ;
       /**
        * <code>optional uint32 cardsValue = 7;</code>
-       * @return Whether the cardsValue field is set.
        */
-      @java.lang.Override
       public boolean hasCardsValue() {
         return ((bitField0_ & 0x00000040) != 0);
       }
       /**
        * <code>optional uint32 cardsValue = 7;</code>
-       * @return The cardsValue.
        */
-      @java.lang.Override
       public int getCardsValue() {
         return cardsValue_;
       }
       /**
        * <code>optional uint32 cardsValue = 7;</code>
-       * @param value The cardsValue to set.
-       * @return This builder for chaining.
        */
       public Builder setCardsValue(int value) {
         bitField0_ |= 0x00000040;
@@ -4464,7 +4114,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional uint32 cardsValue = 7;</code>
-       * @return This builder for chaining.
        */
       public Builder clearCardsValue() {
         bitField0_ = (bitField0_ & ~0x00000040);
@@ -4531,12 +4180,10 @@ public final class ProtoBuf {
 
     /**
      * <code>required .AnnounceMessage.Version protocolVersion = 1;</code>
-     * @return Whether the protocolVersion field is set.
      */
     boolean hasProtocolVersion();
     /**
      * <code>required .AnnounceMessage.Version protocolVersion = 1;</code>
-     * @return The protocolVersion.
      */
     de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version getProtocolVersion();
     /**
@@ -4546,12 +4193,10 @@ public final class ProtoBuf {
 
     /**
      * <code>required .AnnounceMessage.Version latestGameVersion = 2;</code>
-     * @return Whether the latestGameVersion field is set.
      */
     boolean hasLatestGameVersion();
     /**
      * <code>required .AnnounceMessage.Version latestGameVersion = 2;</code>
-     * @return The latestGameVersion.
      */
     de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version getLatestGameVersion();
     /**
@@ -4561,41 +4206,35 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 latestBetaRevision = 3;</code>
-     * @return Whether the latestBetaRevision field is set.
      */
     boolean hasLatestBetaRevision();
     /**
      * <code>required uint32 latestBetaRevision = 3;</code>
-     * @return The latestBetaRevision.
      */
     int getLatestBetaRevision();
 
     /**
      * <code>required .AnnounceMessage.ServerType serverType = 4;</code>
-     * @return Whether the serverType field is set.
      */
     boolean hasServerType();
     /**
      * <code>required .AnnounceMessage.ServerType serverType = 4;</code>
-     * @return The serverType.
      */
     de.pokerth.protocol.ProtoBuf.AnnounceMessage.ServerType getServerType();
 
     /**
      * <code>required uint32 numPlayersOnServer = 5;</code>
-     * @return Whether the numPlayersOnServer field is set.
      */
     boolean hasNumPlayersOnServer();
     /**
      * <code>required uint32 numPlayersOnServer = 5;</code>
-     * @return The numPlayersOnServer.
      */
     int getNumPlayersOnServer();
   }
   /**
    * Protobuf type {@code AnnounceMessage}
    */
-  public static final class AnnounceMessage extends
+  public  static final class AnnounceMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AnnounceMessage)
       AnnounceMessageOrBuilder {
@@ -4757,8 +4396,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -4766,10 +4403,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static ServerType forNumber(int value) {
         switch (value) {
           case 0: return serverTypeLAN;
@@ -4830,30 +4463,26 @@ public final class ProtoBuf {
 
       /**
        * <code>required uint32 majorVersion = 1;</code>
-       * @return Whether the majorVersion field is set.
        */
       boolean hasMajorVersion();
       /**
        * <code>required uint32 majorVersion = 1;</code>
-       * @return The majorVersion.
        */
       int getMajorVersion();
 
       /**
        * <code>required uint32 minorVersion = 2;</code>
-       * @return Whether the minorVersion field is set.
        */
       boolean hasMinorVersion();
       /**
        * <code>required uint32 minorVersion = 2;</code>
-       * @return The minorVersion.
        */
       int getMinorVersion();
     }
     /**
      * Protobuf type {@code AnnounceMessage.Version}
      */
-    public static final class Version extends
+    public  static final class Version extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:AnnounceMessage.Version)
         VersionOrBuilder {
@@ -4943,17 +4572,13 @@ public final class ProtoBuf {
       private int majorVersion_;
       /**
        * <code>required uint32 majorVersion = 1;</code>
-       * @return Whether the majorVersion field is set.
        */
-      @java.lang.Override
       public boolean hasMajorVersion() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 majorVersion = 1;</code>
-       * @return The majorVersion.
        */
-      @java.lang.Override
       public int getMajorVersion() {
         return majorVersion_;
       }
@@ -4962,17 +4587,13 @@ public final class ProtoBuf {
       private int minorVersion_;
       /**
        * <code>required uint32 minorVersion = 2;</code>
-       * @return Whether the minorVersion field is set.
        */
-      @java.lang.Override
       public boolean hasMinorVersion() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 minorVersion = 2;</code>
-       * @return The minorVersion.
        */
-      @java.lang.Override
       public int getMinorVersion() {
         return minorVersion_;
       }
@@ -5333,24 +4954,18 @@ public final class ProtoBuf {
         private int majorVersion_ ;
         /**
          * <code>required uint32 majorVersion = 1;</code>
-         * @return Whether the majorVersion field is set.
          */
-        @java.lang.Override
         public boolean hasMajorVersion() {
           return ((bitField0_ & 0x00000001) != 0);
         }
         /**
          * <code>required uint32 majorVersion = 1;</code>
-         * @return The majorVersion.
          */
-        @java.lang.Override
         public int getMajorVersion() {
           return majorVersion_;
         }
         /**
          * <code>required uint32 majorVersion = 1;</code>
-         * @param value The majorVersion to set.
-         * @return This builder for chaining.
          */
         public Builder setMajorVersion(int value) {
           bitField0_ |= 0x00000001;
@@ -5360,7 +4975,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required uint32 majorVersion = 1;</code>
-         * @return This builder for chaining.
          */
         public Builder clearMajorVersion() {
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -5372,24 +4986,18 @@ public final class ProtoBuf {
         private int minorVersion_ ;
         /**
          * <code>required uint32 minorVersion = 2;</code>
-         * @return Whether the minorVersion field is set.
          */
-        @java.lang.Override
         public boolean hasMinorVersion() {
           return ((bitField0_ & 0x00000002) != 0);
         }
         /**
          * <code>required uint32 minorVersion = 2;</code>
-         * @return The minorVersion.
          */
-        @java.lang.Override
         public int getMinorVersion() {
           return minorVersion_;
         }
         /**
          * <code>required uint32 minorVersion = 2;</code>
-         * @param value The minorVersion to set.
-         * @return This builder for chaining.
          */
         public Builder setMinorVersion(int value) {
           bitField0_ |= 0x00000002;
@@ -5399,7 +5007,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required uint32 minorVersion = 2;</code>
-         * @return This builder for chaining.
          */
         public Builder clearMinorVersion() {
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -5465,24 +5072,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version protocolVersion_;
     /**
      * <code>required .AnnounceMessage.Version protocolVersion = 1;</code>
-     * @return Whether the protocolVersion field is set.
      */
-    @java.lang.Override
     public boolean hasProtocolVersion() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required .AnnounceMessage.Version protocolVersion = 1;</code>
-     * @return The protocolVersion.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version getProtocolVersion() {
       return protocolVersion_ == null ? de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version.getDefaultInstance() : protocolVersion_;
     }
     /**
      * <code>required .AnnounceMessage.Version protocolVersion = 1;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AnnounceMessage.VersionOrBuilder getProtocolVersionOrBuilder() {
       return protocolVersion_ == null ? de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version.getDefaultInstance() : protocolVersion_;
     }
@@ -5491,24 +5093,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version latestGameVersion_;
     /**
      * <code>required .AnnounceMessage.Version latestGameVersion = 2;</code>
-     * @return Whether the latestGameVersion field is set.
      */
-    @java.lang.Override
     public boolean hasLatestGameVersion() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .AnnounceMessage.Version latestGameVersion = 2;</code>
-     * @return The latestGameVersion.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version getLatestGameVersion() {
       return latestGameVersion_ == null ? de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version.getDefaultInstance() : latestGameVersion_;
     }
     /**
      * <code>required .AnnounceMessage.Version latestGameVersion = 2;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AnnounceMessage.VersionOrBuilder getLatestGameVersionOrBuilder() {
       return latestGameVersion_ == null ? de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version.getDefaultInstance() : latestGameVersion_;
     }
@@ -5517,17 +5114,13 @@ public final class ProtoBuf {
     private int latestBetaRevision_;
     /**
      * <code>required uint32 latestBetaRevision = 3;</code>
-     * @return Whether the latestBetaRevision field is set.
      */
-    @java.lang.Override
     public boolean hasLatestBetaRevision() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required uint32 latestBetaRevision = 3;</code>
-     * @return The latestBetaRevision.
      */
-    @java.lang.Override
     public int getLatestBetaRevision() {
       return latestBetaRevision_;
     }
@@ -5536,16 +5129,14 @@ public final class ProtoBuf {
     private int serverType_;
     /**
      * <code>required .AnnounceMessage.ServerType serverType = 4;</code>
-     * @return Whether the serverType field is set.
      */
-    @java.lang.Override public boolean hasServerType() {
+    public boolean hasServerType() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>required .AnnounceMessage.ServerType serverType = 4;</code>
-     * @return The serverType.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.AnnounceMessage.ServerType getServerType() {
+    public de.pokerth.protocol.ProtoBuf.AnnounceMessage.ServerType getServerType() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.AnnounceMessage.ServerType result = de.pokerth.protocol.ProtoBuf.AnnounceMessage.ServerType.valueOf(serverType_);
       return result == null ? de.pokerth.protocol.ProtoBuf.AnnounceMessage.ServerType.serverTypeLAN : result;
@@ -5555,17 +5146,13 @@ public final class ProtoBuf {
     private int numPlayersOnServer_;
     /**
      * <code>required uint32 numPlayersOnServer = 5;</code>
-     * @return Whether the numPlayersOnServer field is set.
      */
-    @java.lang.Override
     public boolean hasNumPlayersOnServer() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
      * <code>required uint32 numPlayersOnServer = 5;</code>
-     * @return The numPlayersOnServer.
      */
-    @java.lang.Override
     public int getNumPlayersOnServer() {
       return numPlayersOnServer_;
     }
@@ -6055,14 +5642,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version, de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version.Builder, de.pokerth.protocol.ProtoBuf.AnnounceMessage.VersionOrBuilder> protocolVersionBuilder_;
       /**
        * <code>required .AnnounceMessage.Version protocolVersion = 1;</code>
-       * @return Whether the protocolVersion field is set.
        */
       public boolean hasProtocolVersion() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required .AnnounceMessage.Version protocolVersion = 1;</code>
-       * @return The protocolVersion.
        */
       public de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version getProtocolVersion() {
         if (protocolVersionBuilder_ == null) {
@@ -6175,14 +5760,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version, de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version.Builder, de.pokerth.protocol.ProtoBuf.AnnounceMessage.VersionOrBuilder> latestGameVersionBuilder_;
       /**
        * <code>required .AnnounceMessage.Version latestGameVersion = 2;</code>
-       * @return Whether the latestGameVersion field is set.
        */
       public boolean hasLatestGameVersion() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .AnnounceMessage.Version latestGameVersion = 2;</code>
-       * @return The latestGameVersion.
        */
       public de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version getLatestGameVersion() {
         if (latestGameVersionBuilder_ == null) {
@@ -6293,24 +5876,18 @@ public final class ProtoBuf {
       private int latestBetaRevision_ ;
       /**
        * <code>required uint32 latestBetaRevision = 3;</code>
-       * @return Whether the latestBetaRevision field is set.
        */
-      @java.lang.Override
       public boolean hasLatestBetaRevision() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required uint32 latestBetaRevision = 3;</code>
-       * @return The latestBetaRevision.
        */
-      @java.lang.Override
       public int getLatestBetaRevision() {
         return latestBetaRevision_;
       }
       /**
        * <code>required uint32 latestBetaRevision = 3;</code>
-       * @param value The latestBetaRevision to set.
-       * @return This builder for chaining.
        */
       public Builder setLatestBetaRevision(int value) {
         bitField0_ |= 0x00000004;
@@ -6320,7 +5897,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 latestBetaRevision = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearLatestBetaRevision() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -6332,16 +5908,13 @@ public final class ProtoBuf {
       private int serverType_ = 0;
       /**
        * <code>required .AnnounceMessage.ServerType serverType = 4;</code>
-       * @return Whether the serverType field is set.
        */
-      @java.lang.Override public boolean hasServerType() {
+      public boolean hasServerType() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>required .AnnounceMessage.ServerType serverType = 4;</code>
-       * @return The serverType.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.AnnounceMessage.ServerType getServerType() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.AnnounceMessage.ServerType result = de.pokerth.protocol.ProtoBuf.AnnounceMessage.ServerType.valueOf(serverType_);
@@ -6349,8 +5922,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .AnnounceMessage.ServerType serverType = 4;</code>
-       * @param value The serverType to set.
-       * @return This builder for chaining.
        */
       public Builder setServerType(de.pokerth.protocol.ProtoBuf.AnnounceMessage.ServerType value) {
         if (value == null) {
@@ -6363,7 +5934,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .AnnounceMessage.ServerType serverType = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearServerType() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -6375,24 +5945,18 @@ public final class ProtoBuf {
       private int numPlayersOnServer_ ;
       /**
        * <code>required uint32 numPlayersOnServer = 5;</code>
-       * @return Whether the numPlayersOnServer field is set.
        */
-      @java.lang.Override
       public boolean hasNumPlayersOnServer() {
         return ((bitField0_ & 0x00000010) != 0);
       }
       /**
        * <code>required uint32 numPlayersOnServer = 5;</code>
-       * @return The numPlayersOnServer.
        */
-      @java.lang.Override
       public int getNumPlayersOnServer() {
         return numPlayersOnServer_;
       }
       /**
        * <code>required uint32 numPlayersOnServer = 5;</code>
-       * @param value The numPlayersOnServer to set.
-       * @return This builder for chaining.
        */
       public Builder setNumPlayersOnServer(int value) {
         bitField0_ |= 0x00000010;
@@ -6402,7 +5966,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 numPlayersOnServer = 5;</code>
-       * @return This builder for chaining.
        */
       public Builder clearNumPlayersOnServer() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -6469,12 +6032,10 @@ public final class ProtoBuf {
 
     /**
      * <code>required .AnnounceMessage.Version requestedVersion = 1;</code>
-     * @return Whether the requestedVersion field is set.
      */
     boolean hasRequestedVersion();
     /**
      * <code>required .AnnounceMessage.Version requestedVersion = 1;</code>
-     * @return The requestedVersion.
      */
     de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version getRequestedVersion();
     /**
@@ -6484,51 +6045,42 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 buildId = 2;</code>
-     * @return Whether the buildId field is set.
      */
     boolean hasBuildId();
     /**
      * <code>required uint32 buildId = 2;</code>
-     * @return The buildId.
      */
     int getBuildId();
 
     /**
      * <code>optional bytes myLastSessionId = 3;</code>
-     * @return Whether the myLastSessionId field is set.
      */
     boolean hasMyLastSessionId();
     /**
      * <code>optional bytes myLastSessionId = 3;</code>
-     * @return The myLastSessionId.
      */
     com.google.protobuf.ByteString getMyLastSessionId();
 
     /**
      * <code>optional string authServerPassword = 4;</code>
-     * @return Whether the authServerPassword field is set.
      */
     boolean hasAuthServerPassword();
     /**
      * <code>optional string authServerPassword = 4;</code>
-     * @return The authServerPassword.
      */
     java.lang.String getAuthServerPassword();
     /**
      * <code>optional string authServerPassword = 4;</code>
-     * @return The bytes for authServerPassword.
      */
     com.google.protobuf.ByteString
         getAuthServerPasswordBytes();
 
     /**
      * <code>required .InitMessage.LoginType login = 5;</code>
-     * @return Whether the login field is set.
      */
     boolean hasLogin();
     /**
      * <code>required .InitMessage.LoginType login = 5;</code>
-     * @return The login.
      */
     de.pokerth.protocol.ProtoBuf.InitMessage.LoginType getLogin();
 
@@ -6538,7 +6090,6 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>optional string nickName = 6;</code>
-     * @return Whether the nickName field is set.
      */
     boolean hasNickName();
     /**
@@ -6547,7 +6098,6 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>optional string nickName = 6;</code>
-     * @return The nickName.
      */
     java.lang.String getNickName();
     /**
@@ -6556,7 +6106,6 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>optional string nickName = 6;</code>
-     * @return The bytes for nickName.
      */
     com.google.protobuf.ByteString
         getNickNameBytes();
@@ -6567,7 +6116,6 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>optional bytes clientUserData = 7;</code>
-     * @return Whether the clientUserData field is set.
      */
     boolean hasClientUserData();
     /**
@@ -6576,7 +6124,6 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>optional bytes clientUserData = 7;</code>
-     * @return The clientUserData.
      */
     com.google.protobuf.ByteString getClientUserData();
 
@@ -6586,7 +6133,6 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>optional bytes avatarHash = 8;</code>
-     * @return Whether the avatarHash field is set.
      */
     boolean hasAvatarHash();
     /**
@@ -6595,7 +6141,6 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>optional bytes avatarHash = 8;</code>
-     * @return The avatarHash.
      */
     com.google.protobuf.ByteString getAvatarHash();
   }
@@ -6606,7 +6151,7 @@ public final class ProtoBuf {
    *
    * Protobuf type {@code InitMessage}
    */
-  public static final class InitMessage extends
+  public  static final class InitMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:InitMessage)
       InitMessageOrBuilder {
@@ -6782,8 +6327,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -6791,10 +6334,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static LoginType forNumber(int value) {
         switch (value) {
           case 0: return guestLogin;
@@ -6854,24 +6393,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version requestedVersion_;
     /**
      * <code>required .AnnounceMessage.Version requestedVersion = 1;</code>
-     * @return Whether the requestedVersion field is set.
      */
-    @java.lang.Override
     public boolean hasRequestedVersion() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required .AnnounceMessage.Version requestedVersion = 1;</code>
-     * @return The requestedVersion.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version getRequestedVersion() {
       return requestedVersion_ == null ? de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version.getDefaultInstance() : requestedVersion_;
     }
     /**
      * <code>required .AnnounceMessage.Version requestedVersion = 1;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AnnounceMessage.VersionOrBuilder getRequestedVersionOrBuilder() {
       return requestedVersion_ == null ? de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version.getDefaultInstance() : requestedVersion_;
     }
@@ -6880,17 +6414,13 @@ public final class ProtoBuf {
     private int buildId_;
     /**
      * <code>required uint32 buildId = 2;</code>
-     * @return Whether the buildId field is set.
      */
-    @java.lang.Override
     public boolean hasBuildId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 buildId = 2;</code>
-     * @return The buildId.
      */
-    @java.lang.Override
     public int getBuildId() {
       return buildId_;
     }
@@ -6899,17 +6429,13 @@ public final class ProtoBuf {
     private com.google.protobuf.ByteString myLastSessionId_;
     /**
      * <code>optional bytes myLastSessionId = 3;</code>
-     * @return Whether the myLastSessionId field is set.
      */
-    @java.lang.Override
     public boolean hasMyLastSessionId() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>optional bytes myLastSessionId = 3;</code>
-     * @return The myLastSessionId.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getMyLastSessionId() {
       return myLastSessionId_;
     }
@@ -6918,17 +6444,13 @@ public final class ProtoBuf {
     private volatile java.lang.Object authServerPassword_;
     /**
      * <code>optional string authServerPassword = 4;</code>
-     * @return Whether the authServerPassword field is set.
      */
-    @java.lang.Override
     public boolean hasAuthServerPassword() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>optional string authServerPassword = 4;</code>
-     * @return The authServerPassword.
      */
-    @java.lang.Override
     public java.lang.String getAuthServerPassword() {
       java.lang.Object ref = authServerPassword_;
       if (ref instanceof java.lang.String) {
@@ -6945,9 +6467,7 @@ public final class ProtoBuf {
     }
     /**
      * <code>optional string authServerPassword = 4;</code>
-     * @return The bytes for authServerPassword.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getAuthServerPasswordBytes() {
       java.lang.Object ref = authServerPassword_;
@@ -6966,16 +6486,14 @@ public final class ProtoBuf {
     private int login_;
     /**
      * <code>required .InitMessage.LoginType login = 5;</code>
-     * @return Whether the login field is set.
      */
-    @java.lang.Override public boolean hasLogin() {
+    public boolean hasLogin() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
      * <code>required .InitMessage.LoginType login = 5;</code>
-     * @return The login.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.InitMessage.LoginType getLogin() {
+    public de.pokerth.protocol.ProtoBuf.InitMessage.LoginType getLogin() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.InitMessage.LoginType result = de.pokerth.protocol.ProtoBuf.InitMessage.LoginType.valueOf(login_);
       return result == null ? de.pokerth.protocol.ProtoBuf.InitMessage.LoginType.guestLogin : result;
@@ -6989,9 +6507,7 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>optional string nickName = 6;</code>
-     * @return Whether the nickName field is set.
      */
-    @java.lang.Override
     public boolean hasNickName() {
       return ((bitField0_ & 0x00000020) != 0);
     }
@@ -7001,9 +6517,7 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>optional string nickName = 6;</code>
-     * @return The nickName.
      */
-    @java.lang.Override
     public java.lang.String getNickName() {
       java.lang.Object ref = nickName_;
       if (ref instanceof java.lang.String) {
@@ -7024,9 +6538,7 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>optional string nickName = 6;</code>
-     * @return The bytes for nickName.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getNickNameBytes() {
       java.lang.Object ref = nickName_;
@@ -7049,9 +6561,7 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>optional bytes clientUserData = 7;</code>
-     * @return Whether the clientUserData field is set.
      */
-    @java.lang.Override
     public boolean hasClientUserData() {
       return ((bitField0_ & 0x00000040) != 0);
     }
@@ -7061,9 +6571,7 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>optional bytes clientUserData = 7;</code>
-     * @return The clientUserData.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getClientUserData() {
       return clientUserData_;
     }
@@ -7076,9 +6584,7 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>optional bytes avatarHash = 8;</code>
-     * @return Whether the avatarHash field is set.
      */
-    @java.lang.Override
     public boolean hasAvatarHash() {
       return ((bitField0_ & 0x00000080) != 0);
     }
@@ -7088,9 +6594,7 @@ public final class ProtoBuf {
      * </pre>
      *
      * <code>optional bytes avatarHash = 8;</code>
-     * @return The avatarHash.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getAvatarHash() {
       return avatarHash_;
     }
@@ -7631,14 +7135,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version, de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version.Builder, de.pokerth.protocol.ProtoBuf.AnnounceMessage.VersionOrBuilder> requestedVersionBuilder_;
       /**
        * <code>required .AnnounceMessage.Version requestedVersion = 1;</code>
-       * @return Whether the requestedVersion field is set.
        */
       public boolean hasRequestedVersion() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required .AnnounceMessage.Version requestedVersion = 1;</code>
-       * @return The requestedVersion.
        */
       public de.pokerth.protocol.ProtoBuf.AnnounceMessage.Version getRequestedVersion() {
         if (requestedVersionBuilder_ == null) {
@@ -7749,24 +7251,18 @@ public final class ProtoBuf {
       private int buildId_ ;
       /**
        * <code>required uint32 buildId = 2;</code>
-       * @return Whether the buildId field is set.
        */
-      @java.lang.Override
       public boolean hasBuildId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 buildId = 2;</code>
-       * @return The buildId.
        */
-      @java.lang.Override
       public int getBuildId() {
         return buildId_;
       }
       /**
        * <code>required uint32 buildId = 2;</code>
-       * @param value The buildId to set.
-       * @return This builder for chaining.
        */
       public Builder setBuildId(int value) {
         bitField0_ |= 0x00000002;
@@ -7776,7 +7272,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 buildId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearBuildId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -7788,24 +7283,18 @@ public final class ProtoBuf {
       private com.google.protobuf.ByteString myLastSessionId_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>optional bytes myLastSessionId = 3;</code>
-       * @return Whether the myLastSessionId field is set.
        */
-      @java.lang.Override
       public boolean hasMyLastSessionId() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>optional bytes myLastSessionId = 3;</code>
-       * @return The myLastSessionId.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getMyLastSessionId() {
         return myLastSessionId_;
       }
       /**
        * <code>optional bytes myLastSessionId = 3;</code>
-       * @param value The myLastSessionId to set.
-       * @return This builder for chaining.
        */
       public Builder setMyLastSessionId(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -7818,7 +7307,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional bytes myLastSessionId = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearMyLastSessionId() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -7830,14 +7318,12 @@ public final class ProtoBuf {
       private java.lang.Object authServerPassword_ = "";
       /**
        * <code>optional string authServerPassword = 4;</code>
-       * @return Whether the authServerPassword field is set.
        */
       public boolean hasAuthServerPassword() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>optional string authServerPassword = 4;</code>
-       * @return The authServerPassword.
        */
       public java.lang.String getAuthServerPassword() {
         java.lang.Object ref = authServerPassword_;
@@ -7855,7 +7341,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional string authServerPassword = 4;</code>
-       * @return The bytes for authServerPassword.
        */
       public com.google.protobuf.ByteString
           getAuthServerPasswordBytes() {
@@ -7872,8 +7357,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional string authServerPassword = 4;</code>
-       * @param value The authServerPassword to set.
-       * @return This builder for chaining.
        */
       public Builder setAuthServerPassword(
           java.lang.String value) {
@@ -7887,7 +7370,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional string authServerPassword = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearAuthServerPassword() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -7897,8 +7379,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional string authServerPassword = 4;</code>
-       * @param value The bytes for authServerPassword to set.
-       * @return This builder for chaining.
        */
       public Builder setAuthServerPasswordBytes(
           com.google.protobuf.ByteString value) {
@@ -7914,16 +7394,13 @@ public final class ProtoBuf {
       private int login_ = 0;
       /**
        * <code>required .InitMessage.LoginType login = 5;</code>
-       * @return Whether the login field is set.
        */
-      @java.lang.Override public boolean hasLogin() {
+      public boolean hasLogin() {
         return ((bitField0_ & 0x00000010) != 0);
       }
       /**
        * <code>required .InitMessage.LoginType login = 5;</code>
-       * @return The login.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.InitMessage.LoginType getLogin() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.InitMessage.LoginType result = de.pokerth.protocol.ProtoBuf.InitMessage.LoginType.valueOf(login_);
@@ -7931,8 +7408,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .InitMessage.LoginType login = 5;</code>
-       * @param value The login to set.
-       * @return This builder for chaining.
        */
       public Builder setLogin(de.pokerth.protocol.ProtoBuf.InitMessage.LoginType value) {
         if (value == null) {
@@ -7945,7 +7420,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .InitMessage.LoginType login = 5;</code>
-       * @return This builder for chaining.
        */
       public Builder clearLogin() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -7961,7 +7435,6 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>optional string nickName = 6;</code>
-       * @return Whether the nickName field is set.
        */
       public boolean hasNickName() {
         return ((bitField0_ & 0x00000020) != 0);
@@ -7972,7 +7445,6 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>optional string nickName = 6;</code>
-       * @return The nickName.
        */
       public java.lang.String getNickName() {
         java.lang.Object ref = nickName_;
@@ -7994,7 +7466,6 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>optional string nickName = 6;</code>
-       * @return The bytes for nickName.
        */
       public com.google.protobuf.ByteString
           getNickNameBytes() {
@@ -8015,8 +7486,6 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>optional string nickName = 6;</code>
-       * @param value The nickName to set.
-       * @return This builder for chaining.
        */
       public Builder setNickName(
           java.lang.String value) {
@@ -8034,7 +7503,6 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>optional string nickName = 6;</code>
-       * @return This builder for chaining.
        */
       public Builder clearNickName() {
         bitField0_ = (bitField0_ & ~0x00000020);
@@ -8048,8 +7516,6 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>optional string nickName = 6;</code>
-       * @param value The bytes for nickName to set.
-       * @return This builder for chaining.
        */
       public Builder setNickNameBytes(
           com.google.protobuf.ByteString value) {
@@ -8069,9 +7535,7 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>optional bytes clientUserData = 7;</code>
-       * @return Whether the clientUserData field is set.
        */
-      @java.lang.Override
       public boolean hasClientUserData() {
         return ((bitField0_ & 0x00000040) != 0);
       }
@@ -8081,9 +7545,7 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>optional bytes clientUserData = 7;</code>
-       * @return The clientUserData.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getClientUserData() {
         return clientUserData_;
       }
@@ -8093,8 +7555,6 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>optional bytes clientUserData = 7;</code>
-       * @param value The clientUserData to set.
-       * @return This builder for chaining.
        */
       public Builder setClientUserData(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -8111,7 +7571,6 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>optional bytes clientUserData = 7;</code>
-       * @return This builder for chaining.
        */
       public Builder clearClientUserData() {
         bitField0_ = (bitField0_ & ~0x00000040);
@@ -8127,9 +7586,7 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>optional bytes avatarHash = 8;</code>
-       * @return Whether the avatarHash field is set.
        */
-      @java.lang.Override
       public boolean hasAvatarHash() {
         return ((bitField0_ & 0x00000080) != 0);
       }
@@ -8139,9 +7596,7 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>optional bytes avatarHash = 8;</code>
-       * @return The avatarHash.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getAvatarHash() {
         return avatarHash_;
       }
@@ -8151,8 +7606,6 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>optional bytes avatarHash = 8;</code>
-       * @param value The avatarHash to set.
-       * @return This builder for chaining.
        */
       public Builder setAvatarHash(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -8169,7 +7622,6 @@ public final class ProtoBuf {
        * </pre>
        *
        * <code>optional bytes avatarHash = 8;</code>
-       * @return This builder for chaining.
        */
       public Builder clearAvatarHash() {
         bitField0_ = (bitField0_ & ~0x00000080);
@@ -8236,19 +7688,17 @@ public final class ProtoBuf {
 
     /**
      * <code>required bytes serverChallenge = 1;</code>
-     * @return Whether the serverChallenge field is set.
      */
     boolean hasServerChallenge();
     /**
      * <code>required bytes serverChallenge = 1;</code>
-     * @return The serverChallenge.
      */
     com.google.protobuf.ByteString getServerChallenge();
   }
   /**
    * Protobuf type {@code AuthServerChallengeMessage}
    */
-  public static final class AuthServerChallengeMessage extends
+  public  static final class AuthServerChallengeMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AuthServerChallengeMessage)
       AuthServerChallengeMessageOrBuilder {
@@ -8334,17 +7784,13 @@ public final class ProtoBuf {
     private com.google.protobuf.ByteString serverChallenge_;
     /**
      * <code>required bytes serverChallenge = 1;</code>
-     * @return Whether the serverChallenge field is set.
      */
-    @java.lang.Override
     public boolean hasServerChallenge() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required bytes serverChallenge = 1;</code>
-     * @return The serverChallenge.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getServerChallenge() {
       return serverChallenge_;
     }
@@ -8673,24 +8119,18 @@ public final class ProtoBuf {
       private com.google.protobuf.ByteString serverChallenge_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>required bytes serverChallenge = 1;</code>
-       * @return Whether the serverChallenge field is set.
        */
-      @java.lang.Override
       public boolean hasServerChallenge() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required bytes serverChallenge = 1;</code>
-       * @return The serverChallenge.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getServerChallenge() {
         return serverChallenge_;
       }
       /**
        * <code>required bytes serverChallenge = 1;</code>
-       * @param value The serverChallenge to set.
-       * @return This builder for chaining.
        */
       public Builder setServerChallenge(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -8703,7 +8143,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required bytes serverChallenge = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearServerChallenge() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -8770,19 +8209,17 @@ public final class ProtoBuf {
 
     /**
      * <code>required bytes clientResponse = 1;</code>
-     * @return Whether the clientResponse field is set.
      */
     boolean hasClientResponse();
     /**
      * <code>required bytes clientResponse = 1;</code>
-     * @return The clientResponse.
      */
     com.google.protobuf.ByteString getClientResponse();
   }
   /**
    * Protobuf type {@code AuthClientResponseMessage}
    */
-  public static final class AuthClientResponseMessage extends
+  public  static final class AuthClientResponseMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AuthClientResponseMessage)
       AuthClientResponseMessageOrBuilder {
@@ -8868,17 +8305,13 @@ public final class ProtoBuf {
     private com.google.protobuf.ByteString clientResponse_;
     /**
      * <code>required bytes clientResponse = 1;</code>
-     * @return Whether the clientResponse field is set.
      */
-    @java.lang.Override
     public boolean hasClientResponse() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required bytes clientResponse = 1;</code>
-     * @return The clientResponse.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getClientResponse() {
       return clientResponse_;
     }
@@ -9207,24 +8640,18 @@ public final class ProtoBuf {
       private com.google.protobuf.ByteString clientResponse_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>required bytes clientResponse = 1;</code>
-       * @return Whether the clientResponse field is set.
        */
-      @java.lang.Override
       public boolean hasClientResponse() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required bytes clientResponse = 1;</code>
-       * @return The clientResponse.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getClientResponse() {
         return clientResponse_;
       }
       /**
        * <code>required bytes clientResponse = 1;</code>
-       * @param value The clientResponse to set.
-       * @return This builder for chaining.
        */
       public Builder setClientResponse(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -9237,7 +8664,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required bytes clientResponse = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearClientResponse() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -9304,19 +8730,17 @@ public final class ProtoBuf {
 
     /**
      * <code>required bytes serverVerification = 1;</code>
-     * @return Whether the serverVerification field is set.
      */
     boolean hasServerVerification();
     /**
      * <code>required bytes serverVerification = 1;</code>
-     * @return The serverVerification.
      */
     com.google.protobuf.ByteString getServerVerification();
   }
   /**
    * Protobuf type {@code AuthServerVerificationMessage}
    */
-  public static final class AuthServerVerificationMessage extends
+  public  static final class AuthServerVerificationMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AuthServerVerificationMessage)
       AuthServerVerificationMessageOrBuilder {
@@ -9402,17 +8826,13 @@ public final class ProtoBuf {
     private com.google.protobuf.ByteString serverVerification_;
     /**
      * <code>required bytes serverVerification = 1;</code>
-     * @return Whether the serverVerification field is set.
      */
-    @java.lang.Override
     public boolean hasServerVerification() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required bytes serverVerification = 1;</code>
-     * @return The serverVerification.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getServerVerification() {
       return serverVerification_;
     }
@@ -9741,24 +9161,18 @@ public final class ProtoBuf {
       private com.google.protobuf.ByteString serverVerification_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>required bytes serverVerification = 1;</code>
-       * @return Whether the serverVerification field is set.
        */
-      @java.lang.Override
       public boolean hasServerVerification() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required bytes serverVerification = 1;</code>
-       * @return The serverVerification.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getServerVerification() {
         return serverVerification_;
       }
       /**
        * <code>required bytes serverVerification = 1;</code>
-       * @param value The serverVerification to set.
-       * @return This builder for chaining.
        */
       public Builder setServerVerification(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -9771,7 +9185,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required bytes serverVerification = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearServerVerification() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -9838,52 +9251,44 @@ public final class ProtoBuf {
 
     /**
      * <code>required bytes yourSessionId = 1;</code>
-     * @return Whether the yourSessionId field is set.
      */
     boolean hasYourSessionId();
     /**
      * <code>required bytes yourSessionId = 1;</code>
-     * @return The yourSessionId.
      */
     com.google.protobuf.ByteString getYourSessionId();
 
     /**
      * <code>required uint32 yourPlayerId = 2;</code>
-     * @return Whether the yourPlayerId field is set.
      */
     boolean hasYourPlayerId();
     /**
      * <code>required uint32 yourPlayerId = 2;</code>
-     * @return The yourPlayerId.
      */
     int getYourPlayerId();
 
     /**
      * <code>optional bytes yourAvatarHash = 3;</code>
-     * @return Whether the yourAvatarHash field is set.
      */
     boolean hasYourAvatarHash();
     /**
      * <code>optional bytes yourAvatarHash = 3;</code>
-     * @return The yourAvatarHash.
      */
     com.google.protobuf.ByteString getYourAvatarHash();
 
     /**
      * <code>optional uint32 rejoinGameId = 4;</code>
-     * @return Whether the rejoinGameId field is set.
      */
     boolean hasRejoinGameId();
     /**
      * <code>optional uint32 rejoinGameId = 4;</code>
-     * @return The rejoinGameId.
      */
     int getRejoinGameId();
   }
   /**
    * Protobuf type {@code InitAckMessage}
    */
-  public static final class InitAckMessage extends
+  public  static final class InitAckMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:InitAckMessage)
       InitAckMessageOrBuilder {
@@ -9985,17 +9390,13 @@ public final class ProtoBuf {
     private com.google.protobuf.ByteString yourSessionId_;
     /**
      * <code>required bytes yourSessionId = 1;</code>
-     * @return Whether the yourSessionId field is set.
      */
-    @java.lang.Override
     public boolean hasYourSessionId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required bytes yourSessionId = 1;</code>
-     * @return The yourSessionId.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getYourSessionId() {
       return yourSessionId_;
     }
@@ -10004,17 +9405,13 @@ public final class ProtoBuf {
     private int yourPlayerId_;
     /**
      * <code>required uint32 yourPlayerId = 2;</code>
-     * @return Whether the yourPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasYourPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 yourPlayerId = 2;</code>
-     * @return The yourPlayerId.
      */
-    @java.lang.Override
     public int getYourPlayerId() {
       return yourPlayerId_;
     }
@@ -10023,17 +9420,13 @@ public final class ProtoBuf {
     private com.google.protobuf.ByteString yourAvatarHash_;
     /**
      * <code>optional bytes yourAvatarHash = 3;</code>
-     * @return Whether the yourAvatarHash field is set.
      */
-    @java.lang.Override
     public boolean hasYourAvatarHash() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>optional bytes yourAvatarHash = 3;</code>
-     * @return The yourAvatarHash.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getYourAvatarHash() {
       return yourAvatarHash_;
     }
@@ -10042,17 +9435,13 @@ public final class ProtoBuf {
     private int rejoinGameId_;
     /**
      * <code>optional uint32 rejoinGameId = 4;</code>
-     * @return Whether the rejoinGameId field is set.
      */
-    @java.lang.Override
     public boolean hasRejoinGameId() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>optional uint32 rejoinGameId = 4;</code>
-     * @return The rejoinGameId.
      */
-    @java.lang.Override
     public int getRejoinGameId() {
       return rejoinGameId_;
     }
@@ -10463,24 +9852,18 @@ public final class ProtoBuf {
       private com.google.protobuf.ByteString yourSessionId_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>required bytes yourSessionId = 1;</code>
-       * @return Whether the yourSessionId field is set.
        */
-      @java.lang.Override
       public boolean hasYourSessionId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required bytes yourSessionId = 1;</code>
-       * @return The yourSessionId.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getYourSessionId() {
         return yourSessionId_;
       }
       /**
        * <code>required bytes yourSessionId = 1;</code>
-       * @param value The yourSessionId to set.
-       * @return This builder for chaining.
        */
       public Builder setYourSessionId(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -10493,7 +9876,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required bytes yourSessionId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearYourSessionId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -10505,24 +9887,18 @@ public final class ProtoBuf {
       private int yourPlayerId_ ;
       /**
        * <code>required uint32 yourPlayerId = 2;</code>
-       * @return Whether the yourPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasYourPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 yourPlayerId = 2;</code>
-       * @return The yourPlayerId.
        */
-      @java.lang.Override
       public int getYourPlayerId() {
         return yourPlayerId_;
       }
       /**
        * <code>required uint32 yourPlayerId = 2;</code>
-       * @param value The yourPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setYourPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -10532,7 +9908,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 yourPlayerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearYourPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -10544,24 +9919,18 @@ public final class ProtoBuf {
       private com.google.protobuf.ByteString yourAvatarHash_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>optional bytes yourAvatarHash = 3;</code>
-       * @return Whether the yourAvatarHash field is set.
        */
-      @java.lang.Override
       public boolean hasYourAvatarHash() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>optional bytes yourAvatarHash = 3;</code>
-       * @return The yourAvatarHash.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getYourAvatarHash() {
         return yourAvatarHash_;
       }
       /**
        * <code>optional bytes yourAvatarHash = 3;</code>
-       * @param value The yourAvatarHash to set.
-       * @return This builder for chaining.
        */
       public Builder setYourAvatarHash(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -10574,7 +9943,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional bytes yourAvatarHash = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearYourAvatarHash() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -10586,24 +9954,18 @@ public final class ProtoBuf {
       private int rejoinGameId_ ;
       /**
        * <code>optional uint32 rejoinGameId = 4;</code>
-       * @return Whether the rejoinGameId field is set.
        */
-      @java.lang.Override
       public boolean hasRejoinGameId() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>optional uint32 rejoinGameId = 4;</code>
-       * @return The rejoinGameId.
        */
-      @java.lang.Override
       public int getRejoinGameId() {
         return rejoinGameId_;
       }
       /**
        * <code>optional uint32 rejoinGameId = 4;</code>
-       * @param value The rejoinGameId to set.
-       * @return This builder for chaining.
        */
       public Builder setRejoinGameId(int value) {
         bitField0_ |= 0x00000008;
@@ -10613,7 +9975,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional uint32 rejoinGameId = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRejoinGameId() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -10680,30 +10041,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return Whether the requestId field is set.
      */
     boolean hasRequestId();
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return The requestId.
      */
     int getRequestId();
 
     /**
      * <code>required bytes avatarHash = 2;</code>
-     * @return Whether the avatarHash field is set.
      */
     boolean hasAvatarHash();
     /**
      * <code>required bytes avatarHash = 2;</code>
-     * @return The avatarHash.
      */
     com.google.protobuf.ByteString getAvatarHash();
   }
   /**
    * Protobuf type {@code AvatarRequestMessage}
    */
-  public static final class AvatarRequestMessage extends
+  public  static final class AvatarRequestMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AvatarRequestMessage)
       AvatarRequestMessageOrBuilder {
@@ -10794,17 +10151,13 @@ public final class ProtoBuf {
     private int requestId_;
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return Whether the requestId field is set.
      */
-    @java.lang.Override
     public boolean hasRequestId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return The requestId.
      */
-    @java.lang.Override
     public int getRequestId() {
       return requestId_;
     }
@@ -10813,17 +10166,13 @@ public final class ProtoBuf {
     private com.google.protobuf.ByteString avatarHash_;
     /**
      * <code>required bytes avatarHash = 2;</code>
-     * @return Whether the avatarHash field is set.
      */
-    @java.lang.Override
     public boolean hasAvatarHash() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required bytes avatarHash = 2;</code>
-     * @return The avatarHash.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getAvatarHash() {
       return avatarHash_;
     }
@@ -11184,24 +10533,18 @@ public final class ProtoBuf {
       private int requestId_ ;
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return Whether the requestId field is set.
        */
-      @java.lang.Override
       public boolean hasRequestId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return The requestId.
        */
-      @java.lang.Override
       public int getRequestId() {
         return requestId_;
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @param value The requestId to set.
-       * @return This builder for chaining.
        */
       public Builder setRequestId(int value) {
         bitField0_ |= 0x00000001;
@@ -11211,7 +10554,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRequestId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -11223,24 +10565,18 @@ public final class ProtoBuf {
       private com.google.protobuf.ByteString avatarHash_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>required bytes avatarHash = 2;</code>
-       * @return Whether the avatarHash field is set.
        */
-      @java.lang.Override
       public boolean hasAvatarHash() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required bytes avatarHash = 2;</code>
-       * @return The avatarHash.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getAvatarHash() {
         return avatarHash_;
       }
       /**
        * <code>required bytes avatarHash = 2;</code>
-       * @param value The avatarHash to set.
-       * @return This builder for chaining.
        */
       public Builder setAvatarHash(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -11253,7 +10589,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required bytes avatarHash = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearAvatarHash() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -11320,41 +10655,35 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return Whether the requestId field is set.
      */
     boolean hasRequestId();
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return The requestId.
      */
     int getRequestId();
 
     /**
      * <code>required .NetAvatarType avatarType = 2;</code>
-     * @return Whether the avatarType field is set.
      */
     boolean hasAvatarType();
     /**
      * <code>required .NetAvatarType avatarType = 2;</code>
-     * @return The avatarType.
      */
     de.pokerth.protocol.ProtoBuf.NetAvatarType getAvatarType();
 
     /**
      * <code>required uint32 avatarSize = 3;</code>
-     * @return Whether the avatarSize field is set.
      */
     boolean hasAvatarSize();
     /**
      * <code>required uint32 avatarSize = 3;</code>
-     * @return The avatarSize.
      */
     int getAvatarSize();
   }
   /**
    * Protobuf type {@code AvatarHeaderMessage}
    */
-  public static final class AvatarHeaderMessage extends
+  public  static final class AvatarHeaderMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AvatarHeaderMessage)
       AvatarHeaderMessageOrBuilder {
@@ -11457,17 +10786,13 @@ public final class ProtoBuf {
     private int requestId_;
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return Whether the requestId field is set.
      */
-    @java.lang.Override
     public boolean hasRequestId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return The requestId.
      */
-    @java.lang.Override
     public int getRequestId() {
       return requestId_;
     }
@@ -11476,16 +10801,14 @@ public final class ProtoBuf {
     private int avatarType_;
     /**
      * <code>required .NetAvatarType avatarType = 2;</code>
-     * @return Whether the avatarType field is set.
      */
-    @java.lang.Override public boolean hasAvatarType() {
+    public boolean hasAvatarType() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .NetAvatarType avatarType = 2;</code>
-     * @return The avatarType.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetAvatarType getAvatarType() {
+    public de.pokerth.protocol.ProtoBuf.NetAvatarType getAvatarType() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.NetAvatarType result = de.pokerth.protocol.ProtoBuf.NetAvatarType.valueOf(avatarType_);
       return result == null ? de.pokerth.protocol.ProtoBuf.NetAvatarType.netAvatarImagePng : result;
@@ -11495,17 +10818,13 @@ public final class ProtoBuf {
     private int avatarSize_;
     /**
      * <code>required uint32 avatarSize = 3;</code>
-     * @return Whether the avatarSize field is set.
      */
-    @java.lang.Override
     public boolean hasAvatarSize() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required uint32 avatarSize = 3;</code>
-     * @return The avatarSize.
      */
-    @java.lang.Override
     public int getAvatarSize() {
       return avatarSize_;
     }
@@ -11897,24 +11216,18 @@ public final class ProtoBuf {
       private int requestId_ ;
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return Whether the requestId field is set.
        */
-      @java.lang.Override
       public boolean hasRequestId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return The requestId.
        */
-      @java.lang.Override
       public int getRequestId() {
         return requestId_;
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @param value The requestId to set.
-       * @return This builder for chaining.
        */
       public Builder setRequestId(int value) {
         bitField0_ |= 0x00000001;
@@ -11924,7 +11237,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRequestId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -11936,16 +11248,13 @@ public final class ProtoBuf {
       private int avatarType_ = 1;
       /**
        * <code>required .NetAvatarType avatarType = 2;</code>
-       * @return Whether the avatarType field is set.
        */
-      @java.lang.Override public boolean hasAvatarType() {
+      public boolean hasAvatarType() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .NetAvatarType avatarType = 2;</code>
-       * @return The avatarType.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.NetAvatarType getAvatarType() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.NetAvatarType result = de.pokerth.protocol.ProtoBuf.NetAvatarType.valueOf(avatarType_);
@@ -11953,8 +11262,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetAvatarType avatarType = 2;</code>
-       * @param value The avatarType to set.
-       * @return This builder for chaining.
        */
       public Builder setAvatarType(de.pokerth.protocol.ProtoBuf.NetAvatarType value) {
         if (value == null) {
@@ -11967,7 +11274,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetAvatarType avatarType = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearAvatarType() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -11979,24 +11285,18 @@ public final class ProtoBuf {
       private int avatarSize_ ;
       /**
        * <code>required uint32 avatarSize = 3;</code>
-       * @return Whether the avatarSize field is set.
        */
-      @java.lang.Override
       public boolean hasAvatarSize() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required uint32 avatarSize = 3;</code>
-       * @return The avatarSize.
        */
-      @java.lang.Override
       public int getAvatarSize() {
         return avatarSize_;
       }
       /**
        * <code>required uint32 avatarSize = 3;</code>
-       * @param value The avatarSize to set.
-       * @return This builder for chaining.
        */
       public Builder setAvatarSize(int value) {
         bitField0_ |= 0x00000004;
@@ -12006,7 +11306,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 avatarSize = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearAvatarSize() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -12073,30 +11372,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return Whether the requestId field is set.
      */
     boolean hasRequestId();
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return The requestId.
      */
     int getRequestId();
 
     /**
      * <code>required bytes avatarBlock = 2;</code>
-     * @return Whether the avatarBlock field is set.
      */
     boolean hasAvatarBlock();
     /**
      * <code>required bytes avatarBlock = 2;</code>
-     * @return The avatarBlock.
      */
     com.google.protobuf.ByteString getAvatarBlock();
   }
   /**
    * Protobuf type {@code AvatarDataMessage}
    */
-  public static final class AvatarDataMessage extends
+  public  static final class AvatarDataMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AvatarDataMessage)
       AvatarDataMessageOrBuilder {
@@ -12187,17 +11482,13 @@ public final class ProtoBuf {
     private int requestId_;
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return Whether the requestId field is set.
      */
-    @java.lang.Override
     public boolean hasRequestId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return The requestId.
      */
-    @java.lang.Override
     public int getRequestId() {
       return requestId_;
     }
@@ -12206,17 +11497,13 @@ public final class ProtoBuf {
     private com.google.protobuf.ByteString avatarBlock_;
     /**
      * <code>required bytes avatarBlock = 2;</code>
-     * @return Whether the avatarBlock field is set.
      */
-    @java.lang.Override
     public boolean hasAvatarBlock() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required bytes avatarBlock = 2;</code>
-     * @return The avatarBlock.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getAvatarBlock() {
       return avatarBlock_;
     }
@@ -12577,24 +11864,18 @@ public final class ProtoBuf {
       private int requestId_ ;
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return Whether the requestId field is set.
        */
-      @java.lang.Override
       public boolean hasRequestId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return The requestId.
        */
-      @java.lang.Override
       public int getRequestId() {
         return requestId_;
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @param value The requestId to set.
-       * @return This builder for chaining.
        */
       public Builder setRequestId(int value) {
         bitField0_ |= 0x00000001;
@@ -12604,7 +11885,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRequestId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -12616,24 +11896,18 @@ public final class ProtoBuf {
       private com.google.protobuf.ByteString avatarBlock_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>required bytes avatarBlock = 2;</code>
-       * @return Whether the avatarBlock field is set.
        */
-      @java.lang.Override
       public boolean hasAvatarBlock() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required bytes avatarBlock = 2;</code>
-       * @return The avatarBlock.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getAvatarBlock() {
         return avatarBlock_;
       }
       /**
        * <code>required bytes avatarBlock = 2;</code>
-       * @param value The avatarBlock to set.
-       * @return This builder for chaining.
        */
       public Builder setAvatarBlock(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -12646,7 +11920,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required bytes avatarBlock = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearAvatarBlock() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -12713,19 +11986,17 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return Whether the requestId field is set.
      */
     boolean hasRequestId();
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return The requestId.
      */
     int getRequestId();
   }
   /**
    * Protobuf type {@code AvatarEndMessage}
    */
-  public static final class AvatarEndMessage extends
+  public  static final class AvatarEndMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AvatarEndMessage)
       AvatarEndMessageOrBuilder {
@@ -12810,17 +12081,13 @@ public final class ProtoBuf {
     private int requestId_;
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return Whether the requestId field is set.
      */
-    @java.lang.Override
     public boolean hasRequestId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return The requestId.
      */
-    @java.lang.Override
     public int getRequestId() {
       return requestId_;
     }
@@ -13149,24 +12416,18 @@ public final class ProtoBuf {
       private int requestId_ ;
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return Whether the requestId field is set.
        */
-      @java.lang.Override
       public boolean hasRequestId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return The requestId.
        */
-      @java.lang.Override
       public int getRequestId() {
         return requestId_;
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @param value The requestId to set.
-       * @return This builder for chaining.
        */
       public Builder setRequestId(int value) {
         bitField0_ |= 0x00000001;
@@ -13176,7 +12437,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRequestId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -13243,19 +12503,17 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return Whether the requestId field is set.
      */
     boolean hasRequestId();
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return The requestId.
      */
     int getRequestId();
   }
   /**
    * Protobuf type {@code UnknownAvatarMessage}
    */
-  public static final class UnknownAvatarMessage extends
+  public  static final class UnknownAvatarMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:UnknownAvatarMessage)
       UnknownAvatarMessageOrBuilder {
@@ -13340,17 +12598,13 @@ public final class ProtoBuf {
     private int requestId_;
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return Whether the requestId field is set.
      */
-    @java.lang.Override
     public boolean hasRequestId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 requestId = 1;</code>
-     * @return The requestId.
      */
-    @java.lang.Override
     public int getRequestId() {
       return requestId_;
     }
@@ -13679,24 +12933,18 @@ public final class ProtoBuf {
       private int requestId_ ;
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return Whether the requestId field is set.
        */
-      @java.lang.Override
       public boolean hasRequestId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return The requestId.
        */
-      @java.lang.Override
       public int getRequestId() {
         return requestId_;
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @param value The requestId to set.
-       * @return This builder for chaining.
        */
       public Builder setRequestId(int value) {
         bitField0_ |= 0x00000001;
@@ -13706,7 +12954,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 requestId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRequestId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -13773,30 +13020,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 playerId = 1;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 1;</code>
-     * @return The playerId.
      */
     int getPlayerId();
 
     /**
      * <code>required .PlayerListMessage.PlayerListNotification playerListNotification = 2;</code>
-     * @return Whether the playerListNotification field is set.
      */
     boolean hasPlayerListNotification();
     /**
      * <code>required .PlayerListMessage.PlayerListNotification playerListNotification = 2;</code>
-     * @return The playerListNotification.
      */
     de.pokerth.protocol.ProtoBuf.PlayerListMessage.PlayerListNotification getPlayerListNotification();
   }
   /**
    * Protobuf type {@code PlayerListMessage}
    */
-  public static final class PlayerListMessage extends
+  public  static final class PlayerListMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:PlayerListMessage)
       PlayerListMessageOrBuilder {
@@ -13919,8 +13162,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -13928,10 +13169,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static PlayerListNotification forNumber(int value) {
         switch (value) {
           case 0: return playerListNew;
@@ -13990,17 +13227,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 1;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 playerId = 1;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -14009,16 +13242,14 @@ public final class ProtoBuf {
     private int playerListNotification_;
     /**
      * <code>required .PlayerListMessage.PlayerListNotification playerListNotification = 2;</code>
-     * @return Whether the playerListNotification field is set.
      */
-    @java.lang.Override public boolean hasPlayerListNotification() {
+    public boolean hasPlayerListNotification() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .PlayerListMessage.PlayerListNotification playerListNotification = 2;</code>
-     * @return The playerListNotification.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.PlayerListMessage.PlayerListNotification getPlayerListNotification() {
+    public de.pokerth.protocol.ProtoBuf.PlayerListMessage.PlayerListNotification getPlayerListNotification() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.PlayerListMessage.PlayerListNotification result = de.pokerth.protocol.ProtoBuf.PlayerListMessage.PlayerListNotification.valueOf(playerListNotification_);
       return result == null ? de.pokerth.protocol.ProtoBuf.PlayerListMessage.PlayerListNotification.playerListNew : result;
@@ -14379,24 +13610,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000001;
@@ -14406,7 +13631,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -14418,16 +13642,13 @@ public final class ProtoBuf {
       private int playerListNotification_ = 0;
       /**
        * <code>required .PlayerListMessage.PlayerListNotification playerListNotification = 2;</code>
-       * @return Whether the playerListNotification field is set.
        */
-      @java.lang.Override public boolean hasPlayerListNotification() {
+      public boolean hasPlayerListNotification() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .PlayerListMessage.PlayerListNotification playerListNotification = 2;</code>
-       * @return The playerListNotification.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.PlayerListMessage.PlayerListNotification getPlayerListNotification() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.PlayerListMessage.PlayerListNotification result = de.pokerth.protocol.ProtoBuf.PlayerListMessage.PlayerListNotification.valueOf(playerListNotification_);
@@ -14435,8 +13656,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .PlayerListMessage.PlayerListNotification playerListNotification = 2;</code>
-       * @param value The playerListNotification to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerListNotification(de.pokerth.protocol.ProtoBuf.PlayerListMessage.PlayerListNotification value) {
         if (value == null) {
@@ -14449,7 +13668,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .PlayerListMessage.PlayerListNotification playerListNotification = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerListNotification() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -14516,73 +13734,59 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required .NetGameMode gameMode = 2;</code>
-     * @return Whether the gameMode field is set.
      */
     boolean hasGameMode();
     /**
      * <code>required .NetGameMode gameMode = 2;</code>
-     * @return The gameMode.
      */
     de.pokerth.protocol.ProtoBuf.NetGameMode getGameMode();
 
     /**
      * <code>required bool isPrivate = 3;</code>
-     * @return Whether the isPrivate field is set.
      */
     boolean hasIsPrivate();
     /**
      * <code>required bool isPrivate = 3;</code>
-     * @return The isPrivate.
      */
     boolean getIsPrivate();
 
     /**
      * <code>repeated uint32 playerIds = 4 [packed = true];</code>
-     * @return A list containing the playerIds.
      */
     java.util.List<java.lang.Integer> getPlayerIdsList();
     /**
      * <code>repeated uint32 playerIds = 4 [packed = true];</code>
-     * @return The count of playerIds.
      */
     int getPlayerIdsCount();
     /**
      * <code>repeated uint32 playerIds = 4 [packed = true];</code>
-     * @param index The index of the element to return.
-     * @return The playerIds at the given index.
      */
     int getPlayerIds(int index);
 
     /**
      * <code>required uint32 adminPlayerId = 5;</code>
-     * @return Whether the adminPlayerId field is set.
      */
     boolean hasAdminPlayerId();
     /**
      * <code>required uint32 adminPlayerId = 5;</code>
-     * @return The adminPlayerId.
      */
     int getAdminPlayerId();
 
     /**
      * <code>required .NetGameInfo gameInfo = 6;</code>
-     * @return Whether the gameInfo field is set.
      */
     boolean hasGameInfo();
     /**
      * <code>required .NetGameInfo gameInfo = 6;</code>
-     * @return The gameInfo.
      */
     de.pokerth.protocol.ProtoBuf.NetGameInfo getGameInfo();
     /**
@@ -14592,25 +13796,21 @@ public final class ProtoBuf {
 
     /**
      * <code>repeated uint32 spectatorIds = 7 [packed = true];</code>
-     * @return A list containing the spectatorIds.
      */
     java.util.List<java.lang.Integer> getSpectatorIdsList();
     /**
      * <code>repeated uint32 spectatorIds = 7 [packed = true];</code>
-     * @return The count of spectatorIds.
      */
     int getSpectatorIdsCount();
     /**
      * <code>repeated uint32 spectatorIds = 7 [packed = true];</code>
-     * @param index The index of the element to return.
-     * @return The spectatorIds at the given index.
      */
     int getSpectatorIds(int index);
   }
   /**
    * Protobuf type {@code GameListNewMessage}
    */
-  public static final class GameListNewMessage extends
+  public  static final class GameListNewMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:GameListNewMessage)
       GameListNewMessageOrBuilder {
@@ -14781,17 +13981,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -14800,16 +13996,14 @@ public final class ProtoBuf {
     private int gameMode_;
     /**
      * <code>required .NetGameMode gameMode = 2;</code>
-     * @return Whether the gameMode field is set.
      */
-    @java.lang.Override public boolean hasGameMode() {
+    public boolean hasGameMode() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .NetGameMode gameMode = 2;</code>
-     * @return The gameMode.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetGameMode getGameMode() {
+    public de.pokerth.protocol.ProtoBuf.NetGameMode getGameMode() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.NetGameMode result = de.pokerth.protocol.ProtoBuf.NetGameMode.valueOf(gameMode_);
       return result == null ? de.pokerth.protocol.ProtoBuf.NetGameMode.netGameCreated : result;
@@ -14819,17 +14013,13 @@ public final class ProtoBuf {
     private boolean isPrivate_;
     /**
      * <code>required bool isPrivate = 3;</code>
-     * @return Whether the isPrivate field is set.
      */
-    @java.lang.Override
     public boolean hasIsPrivate() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required bool isPrivate = 3;</code>
-     * @return The isPrivate.
      */
-    @java.lang.Override
     public boolean getIsPrivate() {
       return isPrivate_;
     }
@@ -14838,24 +14028,19 @@ public final class ProtoBuf {
     private com.google.protobuf.Internal.IntList playerIds_;
     /**
      * <code>repeated uint32 playerIds = 4 [packed = true];</code>
-     * @return A list containing the playerIds.
      */
-    @java.lang.Override
     public java.util.List<java.lang.Integer>
         getPlayerIdsList() {
       return playerIds_;
     }
     /**
      * <code>repeated uint32 playerIds = 4 [packed = true];</code>
-     * @return The count of playerIds.
      */
     public int getPlayerIdsCount() {
       return playerIds_.size();
     }
     /**
      * <code>repeated uint32 playerIds = 4 [packed = true];</code>
-     * @param index The index of the element to return.
-     * @return The playerIds at the given index.
      */
     public int getPlayerIds(int index) {
       return playerIds_.getInt(index);
@@ -14866,17 +14051,13 @@ public final class ProtoBuf {
     private int adminPlayerId_;
     /**
      * <code>required uint32 adminPlayerId = 5;</code>
-     * @return Whether the adminPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasAdminPlayerId() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>required uint32 adminPlayerId = 5;</code>
-     * @return The adminPlayerId.
      */
-    @java.lang.Override
     public int getAdminPlayerId() {
       return adminPlayerId_;
     }
@@ -14885,24 +14066,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.NetGameInfo gameInfo_;
     /**
      * <code>required .NetGameInfo gameInfo = 6;</code>
-     * @return Whether the gameInfo field is set.
      */
-    @java.lang.Override
     public boolean hasGameInfo() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
      * <code>required .NetGameInfo gameInfo = 6;</code>
-     * @return The gameInfo.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.NetGameInfo getGameInfo() {
       return gameInfo_ == null ? de.pokerth.protocol.ProtoBuf.NetGameInfo.getDefaultInstance() : gameInfo_;
     }
     /**
      * <code>required .NetGameInfo gameInfo = 6;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.NetGameInfoOrBuilder getGameInfoOrBuilder() {
       return gameInfo_ == null ? de.pokerth.protocol.ProtoBuf.NetGameInfo.getDefaultInstance() : gameInfo_;
     }
@@ -14911,24 +14087,19 @@ public final class ProtoBuf {
     private com.google.protobuf.Internal.IntList spectatorIds_;
     /**
      * <code>repeated uint32 spectatorIds = 7 [packed = true];</code>
-     * @return A list containing the spectatorIds.
      */
-    @java.lang.Override
     public java.util.List<java.lang.Integer>
         getSpectatorIdsList() {
       return spectatorIds_;
     }
     /**
      * <code>repeated uint32 spectatorIds = 7 [packed = true];</code>
-     * @return The count of spectatorIds.
      */
     public int getSpectatorIdsCount() {
       return spectatorIds_.size();
     }
     /**
      * <code>repeated uint32 spectatorIds = 7 [packed = true];</code>
-     * @param index The index of the element to return.
-     * @return The spectatorIds at the given index.
      */
     public int getSpectatorIds(int index) {
       return spectatorIds_.getInt(index);
@@ -15492,24 +14663,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -15519,7 +14684,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -15531,16 +14695,13 @@ public final class ProtoBuf {
       private int gameMode_ = 1;
       /**
        * <code>required .NetGameMode gameMode = 2;</code>
-       * @return Whether the gameMode field is set.
        */
-      @java.lang.Override public boolean hasGameMode() {
+      public boolean hasGameMode() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .NetGameMode gameMode = 2;</code>
-       * @return The gameMode.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.NetGameMode getGameMode() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.NetGameMode result = de.pokerth.protocol.ProtoBuf.NetGameMode.valueOf(gameMode_);
@@ -15548,8 +14709,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameMode gameMode = 2;</code>
-       * @param value The gameMode to set.
-       * @return This builder for chaining.
        */
       public Builder setGameMode(de.pokerth.protocol.ProtoBuf.NetGameMode value) {
         if (value == null) {
@@ -15562,7 +14721,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameMode gameMode = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameMode() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -15574,24 +14732,18 @@ public final class ProtoBuf {
       private boolean isPrivate_ ;
       /**
        * <code>required bool isPrivate = 3;</code>
-       * @return Whether the isPrivate field is set.
        */
-      @java.lang.Override
       public boolean hasIsPrivate() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required bool isPrivate = 3;</code>
-       * @return The isPrivate.
        */
-      @java.lang.Override
       public boolean getIsPrivate() {
         return isPrivate_;
       }
       /**
        * <code>required bool isPrivate = 3;</code>
-       * @param value The isPrivate to set.
-       * @return This builder for chaining.
        */
       public Builder setIsPrivate(boolean value) {
         bitField0_ |= 0x00000004;
@@ -15601,7 +14753,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required bool isPrivate = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearIsPrivate() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -15619,7 +14770,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerIds = 4 [packed = true];</code>
-       * @return A list containing the playerIds.
        */
       public java.util.List<java.lang.Integer>
           getPlayerIdsList() {
@@ -15628,24 +14778,18 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerIds = 4 [packed = true];</code>
-       * @return The count of playerIds.
        */
       public int getPlayerIdsCount() {
         return playerIds_.size();
       }
       /**
        * <code>repeated uint32 playerIds = 4 [packed = true];</code>
-       * @param index The index of the element to return.
-       * @return The playerIds at the given index.
        */
       public int getPlayerIds(int index) {
         return playerIds_.getInt(index);
       }
       /**
        * <code>repeated uint32 playerIds = 4 [packed = true];</code>
-       * @param index The index to set the value at.
-       * @param value The playerIds to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerIds(
           int index, int value) {
@@ -15656,8 +14800,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerIds = 4 [packed = true];</code>
-       * @param value The playerIds to add.
-       * @return This builder for chaining.
        */
       public Builder addPlayerIds(int value) {
         ensurePlayerIdsIsMutable();
@@ -15667,8 +14809,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerIds = 4 [packed = true];</code>
-       * @param values The playerIds to add.
-       * @return This builder for chaining.
        */
       public Builder addAllPlayerIds(
           java.lang.Iterable<? extends java.lang.Integer> values) {
@@ -15680,7 +14820,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerIds = 4 [packed = true];</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerIds() {
         playerIds_ = emptyIntList();
@@ -15692,24 +14831,18 @@ public final class ProtoBuf {
       private int adminPlayerId_ ;
       /**
        * <code>required uint32 adminPlayerId = 5;</code>
-       * @return Whether the adminPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasAdminPlayerId() {
         return ((bitField0_ & 0x00000010) != 0);
       }
       /**
        * <code>required uint32 adminPlayerId = 5;</code>
-       * @return The adminPlayerId.
        */
-      @java.lang.Override
       public int getAdminPlayerId() {
         return adminPlayerId_;
       }
       /**
        * <code>required uint32 adminPlayerId = 5;</code>
-       * @param value The adminPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setAdminPlayerId(int value) {
         bitField0_ |= 0x00000010;
@@ -15719,7 +14852,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 adminPlayerId = 5;</code>
-       * @return This builder for chaining.
        */
       public Builder clearAdminPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -15733,14 +14865,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.NetGameInfo, de.pokerth.protocol.ProtoBuf.NetGameInfo.Builder, de.pokerth.protocol.ProtoBuf.NetGameInfoOrBuilder> gameInfoBuilder_;
       /**
        * <code>required .NetGameInfo gameInfo = 6;</code>
-       * @return Whether the gameInfo field is set.
        */
       public boolean hasGameInfo() {
         return ((bitField0_ & 0x00000020) != 0);
       }
       /**
        * <code>required .NetGameInfo gameInfo = 6;</code>
-       * @return The gameInfo.
        */
       public de.pokerth.protocol.ProtoBuf.NetGameInfo getGameInfo() {
         if (gameInfoBuilder_ == null) {
@@ -15857,7 +14987,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 spectatorIds = 7 [packed = true];</code>
-       * @return A list containing the spectatorIds.
        */
       public java.util.List<java.lang.Integer>
           getSpectatorIdsList() {
@@ -15866,24 +14995,18 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 spectatorIds = 7 [packed = true];</code>
-       * @return The count of spectatorIds.
        */
       public int getSpectatorIdsCount() {
         return spectatorIds_.size();
       }
       /**
        * <code>repeated uint32 spectatorIds = 7 [packed = true];</code>
-       * @param index The index of the element to return.
-       * @return The spectatorIds at the given index.
        */
       public int getSpectatorIds(int index) {
         return spectatorIds_.getInt(index);
       }
       /**
        * <code>repeated uint32 spectatorIds = 7 [packed = true];</code>
-       * @param index The index to set the value at.
-       * @param value The spectatorIds to set.
-       * @return This builder for chaining.
        */
       public Builder setSpectatorIds(
           int index, int value) {
@@ -15894,8 +15017,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 spectatorIds = 7 [packed = true];</code>
-       * @param value The spectatorIds to add.
-       * @return This builder for chaining.
        */
       public Builder addSpectatorIds(int value) {
         ensureSpectatorIdsIsMutable();
@@ -15905,8 +15026,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 spectatorIds = 7 [packed = true];</code>
-       * @param values The spectatorIds to add.
-       * @return This builder for chaining.
        */
       public Builder addAllSpectatorIds(
           java.lang.Iterable<? extends java.lang.Integer> values) {
@@ -15918,7 +15037,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 spectatorIds = 7 [packed = true];</code>
-       * @return This builder for chaining.
        */
       public Builder clearSpectatorIds() {
         spectatorIds_ = emptyIntList();
@@ -15985,30 +15103,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required .NetGameMode gameMode = 2;</code>
-     * @return Whether the gameMode field is set.
      */
     boolean hasGameMode();
     /**
      * <code>required .NetGameMode gameMode = 2;</code>
-     * @return The gameMode.
      */
     de.pokerth.protocol.ProtoBuf.NetGameMode getGameMode();
   }
   /**
    * Protobuf type {@code GameListUpdateMessage}
    */
-  public static final class GameListUpdateMessage extends
+  public  static final class GameListUpdateMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:GameListUpdateMessage)
       GameListUpdateMessageOrBuilder {
@@ -16106,17 +15220,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -16125,16 +15235,14 @@ public final class ProtoBuf {
     private int gameMode_;
     /**
      * <code>required .NetGameMode gameMode = 2;</code>
-     * @return Whether the gameMode field is set.
      */
-    @java.lang.Override public boolean hasGameMode() {
+    public boolean hasGameMode() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .NetGameMode gameMode = 2;</code>
-     * @return The gameMode.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetGameMode getGameMode() {
+    public de.pokerth.protocol.ProtoBuf.NetGameMode getGameMode() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.NetGameMode result = de.pokerth.protocol.ProtoBuf.NetGameMode.valueOf(gameMode_);
       return result == null ? de.pokerth.protocol.ProtoBuf.NetGameMode.netGameCreated : result;
@@ -16495,24 +15603,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -16522,7 +15624,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -16534,16 +15635,13 @@ public final class ProtoBuf {
       private int gameMode_ = 1;
       /**
        * <code>required .NetGameMode gameMode = 2;</code>
-       * @return Whether the gameMode field is set.
        */
-      @java.lang.Override public boolean hasGameMode() {
+      public boolean hasGameMode() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .NetGameMode gameMode = 2;</code>
-       * @return The gameMode.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.NetGameMode getGameMode() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.NetGameMode result = de.pokerth.protocol.ProtoBuf.NetGameMode.valueOf(gameMode_);
@@ -16551,8 +15649,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameMode gameMode = 2;</code>
-       * @param value The gameMode to set.
-       * @return This builder for chaining.
        */
       public Builder setGameMode(de.pokerth.protocol.ProtoBuf.NetGameMode value) {
         if (value == null) {
@@ -16565,7 +15661,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameMode gameMode = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameMode() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -16632,30 +15727,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
   }
   /**
    * Protobuf type {@code GameListPlayerJoinedMessage}
    */
-  public static final class GameListPlayerJoinedMessage extends
+  public  static final class GameListPlayerJoinedMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:GameListPlayerJoinedMessage)
       GameListPlayerJoinedMessageOrBuilder {
@@ -16745,17 +15836,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -16764,17 +15851,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -17135,24 +16218,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -17162,7 +16239,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -17174,24 +16250,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -17201,7 +16271,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -17268,30 +16337,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
   }
   /**
    * Protobuf type {@code GameListPlayerLeftMessage}
    */
-  public static final class GameListPlayerLeftMessage extends
+  public  static final class GameListPlayerLeftMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:GameListPlayerLeftMessage)
       GameListPlayerLeftMessageOrBuilder {
@@ -17381,17 +16446,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -17400,17 +16461,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -17771,24 +16828,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -17798,7 +16849,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -17810,24 +16860,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -17837,7 +16881,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -17904,30 +16947,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
   }
   /**
    * Protobuf type {@code GameListSpectatorJoinedMessage}
    */
-  public static final class GameListSpectatorJoinedMessage extends
+  public  static final class GameListSpectatorJoinedMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:GameListSpectatorJoinedMessage)
       GameListSpectatorJoinedMessageOrBuilder {
@@ -18017,17 +17056,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -18036,17 +17071,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -18407,24 +17438,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -18434,7 +17459,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -18446,24 +17470,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -18473,7 +17491,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -18540,30 +17557,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
   }
   /**
    * Protobuf type {@code GameListSpectatorLeftMessage}
    */
-  public static final class GameListSpectatorLeftMessage extends
+  public  static final class GameListSpectatorLeftMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:GameListSpectatorLeftMessage)
       GameListSpectatorLeftMessageOrBuilder {
@@ -18653,17 +17666,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -18672,17 +17681,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -19043,24 +18048,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -19070,7 +18069,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -19082,24 +18080,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -19109,7 +18101,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -19176,30 +18167,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 newAdminPlayerId = 2;</code>
-     * @return Whether the newAdminPlayerId field is set.
      */
     boolean hasNewAdminPlayerId();
     /**
      * <code>required uint32 newAdminPlayerId = 2;</code>
-     * @return The newAdminPlayerId.
      */
     int getNewAdminPlayerId();
   }
   /**
    * Protobuf type {@code GameListAdminChangedMessage}
    */
-  public static final class GameListAdminChangedMessage extends
+  public  static final class GameListAdminChangedMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:GameListAdminChangedMessage)
       GameListAdminChangedMessageOrBuilder {
@@ -19289,17 +18276,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -19308,17 +18291,13 @@ public final class ProtoBuf {
     private int newAdminPlayerId_;
     /**
      * <code>required uint32 newAdminPlayerId = 2;</code>
-     * @return Whether the newAdminPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasNewAdminPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 newAdminPlayerId = 2;</code>
-     * @return The newAdminPlayerId.
      */
-    @java.lang.Override
     public int getNewAdminPlayerId() {
       return newAdminPlayerId_;
     }
@@ -19679,24 +18658,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -19706,7 +18679,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -19718,24 +18690,18 @@ public final class ProtoBuf {
       private int newAdminPlayerId_ ;
       /**
        * <code>required uint32 newAdminPlayerId = 2;</code>
-       * @return Whether the newAdminPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasNewAdminPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 newAdminPlayerId = 2;</code>
-       * @return The newAdminPlayerId.
        */
-      @java.lang.Override
       public int getNewAdminPlayerId() {
         return newAdminPlayerId_;
       }
       /**
        * <code>required uint32 newAdminPlayerId = 2;</code>
-       * @param value The newAdminPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setNewAdminPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -19745,7 +18711,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 newAdminPlayerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearNewAdminPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -19812,25 +18777,21 @@ public final class ProtoBuf {
 
     /**
      * <code>repeated uint32 playerId = 1 [packed = true];</code>
-     * @return A list containing the playerId.
      */
     java.util.List<java.lang.Integer> getPlayerIdList();
     /**
      * <code>repeated uint32 playerId = 1 [packed = true];</code>
-     * @return The count of playerId.
      */
     int getPlayerIdCount();
     /**
      * <code>repeated uint32 playerId = 1 [packed = true];</code>
-     * @param index The index of the element to return.
-     * @return The playerId at the given index.
      */
     int getPlayerId(int index);
   }
   /**
    * Protobuf type {@code PlayerInfoRequestMessage}
    */
-  public static final class PlayerInfoRequestMessage extends
+  public  static final class PlayerInfoRequestMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:PlayerInfoRequestMessage)
       PlayerInfoRequestMessageOrBuilder {
@@ -19934,24 +18895,19 @@ public final class ProtoBuf {
     private com.google.protobuf.Internal.IntList playerId_;
     /**
      * <code>repeated uint32 playerId = 1 [packed = true];</code>
-     * @return A list containing the playerId.
      */
-    @java.lang.Override
     public java.util.List<java.lang.Integer>
         getPlayerIdList() {
       return playerId_;
     }
     /**
      * <code>repeated uint32 playerId = 1 [packed = true];</code>
-     * @return The count of playerId.
      */
     public int getPlayerIdCount() {
       return playerId_.size();
     }
     /**
      * <code>repeated uint32 playerId = 1 [packed = true];</code>
-     * @param index The index of the element to return.
-     * @return The playerId at the given index.
      */
     public int getPlayerId(int index) {
       return playerId_.getInt(index);
@@ -20299,7 +19255,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerId = 1 [packed = true];</code>
-       * @return A list containing the playerId.
        */
       public java.util.List<java.lang.Integer>
           getPlayerIdList() {
@@ -20308,24 +19263,18 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerId = 1 [packed = true];</code>
-       * @return The count of playerId.
        */
       public int getPlayerIdCount() {
         return playerId_.size();
       }
       /**
        * <code>repeated uint32 playerId = 1 [packed = true];</code>
-       * @param index The index of the element to return.
-       * @return The playerId at the given index.
        */
       public int getPlayerId(int index) {
         return playerId_.getInt(index);
       }
       /**
        * <code>repeated uint32 playerId = 1 [packed = true];</code>
-       * @param index The index to set the value at.
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(
           int index, int value) {
@@ -20336,8 +19285,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerId = 1 [packed = true];</code>
-       * @param value The playerId to add.
-       * @return This builder for chaining.
        */
       public Builder addPlayerId(int value) {
         ensurePlayerIdIsMutable();
@@ -20347,8 +19294,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerId = 1 [packed = true];</code>
-       * @param values The playerId to add.
-       * @return This builder for chaining.
        */
       public Builder addAllPlayerId(
           java.lang.Iterable<? extends java.lang.Integer> values) {
@@ -20360,7 +19305,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerId = 1 [packed = true];</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         playerId_ = emptyIntList();
@@ -20427,23 +19371,19 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 playerId = 1;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 1;</code>
-     * @return The playerId.
      */
     int getPlayerId();
 
     /**
      * <code>optional .PlayerInfoReplyMessage.PlayerInfoData playerInfoData = 2;</code>
-     * @return Whether the playerInfoData field is set.
      */
     boolean hasPlayerInfoData();
     /**
      * <code>optional .PlayerInfoReplyMessage.PlayerInfoData playerInfoData = 2;</code>
-     * @return The playerInfoData.
      */
     de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData getPlayerInfoData();
     /**
@@ -20454,7 +19394,7 @@ public final class ProtoBuf {
   /**
    * Protobuf type {@code PlayerInfoReplyMessage}
    */
-  public static final class PlayerInfoReplyMessage extends
+  public  static final class PlayerInfoReplyMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:PlayerInfoReplyMessage)
       PlayerInfoReplyMessageOrBuilder {
@@ -20553,68 +19493,56 @@ public final class ProtoBuf {
 
       /**
        * <code>required string playerName = 1;</code>
-       * @return Whether the playerName field is set.
        */
       boolean hasPlayerName();
       /**
        * <code>required string playerName = 1;</code>
-       * @return The playerName.
        */
       java.lang.String getPlayerName();
       /**
        * <code>required string playerName = 1;</code>
-       * @return The bytes for playerName.
        */
       com.google.protobuf.ByteString
           getPlayerNameBytes();
 
       /**
        * <code>required bool isHuman = 2;</code>
-       * @return Whether the isHuman field is set.
        */
       boolean hasIsHuman();
       /**
        * <code>required bool isHuman = 2;</code>
-       * @return The isHuman.
        */
       boolean getIsHuman();
 
       /**
        * <code>required .NetPlayerInfoRights playerRights = 3;</code>
-       * @return Whether the playerRights field is set.
        */
       boolean hasPlayerRights();
       /**
        * <code>required .NetPlayerInfoRights playerRights = 3;</code>
-       * @return The playerRights.
        */
       de.pokerth.protocol.ProtoBuf.NetPlayerInfoRights getPlayerRights();
 
       /**
        * <code>optional string countryCode = 4;</code>
-       * @return Whether the countryCode field is set.
        */
       boolean hasCountryCode();
       /**
        * <code>optional string countryCode = 4;</code>
-       * @return The countryCode.
        */
       java.lang.String getCountryCode();
       /**
        * <code>optional string countryCode = 4;</code>
-       * @return The bytes for countryCode.
        */
       com.google.protobuf.ByteString
           getCountryCodeBytes();
 
       /**
        * <code>optional .PlayerInfoReplyMessage.PlayerInfoData.AvatarData avatarData = 5;</code>
-       * @return Whether the avatarData field is set.
        */
       boolean hasAvatarData();
       /**
        * <code>optional .PlayerInfoReplyMessage.PlayerInfoData.AvatarData avatarData = 5;</code>
-       * @return The avatarData.
        */
       de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData.AvatarData getAvatarData();
       /**
@@ -20625,7 +19553,7 @@ public final class ProtoBuf {
     /**
      * Protobuf type {@code PlayerInfoReplyMessage.PlayerInfoData}
      */
-    public static final class PlayerInfoData extends
+    public  static final class PlayerInfoData extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:PlayerInfoReplyMessage.PlayerInfoData)
         PlayerInfoDataOrBuilder {
@@ -20751,30 +19679,26 @@ public final class ProtoBuf {
 
         /**
          * <code>required .NetAvatarType avatarType = 1;</code>
-         * @return Whether the avatarType field is set.
          */
         boolean hasAvatarType();
         /**
          * <code>required .NetAvatarType avatarType = 1;</code>
-         * @return The avatarType.
          */
         de.pokerth.protocol.ProtoBuf.NetAvatarType getAvatarType();
 
         /**
          * <code>required bytes avatarHash = 2;</code>
-         * @return Whether the avatarHash field is set.
          */
         boolean hasAvatarHash();
         /**
          * <code>required bytes avatarHash = 2;</code>
-         * @return The avatarHash.
          */
         com.google.protobuf.ByteString getAvatarHash();
       }
       /**
        * Protobuf type {@code PlayerInfoReplyMessage.PlayerInfoData.AvatarData}
        */
-      public static final class AvatarData extends
+      public  static final class AvatarData extends
           com.google.protobuf.GeneratedMessageV3 implements
           // @@protoc_insertion_point(message_implements:PlayerInfoReplyMessage.PlayerInfoData.AvatarData)
           AvatarDataOrBuilder {
@@ -20873,16 +19797,14 @@ public final class ProtoBuf {
         private int avatarType_;
         /**
          * <code>required .NetAvatarType avatarType = 1;</code>
-         * @return Whether the avatarType field is set.
          */
-        @java.lang.Override public boolean hasAvatarType() {
+        public boolean hasAvatarType() {
           return ((bitField0_ & 0x00000001) != 0);
         }
         /**
          * <code>required .NetAvatarType avatarType = 1;</code>
-         * @return The avatarType.
          */
-        @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetAvatarType getAvatarType() {
+        public de.pokerth.protocol.ProtoBuf.NetAvatarType getAvatarType() {
           @SuppressWarnings("deprecation")
           de.pokerth.protocol.ProtoBuf.NetAvatarType result = de.pokerth.protocol.ProtoBuf.NetAvatarType.valueOf(avatarType_);
           return result == null ? de.pokerth.protocol.ProtoBuf.NetAvatarType.netAvatarImagePng : result;
@@ -20892,17 +19814,13 @@ public final class ProtoBuf {
         private com.google.protobuf.ByteString avatarHash_;
         /**
          * <code>required bytes avatarHash = 2;</code>
-         * @return Whether the avatarHash field is set.
          */
-        @java.lang.Override
         public boolean hasAvatarHash() {
           return ((bitField0_ & 0x00000002) != 0);
         }
         /**
          * <code>required bytes avatarHash = 2;</code>
-         * @return The avatarHash.
          */
-        @java.lang.Override
         public com.google.protobuf.ByteString getAvatarHash() {
           return avatarHash_;
         }
@@ -21262,16 +20180,13 @@ public final class ProtoBuf {
           private int avatarType_ = 1;
           /**
            * <code>required .NetAvatarType avatarType = 1;</code>
-           * @return Whether the avatarType field is set.
            */
-          @java.lang.Override public boolean hasAvatarType() {
+          public boolean hasAvatarType() {
             return ((bitField0_ & 0x00000001) != 0);
           }
           /**
            * <code>required .NetAvatarType avatarType = 1;</code>
-           * @return The avatarType.
            */
-          @java.lang.Override
           public de.pokerth.protocol.ProtoBuf.NetAvatarType getAvatarType() {
             @SuppressWarnings("deprecation")
             de.pokerth.protocol.ProtoBuf.NetAvatarType result = de.pokerth.protocol.ProtoBuf.NetAvatarType.valueOf(avatarType_);
@@ -21279,8 +20194,6 @@ public final class ProtoBuf {
           }
           /**
            * <code>required .NetAvatarType avatarType = 1;</code>
-           * @param value The avatarType to set.
-           * @return This builder for chaining.
            */
           public Builder setAvatarType(de.pokerth.protocol.ProtoBuf.NetAvatarType value) {
             if (value == null) {
@@ -21293,7 +20206,6 @@ public final class ProtoBuf {
           }
           /**
            * <code>required .NetAvatarType avatarType = 1;</code>
-           * @return This builder for chaining.
            */
           public Builder clearAvatarType() {
             bitField0_ = (bitField0_ & ~0x00000001);
@@ -21305,24 +20217,18 @@ public final class ProtoBuf {
           private com.google.protobuf.ByteString avatarHash_ = com.google.protobuf.ByteString.EMPTY;
           /**
            * <code>required bytes avatarHash = 2;</code>
-           * @return Whether the avatarHash field is set.
            */
-          @java.lang.Override
           public boolean hasAvatarHash() {
             return ((bitField0_ & 0x00000002) != 0);
           }
           /**
            * <code>required bytes avatarHash = 2;</code>
-           * @return The avatarHash.
            */
-          @java.lang.Override
           public com.google.protobuf.ByteString getAvatarHash() {
             return avatarHash_;
           }
           /**
            * <code>required bytes avatarHash = 2;</code>
-           * @param value The avatarHash to set.
-           * @return This builder for chaining.
            */
           public Builder setAvatarHash(com.google.protobuf.ByteString value) {
             if (value == null) {
@@ -21335,7 +20241,6 @@ public final class ProtoBuf {
           }
           /**
            * <code>required bytes avatarHash = 2;</code>
-           * @return This builder for chaining.
            */
           public Builder clearAvatarHash() {
             bitField0_ = (bitField0_ & ~0x00000002);
@@ -21401,17 +20306,13 @@ public final class ProtoBuf {
       private volatile java.lang.Object playerName_;
       /**
        * <code>required string playerName = 1;</code>
-       * @return Whether the playerName field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerName() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required string playerName = 1;</code>
-       * @return The playerName.
        */
-      @java.lang.Override
       public java.lang.String getPlayerName() {
         java.lang.Object ref = playerName_;
         if (ref instanceof java.lang.String) {
@@ -21428,9 +20329,7 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string playerName = 1;</code>
-       * @return The bytes for playerName.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString
           getPlayerNameBytes() {
         java.lang.Object ref = playerName_;
@@ -21449,17 +20348,13 @@ public final class ProtoBuf {
       private boolean isHuman_;
       /**
        * <code>required bool isHuman = 2;</code>
-       * @return Whether the isHuman field is set.
        */
-      @java.lang.Override
       public boolean hasIsHuman() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required bool isHuman = 2;</code>
-       * @return The isHuman.
        */
-      @java.lang.Override
       public boolean getIsHuman() {
         return isHuman_;
       }
@@ -21468,16 +20363,14 @@ public final class ProtoBuf {
       private int playerRights_;
       /**
        * <code>required .NetPlayerInfoRights playerRights = 3;</code>
-       * @return Whether the playerRights field is set.
        */
-      @java.lang.Override public boolean hasPlayerRights() {
+      public boolean hasPlayerRights() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required .NetPlayerInfoRights playerRights = 3;</code>
-       * @return The playerRights.
        */
-      @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetPlayerInfoRights getPlayerRights() {
+      public de.pokerth.protocol.ProtoBuf.NetPlayerInfoRights getPlayerRights() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.NetPlayerInfoRights result = de.pokerth.protocol.ProtoBuf.NetPlayerInfoRights.valueOf(playerRights_);
         return result == null ? de.pokerth.protocol.ProtoBuf.NetPlayerInfoRights.netPlayerRightsGuest : result;
@@ -21487,17 +20380,13 @@ public final class ProtoBuf {
       private volatile java.lang.Object countryCode_;
       /**
        * <code>optional string countryCode = 4;</code>
-       * @return Whether the countryCode field is set.
        */
-      @java.lang.Override
       public boolean hasCountryCode() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>optional string countryCode = 4;</code>
-       * @return The countryCode.
        */
-      @java.lang.Override
       public java.lang.String getCountryCode() {
         java.lang.Object ref = countryCode_;
         if (ref instanceof java.lang.String) {
@@ -21514,9 +20403,7 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional string countryCode = 4;</code>
-       * @return The bytes for countryCode.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString
           getCountryCodeBytes() {
         java.lang.Object ref = countryCode_;
@@ -21535,24 +20422,19 @@ public final class ProtoBuf {
       private de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData.AvatarData avatarData_;
       /**
        * <code>optional .PlayerInfoReplyMessage.PlayerInfoData.AvatarData avatarData = 5;</code>
-       * @return Whether the avatarData field is set.
        */
-      @java.lang.Override
       public boolean hasAvatarData() {
         return ((bitField0_ & 0x00000010) != 0);
       }
       /**
        * <code>optional .PlayerInfoReplyMessage.PlayerInfoData.AvatarData avatarData = 5;</code>
-       * @return The avatarData.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData.AvatarData getAvatarData() {
         return avatarData_ == null ? de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData.AvatarData.getDefaultInstance() : avatarData_;
       }
       /**
        * <code>optional .PlayerInfoReplyMessage.PlayerInfoData.AvatarData avatarData = 5;</code>
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData.AvatarDataOrBuilder getAvatarDataOrBuilder() {
         return avatarData_ == null ? de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData.AvatarData.getDefaultInstance() : avatarData_;
       }
@@ -22017,14 +20899,12 @@ public final class ProtoBuf {
         private java.lang.Object playerName_ = "";
         /**
          * <code>required string playerName = 1;</code>
-         * @return Whether the playerName field is set.
          */
         public boolean hasPlayerName() {
           return ((bitField0_ & 0x00000001) != 0);
         }
         /**
          * <code>required string playerName = 1;</code>
-         * @return The playerName.
          */
         public java.lang.String getPlayerName() {
           java.lang.Object ref = playerName_;
@@ -22042,7 +20922,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required string playerName = 1;</code>
-         * @return The bytes for playerName.
          */
         public com.google.protobuf.ByteString
             getPlayerNameBytes() {
@@ -22059,8 +20938,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required string playerName = 1;</code>
-         * @param value The playerName to set.
-         * @return This builder for chaining.
          */
         public Builder setPlayerName(
             java.lang.String value) {
@@ -22074,7 +20951,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required string playerName = 1;</code>
-         * @return This builder for chaining.
          */
         public Builder clearPlayerName() {
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -22084,8 +20960,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required string playerName = 1;</code>
-         * @param value The bytes for playerName to set.
-         * @return This builder for chaining.
          */
         public Builder setPlayerNameBytes(
             com.google.protobuf.ByteString value) {
@@ -22101,24 +20975,18 @@ public final class ProtoBuf {
         private boolean isHuman_ ;
         /**
          * <code>required bool isHuman = 2;</code>
-         * @return Whether the isHuman field is set.
          */
-        @java.lang.Override
         public boolean hasIsHuman() {
           return ((bitField0_ & 0x00000002) != 0);
         }
         /**
          * <code>required bool isHuman = 2;</code>
-         * @return The isHuman.
          */
-        @java.lang.Override
         public boolean getIsHuman() {
           return isHuman_;
         }
         /**
          * <code>required bool isHuman = 2;</code>
-         * @param value The isHuman to set.
-         * @return This builder for chaining.
          */
         public Builder setIsHuman(boolean value) {
           bitField0_ |= 0x00000002;
@@ -22128,7 +20996,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required bool isHuman = 2;</code>
-         * @return This builder for chaining.
          */
         public Builder clearIsHuman() {
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -22140,16 +21007,13 @@ public final class ProtoBuf {
         private int playerRights_ = 1;
         /**
          * <code>required .NetPlayerInfoRights playerRights = 3;</code>
-         * @return Whether the playerRights field is set.
          */
-        @java.lang.Override public boolean hasPlayerRights() {
+        public boolean hasPlayerRights() {
           return ((bitField0_ & 0x00000004) != 0);
         }
         /**
          * <code>required .NetPlayerInfoRights playerRights = 3;</code>
-         * @return The playerRights.
          */
-        @java.lang.Override
         public de.pokerth.protocol.ProtoBuf.NetPlayerInfoRights getPlayerRights() {
           @SuppressWarnings("deprecation")
           de.pokerth.protocol.ProtoBuf.NetPlayerInfoRights result = de.pokerth.protocol.ProtoBuf.NetPlayerInfoRights.valueOf(playerRights_);
@@ -22157,8 +21021,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required .NetPlayerInfoRights playerRights = 3;</code>
-         * @param value The playerRights to set.
-         * @return This builder for chaining.
          */
         public Builder setPlayerRights(de.pokerth.protocol.ProtoBuf.NetPlayerInfoRights value) {
           if (value == null) {
@@ -22171,7 +21033,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required .NetPlayerInfoRights playerRights = 3;</code>
-         * @return This builder for chaining.
          */
         public Builder clearPlayerRights() {
           bitField0_ = (bitField0_ & ~0x00000004);
@@ -22183,14 +21044,12 @@ public final class ProtoBuf {
         private java.lang.Object countryCode_ = "";
         /**
          * <code>optional string countryCode = 4;</code>
-         * @return Whether the countryCode field is set.
          */
         public boolean hasCountryCode() {
           return ((bitField0_ & 0x00000008) != 0);
         }
         /**
          * <code>optional string countryCode = 4;</code>
-         * @return The countryCode.
          */
         public java.lang.String getCountryCode() {
           java.lang.Object ref = countryCode_;
@@ -22208,7 +21067,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>optional string countryCode = 4;</code>
-         * @return The bytes for countryCode.
          */
         public com.google.protobuf.ByteString
             getCountryCodeBytes() {
@@ -22225,8 +21083,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>optional string countryCode = 4;</code>
-         * @param value The countryCode to set.
-         * @return This builder for chaining.
          */
         public Builder setCountryCode(
             java.lang.String value) {
@@ -22240,7 +21096,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>optional string countryCode = 4;</code>
-         * @return This builder for chaining.
          */
         public Builder clearCountryCode() {
           bitField0_ = (bitField0_ & ~0x00000008);
@@ -22250,8 +21105,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>optional string countryCode = 4;</code>
-         * @param value The bytes for countryCode to set.
-         * @return This builder for chaining.
          */
         public Builder setCountryCodeBytes(
             com.google.protobuf.ByteString value) {
@@ -22269,14 +21122,12 @@ public final class ProtoBuf {
             de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData.AvatarData, de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData.AvatarData.Builder, de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData.AvatarDataOrBuilder> avatarDataBuilder_;
         /**
          * <code>optional .PlayerInfoReplyMessage.PlayerInfoData.AvatarData avatarData = 5;</code>
-         * @return Whether the avatarData field is set.
          */
         public boolean hasAvatarData() {
           return ((bitField0_ & 0x00000010) != 0);
         }
         /**
          * <code>optional .PlayerInfoReplyMessage.PlayerInfoData.AvatarData avatarData = 5;</code>
-         * @return The avatarData.
          */
         public de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData.AvatarData getAvatarData() {
           if (avatarDataBuilder_ == null) {
@@ -22441,17 +21292,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 1;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 playerId = 1;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -22460,24 +21307,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData playerInfoData_;
     /**
      * <code>optional .PlayerInfoReplyMessage.PlayerInfoData playerInfoData = 2;</code>
-     * @return Whether the playerInfoData field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerInfoData() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>optional .PlayerInfoReplyMessage.PlayerInfoData playerInfoData = 2;</code>
-     * @return The playerInfoData.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData getPlayerInfoData() {
       return playerInfoData_ == null ? de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData.getDefaultInstance() : playerInfoData_;
     }
     /**
      * <code>optional .PlayerInfoReplyMessage.PlayerInfoData playerInfoData = 2;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoDataOrBuilder getPlayerInfoDataOrBuilder() {
       return playerInfoData_ == null ? de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData.getDefaultInstance() : playerInfoData_;
     }
@@ -22851,24 +21693,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000001;
@@ -22878,7 +21714,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -22892,14 +21727,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData, de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData.Builder, de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoDataOrBuilder> playerInfoDataBuilder_;
       /**
        * <code>optional .PlayerInfoReplyMessage.PlayerInfoData playerInfoData = 2;</code>
-       * @return Whether the playerInfoData field is set.
        */
       public boolean hasPlayerInfoData() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>optional .PlayerInfoReplyMessage.PlayerInfoData playerInfoData = 2;</code>
-       * @return The playerInfoData.
        */
       public de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.PlayerInfoData getPlayerInfoData() {
         if (playerInfoDataBuilder_ == null) {
@@ -23065,12 +21898,10 @@ public final class ProtoBuf {
 
     /**
      * <code>required .SubscriptionRequestMessage.SubscriptionAction subscriptionAction = 1;</code>
-     * @return Whether the subscriptionAction field is set.
      */
     boolean hasSubscriptionAction();
     /**
      * <code>required .SubscriptionRequestMessage.SubscriptionAction subscriptionAction = 1;</code>
-     * @return The subscriptionAction.
      */
     de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage.SubscriptionAction getSubscriptionAction();
   }
@@ -23082,7 +21913,7 @@ public final class ProtoBuf {
    *
    * Protobuf type {@code SubscriptionRequestMessage}
    */
-  public static final class SubscriptionRequestMessage extends
+  public  static final class SubscriptionRequestMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:SubscriptionRequestMessage)
       SubscriptionRequestMessageOrBuilder {
@@ -23200,8 +22031,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -23209,10 +22038,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static SubscriptionAction forNumber(int value) {
         switch (value) {
           case 1: return unsubscribeGameList;
@@ -23271,16 +22096,14 @@ public final class ProtoBuf {
     private int subscriptionAction_;
     /**
      * <code>required .SubscriptionRequestMessage.SubscriptionAction subscriptionAction = 1;</code>
-     * @return Whether the subscriptionAction field is set.
      */
-    @java.lang.Override public boolean hasSubscriptionAction() {
+    public boolean hasSubscriptionAction() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required .SubscriptionRequestMessage.SubscriptionAction subscriptionAction = 1;</code>
-     * @return The subscriptionAction.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage.SubscriptionAction getSubscriptionAction() {
+    public de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage.SubscriptionAction getSubscriptionAction() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage.SubscriptionAction result = de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage.SubscriptionAction.valueOf(subscriptionAction_);
       return result == null ? de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage.SubscriptionAction.unsubscribeGameList : result;
@@ -23614,16 +22437,13 @@ public final class ProtoBuf {
       private int subscriptionAction_ = 1;
       /**
        * <code>required .SubscriptionRequestMessage.SubscriptionAction subscriptionAction = 1;</code>
-       * @return Whether the subscriptionAction field is set.
        */
-      @java.lang.Override public boolean hasSubscriptionAction() {
+      public boolean hasSubscriptionAction() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required .SubscriptionRequestMessage.SubscriptionAction subscriptionAction = 1;</code>
-       * @return The subscriptionAction.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage.SubscriptionAction getSubscriptionAction() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage.SubscriptionAction result = de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage.SubscriptionAction.valueOf(subscriptionAction_);
@@ -23631,8 +22451,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .SubscriptionRequestMessage.SubscriptionAction subscriptionAction = 1;</code>
-       * @param value The subscriptionAction to set.
-       * @return This builder for chaining.
        */
       public Builder setSubscriptionAction(de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage.SubscriptionAction value) {
         if (value == null) {
@@ -23645,7 +22463,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .SubscriptionRequestMessage.SubscriptionAction subscriptionAction = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearSubscriptionAction() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -23712,58 +22529,49 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>optional string password = 2;</code>
-     * @return Whether the password field is set.
      */
     boolean hasPassword();
     /**
      * <code>optional string password = 2;</code>
-     * @return The password.
      */
     java.lang.String getPassword();
     /**
      * <code>optional string password = 2;</code>
-     * @return The bytes for password.
      */
     com.google.protobuf.ByteString
         getPasswordBytes();
 
     /**
      * <code>optional bool autoLeave = 3 [default = false];</code>
-     * @return Whether the autoLeave field is set.
      */
     boolean hasAutoLeave();
     /**
      * <code>optional bool autoLeave = 3 [default = false];</code>
-     * @return The autoLeave.
      */
     boolean getAutoLeave();
 
     /**
      * <code>optional bool spectateOnly = 4 [default = false];</code>
-     * @return Whether the spectateOnly field is set.
      */
     boolean hasSpectateOnly();
     /**
      * <code>optional bool spectateOnly = 4 [default = false];</code>
-     * @return The spectateOnly.
      */
     boolean getSpectateOnly();
   }
   /**
    * Protobuf type {@code JoinExistingGameMessage}
    */
-  public static final class JoinExistingGameMessage extends
+  public  static final class JoinExistingGameMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:JoinExistingGameMessage)
       JoinExistingGameMessageOrBuilder {
@@ -23865,17 +22673,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -23884,17 +22688,13 @@ public final class ProtoBuf {
     private volatile java.lang.Object password_;
     /**
      * <code>optional string password = 2;</code>
-     * @return Whether the password field is set.
      */
-    @java.lang.Override
     public boolean hasPassword() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>optional string password = 2;</code>
-     * @return The password.
      */
-    @java.lang.Override
     public java.lang.String getPassword() {
       java.lang.Object ref = password_;
       if (ref instanceof java.lang.String) {
@@ -23911,9 +22711,7 @@ public final class ProtoBuf {
     }
     /**
      * <code>optional string password = 2;</code>
-     * @return The bytes for password.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getPasswordBytes() {
       java.lang.Object ref = password_;
@@ -23932,17 +22730,13 @@ public final class ProtoBuf {
     private boolean autoLeave_;
     /**
      * <code>optional bool autoLeave = 3 [default = false];</code>
-     * @return Whether the autoLeave field is set.
      */
-    @java.lang.Override
     public boolean hasAutoLeave() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>optional bool autoLeave = 3 [default = false];</code>
-     * @return The autoLeave.
      */
-    @java.lang.Override
     public boolean getAutoLeave() {
       return autoLeave_;
     }
@@ -23951,17 +22745,13 @@ public final class ProtoBuf {
     private boolean spectateOnly_;
     /**
      * <code>optional bool spectateOnly = 4 [default = false];</code>
-     * @return Whether the spectateOnly field is set.
      */
-    @java.lang.Override
     public boolean hasSpectateOnly() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>optional bool spectateOnly = 4 [default = false];</code>
-     * @return The spectateOnly.
      */
-    @java.lang.Override
     public boolean getSpectateOnly() {
       return spectateOnly_;
     }
@@ -24368,24 +23158,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -24395,7 +23179,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -24407,14 +23190,12 @@ public final class ProtoBuf {
       private java.lang.Object password_ = "";
       /**
        * <code>optional string password = 2;</code>
-       * @return Whether the password field is set.
        */
       public boolean hasPassword() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>optional string password = 2;</code>
-       * @return The password.
        */
       public java.lang.String getPassword() {
         java.lang.Object ref = password_;
@@ -24432,7 +23213,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional string password = 2;</code>
-       * @return The bytes for password.
        */
       public com.google.protobuf.ByteString
           getPasswordBytes() {
@@ -24449,8 +23229,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional string password = 2;</code>
-       * @param value The password to set.
-       * @return This builder for chaining.
        */
       public Builder setPassword(
           java.lang.String value) {
@@ -24464,7 +23242,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional string password = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPassword() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -24474,8 +23251,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional string password = 2;</code>
-       * @param value The bytes for password to set.
-       * @return This builder for chaining.
        */
       public Builder setPasswordBytes(
           com.google.protobuf.ByteString value) {
@@ -24491,24 +23266,18 @@ public final class ProtoBuf {
       private boolean autoLeave_ ;
       /**
        * <code>optional bool autoLeave = 3 [default = false];</code>
-       * @return Whether the autoLeave field is set.
        */
-      @java.lang.Override
       public boolean hasAutoLeave() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>optional bool autoLeave = 3 [default = false];</code>
-       * @return The autoLeave.
        */
-      @java.lang.Override
       public boolean getAutoLeave() {
         return autoLeave_;
       }
       /**
        * <code>optional bool autoLeave = 3 [default = false];</code>
-       * @param value The autoLeave to set.
-       * @return This builder for chaining.
        */
       public Builder setAutoLeave(boolean value) {
         bitField0_ |= 0x00000004;
@@ -24518,7 +23287,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional bool autoLeave = 3 [default = false];</code>
-       * @return This builder for chaining.
        */
       public Builder clearAutoLeave() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -24530,24 +23298,18 @@ public final class ProtoBuf {
       private boolean spectateOnly_ ;
       /**
        * <code>optional bool spectateOnly = 4 [default = false];</code>
-       * @return Whether the spectateOnly field is set.
        */
-      @java.lang.Override
       public boolean hasSpectateOnly() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>optional bool spectateOnly = 4 [default = false];</code>
-       * @return The spectateOnly.
        */
-      @java.lang.Override
       public boolean getSpectateOnly() {
         return spectateOnly_;
       }
       /**
        * <code>optional bool spectateOnly = 4 [default = false];</code>
-       * @param value The spectateOnly to set.
-       * @return This builder for chaining.
        */
       public Builder setSpectateOnly(boolean value) {
         bitField0_ |= 0x00000008;
@@ -24557,7 +23319,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional bool spectateOnly = 4 [default = false];</code>
-       * @return This builder for chaining.
        */
       public Builder clearSpectateOnly() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -24624,12 +23385,10 @@ public final class ProtoBuf {
 
     /**
      * <code>required .NetGameInfo gameInfo = 1;</code>
-     * @return Whether the gameInfo field is set.
      */
     boolean hasGameInfo();
     /**
      * <code>required .NetGameInfo gameInfo = 1;</code>
-     * @return The gameInfo.
      */
     de.pokerth.protocol.ProtoBuf.NetGameInfo getGameInfo();
     /**
@@ -24639,36 +23398,31 @@ public final class ProtoBuf {
 
     /**
      * <code>optional string password = 2;</code>
-     * @return Whether the password field is set.
      */
     boolean hasPassword();
     /**
      * <code>optional string password = 2;</code>
-     * @return The password.
      */
     java.lang.String getPassword();
     /**
      * <code>optional string password = 2;</code>
-     * @return The bytes for password.
      */
     com.google.protobuf.ByteString
         getPasswordBytes();
 
     /**
      * <code>optional bool autoLeave = 3;</code>
-     * @return Whether the autoLeave field is set.
      */
     boolean hasAutoLeave();
     /**
      * <code>optional bool autoLeave = 3;</code>
-     * @return The autoLeave.
      */
     boolean getAutoLeave();
   }
   /**
    * Protobuf type {@code JoinNewGameMessage}
    */
-  public static final class JoinNewGameMessage extends
+  public  static final class JoinNewGameMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:JoinNewGameMessage)
       JoinNewGameMessageOrBuilder {
@@ -24773,24 +23527,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.NetGameInfo gameInfo_;
     /**
      * <code>required .NetGameInfo gameInfo = 1;</code>
-     * @return Whether the gameInfo field is set.
      */
-    @java.lang.Override
     public boolean hasGameInfo() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required .NetGameInfo gameInfo = 1;</code>
-     * @return The gameInfo.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.NetGameInfo getGameInfo() {
       return gameInfo_ == null ? de.pokerth.protocol.ProtoBuf.NetGameInfo.getDefaultInstance() : gameInfo_;
     }
     /**
      * <code>required .NetGameInfo gameInfo = 1;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.NetGameInfoOrBuilder getGameInfoOrBuilder() {
       return gameInfo_ == null ? de.pokerth.protocol.ProtoBuf.NetGameInfo.getDefaultInstance() : gameInfo_;
     }
@@ -24799,17 +23548,13 @@ public final class ProtoBuf {
     private volatile java.lang.Object password_;
     /**
      * <code>optional string password = 2;</code>
-     * @return Whether the password field is set.
      */
-    @java.lang.Override
     public boolean hasPassword() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>optional string password = 2;</code>
-     * @return The password.
      */
-    @java.lang.Override
     public java.lang.String getPassword() {
       java.lang.Object ref = password_;
       if (ref instanceof java.lang.String) {
@@ -24826,9 +23571,7 @@ public final class ProtoBuf {
     }
     /**
      * <code>optional string password = 2;</code>
-     * @return The bytes for password.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getPasswordBytes() {
       java.lang.Object ref = password_;
@@ -24847,17 +23590,13 @@ public final class ProtoBuf {
     private boolean autoLeave_;
     /**
      * <code>optional bool autoLeave = 3;</code>
-     * @return Whether the autoLeave field is set.
      */
-    @java.lang.Override
     public boolean hasAutoLeave() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>optional bool autoLeave = 3;</code>
-     * @return The autoLeave.
      */
-    @java.lang.Override
     public boolean getAutoLeave() {
       return autoLeave_;
     }
@@ -25256,14 +23995,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.NetGameInfo, de.pokerth.protocol.ProtoBuf.NetGameInfo.Builder, de.pokerth.protocol.ProtoBuf.NetGameInfoOrBuilder> gameInfoBuilder_;
       /**
        * <code>required .NetGameInfo gameInfo = 1;</code>
-       * @return Whether the gameInfo field is set.
        */
       public boolean hasGameInfo() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required .NetGameInfo gameInfo = 1;</code>
-       * @return The gameInfo.
        */
       public de.pokerth.protocol.ProtoBuf.NetGameInfo getGameInfo() {
         if (gameInfoBuilder_ == null) {
@@ -25374,14 +24111,12 @@ public final class ProtoBuf {
       private java.lang.Object password_ = "";
       /**
        * <code>optional string password = 2;</code>
-       * @return Whether the password field is set.
        */
       public boolean hasPassword() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>optional string password = 2;</code>
-       * @return The password.
        */
       public java.lang.String getPassword() {
         java.lang.Object ref = password_;
@@ -25399,7 +24134,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional string password = 2;</code>
-       * @return The bytes for password.
        */
       public com.google.protobuf.ByteString
           getPasswordBytes() {
@@ -25416,8 +24150,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional string password = 2;</code>
-       * @param value The password to set.
-       * @return This builder for chaining.
        */
       public Builder setPassword(
           java.lang.String value) {
@@ -25431,7 +24163,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional string password = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPassword() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -25441,8 +24172,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional string password = 2;</code>
-       * @param value The bytes for password to set.
-       * @return This builder for chaining.
        */
       public Builder setPasswordBytes(
           com.google.protobuf.ByteString value) {
@@ -25458,24 +24187,18 @@ public final class ProtoBuf {
       private boolean autoLeave_ ;
       /**
        * <code>optional bool autoLeave = 3;</code>
-       * @return Whether the autoLeave field is set.
        */
-      @java.lang.Override
       public boolean hasAutoLeave() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>optional bool autoLeave = 3;</code>
-       * @return The autoLeave.
        */
-      @java.lang.Override
       public boolean getAutoLeave() {
         return autoLeave_;
       }
       /**
        * <code>optional bool autoLeave = 3;</code>
-       * @param value The autoLeave to set.
-       * @return This builder for chaining.
        */
       public Builder setAutoLeave(boolean value) {
         bitField0_ |= 0x00000004;
@@ -25485,7 +24208,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional bool autoLeave = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearAutoLeave() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -25552,30 +24274,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>optional bool autoLeave = 2;</code>
-     * @return Whether the autoLeave field is set.
      */
     boolean hasAutoLeave();
     /**
      * <code>optional bool autoLeave = 2;</code>
-     * @return The autoLeave.
      */
     boolean getAutoLeave();
   }
   /**
    * Protobuf type {@code RejoinExistingGameMessage}
    */
-  public static final class RejoinExistingGameMessage extends
+  public  static final class RejoinExistingGameMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:RejoinExistingGameMessage)
       RejoinExistingGameMessageOrBuilder {
@@ -25665,17 +24383,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -25684,17 +24398,13 @@ public final class ProtoBuf {
     private boolean autoLeave_;
     /**
      * <code>optional bool autoLeave = 2;</code>
-     * @return Whether the autoLeave field is set.
      */
-    @java.lang.Override
     public boolean hasAutoLeave() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>optional bool autoLeave = 2;</code>
-     * @return The autoLeave.
      */
-    @java.lang.Override
     public boolean getAutoLeave() {
       return autoLeave_;
     }
@@ -26049,24 +24759,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -26076,7 +24780,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -26088,24 +24791,18 @@ public final class ProtoBuf {
       private boolean autoLeave_ ;
       /**
        * <code>optional bool autoLeave = 2;</code>
-       * @return Whether the autoLeave field is set.
        */
-      @java.lang.Override
       public boolean hasAutoLeave() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>optional bool autoLeave = 2;</code>
-       * @return The autoLeave.
        */
-      @java.lang.Override
       public boolean getAutoLeave() {
         return autoLeave_;
       }
       /**
        * <code>optional bool autoLeave = 2;</code>
-       * @param value The autoLeave to set.
-       * @return This builder for chaining.
        */
       public Builder setAutoLeave(boolean value) {
         bitField0_ |= 0x00000002;
@@ -26115,7 +24812,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional bool autoLeave = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearAutoLeave() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -26182,34 +24878,28 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required bool areYouGameAdmin = 2;</code>
-     * @return Whether the areYouGameAdmin field is set.
      */
     boolean hasAreYouGameAdmin();
     /**
      * <code>required bool areYouGameAdmin = 2;</code>
-     * @return The areYouGameAdmin.
      */
     boolean getAreYouGameAdmin();
 
     /**
      * <code>required .NetGameInfo gameInfo = 3;</code>
-     * @return Whether the gameInfo field is set.
      */
     boolean hasGameInfo();
     /**
      * <code>required .NetGameInfo gameInfo = 3;</code>
-     * @return The gameInfo.
      */
     de.pokerth.protocol.ProtoBuf.NetGameInfo getGameInfo();
     /**
@@ -26219,19 +24909,17 @@ public final class ProtoBuf {
 
     /**
      * <code>optional bool spectateOnly = 4;</code>
-     * @return Whether the spectateOnly field is set.
      */
     boolean hasSpectateOnly();
     /**
      * <code>optional bool spectateOnly = 4;</code>
-     * @return The spectateOnly.
      */
     boolean getSpectateOnly();
   }
   /**
    * Protobuf type {@code JoinGameAckMessage}
    */
-  public static final class JoinGameAckMessage extends
+  public  static final class JoinGameAckMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:JoinGameAckMessage)
       JoinGameAckMessageOrBuilder {
@@ -26339,17 +25027,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -26358,17 +25042,13 @@ public final class ProtoBuf {
     private boolean areYouGameAdmin_;
     /**
      * <code>required bool areYouGameAdmin = 2;</code>
-     * @return Whether the areYouGameAdmin field is set.
      */
-    @java.lang.Override
     public boolean hasAreYouGameAdmin() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required bool areYouGameAdmin = 2;</code>
-     * @return The areYouGameAdmin.
      */
-    @java.lang.Override
     public boolean getAreYouGameAdmin() {
       return areYouGameAdmin_;
     }
@@ -26377,24 +25057,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.NetGameInfo gameInfo_;
     /**
      * <code>required .NetGameInfo gameInfo = 3;</code>
-     * @return Whether the gameInfo field is set.
      */
-    @java.lang.Override
     public boolean hasGameInfo() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required .NetGameInfo gameInfo = 3;</code>
-     * @return The gameInfo.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.NetGameInfo getGameInfo() {
       return gameInfo_ == null ? de.pokerth.protocol.ProtoBuf.NetGameInfo.getDefaultInstance() : gameInfo_;
     }
     /**
      * <code>required .NetGameInfo gameInfo = 3;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.NetGameInfoOrBuilder getGameInfoOrBuilder() {
       return gameInfo_ == null ? de.pokerth.protocol.ProtoBuf.NetGameInfo.getDefaultInstance() : gameInfo_;
     }
@@ -26403,17 +25078,13 @@ public final class ProtoBuf {
     private boolean spectateOnly_;
     /**
      * <code>optional bool spectateOnly = 4;</code>
-     * @return Whether the spectateOnly field is set.
      */
-    @java.lang.Override
     public boolean hasSpectateOnly() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>optional bool spectateOnly = 4;</code>
-     * @return The spectateOnly.
      */
-    @java.lang.Override
     public boolean getSpectateOnly() {
       return spectateOnly_;
     }
@@ -26849,24 +25520,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -26876,7 +25541,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -26888,24 +25552,18 @@ public final class ProtoBuf {
       private boolean areYouGameAdmin_ ;
       /**
        * <code>required bool areYouGameAdmin = 2;</code>
-       * @return Whether the areYouGameAdmin field is set.
        */
-      @java.lang.Override
       public boolean hasAreYouGameAdmin() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required bool areYouGameAdmin = 2;</code>
-       * @return The areYouGameAdmin.
        */
-      @java.lang.Override
       public boolean getAreYouGameAdmin() {
         return areYouGameAdmin_;
       }
       /**
        * <code>required bool areYouGameAdmin = 2;</code>
-       * @param value The areYouGameAdmin to set.
-       * @return This builder for chaining.
        */
       public Builder setAreYouGameAdmin(boolean value) {
         bitField0_ |= 0x00000002;
@@ -26915,7 +25573,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required bool areYouGameAdmin = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearAreYouGameAdmin() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -26929,14 +25586,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.NetGameInfo, de.pokerth.protocol.ProtoBuf.NetGameInfo.Builder, de.pokerth.protocol.ProtoBuf.NetGameInfoOrBuilder> gameInfoBuilder_;
       /**
        * <code>required .NetGameInfo gameInfo = 3;</code>
-       * @return Whether the gameInfo field is set.
        */
       public boolean hasGameInfo() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required .NetGameInfo gameInfo = 3;</code>
-       * @return The gameInfo.
        */
       public de.pokerth.protocol.ProtoBuf.NetGameInfo getGameInfo() {
         if (gameInfoBuilder_ == null) {
@@ -27047,24 +25702,18 @@ public final class ProtoBuf {
       private boolean spectateOnly_ ;
       /**
        * <code>optional bool spectateOnly = 4;</code>
-       * @return Whether the spectateOnly field is set.
        */
-      @java.lang.Override
       public boolean hasSpectateOnly() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>optional bool spectateOnly = 4;</code>
-       * @return The spectateOnly.
        */
-      @java.lang.Override
       public boolean getSpectateOnly() {
         return spectateOnly_;
       }
       /**
        * <code>optional bool spectateOnly = 4;</code>
-       * @param value The spectateOnly to set.
-       * @return This builder for chaining.
        */
       public Builder setSpectateOnly(boolean value) {
         bitField0_ |= 0x00000008;
@@ -27074,7 +25723,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional bool spectateOnly = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearSpectateOnly() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -27141,30 +25789,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required .JoinGameFailedMessage.JoinGameFailureReason joinGameFailureReason = 2;</code>
-     * @return Whether the joinGameFailureReason field is set.
      */
     boolean hasJoinGameFailureReason();
     /**
      * <code>required .JoinGameFailedMessage.JoinGameFailureReason joinGameFailureReason = 2;</code>
-     * @return The joinGameFailureReason.
      */
     de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage.JoinGameFailureReason getJoinGameFailureReason();
   }
   /**
    * Protobuf type {@code JoinGameFailedMessage}
    */
-  public static final class JoinGameFailedMessage extends
+  public  static final class JoinGameFailedMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:JoinGameFailedMessage)
       JoinGameFailedMessageOrBuilder {
@@ -27367,8 +26011,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -27376,10 +26018,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static JoinGameFailureReason forNumber(int value) {
         switch (value) {
           case 1: return invalidGame;
@@ -27448,17 +26086,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -27467,16 +26101,14 @@ public final class ProtoBuf {
     private int joinGameFailureReason_;
     /**
      * <code>required .JoinGameFailedMessage.JoinGameFailureReason joinGameFailureReason = 2;</code>
-     * @return Whether the joinGameFailureReason field is set.
      */
-    @java.lang.Override public boolean hasJoinGameFailureReason() {
+    public boolean hasJoinGameFailureReason() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .JoinGameFailedMessage.JoinGameFailureReason joinGameFailureReason = 2;</code>
-     * @return The joinGameFailureReason.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage.JoinGameFailureReason getJoinGameFailureReason() {
+    public de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage.JoinGameFailureReason getJoinGameFailureReason() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage.JoinGameFailureReason result = de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage.JoinGameFailureReason.valueOf(joinGameFailureReason_);
       return result == null ? de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage.JoinGameFailureReason.invalidGame : result;
@@ -27837,24 +26469,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -27864,7 +26490,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -27876,16 +26501,13 @@ public final class ProtoBuf {
       private int joinGameFailureReason_ = 1;
       /**
        * <code>required .JoinGameFailedMessage.JoinGameFailureReason joinGameFailureReason = 2;</code>
-       * @return Whether the joinGameFailureReason field is set.
        */
-      @java.lang.Override public boolean hasJoinGameFailureReason() {
+      public boolean hasJoinGameFailureReason() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .JoinGameFailedMessage.JoinGameFailureReason joinGameFailureReason = 2;</code>
-       * @return The joinGameFailureReason.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage.JoinGameFailureReason getJoinGameFailureReason() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage.JoinGameFailureReason result = de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage.JoinGameFailureReason.valueOf(joinGameFailureReason_);
@@ -27893,8 +26515,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .JoinGameFailedMessage.JoinGameFailureReason joinGameFailureReason = 2;</code>
-       * @param value The joinGameFailureReason to set.
-       * @return This builder for chaining.
        */
       public Builder setJoinGameFailureReason(de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage.JoinGameFailureReason value) {
         if (value == null) {
@@ -27907,7 +26527,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .JoinGameFailedMessage.JoinGameFailureReason joinGameFailureReason = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearJoinGameFailureReason() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -27974,41 +26593,35 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
 
     /**
      * <code>required bool isGameAdmin = 3;</code>
-     * @return Whether the isGameAdmin field is set.
      */
     boolean hasIsGameAdmin();
     /**
      * <code>required bool isGameAdmin = 3;</code>
-     * @return The isGameAdmin.
      */
     boolean getIsGameAdmin();
   }
   /**
    * Protobuf type {@code GamePlayerJoinedMessage}
    */
-  public static final class GamePlayerJoinedMessage extends
+  public  static final class GamePlayerJoinedMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:GamePlayerJoinedMessage)
       GamePlayerJoinedMessageOrBuilder {
@@ -28103,17 +26716,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -28122,17 +26731,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -28141,17 +26746,13 @@ public final class ProtoBuf {
     private boolean isGameAdmin_;
     /**
      * <code>required bool isGameAdmin = 3;</code>
-     * @return Whether the isGameAdmin field is set.
      */
-    @java.lang.Override
     public boolean hasIsGameAdmin() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required bool isGameAdmin = 3;</code>
-     * @return The isGameAdmin.
      */
-    @java.lang.Override
     public boolean getIsGameAdmin() {
       return isGameAdmin_;
     }
@@ -28545,24 +27146,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -28572,7 +27167,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -28584,24 +27178,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -28611,7 +27199,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -28623,24 +27210,18 @@ public final class ProtoBuf {
       private boolean isGameAdmin_ ;
       /**
        * <code>required bool isGameAdmin = 3;</code>
-       * @return Whether the isGameAdmin field is set.
        */
-      @java.lang.Override
       public boolean hasIsGameAdmin() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required bool isGameAdmin = 3;</code>
-       * @return The isGameAdmin.
        */
-      @java.lang.Override
       public boolean getIsGameAdmin() {
         return isGameAdmin_;
       }
       /**
        * <code>required bool isGameAdmin = 3;</code>
-       * @param value The isGameAdmin to set.
-       * @return This builder for chaining.
        */
       public Builder setIsGameAdmin(boolean value) {
         bitField0_ |= 0x00000004;
@@ -28650,7 +27231,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required bool isGameAdmin = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearIsGameAdmin() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -28717,41 +27297,35 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
 
     /**
      * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gamePlayerLeftReason = 3;</code>
-     * @return Whether the gamePlayerLeftReason field is set.
      */
     boolean hasGamePlayerLeftReason();
     /**
      * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gamePlayerLeftReason = 3;</code>
-     * @return The gamePlayerLeftReason.
      */
     de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason getGamePlayerLeftReason();
   }
   /**
    * Protobuf type {@code GamePlayerLeftMessage}
    */
-  public static final class GamePlayerLeftMessage extends
+  public  static final class GamePlayerLeftMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:GamePlayerLeftMessage)
       GamePlayerLeftMessageOrBuilder {
@@ -28887,8 +27461,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -28896,10 +27468,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static GamePlayerLeftReason forNumber(int value) {
         switch (value) {
           case 0: return leftOnRequest;
@@ -28959,17 +27527,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -28978,17 +27542,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -28997,16 +27557,14 @@ public final class ProtoBuf {
     private int gamePlayerLeftReason_;
     /**
      * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gamePlayerLeftReason = 3;</code>
-     * @return Whether the gamePlayerLeftReason field is set.
      */
-    @java.lang.Override public boolean hasGamePlayerLeftReason() {
+    public boolean hasGamePlayerLeftReason() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gamePlayerLeftReason = 3;</code>
-     * @return The gamePlayerLeftReason.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason getGamePlayerLeftReason() {
+    public de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason getGamePlayerLeftReason() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason result = de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason.valueOf(gamePlayerLeftReason_);
       return result == null ? de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason.leftOnRequest : result;
@@ -29399,24 +27957,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -29426,7 +27978,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -29438,24 +27989,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -29465,7 +28010,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -29477,16 +28021,13 @@ public final class ProtoBuf {
       private int gamePlayerLeftReason_ = 0;
       /**
        * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gamePlayerLeftReason = 3;</code>
-       * @return Whether the gamePlayerLeftReason field is set.
        */
-      @java.lang.Override public boolean hasGamePlayerLeftReason() {
+      public boolean hasGamePlayerLeftReason() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gamePlayerLeftReason = 3;</code>
-       * @return The gamePlayerLeftReason.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason getGamePlayerLeftReason() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason result = de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason.valueOf(gamePlayerLeftReason_);
@@ -29494,8 +28035,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gamePlayerLeftReason = 3;</code>
-       * @param value The gamePlayerLeftReason to set.
-       * @return This builder for chaining.
        */
       public Builder setGamePlayerLeftReason(de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason value) {
         if (value == null) {
@@ -29508,7 +28047,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gamePlayerLeftReason = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGamePlayerLeftReason() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -29575,30 +28113,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
   }
   /**
    * Protobuf type {@code GameSpectatorJoinedMessage}
    */
-  public static final class GameSpectatorJoinedMessage extends
+  public  static final class GameSpectatorJoinedMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:GameSpectatorJoinedMessage)
       GameSpectatorJoinedMessageOrBuilder {
@@ -29688,17 +28222,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -29707,17 +28237,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -30078,24 +28604,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -30105,7 +28625,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -30117,24 +28636,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -30144,7 +28657,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -30211,41 +28723,35 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
 
     /**
      * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gameSpectatorLeftReason = 3;</code>
-     * @return Whether the gameSpectatorLeftReason field is set.
      */
     boolean hasGameSpectatorLeftReason();
     /**
      * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gameSpectatorLeftReason = 3;</code>
-     * @return The gameSpectatorLeftReason.
      */
     de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason getGameSpectatorLeftReason();
   }
   /**
    * Protobuf type {@code GameSpectatorLeftMessage}
    */
-  public static final class GameSpectatorLeftMessage extends
+  public  static final class GameSpectatorLeftMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:GameSpectatorLeftMessage)
       GameSpectatorLeftMessageOrBuilder {
@@ -30348,17 +28854,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -30367,17 +28869,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -30386,16 +28884,14 @@ public final class ProtoBuf {
     private int gameSpectatorLeftReason_;
     /**
      * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gameSpectatorLeftReason = 3;</code>
-     * @return Whether the gameSpectatorLeftReason field is set.
      */
-    @java.lang.Override public boolean hasGameSpectatorLeftReason() {
+    public boolean hasGameSpectatorLeftReason() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gameSpectatorLeftReason = 3;</code>
-     * @return The gameSpectatorLeftReason.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason getGameSpectatorLeftReason() {
+    public de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason getGameSpectatorLeftReason() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason result = de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason.valueOf(gameSpectatorLeftReason_);
       return result == null ? de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason.leftOnRequest : result;
@@ -30788,24 +29284,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -30815,7 +29305,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -30827,24 +29316,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -30854,7 +29337,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -30866,16 +29348,13 @@ public final class ProtoBuf {
       private int gameSpectatorLeftReason_ = 0;
       /**
        * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gameSpectatorLeftReason = 3;</code>
-       * @return Whether the gameSpectatorLeftReason field is set.
        */
-      @java.lang.Override public boolean hasGameSpectatorLeftReason() {
+      public boolean hasGameSpectatorLeftReason() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gameSpectatorLeftReason = 3;</code>
-       * @return The gameSpectatorLeftReason.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason getGameSpectatorLeftReason() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason result = de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason.valueOf(gameSpectatorLeftReason_);
@@ -30883,8 +29362,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gameSpectatorLeftReason = 3;</code>
-       * @param value The gameSpectatorLeftReason to set.
-       * @return This builder for chaining.
        */
       public Builder setGameSpectatorLeftReason(de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.GamePlayerLeftReason value) {
         if (value == null) {
@@ -30897,7 +29374,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .GamePlayerLeftMessage.GamePlayerLeftReason gameSpectatorLeftReason = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameSpectatorLeftReason() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -30964,30 +29440,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 newAdminPlayerId = 2;</code>
-     * @return Whether the newAdminPlayerId field is set.
      */
     boolean hasNewAdminPlayerId();
     /**
      * <code>required uint32 newAdminPlayerId = 2;</code>
-     * @return The newAdminPlayerId.
      */
     int getNewAdminPlayerId();
   }
   /**
    * Protobuf type {@code GameAdminChangedMessage}
    */
-  public static final class GameAdminChangedMessage extends
+  public  static final class GameAdminChangedMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:GameAdminChangedMessage)
       GameAdminChangedMessageOrBuilder {
@@ -31077,17 +29549,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -31096,17 +29564,13 @@ public final class ProtoBuf {
     private int newAdminPlayerId_;
     /**
      * <code>required uint32 newAdminPlayerId = 2;</code>
-     * @return Whether the newAdminPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasNewAdminPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 newAdminPlayerId = 2;</code>
-     * @return The newAdminPlayerId.
      */
-    @java.lang.Override
     public int getNewAdminPlayerId() {
       return newAdminPlayerId_;
     }
@@ -31467,24 +29931,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -31494,7 +29952,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -31506,24 +29963,18 @@ public final class ProtoBuf {
       private int newAdminPlayerId_ ;
       /**
        * <code>required uint32 newAdminPlayerId = 2;</code>
-       * @return Whether the newAdminPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasNewAdminPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 newAdminPlayerId = 2;</code>
-       * @return The newAdminPlayerId.
        */
-      @java.lang.Override
       public int getNewAdminPlayerId() {
         return newAdminPlayerId_;
       }
       /**
        * <code>required uint32 newAdminPlayerId = 2;</code>
-       * @param value The newAdminPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setNewAdminPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -31533,7 +29984,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 newAdminPlayerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearNewAdminPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -31600,30 +30050,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required .RemovedFromGameMessage.RemovedFromGameReason removedFromGameReason = 2;</code>
-     * @return Whether the removedFromGameReason field is set.
      */
     boolean hasRemovedFromGameReason();
     /**
      * <code>required .RemovedFromGameMessage.RemovedFromGameReason removedFromGameReason = 2;</code>
-     * @return The removedFromGameReason.
      */
     de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage.RemovedFromGameReason getRemovedFromGameReason();
   }
   /**
    * Protobuf type {@code RemovedFromGameMessage}
    */
-  public static final class RemovedFromGameMessage extends
+  public  static final class RemovedFromGameMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:RemovedFromGameMessage)
       RemovedFromGameMessageOrBuilder {
@@ -31794,8 +30240,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -31803,10 +30247,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static RemovedFromGameReason forNumber(int value) {
         switch (value) {
           case 0: return removedOnRequest;
@@ -31870,17 +30310,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -31889,16 +30325,14 @@ public final class ProtoBuf {
     private int removedFromGameReason_;
     /**
      * <code>required .RemovedFromGameMessage.RemovedFromGameReason removedFromGameReason = 2;</code>
-     * @return Whether the removedFromGameReason field is set.
      */
-    @java.lang.Override public boolean hasRemovedFromGameReason() {
+    public boolean hasRemovedFromGameReason() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .RemovedFromGameMessage.RemovedFromGameReason removedFromGameReason = 2;</code>
-     * @return The removedFromGameReason.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage.RemovedFromGameReason getRemovedFromGameReason() {
+    public de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage.RemovedFromGameReason getRemovedFromGameReason() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage.RemovedFromGameReason result = de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage.RemovedFromGameReason.valueOf(removedFromGameReason_);
       return result == null ? de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage.RemovedFromGameReason.removedOnRequest : result;
@@ -32259,24 +30693,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -32286,7 +30714,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -32298,16 +30725,13 @@ public final class ProtoBuf {
       private int removedFromGameReason_ = 0;
       /**
        * <code>required .RemovedFromGameMessage.RemovedFromGameReason removedFromGameReason = 2;</code>
-       * @return Whether the removedFromGameReason field is set.
        */
-      @java.lang.Override public boolean hasRemovedFromGameReason() {
+      public boolean hasRemovedFromGameReason() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .RemovedFromGameMessage.RemovedFromGameReason removedFromGameReason = 2;</code>
-       * @return The removedFromGameReason.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage.RemovedFromGameReason getRemovedFromGameReason() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage.RemovedFromGameReason result = de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage.RemovedFromGameReason.valueOf(removedFromGameReason_);
@@ -32315,8 +30739,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .RemovedFromGameMessage.RemovedFromGameReason removedFromGameReason = 2;</code>
-       * @param value The removedFromGameReason to set.
-       * @return This builder for chaining.
        */
       public Builder setRemovedFromGameReason(de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage.RemovedFromGameReason value) {
         if (value == null) {
@@ -32329,7 +30751,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .RemovedFromGameMessage.RemovedFromGameReason removedFromGameReason = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRemovedFromGameReason() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -32396,30 +30817,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
   }
   /**
    * Protobuf type {@code KickPlayerRequestMessage}
    */
-  public static final class KickPlayerRequestMessage extends
+  public  static final class KickPlayerRequestMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:KickPlayerRequestMessage)
       KickPlayerRequestMessageOrBuilder {
@@ -32509,17 +30926,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -32528,17 +30941,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -32899,24 +31308,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -32926,7 +31329,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -32938,24 +31340,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -32965,7 +31361,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -33032,19 +31427,17 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
   }
   /**
    * Protobuf type {@code LeaveGameRequestMessage}
    */
-  public static final class LeaveGameRequestMessage extends
+  public  static final class LeaveGameRequestMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:LeaveGameRequestMessage)
       LeaveGameRequestMessageOrBuilder {
@@ -33129,17 +31522,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -33468,24 +31857,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -33495,7 +31878,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -33562,30 +31944,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
   }
   /**
    * Protobuf type {@code InvitePlayerToGameMessage}
    */
-  public static final class InvitePlayerToGameMessage extends
+  public  static final class InvitePlayerToGameMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:InvitePlayerToGameMessage)
       InvitePlayerToGameMessageOrBuilder {
@@ -33675,17 +32053,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -33694,17 +32068,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -34065,24 +32435,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -34092,7 +32456,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -34104,24 +32467,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -34131,7 +32488,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -34198,41 +32554,35 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerIdWho = 2;</code>
-     * @return Whether the playerIdWho field is set.
      */
     boolean hasPlayerIdWho();
     /**
      * <code>required uint32 playerIdWho = 2;</code>
-     * @return The playerIdWho.
      */
     int getPlayerIdWho();
 
     /**
      * <code>required uint32 playerIdByWhom = 3;</code>
-     * @return Whether the playerIdByWhom field is set.
      */
     boolean hasPlayerIdByWhom();
     /**
      * <code>required uint32 playerIdByWhom = 3;</code>
-     * @return The playerIdByWhom.
      */
     int getPlayerIdByWhom();
   }
   /**
    * Protobuf type {@code InviteNotifyMessage}
    */
-  public static final class InviteNotifyMessage extends
+  public  static final class InviteNotifyMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:InviteNotifyMessage)
       InviteNotifyMessageOrBuilder {
@@ -34327,17 +32677,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -34346,17 +32692,13 @@ public final class ProtoBuf {
     private int playerIdWho_;
     /**
      * <code>required uint32 playerIdWho = 2;</code>
-     * @return Whether the playerIdWho field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerIdWho() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerIdWho = 2;</code>
-     * @return The playerIdWho.
      */
-    @java.lang.Override
     public int getPlayerIdWho() {
       return playerIdWho_;
     }
@@ -34365,17 +32707,13 @@ public final class ProtoBuf {
     private int playerIdByWhom_;
     /**
      * <code>required uint32 playerIdByWhom = 3;</code>
-     * @return Whether the playerIdByWhom field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerIdByWhom() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required uint32 playerIdByWhom = 3;</code>
-     * @return The playerIdByWhom.
      */
-    @java.lang.Override
     public int getPlayerIdByWhom() {
       return playerIdByWhom_;
     }
@@ -34768,24 +33106,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -34795,7 +33127,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -34807,24 +33138,18 @@ public final class ProtoBuf {
       private int playerIdWho_ ;
       /**
        * <code>required uint32 playerIdWho = 2;</code>
-       * @return Whether the playerIdWho field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerIdWho() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerIdWho = 2;</code>
-       * @return The playerIdWho.
        */
-      @java.lang.Override
       public int getPlayerIdWho() {
         return playerIdWho_;
       }
       /**
        * <code>required uint32 playerIdWho = 2;</code>
-       * @param value The playerIdWho to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerIdWho(int value) {
         bitField0_ |= 0x00000002;
@@ -34834,7 +33159,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerIdWho = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerIdWho() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -34846,24 +33170,18 @@ public final class ProtoBuf {
       private int playerIdByWhom_ ;
       /**
        * <code>required uint32 playerIdByWhom = 3;</code>
-       * @return Whether the playerIdByWhom field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerIdByWhom() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required uint32 playerIdByWhom = 3;</code>
-       * @return The playerIdByWhom.
        */
-      @java.lang.Override
       public int getPlayerIdByWhom() {
         return playerIdByWhom_;
       }
       /**
        * <code>required uint32 playerIdByWhom = 3;</code>
-       * @param value The playerIdByWhom to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerIdByWhom(int value) {
         bitField0_ |= 0x00000004;
@@ -34873,7 +33191,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerIdByWhom = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerIdByWhom() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -34940,30 +33257,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required .RejectGameInvitationMessage.RejectGameInvReason myRejectReason = 2;</code>
-     * @return Whether the myRejectReason field is set.
      */
     boolean hasMyRejectReason();
     /**
      * <code>required .RejectGameInvitationMessage.RejectGameInvReason myRejectReason = 2;</code>
-     * @return The myRejectReason.
      */
     de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason getMyRejectReason();
   }
   /**
    * Protobuf type {@code RejectGameInvitationMessage}
    */
-  public static final class RejectGameInvitationMessage extends
+  public  static final class RejectGameInvitationMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:RejectGameInvitationMessage)
       RejectGameInvitationMessageOrBuilder {
@@ -35086,8 +33399,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -35095,10 +33406,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static RejectGameInvReason forNumber(int value) {
         switch (value) {
           case 0: return rejectReasonNo;
@@ -35157,17 +33464,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -35176,16 +33479,14 @@ public final class ProtoBuf {
     private int myRejectReason_;
     /**
      * <code>required .RejectGameInvitationMessage.RejectGameInvReason myRejectReason = 2;</code>
-     * @return Whether the myRejectReason field is set.
      */
-    @java.lang.Override public boolean hasMyRejectReason() {
+    public boolean hasMyRejectReason() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .RejectGameInvitationMessage.RejectGameInvReason myRejectReason = 2;</code>
-     * @return The myRejectReason.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason getMyRejectReason() {
+    public de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason getMyRejectReason() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason result = de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason.valueOf(myRejectReason_);
       return result == null ? de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason.rejectReasonNo : result;
@@ -35546,24 +33847,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -35573,7 +33868,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -35585,16 +33879,13 @@ public final class ProtoBuf {
       private int myRejectReason_ = 0;
       /**
        * <code>required .RejectGameInvitationMessage.RejectGameInvReason myRejectReason = 2;</code>
-       * @return Whether the myRejectReason field is set.
        */
-      @java.lang.Override public boolean hasMyRejectReason() {
+      public boolean hasMyRejectReason() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .RejectGameInvitationMessage.RejectGameInvReason myRejectReason = 2;</code>
-       * @return The myRejectReason.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason getMyRejectReason() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason result = de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason.valueOf(myRejectReason_);
@@ -35602,8 +33893,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .RejectGameInvitationMessage.RejectGameInvReason myRejectReason = 2;</code>
-       * @param value The myRejectReason to set.
-       * @return This builder for chaining.
        */
       public Builder setMyRejectReason(de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason value) {
         if (value == null) {
@@ -35616,7 +33905,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .RejectGameInvitationMessage.RejectGameInvReason myRejectReason = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearMyRejectReason() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -35683,41 +33971,35 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
 
     /**
      * <code>required .RejectGameInvitationMessage.RejectGameInvReason playerRejectReason = 3;</code>
-     * @return Whether the playerRejectReason field is set.
      */
     boolean hasPlayerRejectReason();
     /**
      * <code>required .RejectGameInvitationMessage.RejectGameInvReason playerRejectReason = 3;</code>
-     * @return The playerRejectReason.
      */
     de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason getPlayerRejectReason();
   }
   /**
    * Protobuf type {@code RejectInvNotifyMessage}
    */
-  public static final class RejectInvNotifyMessage extends
+  public  static final class RejectInvNotifyMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:RejectInvNotifyMessage)
       RejectInvNotifyMessageOrBuilder {
@@ -35820,17 +34102,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -35839,17 +34117,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -35858,16 +34132,14 @@ public final class ProtoBuf {
     private int playerRejectReason_;
     /**
      * <code>required .RejectGameInvitationMessage.RejectGameInvReason playerRejectReason = 3;</code>
-     * @return Whether the playerRejectReason field is set.
      */
-    @java.lang.Override public boolean hasPlayerRejectReason() {
+    public boolean hasPlayerRejectReason() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required .RejectGameInvitationMessage.RejectGameInvReason playerRejectReason = 3;</code>
-     * @return The playerRejectReason.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason getPlayerRejectReason() {
+    public de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason getPlayerRejectReason() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason result = de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason.valueOf(playerRejectReason_);
       return result == null ? de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason.rejectReasonNo : result;
@@ -36260,24 +34532,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -36287,7 +34553,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -36299,24 +34564,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -36326,7 +34585,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -36338,16 +34596,13 @@ public final class ProtoBuf {
       private int playerRejectReason_ = 0;
       /**
        * <code>required .RejectGameInvitationMessage.RejectGameInvReason playerRejectReason = 3;</code>
-       * @return Whether the playerRejectReason field is set.
        */
-      @java.lang.Override public boolean hasPlayerRejectReason() {
+      public boolean hasPlayerRejectReason() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required .RejectGameInvitationMessage.RejectGameInvReason playerRejectReason = 3;</code>
-       * @return The playerRejectReason.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason getPlayerRejectReason() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason result = de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason.valueOf(playerRejectReason_);
@@ -36355,8 +34610,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .RejectGameInvitationMessage.RejectGameInvReason playerRejectReason = 3;</code>
-       * @param value The playerRejectReason to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerRejectReason(de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.RejectGameInvReason value) {
         if (value == null) {
@@ -36369,7 +34622,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .RejectGameInvitationMessage.RejectGameInvReason playerRejectReason = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerRejectReason() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -36436,41 +34688,35 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required .StartEventMessage.StartEventType startEventType = 2;</code>
-     * @return Whether the startEventType field is set.
      */
     boolean hasStartEventType();
     /**
      * <code>required .StartEventMessage.StartEventType startEventType = 2;</code>
-     * @return The startEventType.
      */
     de.pokerth.protocol.ProtoBuf.StartEventMessage.StartEventType getStartEventType();
 
     /**
      * <code>optional bool fillWithComputerPlayers = 3;</code>
-     * @return Whether the fillWithComputerPlayers field is set.
      */
     boolean hasFillWithComputerPlayers();
     /**
      * <code>optional bool fillWithComputerPlayers = 3;</code>
-     * @return The fillWithComputerPlayers.
      */
     boolean getFillWithComputerPlayers();
   }
   /**
    * Protobuf type {@code StartEventMessage}
    */
-  public static final class StartEventMessage extends
+  public  static final class StartEventMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:StartEventMessage)
       StartEventMessageOrBuilder {
@@ -36598,8 +34844,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -36607,10 +34851,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static StartEventType forNumber(int value) {
         switch (value) {
           case 0: return startEvent;
@@ -36669,17 +34909,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -36688,16 +34924,14 @@ public final class ProtoBuf {
     private int startEventType_;
     /**
      * <code>required .StartEventMessage.StartEventType startEventType = 2;</code>
-     * @return Whether the startEventType field is set.
      */
-    @java.lang.Override public boolean hasStartEventType() {
+    public boolean hasStartEventType() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .StartEventMessage.StartEventType startEventType = 2;</code>
-     * @return The startEventType.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.StartEventMessage.StartEventType getStartEventType() {
+    public de.pokerth.protocol.ProtoBuf.StartEventMessage.StartEventType getStartEventType() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.StartEventMessage.StartEventType result = de.pokerth.protocol.ProtoBuf.StartEventMessage.StartEventType.valueOf(startEventType_);
       return result == null ? de.pokerth.protocol.ProtoBuf.StartEventMessage.StartEventType.startEvent : result;
@@ -36707,17 +34941,13 @@ public final class ProtoBuf {
     private boolean fillWithComputerPlayers_;
     /**
      * <code>optional bool fillWithComputerPlayers = 3;</code>
-     * @return Whether the fillWithComputerPlayers field is set.
      */
-    @java.lang.Override
     public boolean hasFillWithComputerPlayers() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>optional bool fillWithComputerPlayers = 3;</code>
-     * @return The fillWithComputerPlayers.
      */
-    @java.lang.Override
     public boolean getFillWithComputerPlayers() {
       return fillWithComputerPlayers_;
     }
@@ -37103,24 +35333,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -37130,7 +35354,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -37142,16 +35365,13 @@ public final class ProtoBuf {
       private int startEventType_ = 0;
       /**
        * <code>required .StartEventMessage.StartEventType startEventType = 2;</code>
-       * @return Whether the startEventType field is set.
        */
-      @java.lang.Override public boolean hasStartEventType() {
+      public boolean hasStartEventType() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .StartEventMessage.StartEventType startEventType = 2;</code>
-       * @return The startEventType.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.StartEventMessage.StartEventType getStartEventType() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.StartEventMessage.StartEventType result = de.pokerth.protocol.ProtoBuf.StartEventMessage.StartEventType.valueOf(startEventType_);
@@ -37159,8 +35379,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .StartEventMessage.StartEventType startEventType = 2;</code>
-       * @param value The startEventType to set.
-       * @return This builder for chaining.
        */
       public Builder setStartEventType(de.pokerth.protocol.ProtoBuf.StartEventMessage.StartEventType value) {
         if (value == null) {
@@ -37173,7 +35391,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .StartEventMessage.StartEventType startEventType = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearStartEventType() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -37185,24 +35402,18 @@ public final class ProtoBuf {
       private boolean fillWithComputerPlayers_ ;
       /**
        * <code>optional bool fillWithComputerPlayers = 3;</code>
-       * @return Whether the fillWithComputerPlayers field is set.
        */
-      @java.lang.Override
       public boolean hasFillWithComputerPlayers() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>optional bool fillWithComputerPlayers = 3;</code>
-       * @return The fillWithComputerPlayers.
        */
-      @java.lang.Override
       public boolean getFillWithComputerPlayers() {
         return fillWithComputerPlayers_;
       }
       /**
        * <code>optional bool fillWithComputerPlayers = 3;</code>
-       * @param value The fillWithComputerPlayers to set.
-       * @return This builder for chaining.
        */
       public Builder setFillWithComputerPlayers(boolean value) {
         bitField0_ |= 0x00000004;
@@ -37212,7 +35423,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional bool fillWithComputerPlayers = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearFillWithComputerPlayers() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -37279,19 +35489,17 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
   }
   /**
    * Protobuf type {@code StartEventAckMessage}
    */
-  public static final class StartEventAckMessage extends
+  public  static final class StartEventAckMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:StartEventAckMessage)
       StartEventAckMessageOrBuilder {
@@ -37376,17 +35584,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -37715,24 +35919,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -37742,7 +35940,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -37809,47 +36006,39 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 startDealerPlayerId = 2;</code>
-     * @return Whether the startDealerPlayerId field is set.
      */
     boolean hasStartDealerPlayerId();
     /**
      * <code>required uint32 startDealerPlayerId = 2;</code>
-     * @return The startDealerPlayerId.
      */
     int getStartDealerPlayerId();
 
     /**
      * <code>repeated uint32 playerSeats = 3 [packed = true];</code>
-     * @return A list containing the playerSeats.
      */
     java.util.List<java.lang.Integer> getPlayerSeatsList();
     /**
      * <code>repeated uint32 playerSeats = 3 [packed = true];</code>
-     * @return The count of playerSeats.
      */
     int getPlayerSeatsCount();
     /**
      * <code>repeated uint32 playerSeats = 3 [packed = true];</code>
-     * @param index The index of the element to return.
-     * @return The playerSeats at the given index.
      */
     int getPlayerSeats(int index);
   }
   /**
    * Protobuf type {@code GameStartInitialMessage}
    */
-  public static final class GameStartInitialMessage extends
+  public  static final class GameStartInitialMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:GameStartInitialMessage)
       GameStartInitialMessageOrBuilder {
@@ -37964,17 +36153,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -37983,17 +36168,13 @@ public final class ProtoBuf {
     private int startDealerPlayerId_;
     /**
      * <code>required uint32 startDealerPlayerId = 2;</code>
-     * @return Whether the startDealerPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasStartDealerPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 startDealerPlayerId = 2;</code>
-     * @return The startDealerPlayerId.
      */
-    @java.lang.Override
     public int getStartDealerPlayerId() {
       return startDealerPlayerId_;
     }
@@ -38002,24 +36183,19 @@ public final class ProtoBuf {
     private com.google.protobuf.Internal.IntList playerSeats_;
     /**
      * <code>repeated uint32 playerSeats = 3 [packed = true];</code>
-     * @return A list containing the playerSeats.
      */
-    @java.lang.Override
     public java.util.List<java.lang.Integer>
         getPlayerSeatsList() {
       return playerSeats_;
     }
     /**
      * <code>repeated uint32 playerSeats = 3 [packed = true];</code>
-     * @return The count of playerSeats.
      */
     public int getPlayerSeatsCount() {
       return playerSeats_.size();
     }
     /**
      * <code>repeated uint32 playerSeats = 3 [packed = true];</code>
-     * @param index The index of the element to return.
-     * @return The playerSeats at the given index.
      */
     public int getPlayerSeats(int index) {
       return playerSeats_.getInt(index);
@@ -38427,24 +36603,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -38454,7 +36624,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -38466,24 +36635,18 @@ public final class ProtoBuf {
       private int startDealerPlayerId_ ;
       /**
        * <code>required uint32 startDealerPlayerId = 2;</code>
-       * @return Whether the startDealerPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasStartDealerPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 startDealerPlayerId = 2;</code>
-       * @return The startDealerPlayerId.
        */
-      @java.lang.Override
       public int getStartDealerPlayerId() {
         return startDealerPlayerId_;
       }
       /**
        * <code>required uint32 startDealerPlayerId = 2;</code>
-       * @param value The startDealerPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setStartDealerPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -38493,7 +36656,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 startDealerPlayerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearStartDealerPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -38511,7 +36673,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerSeats = 3 [packed = true];</code>
-       * @return A list containing the playerSeats.
        */
       public java.util.List<java.lang.Integer>
           getPlayerSeatsList() {
@@ -38520,24 +36681,18 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerSeats = 3 [packed = true];</code>
-       * @return The count of playerSeats.
        */
       public int getPlayerSeatsCount() {
         return playerSeats_.size();
       }
       /**
        * <code>repeated uint32 playerSeats = 3 [packed = true];</code>
-       * @param index The index of the element to return.
-       * @return The playerSeats at the given index.
        */
       public int getPlayerSeats(int index) {
         return playerSeats_.getInt(index);
       }
       /**
        * <code>repeated uint32 playerSeats = 3 [packed = true];</code>
-       * @param index The index to set the value at.
-       * @param value The playerSeats to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerSeats(
           int index, int value) {
@@ -38548,8 +36703,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerSeats = 3 [packed = true];</code>
-       * @param value The playerSeats to add.
-       * @return This builder for chaining.
        */
       public Builder addPlayerSeats(int value) {
         ensurePlayerSeatsIsMutable();
@@ -38559,8 +36712,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerSeats = 3 [packed = true];</code>
-       * @param values The playerSeats to add.
-       * @return This builder for chaining.
        */
       public Builder addAllPlayerSeats(
           java.lang.Iterable<? extends java.lang.Integer> values) {
@@ -38572,7 +36723,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated uint32 playerSeats = 3 [packed = true];</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerSeats() {
         playerSeats_ = emptyIntList();
@@ -38639,34 +36789,28 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 startDealerPlayerId = 2;</code>
-     * @return Whether the startDealerPlayerId field is set.
      */
     boolean hasStartDealerPlayerId();
     /**
      * <code>required uint32 startDealerPlayerId = 2;</code>
-     * @return The startDealerPlayerId.
      */
     int getStartDealerPlayerId();
 
     /**
      * <code>required uint32 handNum = 3;</code>
-     * @return Whether the handNum field is set.
      */
     boolean hasHandNum();
     /**
      * <code>required uint32 handNum = 3;</code>
-     * @return The handNum.
      */
     int getHandNum();
 
@@ -38697,7 +36841,7 @@ public final class ProtoBuf {
   /**
    * Protobuf type {@code GameStartRejoinMessage}
    */
-  public static final class GameStartRejoinMessage extends
+  public  static final class GameStartRejoinMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:GameStartRejoinMessage)
       GameStartRejoinMessageOrBuilder {
@@ -38806,30 +36950,26 @@ public final class ProtoBuf {
 
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return Whether the playerId field is set.
        */
       boolean hasPlayerId();
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return The playerId.
        */
       int getPlayerId();
 
       /**
        * <code>required uint32 playerMoney = 2;</code>
-       * @return Whether the playerMoney field is set.
        */
       boolean hasPlayerMoney();
       /**
        * <code>required uint32 playerMoney = 2;</code>
-       * @return The playerMoney.
        */
       int getPlayerMoney();
     }
     /**
      * Protobuf type {@code GameStartRejoinMessage.RejoinPlayerData}
      */
-    public static final class RejoinPlayerData extends
+    public  static final class RejoinPlayerData extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:GameStartRejoinMessage.RejoinPlayerData)
         RejoinPlayerDataOrBuilder {
@@ -38919,17 +37059,13 @@ public final class ProtoBuf {
       private int playerId_;
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
@@ -38938,17 +37074,13 @@ public final class ProtoBuf {
       private int playerMoney_;
       /**
        * <code>required uint32 playerMoney = 2;</code>
-       * @return Whether the playerMoney field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerMoney() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerMoney = 2;</code>
-       * @return The playerMoney.
        */
-      @java.lang.Override
       public int getPlayerMoney() {
         return playerMoney_;
       }
@@ -39309,24 +37441,18 @@ public final class ProtoBuf {
         private int playerId_ ;
         /**
          * <code>required uint32 playerId = 1;</code>
-         * @return Whether the playerId field is set.
          */
-        @java.lang.Override
         public boolean hasPlayerId() {
           return ((bitField0_ & 0x00000001) != 0);
         }
         /**
          * <code>required uint32 playerId = 1;</code>
-         * @return The playerId.
          */
-        @java.lang.Override
         public int getPlayerId() {
           return playerId_;
         }
         /**
          * <code>required uint32 playerId = 1;</code>
-         * @param value The playerId to set.
-         * @return This builder for chaining.
          */
         public Builder setPlayerId(int value) {
           bitField0_ |= 0x00000001;
@@ -39336,7 +37462,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required uint32 playerId = 1;</code>
-         * @return This builder for chaining.
          */
         public Builder clearPlayerId() {
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -39348,24 +37473,18 @@ public final class ProtoBuf {
         private int playerMoney_ ;
         /**
          * <code>required uint32 playerMoney = 2;</code>
-         * @return Whether the playerMoney field is set.
          */
-        @java.lang.Override
         public boolean hasPlayerMoney() {
           return ((bitField0_ & 0x00000002) != 0);
         }
         /**
          * <code>required uint32 playerMoney = 2;</code>
-         * @return The playerMoney.
          */
-        @java.lang.Override
         public int getPlayerMoney() {
           return playerMoney_;
         }
         /**
          * <code>required uint32 playerMoney = 2;</code>
-         * @param value The playerMoney to set.
-         * @return This builder for chaining.
          */
         public Builder setPlayerMoney(int value) {
           bitField0_ |= 0x00000002;
@@ -39375,7 +37494,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required uint32 playerMoney = 2;</code>
-         * @return This builder for chaining.
          */
         public Builder clearPlayerMoney() {
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -39441,17 +37559,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -39460,17 +37574,13 @@ public final class ProtoBuf {
     private int startDealerPlayerId_;
     /**
      * <code>required uint32 startDealerPlayerId = 2;</code>
-     * @return Whether the startDealerPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasStartDealerPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 startDealerPlayerId = 2;</code>
-     * @return The startDealerPlayerId.
      */
-    @java.lang.Override
     public int getStartDealerPlayerId() {
       return startDealerPlayerId_;
     }
@@ -39479,17 +37589,13 @@ public final class ProtoBuf {
     private int handNum_;
     /**
      * <code>required uint32 handNum = 3;</code>
-     * @return Whether the handNum field is set.
      */
-    @java.lang.Override
     public boolean hasHandNum() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required uint32 handNum = 3;</code>
-     * @return The handNum.
      */
-    @java.lang.Override
     public int getHandNum() {
       return handNum_;
     }
@@ -39499,14 +37605,12 @@ public final class ProtoBuf {
     /**
      * <code>repeated .GameStartRejoinMessage.RejoinPlayerData rejoinPlayerData = 4;</code>
      */
-    @java.lang.Override
     public java.util.List<de.pokerth.protocol.ProtoBuf.GameStartRejoinMessage.RejoinPlayerData> getRejoinPlayerDataList() {
       return rejoinPlayerData_;
     }
     /**
      * <code>repeated .GameStartRejoinMessage.RejoinPlayerData rejoinPlayerData = 4;</code>
      */
-    @java.lang.Override
     public java.util.List<? extends de.pokerth.protocol.ProtoBuf.GameStartRejoinMessage.RejoinPlayerDataOrBuilder> 
         getRejoinPlayerDataOrBuilderList() {
       return rejoinPlayerData_;
@@ -39514,21 +37618,18 @@ public final class ProtoBuf {
     /**
      * <code>repeated .GameStartRejoinMessage.RejoinPlayerData rejoinPlayerData = 4;</code>
      */
-    @java.lang.Override
     public int getRejoinPlayerDataCount() {
       return rejoinPlayerData_.size();
     }
     /**
      * <code>repeated .GameStartRejoinMessage.RejoinPlayerData rejoinPlayerData = 4;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameStartRejoinMessage.RejoinPlayerData getRejoinPlayerData(int index) {
       return rejoinPlayerData_.get(index);
     }
     /**
      * <code>repeated .GameStartRejoinMessage.RejoinPlayerData rejoinPlayerData = 4;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameStartRejoinMessage.RejoinPlayerDataOrBuilder getRejoinPlayerDataOrBuilder(
         int index) {
       return rejoinPlayerData_.get(index);
@@ -39988,24 +38089,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -40015,7 +38110,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -40027,24 +38121,18 @@ public final class ProtoBuf {
       private int startDealerPlayerId_ ;
       /**
        * <code>required uint32 startDealerPlayerId = 2;</code>
-       * @return Whether the startDealerPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasStartDealerPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 startDealerPlayerId = 2;</code>
-       * @return The startDealerPlayerId.
        */
-      @java.lang.Override
       public int getStartDealerPlayerId() {
         return startDealerPlayerId_;
       }
       /**
        * <code>required uint32 startDealerPlayerId = 2;</code>
-       * @param value The startDealerPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setStartDealerPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -40054,7 +38142,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 startDealerPlayerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearStartDealerPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -40066,24 +38153,18 @@ public final class ProtoBuf {
       private int handNum_ ;
       /**
        * <code>required uint32 handNum = 3;</code>
-       * @return Whether the handNum field is set.
        */
-      @java.lang.Override
       public boolean hasHandNum() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required uint32 handNum = 3;</code>
-       * @return The handNum.
        */
-      @java.lang.Override
       public int getHandNum() {
         return handNum_;
       }
       /**
        * <code>required uint32 handNum = 3;</code>
-       * @param value The handNum to set.
-       * @return This builder for chaining.
        */
       public Builder setHandNum(int value) {
         bitField0_ |= 0x00000004;
@@ -40093,7 +38174,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 handNum = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearHandNum() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -40400,23 +38480,19 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>optional .HandStartMessage.PlainCards plainCards = 2;</code>
-     * @return Whether the plainCards field is set.
      */
     boolean hasPlainCards();
     /**
      * <code>optional .HandStartMessage.PlainCards plainCards = 2;</code>
-     * @return The plainCards.
      */
     de.pokerth.protocol.ProtoBuf.HandStartMessage.PlainCards getPlainCards();
     /**
@@ -40426,58 +38502,48 @@ public final class ProtoBuf {
 
     /**
      * <code>optional bytes encryptedCards = 3;</code>
-     * @return Whether the encryptedCards field is set.
      */
     boolean hasEncryptedCards();
     /**
      * <code>optional bytes encryptedCards = 3;</code>
-     * @return The encryptedCards.
      */
     com.google.protobuf.ByteString getEncryptedCards();
 
     /**
      * <code>required uint32 smallBlind = 4;</code>
-     * @return Whether the smallBlind field is set.
      */
     boolean hasSmallBlind();
     /**
      * <code>required uint32 smallBlind = 4;</code>
-     * @return The smallBlind.
      */
     int getSmallBlind();
 
     /**
      * <code>repeated .NetPlayerState seatStates = 5;</code>
-     * @return A list containing the seatStates.
      */
     java.util.List<de.pokerth.protocol.ProtoBuf.NetPlayerState> getSeatStatesList();
     /**
      * <code>repeated .NetPlayerState seatStates = 5;</code>
-     * @return The count of seatStates.
      */
     int getSeatStatesCount();
     /**
      * <code>repeated .NetPlayerState seatStates = 5;</code>
-     * @param index The index of the element to return.
-     * @return The seatStates at the given index.
      */
     de.pokerth.protocol.ProtoBuf.NetPlayerState getSeatStates(int index);
 
     /**
      * <code>optional uint32 dealerPlayerId = 6;</code>
-     * @return Whether the dealerPlayerId field is set.
      */
     boolean hasDealerPlayerId();
     /**
      * <code>optional uint32 dealerPlayerId = 6;</code>
-     * @return The dealerPlayerId.
      */
     int getDealerPlayerId();
   }
   /**
    * Protobuf type {@code HandStartMessage}
    */
-  public static final class HandStartMessage extends
+  public  static final class HandStartMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:HandStartMessage)
       HandStartMessageOrBuilder {
@@ -40631,30 +38697,26 @@ public final class ProtoBuf {
 
       /**
        * <code>required uint32 plainCard1 = 1;</code>
-       * @return Whether the plainCard1 field is set.
        */
       boolean hasPlainCard1();
       /**
        * <code>required uint32 plainCard1 = 1;</code>
-       * @return The plainCard1.
        */
       int getPlainCard1();
 
       /**
        * <code>required uint32 plainCard2 = 2;</code>
-       * @return Whether the plainCard2 field is set.
        */
       boolean hasPlainCard2();
       /**
        * <code>required uint32 plainCard2 = 2;</code>
-       * @return The plainCard2.
        */
       int getPlainCard2();
     }
     /**
      * Protobuf type {@code HandStartMessage.PlainCards}
      */
-    public static final class PlainCards extends
+    public  static final class PlainCards extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:HandStartMessage.PlainCards)
         PlainCardsOrBuilder {
@@ -40744,17 +38806,13 @@ public final class ProtoBuf {
       private int plainCard1_;
       /**
        * <code>required uint32 plainCard1 = 1;</code>
-       * @return Whether the plainCard1 field is set.
        */
-      @java.lang.Override
       public boolean hasPlainCard1() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 plainCard1 = 1;</code>
-       * @return The plainCard1.
        */
-      @java.lang.Override
       public int getPlainCard1() {
         return plainCard1_;
       }
@@ -40763,17 +38821,13 @@ public final class ProtoBuf {
       private int plainCard2_;
       /**
        * <code>required uint32 plainCard2 = 2;</code>
-       * @return Whether the plainCard2 field is set.
        */
-      @java.lang.Override
       public boolean hasPlainCard2() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 plainCard2 = 2;</code>
-       * @return The plainCard2.
        */
-      @java.lang.Override
       public int getPlainCard2() {
         return plainCard2_;
       }
@@ -41134,24 +39188,18 @@ public final class ProtoBuf {
         private int plainCard1_ ;
         /**
          * <code>required uint32 plainCard1 = 1;</code>
-         * @return Whether the plainCard1 field is set.
          */
-        @java.lang.Override
         public boolean hasPlainCard1() {
           return ((bitField0_ & 0x00000001) != 0);
         }
         /**
          * <code>required uint32 plainCard1 = 1;</code>
-         * @return The plainCard1.
          */
-        @java.lang.Override
         public int getPlainCard1() {
           return plainCard1_;
         }
         /**
          * <code>required uint32 plainCard1 = 1;</code>
-         * @param value The plainCard1 to set.
-         * @return This builder for chaining.
          */
         public Builder setPlainCard1(int value) {
           bitField0_ |= 0x00000001;
@@ -41161,7 +39209,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required uint32 plainCard1 = 1;</code>
-         * @return This builder for chaining.
          */
         public Builder clearPlainCard1() {
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -41173,24 +39220,18 @@ public final class ProtoBuf {
         private int plainCard2_ ;
         /**
          * <code>required uint32 plainCard2 = 2;</code>
-         * @return Whether the plainCard2 field is set.
          */
-        @java.lang.Override
         public boolean hasPlainCard2() {
           return ((bitField0_ & 0x00000002) != 0);
         }
         /**
          * <code>required uint32 plainCard2 = 2;</code>
-         * @return The plainCard2.
          */
-        @java.lang.Override
         public int getPlainCard2() {
           return plainCard2_;
         }
         /**
          * <code>required uint32 plainCard2 = 2;</code>
-         * @param value The plainCard2 to set.
-         * @return This builder for chaining.
          */
         public Builder setPlainCard2(int value) {
           bitField0_ |= 0x00000002;
@@ -41200,7 +39241,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required uint32 plainCard2 = 2;</code>
-         * @return This builder for chaining.
          */
         public Builder clearPlainCard2() {
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -41266,17 +39306,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -41285,24 +39321,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.HandStartMessage.PlainCards plainCards_;
     /**
      * <code>optional .HandStartMessage.PlainCards plainCards = 2;</code>
-     * @return Whether the plainCards field is set.
      */
-    @java.lang.Override
     public boolean hasPlainCards() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>optional .HandStartMessage.PlainCards plainCards = 2;</code>
-     * @return The plainCards.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.HandStartMessage.PlainCards getPlainCards() {
       return plainCards_ == null ? de.pokerth.protocol.ProtoBuf.HandStartMessage.PlainCards.getDefaultInstance() : plainCards_;
     }
     /**
      * <code>optional .HandStartMessage.PlainCards plainCards = 2;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.HandStartMessage.PlainCardsOrBuilder getPlainCardsOrBuilder() {
       return plainCards_ == null ? de.pokerth.protocol.ProtoBuf.HandStartMessage.PlainCards.getDefaultInstance() : plainCards_;
     }
@@ -41311,17 +39342,13 @@ public final class ProtoBuf {
     private com.google.protobuf.ByteString encryptedCards_;
     /**
      * <code>optional bytes encryptedCards = 3;</code>
-     * @return Whether the encryptedCards field is set.
      */
-    @java.lang.Override
     public boolean hasEncryptedCards() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>optional bytes encryptedCards = 3;</code>
-     * @return The encryptedCards.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getEncryptedCards() {
       return encryptedCards_;
     }
@@ -41330,17 +39357,13 @@ public final class ProtoBuf {
     private int smallBlind_;
     /**
      * <code>required uint32 smallBlind = 4;</code>
-     * @return Whether the smallBlind field is set.
      */
-    @java.lang.Override
     public boolean hasSmallBlind() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>required uint32 smallBlind = 4;</code>
-     * @return The smallBlind.
      */
-    @java.lang.Override
     public int getSmallBlind() {
       return smallBlind_;
     }
@@ -41359,27 +39382,20 @@ public final class ProtoBuf {
             };
     /**
      * <code>repeated .NetPlayerState seatStates = 5;</code>
-     * @return A list containing the seatStates.
      */
-    @java.lang.Override
     public java.util.List<de.pokerth.protocol.ProtoBuf.NetPlayerState> getSeatStatesList() {
       return new com.google.protobuf.Internal.ListAdapter<
           java.lang.Integer, de.pokerth.protocol.ProtoBuf.NetPlayerState>(seatStates_, seatStates_converter_);
     }
     /**
      * <code>repeated .NetPlayerState seatStates = 5;</code>
-     * @return The count of seatStates.
      */
-    @java.lang.Override
     public int getSeatStatesCount() {
       return seatStates_.size();
     }
     /**
      * <code>repeated .NetPlayerState seatStates = 5;</code>
-     * @param index The index of the element to return.
-     * @return The seatStates at the given index.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.NetPlayerState getSeatStates(int index) {
       return seatStates_converter_.convert(seatStates_.get(index));
     }
@@ -41388,17 +39404,13 @@ public final class ProtoBuf {
     private int dealerPlayerId_;
     /**
      * <code>optional uint32 dealerPlayerId = 6;</code>
-     * @return Whether the dealerPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasDealerPlayerId() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
      * <code>optional uint32 dealerPlayerId = 6;</code>
-     * @return The dealerPlayerId.
      */
-    @java.lang.Override
     public int getDealerPlayerId() {
       return dealerPlayerId_;
     }
@@ -41888,24 +39900,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -41915,7 +39921,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -41929,14 +39934,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.HandStartMessage.PlainCards, de.pokerth.protocol.ProtoBuf.HandStartMessage.PlainCards.Builder, de.pokerth.protocol.ProtoBuf.HandStartMessage.PlainCardsOrBuilder> plainCardsBuilder_;
       /**
        * <code>optional .HandStartMessage.PlainCards plainCards = 2;</code>
-       * @return Whether the plainCards field is set.
        */
       public boolean hasPlainCards() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>optional .HandStartMessage.PlainCards plainCards = 2;</code>
-       * @return The plainCards.
        */
       public de.pokerth.protocol.ProtoBuf.HandStartMessage.PlainCards getPlainCards() {
         if (plainCardsBuilder_ == null) {
@@ -42047,24 +40050,18 @@ public final class ProtoBuf {
       private com.google.protobuf.ByteString encryptedCards_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>optional bytes encryptedCards = 3;</code>
-       * @return Whether the encryptedCards field is set.
        */
-      @java.lang.Override
       public boolean hasEncryptedCards() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>optional bytes encryptedCards = 3;</code>
-       * @return The encryptedCards.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getEncryptedCards() {
         return encryptedCards_;
       }
       /**
        * <code>optional bytes encryptedCards = 3;</code>
-       * @param value The encryptedCards to set.
-       * @return This builder for chaining.
        */
       public Builder setEncryptedCards(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -42077,7 +40074,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional bytes encryptedCards = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearEncryptedCards() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -42089,24 +40085,18 @@ public final class ProtoBuf {
       private int smallBlind_ ;
       /**
        * <code>required uint32 smallBlind = 4;</code>
-       * @return Whether the smallBlind field is set.
        */
-      @java.lang.Override
       public boolean hasSmallBlind() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>required uint32 smallBlind = 4;</code>
-       * @return The smallBlind.
        */
-      @java.lang.Override
       public int getSmallBlind() {
         return smallBlind_;
       }
       /**
        * <code>required uint32 smallBlind = 4;</code>
-       * @param value The smallBlind to set.
-       * @return This builder for chaining.
        */
       public Builder setSmallBlind(int value) {
         bitField0_ |= 0x00000008;
@@ -42116,7 +40106,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 smallBlind = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearSmallBlind() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -42135,7 +40124,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated .NetPlayerState seatStates = 5;</code>
-       * @return A list containing the seatStates.
        */
       public java.util.List<de.pokerth.protocol.ProtoBuf.NetPlayerState> getSeatStatesList() {
         return new com.google.protobuf.Internal.ListAdapter<
@@ -42143,24 +40131,18 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated .NetPlayerState seatStates = 5;</code>
-       * @return The count of seatStates.
        */
       public int getSeatStatesCount() {
         return seatStates_.size();
       }
       /**
        * <code>repeated .NetPlayerState seatStates = 5;</code>
-       * @param index The index of the element to return.
-       * @return The seatStates at the given index.
        */
       public de.pokerth.protocol.ProtoBuf.NetPlayerState getSeatStates(int index) {
         return seatStates_converter_.convert(seatStates_.get(index));
       }
       /**
        * <code>repeated .NetPlayerState seatStates = 5;</code>
-       * @param index The index to set the value at.
-       * @param value The seatStates to set.
-       * @return This builder for chaining.
        */
       public Builder setSeatStates(
           int index, de.pokerth.protocol.ProtoBuf.NetPlayerState value) {
@@ -42174,8 +40156,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated .NetPlayerState seatStates = 5;</code>
-       * @param value The seatStates to add.
-       * @return This builder for chaining.
        */
       public Builder addSeatStates(de.pokerth.protocol.ProtoBuf.NetPlayerState value) {
         if (value == null) {
@@ -42188,8 +40168,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated .NetPlayerState seatStates = 5;</code>
-       * @param values The seatStates to add.
-       * @return This builder for chaining.
        */
       public Builder addAllSeatStates(
           java.lang.Iterable<? extends de.pokerth.protocol.ProtoBuf.NetPlayerState> values) {
@@ -42202,7 +40180,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>repeated .NetPlayerState seatStates = 5;</code>
-       * @return This builder for chaining.
        */
       public Builder clearSeatStates() {
         seatStates_ = java.util.Collections.emptyList();
@@ -42214,24 +40191,18 @@ public final class ProtoBuf {
       private int dealerPlayerId_ ;
       /**
        * <code>optional uint32 dealerPlayerId = 6;</code>
-       * @return Whether the dealerPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasDealerPlayerId() {
         return ((bitField0_ & 0x00000020) != 0);
       }
       /**
        * <code>optional uint32 dealerPlayerId = 6;</code>
-       * @return The dealerPlayerId.
        */
-      @java.lang.Override
       public int getDealerPlayerId() {
         return dealerPlayerId_;
       }
       /**
        * <code>optional uint32 dealerPlayerId = 6;</code>
-       * @param value The dealerPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setDealerPlayerId(int value) {
         bitField0_ |= 0x00000020;
@@ -42241,7 +40212,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional uint32 dealerPlayerId = 6;</code>
-       * @return This builder for chaining.
        */
       public Builder clearDealerPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000020);
@@ -42308,41 +40278,35 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
 
     /**
      * <code>required .NetGameState gameState = 3;</code>
-     * @return Whether the gameState field is set.
      */
     boolean hasGameState();
     /**
      * <code>required .NetGameState gameState = 3;</code>
-     * @return The gameState.
      */
     de.pokerth.protocol.ProtoBuf.NetGameState getGameState();
   }
   /**
    * Protobuf type {@code PlayersTurnMessage}
    */
-  public static final class PlayersTurnMessage extends
+  public  static final class PlayersTurnMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:PlayersTurnMessage)
       PlayersTurnMessageOrBuilder {
@@ -42445,17 +40409,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -42464,17 +40424,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -42483,16 +40439,14 @@ public final class ProtoBuf {
     private int gameState_;
     /**
      * <code>required .NetGameState gameState = 3;</code>
-     * @return Whether the gameState field is set.
      */
-    @java.lang.Override public boolean hasGameState() {
+    public boolean hasGameState() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required .NetGameState gameState = 3;</code>
-     * @return The gameState.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetGameState getGameState() {
+    public de.pokerth.protocol.ProtoBuf.NetGameState getGameState() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.NetGameState result = de.pokerth.protocol.ProtoBuf.NetGameState.valueOf(gameState_);
       return result == null ? de.pokerth.protocol.ProtoBuf.NetGameState.netStatePreflop : result;
@@ -42885,24 +40839,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -42912,7 +40860,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -42924,24 +40871,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -42951,7 +40892,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -42963,16 +40903,13 @@ public final class ProtoBuf {
       private int gameState_ = 0;
       /**
        * <code>required .NetGameState gameState = 3;</code>
-       * @return Whether the gameState field is set.
        */
-      @java.lang.Override public boolean hasGameState() {
+      public boolean hasGameState() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required .NetGameState gameState = 3;</code>
-       * @return The gameState.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.NetGameState getGameState() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.NetGameState result = de.pokerth.protocol.ProtoBuf.NetGameState.valueOf(gameState_);
@@ -42980,8 +40917,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameState gameState = 3;</code>
-       * @param value The gameState to set.
-       * @return This builder for chaining.
        */
       public Builder setGameState(de.pokerth.protocol.ProtoBuf.NetGameState value) {
         if (value == null) {
@@ -42994,7 +40929,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameState gameState = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameState() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -43061,63 +40995,53 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 handNum = 2;</code>
-     * @return Whether the handNum field is set.
      */
     boolean hasHandNum();
     /**
      * <code>required uint32 handNum = 2;</code>
-     * @return The handNum.
      */
     int getHandNum();
 
     /**
      * <code>required .NetGameState gameState = 3;</code>
-     * @return Whether the gameState field is set.
      */
     boolean hasGameState();
     /**
      * <code>required .NetGameState gameState = 3;</code>
-     * @return The gameState.
      */
     de.pokerth.protocol.ProtoBuf.NetGameState getGameState();
 
     /**
      * <code>required .NetPlayerAction myAction = 4;</code>
-     * @return Whether the myAction field is set.
      */
     boolean hasMyAction();
     /**
      * <code>required .NetPlayerAction myAction = 4;</code>
-     * @return The myAction.
      */
     de.pokerth.protocol.ProtoBuf.NetPlayerAction getMyAction();
 
     /**
      * <code>required uint32 myRelativeBet = 5;</code>
-     * @return Whether the myRelativeBet field is set.
      */
     boolean hasMyRelativeBet();
     /**
      * <code>required uint32 myRelativeBet = 5;</code>
-     * @return The myRelativeBet.
      */
     int getMyRelativeBet();
   }
   /**
    * Protobuf type {@code MyActionRequestMessage}
    */
-  public static final class MyActionRequestMessage extends
+  public  static final class MyActionRequestMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:MyActionRequestMessage)
       MyActionRequestMessageOrBuilder {
@@ -43238,17 +41162,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -43257,17 +41177,13 @@ public final class ProtoBuf {
     private int handNum_;
     /**
      * <code>required uint32 handNum = 2;</code>
-     * @return Whether the handNum field is set.
      */
-    @java.lang.Override
     public boolean hasHandNum() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 handNum = 2;</code>
-     * @return The handNum.
      */
-    @java.lang.Override
     public int getHandNum() {
       return handNum_;
     }
@@ -43276,16 +41192,14 @@ public final class ProtoBuf {
     private int gameState_;
     /**
      * <code>required .NetGameState gameState = 3;</code>
-     * @return Whether the gameState field is set.
      */
-    @java.lang.Override public boolean hasGameState() {
+    public boolean hasGameState() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required .NetGameState gameState = 3;</code>
-     * @return The gameState.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetGameState getGameState() {
+    public de.pokerth.protocol.ProtoBuf.NetGameState getGameState() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.NetGameState result = de.pokerth.protocol.ProtoBuf.NetGameState.valueOf(gameState_);
       return result == null ? de.pokerth.protocol.ProtoBuf.NetGameState.netStatePreflop : result;
@@ -43295,16 +41209,14 @@ public final class ProtoBuf {
     private int myAction_;
     /**
      * <code>required .NetPlayerAction myAction = 4;</code>
-     * @return Whether the myAction field is set.
      */
-    @java.lang.Override public boolean hasMyAction() {
+    public boolean hasMyAction() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>required .NetPlayerAction myAction = 4;</code>
-     * @return The myAction.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetPlayerAction getMyAction() {
+    public de.pokerth.protocol.ProtoBuf.NetPlayerAction getMyAction() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.NetPlayerAction result = de.pokerth.protocol.ProtoBuf.NetPlayerAction.valueOf(myAction_);
       return result == null ? de.pokerth.protocol.ProtoBuf.NetPlayerAction.netActionNone : result;
@@ -43314,17 +41226,13 @@ public final class ProtoBuf {
     private int myRelativeBet_;
     /**
      * <code>required uint32 myRelativeBet = 5;</code>
-     * @return Whether the myRelativeBet field is set.
      */
-    @java.lang.Override
     public boolean hasMyRelativeBet() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
      * <code>required uint32 myRelativeBet = 5;</code>
-     * @return The myRelativeBet.
      */
-    @java.lang.Override
     public int getMyRelativeBet() {
       return myRelativeBet_;
     }
@@ -43779,24 +41687,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -43806,7 +41708,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -43818,24 +41719,18 @@ public final class ProtoBuf {
       private int handNum_ ;
       /**
        * <code>required uint32 handNum = 2;</code>
-       * @return Whether the handNum field is set.
        */
-      @java.lang.Override
       public boolean hasHandNum() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 handNum = 2;</code>
-       * @return The handNum.
        */
-      @java.lang.Override
       public int getHandNum() {
         return handNum_;
       }
       /**
        * <code>required uint32 handNum = 2;</code>
-       * @param value The handNum to set.
-       * @return This builder for chaining.
        */
       public Builder setHandNum(int value) {
         bitField0_ |= 0x00000002;
@@ -43845,7 +41740,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 handNum = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearHandNum() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -43857,16 +41751,13 @@ public final class ProtoBuf {
       private int gameState_ = 0;
       /**
        * <code>required .NetGameState gameState = 3;</code>
-       * @return Whether the gameState field is set.
        */
-      @java.lang.Override public boolean hasGameState() {
+      public boolean hasGameState() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required .NetGameState gameState = 3;</code>
-       * @return The gameState.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.NetGameState getGameState() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.NetGameState result = de.pokerth.protocol.ProtoBuf.NetGameState.valueOf(gameState_);
@@ -43874,8 +41765,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameState gameState = 3;</code>
-       * @param value The gameState to set.
-       * @return This builder for chaining.
        */
       public Builder setGameState(de.pokerth.protocol.ProtoBuf.NetGameState value) {
         if (value == null) {
@@ -43888,7 +41777,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameState gameState = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameState() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -43900,16 +41788,13 @@ public final class ProtoBuf {
       private int myAction_ = 0;
       /**
        * <code>required .NetPlayerAction myAction = 4;</code>
-       * @return Whether the myAction field is set.
        */
-      @java.lang.Override public boolean hasMyAction() {
+      public boolean hasMyAction() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>required .NetPlayerAction myAction = 4;</code>
-       * @return The myAction.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.NetPlayerAction getMyAction() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.NetPlayerAction result = de.pokerth.protocol.ProtoBuf.NetPlayerAction.valueOf(myAction_);
@@ -43917,8 +41802,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetPlayerAction myAction = 4;</code>
-       * @param value The myAction to set.
-       * @return This builder for chaining.
        */
       public Builder setMyAction(de.pokerth.protocol.ProtoBuf.NetPlayerAction value) {
         if (value == null) {
@@ -43931,7 +41814,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetPlayerAction myAction = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearMyAction() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -43943,24 +41825,18 @@ public final class ProtoBuf {
       private int myRelativeBet_ ;
       /**
        * <code>required uint32 myRelativeBet = 5;</code>
-       * @return Whether the myRelativeBet field is set.
        */
-      @java.lang.Override
       public boolean hasMyRelativeBet() {
         return ((bitField0_ & 0x00000010) != 0);
       }
       /**
        * <code>required uint32 myRelativeBet = 5;</code>
-       * @return The myRelativeBet.
        */
-      @java.lang.Override
       public int getMyRelativeBet() {
         return myRelativeBet_;
       }
       /**
        * <code>required uint32 myRelativeBet = 5;</code>
-       * @param value The myRelativeBet to set.
-       * @return This builder for chaining.
        */
       public Builder setMyRelativeBet(int value) {
         bitField0_ |= 0x00000010;
@@ -43970,7 +41846,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 myRelativeBet = 5;</code>
-       * @return This builder for chaining.
        */
       public Builder clearMyRelativeBet() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -44037,63 +41912,53 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required .NetGameState gameState = 2;</code>
-     * @return Whether the gameState field is set.
      */
     boolean hasGameState();
     /**
      * <code>required .NetGameState gameState = 2;</code>
-     * @return The gameState.
      */
     de.pokerth.protocol.ProtoBuf.NetGameState getGameState();
 
     /**
      * <code>required .NetPlayerAction yourAction = 3;</code>
-     * @return Whether the yourAction field is set.
      */
     boolean hasYourAction();
     /**
      * <code>required .NetPlayerAction yourAction = 3;</code>
-     * @return The yourAction.
      */
     de.pokerth.protocol.ProtoBuf.NetPlayerAction getYourAction();
 
     /**
      * <code>required uint32 yourRelativeBet = 4;</code>
-     * @return Whether the yourRelativeBet field is set.
      */
     boolean hasYourRelativeBet();
     /**
      * <code>required uint32 yourRelativeBet = 4;</code>
-     * @return The yourRelativeBet.
      */
     int getYourRelativeBet();
 
     /**
      * <code>required .YourActionRejectedMessage.RejectionReason rejectionReason = 5;</code>
-     * @return Whether the rejectionReason field is set.
      */
     boolean hasRejectionReason();
     /**
      * <code>required .YourActionRejectedMessage.RejectionReason rejectionReason = 5;</code>
-     * @return The rejectionReason.
      */
     de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage.RejectionReason getRejectionReason();
   }
   /**
    * Protobuf type {@code YourActionRejectedMessage}
    */
-  public static final class YourActionRejectedMessage extends
+  public  static final class YourActionRejectedMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:YourActionRejectedMessage)
       YourActionRejectedMessageOrBuilder {
@@ -44255,8 +42120,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -44264,10 +42127,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static RejectionReason forNumber(int value) {
         switch (value) {
           case 1: return rejectedInvalidGameState;
@@ -44327,17 +42186,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -44346,16 +42201,14 @@ public final class ProtoBuf {
     private int gameState_;
     /**
      * <code>required .NetGameState gameState = 2;</code>
-     * @return Whether the gameState field is set.
      */
-    @java.lang.Override public boolean hasGameState() {
+    public boolean hasGameState() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .NetGameState gameState = 2;</code>
-     * @return The gameState.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetGameState getGameState() {
+    public de.pokerth.protocol.ProtoBuf.NetGameState getGameState() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.NetGameState result = de.pokerth.protocol.ProtoBuf.NetGameState.valueOf(gameState_);
       return result == null ? de.pokerth.protocol.ProtoBuf.NetGameState.netStatePreflop : result;
@@ -44365,16 +42218,14 @@ public final class ProtoBuf {
     private int yourAction_;
     /**
      * <code>required .NetPlayerAction yourAction = 3;</code>
-     * @return Whether the yourAction field is set.
      */
-    @java.lang.Override public boolean hasYourAction() {
+    public boolean hasYourAction() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required .NetPlayerAction yourAction = 3;</code>
-     * @return The yourAction.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetPlayerAction getYourAction() {
+    public de.pokerth.protocol.ProtoBuf.NetPlayerAction getYourAction() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.NetPlayerAction result = de.pokerth.protocol.ProtoBuf.NetPlayerAction.valueOf(yourAction_);
       return result == null ? de.pokerth.protocol.ProtoBuf.NetPlayerAction.netActionNone : result;
@@ -44384,17 +42235,13 @@ public final class ProtoBuf {
     private int yourRelativeBet_;
     /**
      * <code>required uint32 yourRelativeBet = 4;</code>
-     * @return Whether the yourRelativeBet field is set.
      */
-    @java.lang.Override
     public boolean hasYourRelativeBet() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>required uint32 yourRelativeBet = 4;</code>
-     * @return The yourRelativeBet.
      */
-    @java.lang.Override
     public int getYourRelativeBet() {
       return yourRelativeBet_;
     }
@@ -44403,16 +42250,14 @@ public final class ProtoBuf {
     private int rejectionReason_;
     /**
      * <code>required .YourActionRejectedMessage.RejectionReason rejectionReason = 5;</code>
-     * @return Whether the rejectionReason field is set.
      */
-    @java.lang.Override public boolean hasRejectionReason() {
+    public boolean hasRejectionReason() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
      * <code>required .YourActionRejectedMessage.RejectionReason rejectionReason = 5;</code>
-     * @return The rejectionReason.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage.RejectionReason getRejectionReason() {
+    public de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage.RejectionReason getRejectionReason() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage.RejectionReason result = de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage.RejectionReason.valueOf(rejectionReason_);
       return result == null ? de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage.RejectionReason.rejectedInvalidGameState : result;
@@ -44867,24 +42712,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -44894,7 +42733,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -44906,16 +42744,13 @@ public final class ProtoBuf {
       private int gameState_ = 0;
       /**
        * <code>required .NetGameState gameState = 2;</code>
-       * @return Whether the gameState field is set.
        */
-      @java.lang.Override public boolean hasGameState() {
+      public boolean hasGameState() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .NetGameState gameState = 2;</code>
-       * @return The gameState.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.NetGameState getGameState() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.NetGameState result = de.pokerth.protocol.ProtoBuf.NetGameState.valueOf(gameState_);
@@ -44923,8 +42758,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameState gameState = 2;</code>
-       * @param value The gameState to set.
-       * @return This builder for chaining.
        */
       public Builder setGameState(de.pokerth.protocol.ProtoBuf.NetGameState value) {
         if (value == null) {
@@ -44937,7 +42770,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameState gameState = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameState() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -44949,16 +42781,13 @@ public final class ProtoBuf {
       private int yourAction_ = 0;
       /**
        * <code>required .NetPlayerAction yourAction = 3;</code>
-       * @return Whether the yourAction field is set.
        */
-      @java.lang.Override public boolean hasYourAction() {
+      public boolean hasYourAction() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required .NetPlayerAction yourAction = 3;</code>
-       * @return The yourAction.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.NetPlayerAction getYourAction() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.NetPlayerAction result = de.pokerth.protocol.ProtoBuf.NetPlayerAction.valueOf(yourAction_);
@@ -44966,8 +42795,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetPlayerAction yourAction = 3;</code>
-       * @param value The yourAction to set.
-       * @return This builder for chaining.
        */
       public Builder setYourAction(de.pokerth.protocol.ProtoBuf.NetPlayerAction value) {
         if (value == null) {
@@ -44980,7 +42807,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetPlayerAction yourAction = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearYourAction() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -44992,24 +42818,18 @@ public final class ProtoBuf {
       private int yourRelativeBet_ ;
       /**
        * <code>required uint32 yourRelativeBet = 4;</code>
-       * @return Whether the yourRelativeBet field is set.
        */
-      @java.lang.Override
       public boolean hasYourRelativeBet() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>required uint32 yourRelativeBet = 4;</code>
-       * @return The yourRelativeBet.
        */
-      @java.lang.Override
       public int getYourRelativeBet() {
         return yourRelativeBet_;
       }
       /**
        * <code>required uint32 yourRelativeBet = 4;</code>
-       * @param value The yourRelativeBet to set.
-       * @return This builder for chaining.
        */
       public Builder setYourRelativeBet(int value) {
         bitField0_ |= 0x00000008;
@@ -45019,7 +42839,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 yourRelativeBet = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearYourRelativeBet() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -45031,16 +42850,13 @@ public final class ProtoBuf {
       private int rejectionReason_ = 1;
       /**
        * <code>required .YourActionRejectedMessage.RejectionReason rejectionReason = 5;</code>
-       * @return Whether the rejectionReason field is set.
        */
-      @java.lang.Override public boolean hasRejectionReason() {
+      public boolean hasRejectionReason() {
         return ((bitField0_ & 0x00000010) != 0);
       }
       /**
        * <code>required .YourActionRejectedMessage.RejectionReason rejectionReason = 5;</code>
-       * @return The rejectionReason.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage.RejectionReason getRejectionReason() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage.RejectionReason result = de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage.RejectionReason.valueOf(rejectionReason_);
@@ -45048,8 +42864,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .YourActionRejectedMessage.RejectionReason rejectionReason = 5;</code>
-       * @param value The rejectionReason to set.
-       * @return This builder for chaining.
        */
       public Builder setRejectionReason(de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage.RejectionReason value) {
         if (value == null) {
@@ -45062,7 +42876,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .YourActionRejectedMessage.RejectionReason rejectionReason = 5;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRejectionReason() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -45129,96 +42942,80 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
 
     /**
      * <code>required .NetGameState gameState = 3;</code>
-     * @return Whether the gameState field is set.
      */
     boolean hasGameState();
     /**
      * <code>required .NetGameState gameState = 3;</code>
-     * @return The gameState.
      */
     de.pokerth.protocol.ProtoBuf.NetGameState getGameState();
 
     /**
      * <code>required .NetPlayerAction playerAction = 4;</code>
-     * @return Whether the playerAction field is set.
      */
     boolean hasPlayerAction();
     /**
      * <code>required .NetPlayerAction playerAction = 4;</code>
-     * @return The playerAction.
      */
     de.pokerth.protocol.ProtoBuf.NetPlayerAction getPlayerAction();
 
     /**
      * <code>required uint32 totalPlayerBet = 5;</code>
-     * @return Whether the totalPlayerBet field is set.
      */
     boolean hasTotalPlayerBet();
     /**
      * <code>required uint32 totalPlayerBet = 5;</code>
-     * @return The totalPlayerBet.
      */
     int getTotalPlayerBet();
 
     /**
      * <code>required uint32 playerMoney = 6;</code>
-     * @return Whether the playerMoney field is set.
      */
     boolean hasPlayerMoney();
     /**
      * <code>required uint32 playerMoney = 6;</code>
-     * @return The playerMoney.
      */
     int getPlayerMoney();
 
     /**
      * <code>required uint32 highestSet = 7;</code>
-     * @return Whether the highestSet field is set.
      */
     boolean hasHighestSet();
     /**
      * <code>required uint32 highestSet = 7;</code>
-     * @return The highestSet.
      */
     int getHighestSet();
 
     /**
      * <code>required uint32 minimumRaise = 8;</code>
-     * @return Whether the minimumRaise field is set.
      */
     boolean hasMinimumRaise();
     /**
      * <code>required uint32 minimumRaise = 8;</code>
-     * @return The minimumRaise.
      */
     int getMinimumRaise();
   }
   /**
    * Protobuf type {@code PlayersActionDoneMessage}
    */
-  public static final class PlayersActionDoneMessage extends
+  public  static final class PlayersActionDoneMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:PlayersActionDoneMessage)
       PlayersActionDoneMessageOrBuilder {
@@ -45354,17 +43151,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -45373,17 +43166,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -45392,16 +43181,14 @@ public final class ProtoBuf {
     private int gameState_;
     /**
      * <code>required .NetGameState gameState = 3;</code>
-     * @return Whether the gameState field is set.
      */
-    @java.lang.Override public boolean hasGameState() {
+    public boolean hasGameState() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required .NetGameState gameState = 3;</code>
-     * @return The gameState.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetGameState getGameState() {
+    public de.pokerth.protocol.ProtoBuf.NetGameState getGameState() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.NetGameState result = de.pokerth.protocol.ProtoBuf.NetGameState.valueOf(gameState_);
       return result == null ? de.pokerth.protocol.ProtoBuf.NetGameState.netStatePreflop : result;
@@ -45411,16 +43198,14 @@ public final class ProtoBuf {
     private int playerAction_;
     /**
      * <code>required .NetPlayerAction playerAction = 4;</code>
-     * @return Whether the playerAction field is set.
      */
-    @java.lang.Override public boolean hasPlayerAction() {
+    public boolean hasPlayerAction() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>required .NetPlayerAction playerAction = 4;</code>
-     * @return The playerAction.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.NetPlayerAction getPlayerAction() {
+    public de.pokerth.protocol.ProtoBuf.NetPlayerAction getPlayerAction() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.NetPlayerAction result = de.pokerth.protocol.ProtoBuf.NetPlayerAction.valueOf(playerAction_);
       return result == null ? de.pokerth.protocol.ProtoBuf.NetPlayerAction.netActionNone : result;
@@ -45430,17 +43215,13 @@ public final class ProtoBuf {
     private int totalPlayerBet_;
     /**
      * <code>required uint32 totalPlayerBet = 5;</code>
-     * @return Whether the totalPlayerBet field is set.
      */
-    @java.lang.Override
     public boolean hasTotalPlayerBet() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
      * <code>required uint32 totalPlayerBet = 5;</code>
-     * @return The totalPlayerBet.
      */
-    @java.lang.Override
     public int getTotalPlayerBet() {
       return totalPlayerBet_;
     }
@@ -45449,17 +43230,13 @@ public final class ProtoBuf {
     private int playerMoney_;
     /**
      * <code>required uint32 playerMoney = 6;</code>
-     * @return Whether the playerMoney field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerMoney() {
       return ((bitField0_ & 0x00000020) != 0);
     }
     /**
      * <code>required uint32 playerMoney = 6;</code>
-     * @return The playerMoney.
      */
-    @java.lang.Override
     public int getPlayerMoney() {
       return playerMoney_;
     }
@@ -45468,17 +43245,13 @@ public final class ProtoBuf {
     private int highestSet_;
     /**
      * <code>required uint32 highestSet = 7;</code>
-     * @return Whether the highestSet field is set.
      */
-    @java.lang.Override
     public boolean hasHighestSet() {
       return ((bitField0_ & 0x00000040) != 0);
     }
     /**
      * <code>required uint32 highestSet = 7;</code>
-     * @return The highestSet.
      */
-    @java.lang.Override
     public int getHighestSet() {
       return highestSet_;
     }
@@ -45487,17 +43260,13 @@ public final class ProtoBuf {
     private int minimumRaise_;
     /**
      * <code>required uint32 minimumRaise = 8;</code>
-     * @return Whether the minimumRaise field is set.
      */
-    @java.lang.Override
     public boolean hasMinimumRaise() {
       return ((bitField0_ & 0x00000080) != 0);
     }
     /**
      * <code>required uint32 minimumRaise = 8;</code>
-     * @return The minimumRaise.
      */
-    @java.lang.Override
     public int getMinimumRaise() {
       return minimumRaise_;
     }
@@ -46048,24 +43817,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -46075,7 +43838,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -46087,24 +43849,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -46114,7 +43870,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -46126,16 +43881,13 @@ public final class ProtoBuf {
       private int gameState_ = 0;
       /**
        * <code>required .NetGameState gameState = 3;</code>
-       * @return Whether the gameState field is set.
        */
-      @java.lang.Override public boolean hasGameState() {
+      public boolean hasGameState() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required .NetGameState gameState = 3;</code>
-       * @return The gameState.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.NetGameState getGameState() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.NetGameState result = de.pokerth.protocol.ProtoBuf.NetGameState.valueOf(gameState_);
@@ -46143,8 +43895,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameState gameState = 3;</code>
-       * @param value The gameState to set.
-       * @return This builder for chaining.
        */
       public Builder setGameState(de.pokerth.protocol.ProtoBuf.NetGameState value) {
         if (value == null) {
@@ -46157,7 +43907,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetGameState gameState = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameState() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -46169,16 +43918,13 @@ public final class ProtoBuf {
       private int playerAction_ = 0;
       /**
        * <code>required .NetPlayerAction playerAction = 4;</code>
-       * @return Whether the playerAction field is set.
        */
-      @java.lang.Override public boolean hasPlayerAction() {
+      public boolean hasPlayerAction() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>required .NetPlayerAction playerAction = 4;</code>
-       * @return The playerAction.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.NetPlayerAction getPlayerAction() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.NetPlayerAction result = de.pokerth.protocol.ProtoBuf.NetPlayerAction.valueOf(playerAction_);
@@ -46186,8 +43932,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetPlayerAction playerAction = 4;</code>
-       * @param value The playerAction to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerAction(de.pokerth.protocol.ProtoBuf.NetPlayerAction value) {
         if (value == null) {
@@ -46200,7 +43944,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .NetPlayerAction playerAction = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerAction() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -46212,24 +43955,18 @@ public final class ProtoBuf {
       private int totalPlayerBet_ ;
       /**
        * <code>required uint32 totalPlayerBet = 5;</code>
-       * @return Whether the totalPlayerBet field is set.
        */
-      @java.lang.Override
       public boolean hasTotalPlayerBet() {
         return ((bitField0_ & 0x00000010) != 0);
       }
       /**
        * <code>required uint32 totalPlayerBet = 5;</code>
-       * @return The totalPlayerBet.
        */
-      @java.lang.Override
       public int getTotalPlayerBet() {
         return totalPlayerBet_;
       }
       /**
        * <code>required uint32 totalPlayerBet = 5;</code>
-       * @param value The totalPlayerBet to set.
-       * @return This builder for chaining.
        */
       public Builder setTotalPlayerBet(int value) {
         bitField0_ |= 0x00000010;
@@ -46239,7 +43976,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 totalPlayerBet = 5;</code>
-       * @return This builder for chaining.
        */
       public Builder clearTotalPlayerBet() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -46251,24 +43987,18 @@ public final class ProtoBuf {
       private int playerMoney_ ;
       /**
        * <code>required uint32 playerMoney = 6;</code>
-       * @return Whether the playerMoney field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerMoney() {
         return ((bitField0_ & 0x00000020) != 0);
       }
       /**
        * <code>required uint32 playerMoney = 6;</code>
-       * @return The playerMoney.
        */
-      @java.lang.Override
       public int getPlayerMoney() {
         return playerMoney_;
       }
       /**
        * <code>required uint32 playerMoney = 6;</code>
-       * @param value The playerMoney to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerMoney(int value) {
         bitField0_ |= 0x00000020;
@@ -46278,7 +44008,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerMoney = 6;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerMoney() {
         bitField0_ = (bitField0_ & ~0x00000020);
@@ -46290,24 +44019,18 @@ public final class ProtoBuf {
       private int highestSet_ ;
       /**
        * <code>required uint32 highestSet = 7;</code>
-       * @return Whether the highestSet field is set.
        */
-      @java.lang.Override
       public boolean hasHighestSet() {
         return ((bitField0_ & 0x00000040) != 0);
       }
       /**
        * <code>required uint32 highestSet = 7;</code>
-       * @return The highestSet.
        */
-      @java.lang.Override
       public int getHighestSet() {
         return highestSet_;
       }
       /**
        * <code>required uint32 highestSet = 7;</code>
-       * @param value The highestSet to set.
-       * @return This builder for chaining.
        */
       public Builder setHighestSet(int value) {
         bitField0_ |= 0x00000040;
@@ -46317,7 +44040,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 highestSet = 7;</code>
-       * @return This builder for chaining.
        */
       public Builder clearHighestSet() {
         bitField0_ = (bitField0_ & ~0x00000040);
@@ -46329,24 +44051,18 @@ public final class ProtoBuf {
       private int minimumRaise_ ;
       /**
        * <code>required uint32 minimumRaise = 8;</code>
-       * @return Whether the minimumRaise field is set.
        */
-      @java.lang.Override
       public boolean hasMinimumRaise() {
         return ((bitField0_ & 0x00000080) != 0);
       }
       /**
        * <code>required uint32 minimumRaise = 8;</code>
-       * @return The minimumRaise.
        */
-      @java.lang.Override
       public int getMinimumRaise() {
         return minimumRaise_;
       }
       /**
        * <code>required uint32 minimumRaise = 8;</code>
-       * @param value The minimumRaise to set.
-       * @return This builder for chaining.
        */
       public Builder setMinimumRaise(int value) {
         bitField0_ |= 0x00000080;
@@ -46356,7 +44072,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 minimumRaise = 8;</code>
-       * @return This builder for chaining.
        */
       public Builder clearMinimumRaise() {
         bitField0_ = (bitField0_ & ~0x00000080);
@@ -46423,52 +44138,44 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 flopCard1 = 2;</code>
-     * @return Whether the flopCard1 field is set.
      */
     boolean hasFlopCard1();
     /**
      * <code>required uint32 flopCard1 = 2;</code>
-     * @return The flopCard1.
      */
     int getFlopCard1();
 
     /**
      * <code>required uint32 flopCard2 = 3;</code>
-     * @return Whether the flopCard2 field is set.
      */
     boolean hasFlopCard2();
     /**
      * <code>required uint32 flopCard2 = 3;</code>
-     * @return The flopCard2.
      */
     int getFlopCard2();
 
     /**
      * <code>required uint32 flopCard3 = 4;</code>
-     * @return Whether the flopCard3 field is set.
      */
     boolean hasFlopCard3();
     /**
      * <code>required uint32 flopCard3 = 4;</code>
-     * @return The flopCard3.
      */
     int getFlopCard3();
   }
   /**
    * Protobuf type {@code DealFlopCardsMessage}
    */
-  public static final class DealFlopCardsMessage extends
+  public  static final class DealFlopCardsMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:DealFlopCardsMessage)
       DealFlopCardsMessageOrBuilder {
@@ -46568,17 +44275,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -46587,17 +44290,13 @@ public final class ProtoBuf {
     private int flopCard1_;
     /**
      * <code>required uint32 flopCard1 = 2;</code>
-     * @return Whether the flopCard1 field is set.
      */
-    @java.lang.Override
     public boolean hasFlopCard1() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 flopCard1 = 2;</code>
-     * @return The flopCard1.
      */
-    @java.lang.Override
     public int getFlopCard1() {
       return flopCard1_;
     }
@@ -46606,17 +44305,13 @@ public final class ProtoBuf {
     private int flopCard2_;
     /**
      * <code>required uint32 flopCard2 = 3;</code>
-     * @return Whether the flopCard2 field is set.
      */
-    @java.lang.Override
     public boolean hasFlopCard2() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required uint32 flopCard2 = 3;</code>
-     * @return The flopCard2.
      */
-    @java.lang.Override
     public int getFlopCard2() {
       return flopCard2_;
     }
@@ -46625,17 +44320,13 @@ public final class ProtoBuf {
     private int flopCard3_;
     /**
      * <code>required uint32 flopCard3 = 4;</code>
-     * @return Whether the flopCard3 field is set.
      */
-    @java.lang.Override
     public boolean hasFlopCard3() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>required uint32 flopCard3 = 4;</code>
-     * @return The flopCard3.
      */
-    @java.lang.Override
     public int getFlopCard3() {
       return flopCard3_;
     }
@@ -47060,24 +44751,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -47087,7 +44772,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -47099,24 +44783,18 @@ public final class ProtoBuf {
       private int flopCard1_ ;
       /**
        * <code>required uint32 flopCard1 = 2;</code>
-       * @return Whether the flopCard1 field is set.
        */
-      @java.lang.Override
       public boolean hasFlopCard1() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 flopCard1 = 2;</code>
-       * @return The flopCard1.
        */
-      @java.lang.Override
       public int getFlopCard1() {
         return flopCard1_;
       }
       /**
        * <code>required uint32 flopCard1 = 2;</code>
-       * @param value The flopCard1 to set.
-       * @return This builder for chaining.
        */
       public Builder setFlopCard1(int value) {
         bitField0_ |= 0x00000002;
@@ -47126,7 +44804,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 flopCard1 = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearFlopCard1() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -47138,24 +44815,18 @@ public final class ProtoBuf {
       private int flopCard2_ ;
       /**
        * <code>required uint32 flopCard2 = 3;</code>
-       * @return Whether the flopCard2 field is set.
        */
-      @java.lang.Override
       public boolean hasFlopCard2() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required uint32 flopCard2 = 3;</code>
-       * @return The flopCard2.
        */
-      @java.lang.Override
       public int getFlopCard2() {
         return flopCard2_;
       }
       /**
        * <code>required uint32 flopCard2 = 3;</code>
-       * @param value The flopCard2 to set.
-       * @return This builder for chaining.
        */
       public Builder setFlopCard2(int value) {
         bitField0_ |= 0x00000004;
@@ -47165,7 +44836,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 flopCard2 = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearFlopCard2() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -47177,24 +44847,18 @@ public final class ProtoBuf {
       private int flopCard3_ ;
       /**
        * <code>required uint32 flopCard3 = 4;</code>
-       * @return Whether the flopCard3 field is set.
        */
-      @java.lang.Override
       public boolean hasFlopCard3() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>required uint32 flopCard3 = 4;</code>
-       * @return The flopCard3.
        */
-      @java.lang.Override
       public int getFlopCard3() {
         return flopCard3_;
       }
       /**
        * <code>required uint32 flopCard3 = 4;</code>
-       * @param value The flopCard3 to set.
-       * @return This builder for chaining.
        */
       public Builder setFlopCard3(int value) {
         bitField0_ |= 0x00000008;
@@ -47204,7 +44868,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 flopCard3 = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearFlopCard3() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -47271,30 +44934,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 turnCard = 2;</code>
-     * @return Whether the turnCard field is set.
      */
     boolean hasTurnCard();
     /**
      * <code>required uint32 turnCard = 2;</code>
-     * @return The turnCard.
      */
     int getTurnCard();
   }
   /**
    * Protobuf type {@code DealTurnCardMessage}
    */
-  public static final class DealTurnCardMessage extends
+  public  static final class DealTurnCardMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:DealTurnCardMessage)
       DealTurnCardMessageOrBuilder {
@@ -47384,17 +45043,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -47403,17 +45058,13 @@ public final class ProtoBuf {
     private int turnCard_;
     /**
      * <code>required uint32 turnCard = 2;</code>
-     * @return Whether the turnCard field is set.
      */
-    @java.lang.Override
     public boolean hasTurnCard() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 turnCard = 2;</code>
-     * @return The turnCard.
      */
-    @java.lang.Override
     public int getTurnCard() {
       return turnCard_;
     }
@@ -47774,24 +45425,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -47801,7 +45446,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -47813,24 +45457,18 @@ public final class ProtoBuf {
       private int turnCard_ ;
       /**
        * <code>required uint32 turnCard = 2;</code>
-       * @return Whether the turnCard field is set.
        */
-      @java.lang.Override
       public boolean hasTurnCard() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 turnCard = 2;</code>
-       * @return The turnCard.
        */
-      @java.lang.Override
       public int getTurnCard() {
         return turnCard_;
       }
       /**
        * <code>required uint32 turnCard = 2;</code>
-       * @param value The turnCard to set.
-       * @return This builder for chaining.
        */
       public Builder setTurnCard(int value) {
         bitField0_ |= 0x00000002;
@@ -47840,7 +45478,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 turnCard = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearTurnCard() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -47907,30 +45544,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 riverCard = 2;</code>
-     * @return Whether the riverCard field is set.
      */
     boolean hasRiverCard();
     /**
      * <code>required uint32 riverCard = 2;</code>
-     * @return The riverCard.
      */
     int getRiverCard();
   }
   /**
    * Protobuf type {@code DealRiverCardMessage}
    */
-  public static final class DealRiverCardMessage extends
+  public  static final class DealRiverCardMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:DealRiverCardMessage)
       DealRiverCardMessageOrBuilder {
@@ -48020,17 +45653,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -48039,17 +45668,13 @@ public final class ProtoBuf {
     private int riverCard_;
     /**
      * <code>required uint32 riverCard = 2;</code>
-     * @return Whether the riverCard field is set.
      */
-    @java.lang.Override
     public boolean hasRiverCard() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 riverCard = 2;</code>
-     * @return The riverCard.
      */
-    @java.lang.Override
     public int getRiverCard() {
       return riverCard_;
     }
@@ -48410,24 +46035,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -48437,7 +46056,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -48449,24 +46067,18 @@ public final class ProtoBuf {
       private int riverCard_ ;
       /**
        * <code>required uint32 riverCard = 2;</code>
-       * @return Whether the riverCard field is set.
        */
-      @java.lang.Override
       public boolean hasRiverCard() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 riverCard = 2;</code>
-       * @return The riverCard.
        */
-      @java.lang.Override
       public int getRiverCard() {
         return riverCard_;
       }
       /**
        * <code>required uint32 riverCard = 2;</code>
-       * @param value The riverCard to set.
-       * @return This builder for chaining.
        */
       public Builder setRiverCard(int value) {
         bitField0_ |= 0x00000002;
@@ -48476,7 +46088,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 riverCard = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRiverCard() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -48543,12 +46154,10 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
@@ -48579,7 +46188,7 @@ public final class ProtoBuf {
   /**
    * Protobuf type {@code AllInShowCardsMessage}
    */
-  public static final class AllInShowCardsMessage extends
+  public  static final class AllInShowCardsMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AllInShowCardsMessage)
       AllInShowCardsMessageOrBuilder {
@@ -48678,41 +46287,35 @@ public final class ProtoBuf {
 
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return Whether the playerId field is set.
        */
       boolean hasPlayerId();
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return The playerId.
        */
       int getPlayerId();
 
       /**
        * <code>required uint32 allInCard1 = 2;</code>
-       * @return Whether the allInCard1 field is set.
        */
       boolean hasAllInCard1();
       /**
        * <code>required uint32 allInCard1 = 2;</code>
-       * @return The allInCard1.
        */
       int getAllInCard1();
 
       /**
        * <code>required uint32 allInCard2 = 3;</code>
-       * @return Whether the allInCard2 field is set.
        */
       boolean hasAllInCard2();
       /**
        * <code>required uint32 allInCard2 = 3;</code>
-       * @return The allInCard2.
        */
       int getAllInCard2();
     }
     /**
      * Protobuf type {@code AllInShowCardsMessage.PlayerAllIn}
      */
-    public static final class PlayerAllIn extends
+    public  static final class PlayerAllIn extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:AllInShowCardsMessage.PlayerAllIn)
         PlayerAllInOrBuilder {
@@ -48807,17 +46410,13 @@ public final class ProtoBuf {
       private int playerId_;
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 playerId = 1;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
@@ -48826,17 +46425,13 @@ public final class ProtoBuf {
       private int allInCard1_;
       /**
        * <code>required uint32 allInCard1 = 2;</code>
-       * @return Whether the allInCard1 field is set.
        */
-      @java.lang.Override
       public boolean hasAllInCard1() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 allInCard1 = 2;</code>
-       * @return The allInCard1.
        */
-      @java.lang.Override
       public int getAllInCard1() {
         return allInCard1_;
       }
@@ -48845,17 +46440,13 @@ public final class ProtoBuf {
       private int allInCard2_;
       /**
        * <code>required uint32 allInCard2 = 3;</code>
-       * @return Whether the allInCard2 field is set.
        */
-      @java.lang.Override
       public boolean hasAllInCard2() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required uint32 allInCard2 = 3;</code>
-       * @return The allInCard2.
        */
-      @java.lang.Override
       public int getAllInCard2() {
         return allInCard2_;
       }
@@ -49248,24 +46839,18 @@ public final class ProtoBuf {
         private int playerId_ ;
         /**
          * <code>required uint32 playerId = 1;</code>
-         * @return Whether the playerId field is set.
          */
-        @java.lang.Override
         public boolean hasPlayerId() {
           return ((bitField0_ & 0x00000001) != 0);
         }
         /**
          * <code>required uint32 playerId = 1;</code>
-         * @return The playerId.
          */
-        @java.lang.Override
         public int getPlayerId() {
           return playerId_;
         }
         /**
          * <code>required uint32 playerId = 1;</code>
-         * @param value The playerId to set.
-         * @return This builder for chaining.
          */
         public Builder setPlayerId(int value) {
           bitField0_ |= 0x00000001;
@@ -49275,7 +46860,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required uint32 playerId = 1;</code>
-         * @return This builder for chaining.
          */
         public Builder clearPlayerId() {
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -49287,24 +46871,18 @@ public final class ProtoBuf {
         private int allInCard1_ ;
         /**
          * <code>required uint32 allInCard1 = 2;</code>
-         * @return Whether the allInCard1 field is set.
          */
-        @java.lang.Override
         public boolean hasAllInCard1() {
           return ((bitField0_ & 0x00000002) != 0);
         }
         /**
          * <code>required uint32 allInCard1 = 2;</code>
-         * @return The allInCard1.
          */
-        @java.lang.Override
         public int getAllInCard1() {
           return allInCard1_;
         }
         /**
          * <code>required uint32 allInCard1 = 2;</code>
-         * @param value The allInCard1 to set.
-         * @return This builder for chaining.
          */
         public Builder setAllInCard1(int value) {
           bitField0_ |= 0x00000002;
@@ -49314,7 +46892,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required uint32 allInCard1 = 2;</code>
-         * @return This builder for chaining.
          */
         public Builder clearAllInCard1() {
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -49326,24 +46903,18 @@ public final class ProtoBuf {
         private int allInCard2_ ;
         /**
          * <code>required uint32 allInCard2 = 3;</code>
-         * @return Whether the allInCard2 field is set.
          */
-        @java.lang.Override
         public boolean hasAllInCard2() {
           return ((bitField0_ & 0x00000004) != 0);
         }
         /**
          * <code>required uint32 allInCard2 = 3;</code>
-         * @return The allInCard2.
          */
-        @java.lang.Override
         public int getAllInCard2() {
           return allInCard2_;
         }
         /**
          * <code>required uint32 allInCard2 = 3;</code>
-         * @param value The allInCard2 to set.
-         * @return This builder for chaining.
          */
         public Builder setAllInCard2(int value) {
           bitField0_ |= 0x00000004;
@@ -49353,7 +46924,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required uint32 allInCard2 = 3;</code>
-         * @return This builder for chaining.
          */
         public Builder clearAllInCard2() {
           bitField0_ = (bitField0_ & ~0x00000004);
@@ -49419,17 +46989,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -49439,14 +47005,12 @@ public final class ProtoBuf {
     /**
      * <code>repeated .AllInShowCardsMessage.PlayerAllIn playersAllIn = 2;</code>
      */
-    @java.lang.Override
     public java.util.List<de.pokerth.protocol.ProtoBuf.AllInShowCardsMessage.PlayerAllIn> getPlayersAllInList() {
       return playersAllIn_;
     }
     /**
      * <code>repeated .AllInShowCardsMessage.PlayerAllIn playersAllIn = 2;</code>
      */
-    @java.lang.Override
     public java.util.List<? extends de.pokerth.protocol.ProtoBuf.AllInShowCardsMessage.PlayerAllInOrBuilder> 
         getPlayersAllInOrBuilderList() {
       return playersAllIn_;
@@ -49454,21 +47018,18 @@ public final class ProtoBuf {
     /**
      * <code>repeated .AllInShowCardsMessage.PlayerAllIn playersAllIn = 2;</code>
      */
-    @java.lang.Override
     public int getPlayersAllInCount() {
       return playersAllIn_.size();
     }
     /**
      * <code>repeated .AllInShowCardsMessage.PlayerAllIn playersAllIn = 2;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AllInShowCardsMessage.PlayerAllIn getPlayersAllIn(int index) {
       return playersAllIn_.get(index);
     }
     /**
      * <code>repeated .AllInShowCardsMessage.PlayerAllIn playersAllIn = 2;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AllInShowCardsMessage.PlayerAllInOrBuilder getPlayersAllInOrBuilder(
         int index) {
       return playersAllIn_.get(index);
@@ -49864,24 +47425,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -49891,7 +47446,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -50198,12 +47752,10 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
@@ -50234,7 +47786,7 @@ public final class ProtoBuf {
   /**
    * Protobuf type {@code EndOfHandShowCardsMessage}
    */
-  public static final class EndOfHandShowCardsMessage extends
+  public  static final class EndOfHandShowCardsMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:EndOfHandShowCardsMessage)
       EndOfHandShowCardsMessageOrBuilder {
@@ -50332,17 +47884,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -50352,14 +47900,12 @@ public final class ProtoBuf {
     /**
      * <code>repeated .PlayerResult playerResults = 2;</code>
      */
-    @java.lang.Override
     public java.util.List<de.pokerth.protocol.ProtoBuf.PlayerResult> getPlayerResultsList() {
       return playerResults_;
     }
     /**
      * <code>repeated .PlayerResult playerResults = 2;</code>
      */
-    @java.lang.Override
     public java.util.List<? extends de.pokerth.protocol.ProtoBuf.PlayerResultOrBuilder> 
         getPlayerResultsOrBuilderList() {
       return playerResults_;
@@ -50367,21 +47913,18 @@ public final class ProtoBuf {
     /**
      * <code>repeated .PlayerResult playerResults = 2;</code>
      */
-    @java.lang.Override
     public int getPlayerResultsCount() {
       return playerResults_.size();
     }
     /**
      * <code>repeated .PlayerResult playerResults = 2;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayerResult getPlayerResults(int index) {
       return playerResults_.get(index);
     }
     /**
      * <code>repeated .PlayerResult playerResults = 2;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayerResultOrBuilder getPlayerResultsOrBuilder(
         int index) {
       return playerResults_.get(index);
@@ -50777,24 +48320,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -50804,7 +48341,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -51111,52 +48647,44 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
 
     /**
      * <code>required uint32 moneyWon = 3;</code>
-     * @return Whether the moneyWon field is set.
      */
     boolean hasMoneyWon();
     /**
      * <code>required uint32 moneyWon = 3;</code>
-     * @return The moneyWon.
      */
     int getMoneyWon();
 
     /**
      * <code>required uint32 playerMoney = 4;</code>
-     * @return Whether the playerMoney field is set.
      */
     boolean hasPlayerMoney();
     /**
      * <code>required uint32 playerMoney = 4;</code>
-     * @return The playerMoney.
      */
     int getPlayerMoney();
   }
   /**
    * Protobuf type {@code EndOfHandHideCardsMessage}
    */
-  public static final class EndOfHandHideCardsMessage extends
+  public  static final class EndOfHandHideCardsMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:EndOfHandHideCardsMessage)
       EndOfHandHideCardsMessageOrBuilder {
@@ -51256,17 +48784,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -51275,17 +48799,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -51294,17 +48814,13 @@ public final class ProtoBuf {
     private int moneyWon_;
     /**
      * <code>required uint32 moneyWon = 3;</code>
-     * @return Whether the moneyWon field is set.
      */
-    @java.lang.Override
     public boolean hasMoneyWon() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required uint32 moneyWon = 3;</code>
-     * @return The moneyWon.
      */
-    @java.lang.Override
     public int getMoneyWon() {
       return moneyWon_;
     }
@@ -51313,17 +48829,13 @@ public final class ProtoBuf {
     private int playerMoney_;
     /**
      * <code>required uint32 playerMoney = 4;</code>
-     * @return Whether the playerMoney field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerMoney() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>required uint32 playerMoney = 4;</code>
-     * @return The playerMoney.
      */
-    @java.lang.Override
     public int getPlayerMoney() {
       return playerMoney_;
     }
@@ -51748,24 +49260,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -51775,7 +49281,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -51787,24 +49292,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -51814,7 +49313,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -51826,24 +49324,18 @@ public final class ProtoBuf {
       private int moneyWon_ ;
       /**
        * <code>required uint32 moneyWon = 3;</code>
-       * @return Whether the moneyWon field is set.
        */
-      @java.lang.Override
       public boolean hasMoneyWon() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required uint32 moneyWon = 3;</code>
-       * @return The moneyWon.
        */
-      @java.lang.Override
       public int getMoneyWon() {
         return moneyWon_;
       }
       /**
        * <code>required uint32 moneyWon = 3;</code>
-       * @param value The moneyWon to set.
-       * @return This builder for chaining.
        */
       public Builder setMoneyWon(int value) {
         bitField0_ |= 0x00000004;
@@ -51853,7 +49345,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 moneyWon = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearMoneyWon() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -51865,24 +49356,18 @@ public final class ProtoBuf {
       private int playerMoney_ ;
       /**
        * <code>required uint32 playerMoney = 4;</code>
-       * @return Whether the playerMoney field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerMoney() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>required uint32 playerMoney = 4;</code>
-       * @return The playerMoney.
        */
-      @java.lang.Override
       public int getPlayerMoney() {
         return playerMoney_;
       }
       /**
        * <code>required uint32 playerMoney = 4;</code>
-       * @param value The playerMoney to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerMoney(int value) {
         bitField0_ |= 0x00000008;
@@ -51892,7 +49377,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerMoney = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerMoney() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -51960,7 +49444,7 @@ public final class ProtoBuf {
   /**
    * Protobuf type {@code ShowMyCardsRequestMessage}
    */
-  public static final class ShowMyCardsRequestMessage extends
+  public  static final class ShowMyCardsRequestMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:ShowMyCardsRequestMessage)
       ShowMyCardsRequestMessageOrBuilder {
@@ -52377,12 +49861,10 @@ public final class ProtoBuf {
 
     /**
      * <code>required .PlayerResult playerResult = 1;</code>
-     * @return Whether the playerResult field is set.
      */
     boolean hasPlayerResult();
     /**
      * <code>required .PlayerResult playerResult = 1;</code>
-     * @return The playerResult.
      */
     de.pokerth.protocol.ProtoBuf.PlayerResult getPlayerResult();
     /**
@@ -52393,7 +49875,7 @@ public final class ProtoBuf {
   /**
    * Protobuf type {@code AfterHandShowCardsMessage}
    */
-  public static final class AfterHandShowCardsMessage extends
+  public  static final class AfterHandShowCardsMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AfterHandShowCardsMessage)
       AfterHandShowCardsMessageOrBuilder {
@@ -52486,24 +49968,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.PlayerResult playerResult_;
     /**
      * <code>required .PlayerResult playerResult = 1;</code>
-     * @return Whether the playerResult field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerResult() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required .PlayerResult playerResult = 1;</code>
-     * @return The playerResult.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayerResult getPlayerResult() {
       return playerResult_ == null ? de.pokerth.protocol.ProtoBuf.PlayerResult.getDefaultInstance() : playerResult_;
     }
     /**
      * <code>required .PlayerResult playerResult = 1;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayerResultOrBuilder getPlayerResultOrBuilder() {
       return playerResult_ == null ? de.pokerth.protocol.ProtoBuf.PlayerResult.getDefaultInstance() : playerResult_;
     }
@@ -52850,14 +50327,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.PlayerResult, de.pokerth.protocol.ProtoBuf.PlayerResult.Builder, de.pokerth.protocol.ProtoBuf.PlayerResultOrBuilder> playerResultBuilder_;
       /**
        * <code>required .PlayerResult playerResult = 1;</code>
-       * @return Whether the playerResult field is set.
        */
       public boolean hasPlayerResult() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required .PlayerResult playerResult = 1;</code>
-       * @return The playerResult.
        */
       public de.pokerth.protocol.ProtoBuf.PlayerResult getPlayerResult() {
         if (playerResultBuilder_ == null) {
@@ -53023,30 +50498,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 winnerPlayerId = 2;</code>
-     * @return Whether the winnerPlayerId field is set.
      */
     boolean hasWinnerPlayerId();
     /**
      * <code>required uint32 winnerPlayerId = 2;</code>
-     * @return The winnerPlayerId.
      */
     int getWinnerPlayerId();
   }
   /**
    * Protobuf type {@code EndOfGameMessage}
    */
-  public static final class EndOfGameMessage extends
+  public  static final class EndOfGameMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:EndOfGameMessage)
       EndOfGameMessageOrBuilder {
@@ -53136,17 +50607,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -53155,17 +50622,13 @@ public final class ProtoBuf {
     private int winnerPlayerId_;
     /**
      * <code>required uint32 winnerPlayerId = 2;</code>
-     * @return Whether the winnerPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasWinnerPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 winnerPlayerId = 2;</code>
-     * @return The winnerPlayerId.
      */
-    @java.lang.Override
     public int getWinnerPlayerId() {
       return winnerPlayerId_;
     }
@@ -53526,24 +50989,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -53553,7 +51010,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -53565,24 +51021,18 @@ public final class ProtoBuf {
       private int winnerPlayerId_ ;
       /**
        * <code>required uint32 winnerPlayerId = 2;</code>
-       * @return Whether the winnerPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasWinnerPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 winnerPlayerId = 2;</code>
-       * @return The winnerPlayerId.
        */
-      @java.lang.Override
       public int getWinnerPlayerId() {
         return winnerPlayerId_;
       }
       /**
        * <code>required uint32 winnerPlayerId = 2;</code>
-       * @param value The winnerPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setWinnerPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -53592,7 +51042,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 winnerPlayerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearWinnerPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -53659,30 +51108,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 oldPlayerId = 1;</code>
-     * @return Whether the oldPlayerId field is set.
      */
     boolean hasOldPlayerId();
     /**
      * <code>required uint32 oldPlayerId = 1;</code>
-     * @return The oldPlayerId.
      */
     int getOldPlayerId();
 
     /**
      * <code>required uint32 newPlayerId = 2;</code>
-     * @return Whether the newPlayerId field is set.
      */
     boolean hasNewPlayerId();
     /**
      * <code>required uint32 newPlayerId = 2;</code>
-     * @return The newPlayerId.
      */
     int getNewPlayerId();
   }
   /**
    * Protobuf type {@code PlayerIdChangedMessage}
    */
-  public static final class PlayerIdChangedMessage extends
+  public  static final class PlayerIdChangedMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:PlayerIdChangedMessage)
       PlayerIdChangedMessageOrBuilder {
@@ -53772,17 +51217,13 @@ public final class ProtoBuf {
     private int oldPlayerId_;
     /**
      * <code>required uint32 oldPlayerId = 1;</code>
-     * @return Whether the oldPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasOldPlayerId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 oldPlayerId = 1;</code>
-     * @return The oldPlayerId.
      */
-    @java.lang.Override
     public int getOldPlayerId() {
       return oldPlayerId_;
     }
@@ -53791,17 +51232,13 @@ public final class ProtoBuf {
     private int newPlayerId_;
     /**
      * <code>required uint32 newPlayerId = 2;</code>
-     * @return Whether the newPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasNewPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 newPlayerId = 2;</code>
-     * @return The newPlayerId.
      */
-    @java.lang.Override
     public int getNewPlayerId() {
       return newPlayerId_;
     }
@@ -54162,24 +51599,18 @@ public final class ProtoBuf {
       private int oldPlayerId_ ;
       /**
        * <code>required uint32 oldPlayerId = 1;</code>
-       * @return Whether the oldPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasOldPlayerId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 oldPlayerId = 1;</code>
-       * @return The oldPlayerId.
        */
-      @java.lang.Override
       public int getOldPlayerId() {
         return oldPlayerId_;
       }
       /**
        * <code>required uint32 oldPlayerId = 1;</code>
-       * @param value The oldPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setOldPlayerId(int value) {
         bitField0_ |= 0x00000001;
@@ -54189,7 +51620,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 oldPlayerId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearOldPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -54201,24 +51631,18 @@ public final class ProtoBuf {
       private int newPlayerId_ ;
       /**
        * <code>required uint32 newPlayerId = 2;</code>
-       * @return Whether the newPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasNewPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 newPlayerId = 2;</code>
-       * @return The newPlayerId.
        */
-      @java.lang.Override
       public int getNewPlayerId() {
         return newPlayerId_;
       }
       /**
        * <code>required uint32 newPlayerId = 2;</code>
-       * @param value The newPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setNewPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -54228,7 +51652,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 newPlayerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearNewPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -54295,30 +51718,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
   }
   /**
    * Protobuf type {@code AskKickPlayerMessage}
    */
-  public static final class AskKickPlayerMessage extends
+  public  static final class AskKickPlayerMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AskKickPlayerMessage)
       AskKickPlayerMessageOrBuilder {
@@ -54408,17 +51827,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -54427,17 +51842,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -54798,24 +52209,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -54825,7 +52230,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -54837,24 +52241,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -54864,7 +52262,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -54931,41 +52328,35 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
 
     /**
      * <code>required .AskKickDeniedMessage.KickDeniedReason kickDeniedReason = 3;</code>
-     * @return Whether the kickDeniedReason field is set.
      */
     boolean hasKickDeniedReason();
     /**
      * <code>required .AskKickDeniedMessage.KickDeniedReason kickDeniedReason = 3;</code>
-     * @return The kickDeniedReason.
      */
     de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage.KickDeniedReason getKickDeniedReason();
   }
   /**
    * Protobuf type {@code AskKickDeniedMessage}
    */
-  public static final class AskKickDeniedMessage extends
+  public  static final class AskKickDeniedMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AskKickDeniedMessage)
       AskKickDeniedMessageOrBuilder {
@@ -55117,8 +52508,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -55126,10 +52515,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static KickDeniedReason forNumber(int value) {
         switch (value) {
           case 0: return kickDeniedInvalidGameState;
@@ -55191,17 +52576,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -55210,17 +52591,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -55229,16 +52606,14 @@ public final class ProtoBuf {
     private int kickDeniedReason_;
     /**
      * <code>required .AskKickDeniedMessage.KickDeniedReason kickDeniedReason = 3;</code>
-     * @return Whether the kickDeniedReason field is set.
      */
-    @java.lang.Override public boolean hasKickDeniedReason() {
+    public boolean hasKickDeniedReason() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required .AskKickDeniedMessage.KickDeniedReason kickDeniedReason = 3;</code>
-     * @return The kickDeniedReason.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage.KickDeniedReason getKickDeniedReason() {
+    public de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage.KickDeniedReason getKickDeniedReason() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage.KickDeniedReason result = de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage.KickDeniedReason.valueOf(kickDeniedReason_);
       return result == null ? de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage.KickDeniedReason.kickDeniedInvalidGameState : result;
@@ -55631,24 +53006,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -55658,7 +53027,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -55670,24 +53038,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -55697,7 +53059,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -55709,16 +53070,13 @@ public final class ProtoBuf {
       private int kickDeniedReason_ = 0;
       /**
        * <code>required .AskKickDeniedMessage.KickDeniedReason kickDeniedReason = 3;</code>
-       * @return Whether the kickDeniedReason field is set.
        */
-      @java.lang.Override public boolean hasKickDeniedReason() {
+      public boolean hasKickDeniedReason() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required .AskKickDeniedMessage.KickDeniedReason kickDeniedReason = 3;</code>
-       * @return The kickDeniedReason.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage.KickDeniedReason getKickDeniedReason() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage.KickDeniedReason result = de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage.KickDeniedReason.valueOf(kickDeniedReason_);
@@ -55726,8 +53084,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .AskKickDeniedMessage.KickDeniedReason kickDeniedReason = 3;</code>
-       * @param value The kickDeniedReason to set.
-       * @return This builder for chaining.
        */
       public Builder setKickDeniedReason(de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage.KickDeniedReason value) {
         if (value == null) {
@@ -55740,7 +53096,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .AskKickDeniedMessage.KickDeniedReason kickDeniedReason = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearKickDeniedReason() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -55807,74 +53162,62 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return Whether the petitionId field is set.
      */
     boolean hasPetitionId();
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return The petitionId.
      */
     int getPetitionId();
 
     /**
      * <code>required uint32 proposingPlayerId = 3;</code>
-     * @return Whether the proposingPlayerId field is set.
      */
     boolean hasProposingPlayerId();
     /**
      * <code>required uint32 proposingPlayerId = 3;</code>
-     * @return The proposingPlayerId.
      */
     int getProposingPlayerId();
 
     /**
      * <code>required uint32 kickPlayerId = 4;</code>
-     * @return Whether the kickPlayerId field is set.
      */
     boolean hasKickPlayerId();
     /**
      * <code>required uint32 kickPlayerId = 4;</code>
-     * @return The kickPlayerId.
      */
     int getKickPlayerId();
 
     /**
      * <code>required uint32 kickTimeoutSec = 5;</code>
-     * @return Whether the kickTimeoutSec field is set.
      */
     boolean hasKickTimeoutSec();
     /**
      * <code>required uint32 kickTimeoutSec = 5;</code>
-     * @return The kickTimeoutSec.
      */
     int getKickTimeoutSec();
 
     /**
      * <code>required uint32 numVotesNeededToKick = 6;</code>
-     * @return Whether the numVotesNeededToKick field is set.
      */
     boolean hasNumVotesNeededToKick();
     /**
      * <code>required uint32 numVotesNeededToKick = 6;</code>
-     * @return The numVotesNeededToKick.
      */
     int getNumVotesNeededToKick();
   }
   /**
    * Protobuf type {@code StartKickPetitionMessage}
    */
-  public static final class StartKickPetitionMessage extends
+  public  static final class StartKickPetitionMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:StartKickPetitionMessage)
       StartKickPetitionMessageOrBuilder {
@@ -55984,17 +53327,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -56003,17 +53342,13 @@ public final class ProtoBuf {
     private int petitionId_;
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return Whether the petitionId field is set.
      */
-    @java.lang.Override
     public boolean hasPetitionId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return The petitionId.
      */
-    @java.lang.Override
     public int getPetitionId() {
       return petitionId_;
     }
@@ -56022,17 +53357,13 @@ public final class ProtoBuf {
     private int proposingPlayerId_;
     /**
      * <code>required uint32 proposingPlayerId = 3;</code>
-     * @return Whether the proposingPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasProposingPlayerId() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required uint32 proposingPlayerId = 3;</code>
-     * @return The proposingPlayerId.
      */
-    @java.lang.Override
     public int getProposingPlayerId() {
       return proposingPlayerId_;
     }
@@ -56041,17 +53372,13 @@ public final class ProtoBuf {
     private int kickPlayerId_;
     /**
      * <code>required uint32 kickPlayerId = 4;</code>
-     * @return Whether the kickPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasKickPlayerId() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>required uint32 kickPlayerId = 4;</code>
-     * @return The kickPlayerId.
      */
-    @java.lang.Override
     public int getKickPlayerId() {
       return kickPlayerId_;
     }
@@ -56060,17 +53387,13 @@ public final class ProtoBuf {
     private int kickTimeoutSec_;
     /**
      * <code>required uint32 kickTimeoutSec = 5;</code>
-     * @return Whether the kickTimeoutSec field is set.
      */
-    @java.lang.Override
     public boolean hasKickTimeoutSec() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
      * <code>required uint32 kickTimeoutSec = 5;</code>
-     * @return The kickTimeoutSec.
      */
-    @java.lang.Override
     public int getKickTimeoutSec() {
       return kickTimeoutSec_;
     }
@@ -56079,17 +53402,13 @@ public final class ProtoBuf {
     private int numVotesNeededToKick_;
     /**
      * <code>required uint32 numVotesNeededToKick = 6;</code>
-     * @return Whether the numVotesNeededToKick field is set.
      */
-    @java.lang.Override
     public boolean hasNumVotesNeededToKick() {
       return ((bitField0_ & 0x00000020) != 0);
     }
     /**
      * <code>required uint32 numVotesNeededToKick = 6;</code>
-     * @return The numVotesNeededToKick.
      */
-    @java.lang.Override
     public int getNumVotesNeededToKick() {
       return numVotesNeededToKick_;
     }
@@ -56578,24 +53897,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -56605,7 +53918,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -56617,24 +53929,18 @@ public final class ProtoBuf {
       private int petitionId_ ;
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return Whether the petitionId field is set.
        */
-      @java.lang.Override
       public boolean hasPetitionId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return The petitionId.
        */
-      @java.lang.Override
       public int getPetitionId() {
         return petitionId_;
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @param value The petitionId to set.
-       * @return This builder for chaining.
        */
       public Builder setPetitionId(int value) {
         bitField0_ |= 0x00000002;
@@ -56644,7 +53950,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPetitionId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -56656,24 +53961,18 @@ public final class ProtoBuf {
       private int proposingPlayerId_ ;
       /**
        * <code>required uint32 proposingPlayerId = 3;</code>
-       * @return Whether the proposingPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasProposingPlayerId() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required uint32 proposingPlayerId = 3;</code>
-       * @return The proposingPlayerId.
        */
-      @java.lang.Override
       public int getProposingPlayerId() {
         return proposingPlayerId_;
       }
       /**
        * <code>required uint32 proposingPlayerId = 3;</code>
-       * @param value The proposingPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setProposingPlayerId(int value) {
         bitField0_ |= 0x00000004;
@@ -56683,7 +53982,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 proposingPlayerId = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearProposingPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -56695,24 +53993,18 @@ public final class ProtoBuf {
       private int kickPlayerId_ ;
       /**
        * <code>required uint32 kickPlayerId = 4;</code>
-       * @return Whether the kickPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasKickPlayerId() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>required uint32 kickPlayerId = 4;</code>
-       * @return The kickPlayerId.
        */
-      @java.lang.Override
       public int getKickPlayerId() {
         return kickPlayerId_;
       }
       /**
        * <code>required uint32 kickPlayerId = 4;</code>
-       * @param value The kickPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setKickPlayerId(int value) {
         bitField0_ |= 0x00000008;
@@ -56722,7 +54014,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 kickPlayerId = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearKickPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -56734,24 +54025,18 @@ public final class ProtoBuf {
       private int kickTimeoutSec_ ;
       /**
        * <code>required uint32 kickTimeoutSec = 5;</code>
-       * @return Whether the kickTimeoutSec field is set.
        */
-      @java.lang.Override
       public boolean hasKickTimeoutSec() {
         return ((bitField0_ & 0x00000010) != 0);
       }
       /**
        * <code>required uint32 kickTimeoutSec = 5;</code>
-       * @return The kickTimeoutSec.
        */
-      @java.lang.Override
       public int getKickTimeoutSec() {
         return kickTimeoutSec_;
       }
       /**
        * <code>required uint32 kickTimeoutSec = 5;</code>
-       * @param value The kickTimeoutSec to set.
-       * @return This builder for chaining.
        */
       public Builder setKickTimeoutSec(int value) {
         bitField0_ |= 0x00000010;
@@ -56761,7 +54046,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 kickTimeoutSec = 5;</code>
-       * @return This builder for chaining.
        */
       public Builder clearKickTimeoutSec() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -56773,24 +54057,18 @@ public final class ProtoBuf {
       private int numVotesNeededToKick_ ;
       /**
        * <code>required uint32 numVotesNeededToKick = 6;</code>
-       * @return Whether the numVotesNeededToKick field is set.
        */
-      @java.lang.Override
       public boolean hasNumVotesNeededToKick() {
         return ((bitField0_ & 0x00000020) != 0);
       }
       /**
        * <code>required uint32 numVotesNeededToKick = 6;</code>
-       * @return The numVotesNeededToKick.
        */
-      @java.lang.Override
       public int getNumVotesNeededToKick() {
         return numVotesNeededToKick_;
       }
       /**
        * <code>required uint32 numVotesNeededToKick = 6;</code>
-       * @param value The numVotesNeededToKick to set.
-       * @return This builder for chaining.
        */
       public Builder setNumVotesNeededToKick(int value) {
         bitField0_ |= 0x00000020;
@@ -56800,7 +54078,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 numVotesNeededToKick = 6;</code>
-       * @return This builder for chaining.
        */
       public Builder clearNumVotesNeededToKick() {
         bitField0_ = (bitField0_ & ~0x00000020);
@@ -56867,41 +54144,35 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return Whether the petitionId field is set.
      */
     boolean hasPetitionId();
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return The petitionId.
      */
     int getPetitionId();
 
     /**
      * <code>required bool voteKick = 3;</code>
-     * @return Whether the voteKick field is set.
      */
     boolean hasVoteKick();
     /**
      * <code>required bool voteKick = 3;</code>
-     * @return The voteKick.
      */
     boolean getVoteKick();
   }
   /**
    * Protobuf type {@code VoteKickRequestMessage}
    */
-  public static final class VoteKickRequestMessage extends
+  public  static final class VoteKickRequestMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:VoteKickRequestMessage)
       VoteKickRequestMessageOrBuilder {
@@ -56996,17 +54267,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -57015,17 +54282,13 @@ public final class ProtoBuf {
     private int petitionId_;
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return Whether the petitionId field is set.
      */
-    @java.lang.Override
     public boolean hasPetitionId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return The petitionId.
      */
-    @java.lang.Override
     public int getPetitionId() {
       return petitionId_;
     }
@@ -57034,17 +54297,13 @@ public final class ProtoBuf {
     private boolean voteKick_;
     /**
      * <code>required bool voteKick = 3;</code>
-     * @return Whether the voteKick field is set.
      */
-    @java.lang.Override
     public boolean hasVoteKick() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required bool voteKick = 3;</code>
-     * @return The voteKick.
      */
-    @java.lang.Override
     public boolean getVoteKick() {
       return voteKick_;
     }
@@ -57438,24 +54697,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -57465,7 +54718,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -57477,24 +54729,18 @@ public final class ProtoBuf {
       private int petitionId_ ;
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return Whether the petitionId field is set.
        */
-      @java.lang.Override
       public boolean hasPetitionId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return The petitionId.
        */
-      @java.lang.Override
       public int getPetitionId() {
         return petitionId_;
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @param value The petitionId to set.
-       * @return This builder for chaining.
        */
       public Builder setPetitionId(int value) {
         bitField0_ |= 0x00000002;
@@ -57504,7 +54750,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPetitionId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -57516,24 +54761,18 @@ public final class ProtoBuf {
       private boolean voteKick_ ;
       /**
        * <code>required bool voteKick = 3;</code>
-       * @return Whether the voteKick field is set.
        */
-      @java.lang.Override
       public boolean hasVoteKick() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required bool voteKick = 3;</code>
-       * @return The voteKick.
        */
-      @java.lang.Override
       public boolean getVoteKick() {
         return voteKick_;
       }
       /**
        * <code>required bool voteKick = 3;</code>
-       * @param value The voteKick to set.
-       * @return This builder for chaining.
        */
       public Builder setVoteKick(boolean value) {
         bitField0_ |= 0x00000004;
@@ -57543,7 +54782,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required bool voteKick = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearVoteKick() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -57610,41 +54848,35 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return Whether the petitionId field is set.
      */
     boolean hasPetitionId();
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return The petitionId.
      */
     int getPetitionId();
 
     /**
      * <code>required .VoteKickReplyMessage.VoteKickReplyType voteKickReplyType = 3;</code>
-     * @return Whether the voteKickReplyType field is set.
      */
     boolean hasVoteKickReplyType();
     /**
      * <code>required .VoteKickReplyMessage.VoteKickReplyType voteKickReplyType = 3;</code>
-     * @return The voteKickReplyType.
      */
     de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage.VoteKickReplyType getVoteKickReplyType();
   }
   /**
    * Protobuf type {@code VoteKickReplyMessage}
    */
-  public static final class VoteKickReplyMessage extends
+  public  static final class VoteKickReplyMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:VoteKickReplyMessage)
       VoteKickReplyMessageOrBuilder {
@@ -57780,8 +55012,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -57789,10 +55019,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static VoteKickReplyType forNumber(int value) {
         switch (value) {
           case 0: return voteKickAck;
@@ -57852,17 +55078,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -57871,17 +55093,13 @@ public final class ProtoBuf {
     private int petitionId_;
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return Whether the petitionId field is set.
      */
-    @java.lang.Override
     public boolean hasPetitionId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return The petitionId.
      */
-    @java.lang.Override
     public int getPetitionId() {
       return petitionId_;
     }
@@ -57890,16 +55108,14 @@ public final class ProtoBuf {
     private int voteKickReplyType_;
     /**
      * <code>required .VoteKickReplyMessage.VoteKickReplyType voteKickReplyType = 3;</code>
-     * @return Whether the voteKickReplyType field is set.
      */
-    @java.lang.Override public boolean hasVoteKickReplyType() {
+    public boolean hasVoteKickReplyType() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required .VoteKickReplyMessage.VoteKickReplyType voteKickReplyType = 3;</code>
-     * @return The voteKickReplyType.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage.VoteKickReplyType getVoteKickReplyType() {
+    public de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage.VoteKickReplyType getVoteKickReplyType() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage.VoteKickReplyType result = de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage.VoteKickReplyType.valueOf(voteKickReplyType_);
       return result == null ? de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage.VoteKickReplyType.voteKickAck : result;
@@ -58292,24 +55508,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -58319,7 +55529,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -58331,24 +55540,18 @@ public final class ProtoBuf {
       private int petitionId_ ;
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return Whether the petitionId field is set.
        */
-      @java.lang.Override
       public boolean hasPetitionId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return The petitionId.
        */
-      @java.lang.Override
       public int getPetitionId() {
         return petitionId_;
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @param value The petitionId to set.
-       * @return This builder for chaining.
        */
       public Builder setPetitionId(int value) {
         bitField0_ |= 0x00000002;
@@ -58358,7 +55561,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPetitionId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -58370,16 +55572,13 @@ public final class ProtoBuf {
       private int voteKickReplyType_ = 0;
       /**
        * <code>required .VoteKickReplyMessage.VoteKickReplyType voteKickReplyType = 3;</code>
-       * @return Whether the voteKickReplyType field is set.
        */
-      @java.lang.Override public boolean hasVoteKickReplyType() {
+      public boolean hasVoteKickReplyType() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required .VoteKickReplyMessage.VoteKickReplyType voteKickReplyType = 3;</code>
-       * @return The voteKickReplyType.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage.VoteKickReplyType getVoteKickReplyType() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage.VoteKickReplyType result = de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage.VoteKickReplyType.valueOf(voteKickReplyType_);
@@ -58387,8 +55586,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .VoteKickReplyMessage.VoteKickReplyType voteKickReplyType = 3;</code>
-       * @param value The voteKickReplyType to set.
-       * @return This builder for chaining.
        */
       public Builder setVoteKickReplyType(de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage.VoteKickReplyType value) {
         if (value == null) {
@@ -58401,7 +55598,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .VoteKickReplyMessage.VoteKickReplyType voteKickReplyType = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearVoteKickReplyType() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -58468,63 +55664,53 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return Whether the petitionId field is set.
      */
     boolean hasPetitionId();
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return The petitionId.
      */
     int getPetitionId();
 
     /**
      * <code>required uint32 numVotesAgainstKicking = 3;</code>
-     * @return Whether the numVotesAgainstKicking field is set.
      */
     boolean hasNumVotesAgainstKicking();
     /**
      * <code>required uint32 numVotesAgainstKicking = 3;</code>
-     * @return The numVotesAgainstKicking.
      */
     int getNumVotesAgainstKicking();
 
     /**
      * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-     * @return Whether the numVotesInFavourOfKicking field is set.
      */
     boolean hasNumVotesInFavourOfKicking();
     /**
      * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-     * @return The numVotesInFavourOfKicking.
      */
     int getNumVotesInFavourOfKicking();
 
     /**
      * <code>required uint32 numVotesNeededToKick = 5;</code>
-     * @return Whether the numVotesNeededToKick field is set.
      */
     boolean hasNumVotesNeededToKick();
     /**
      * <code>required uint32 numVotesNeededToKick = 5;</code>
-     * @return The numVotesNeededToKick.
      */
     int getNumVotesNeededToKick();
   }
   /**
    * Protobuf type {@code KickPetitionUpdateMessage}
    */
-  public static final class KickPetitionUpdateMessage extends
+  public  static final class KickPetitionUpdateMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:KickPetitionUpdateMessage)
       KickPetitionUpdateMessageOrBuilder {
@@ -58629,17 +55815,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -58648,17 +55830,13 @@ public final class ProtoBuf {
     private int petitionId_;
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return Whether the petitionId field is set.
      */
-    @java.lang.Override
     public boolean hasPetitionId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return The petitionId.
      */
-    @java.lang.Override
     public int getPetitionId() {
       return petitionId_;
     }
@@ -58667,17 +55845,13 @@ public final class ProtoBuf {
     private int numVotesAgainstKicking_;
     /**
      * <code>required uint32 numVotesAgainstKicking = 3;</code>
-     * @return Whether the numVotesAgainstKicking field is set.
      */
-    @java.lang.Override
     public boolean hasNumVotesAgainstKicking() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required uint32 numVotesAgainstKicking = 3;</code>
-     * @return The numVotesAgainstKicking.
      */
-    @java.lang.Override
     public int getNumVotesAgainstKicking() {
       return numVotesAgainstKicking_;
     }
@@ -58686,17 +55860,13 @@ public final class ProtoBuf {
     private int numVotesInFavourOfKicking_;
     /**
      * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-     * @return Whether the numVotesInFavourOfKicking field is set.
      */
-    @java.lang.Override
     public boolean hasNumVotesInFavourOfKicking() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-     * @return The numVotesInFavourOfKicking.
      */
-    @java.lang.Override
     public int getNumVotesInFavourOfKicking() {
       return numVotesInFavourOfKicking_;
     }
@@ -58705,17 +55875,13 @@ public final class ProtoBuf {
     private int numVotesNeededToKick_;
     /**
      * <code>required uint32 numVotesNeededToKick = 5;</code>
-     * @return Whether the numVotesNeededToKick field is set.
      */
-    @java.lang.Override
     public boolean hasNumVotesNeededToKick() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
      * <code>required uint32 numVotesNeededToKick = 5;</code>
-     * @return The numVotesNeededToKick.
      */
-    @java.lang.Override
     public int getNumVotesNeededToKick() {
       return numVotesNeededToKick_;
     }
@@ -59172,24 +56338,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -59199,7 +56359,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -59211,24 +56370,18 @@ public final class ProtoBuf {
       private int petitionId_ ;
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return Whether the petitionId field is set.
        */
-      @java.lang.Override
       public boolean hasPetitionId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return The petitionId.
        */
-      @java.lang.Override
       public int getPetitionId() {
         return petitionId_;
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @param value The petitionId to set.
-       * @return This builder for chaining.
        */
       public Builder setPetitionId(int value) {
         bitField0_ |= 0x00000002;
@@ -59238,7 +56391,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPetitionId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -59250,24 +56402,18 @@ public final class ProtoBuf {
       private int numVotesAgainstKicking_ ;
       /**
        * <code>required uint32 numVotesAgainstKicking = 3;</code>
-       * @return Whether the numVotesAgainstKicking field is set.
        */
-      @java.lang.Override
       public boolean hasNumVotesAgainstKicking() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required uint32 numVotesAgainstKicking = 3;</code>
-       * @return The numVotesAgainstKicking.
        */
-      @java.lang.Override
       public int getNumVotesAgainstKicking() {
         return numVotesAgainstKicking_;
       }
       /**
        * <code>required uint32 numVotesAgainstKicking = 3;</code>
-       * @param value The numVotesAgainstKicking to set.
-       * @return This builder for chaining.
        */
       public Builder setNumVotesAgainstKicking(int value) {
         bitField0_ |= 0x00000004;
@@ -59277,7 +56423,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 numVotesAgainstKicking = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearNumVotesAgainstKicking() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -59289,24 +56434,18 @@ public final class ProtoBuf {
       private int numVotesInFavourOfKicking_ ;
       /**
        * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-       * @return Whether the numVotesInFavourOfKicking field is set.
        */
-      @java.lang.Override
       public boolean hasNumVotesInFavourOfKicking() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-       * @return The numVotesInFavourOfKicking.
        */
-      @java.lang.Override
       public int getNumVotesInFavourOfKicking() {
         return numVotesInFavourOfKicking_;
       }
       /**
        * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-       * @param value The numVotesInFavourOfKicking to set.
-       * @return This builder for chaining.
        */
       public Builder setNumVotesInFavourOfKicking(int value) {
         bitField0_ |= 0x00000008;
@@ -59316,7 +56455,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearNumVotesInFavourOfKicking() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -59328,24 +56466,18 @@ public final class ProtoBuf {
       private int numVotesNeededToKick_ ;
       /**
        * <code>required uint32 numVotesNeededToKick = 5;</code>
-       * @return Whether the numVotesNeededToKick field is set.
        */
-      @java.lang.Override
       public boolean hasNumVotesNeededToKick() {
         return ((bitField0_ & 0x00000010) != 0);
       }
       /**
        * <code>required uint32 numVotesNeededToKick = 5;</code>
-       * @return The numVotesNeededToKick.
        */
-      @java.lang.Override
       public int getNumVotesNeededToKick() {
         return numVotesNeededToKick_;
       }
       /**
        * <code>required uint32 numVotesNeededToKick = 5;</code>
-       * @param value The numVotesNeededToKick to set.
-       * @return This builder for chaining.
        */
       public Builder setNumVotesNeededToKick(int value) {
         bitField0_ |= 0x00000010;
@@ -59355,7 +56487,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 numVotesNeededToKick = 5;</code>
-       * @return This builder for chaining.
        */
       public Builder clearNumVotesNeededToKick() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -59422,74 +56553,62 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return Whether the petitionId field is set.
      */
     boolean hasPetitionId();
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return The petitionId.
      */
     int getPetitionId();
 
     /**
      * <code>required uint32 numVotesAgainstKicking = 3;</code>
-     * @return Whether the numVotesAgainstKicking field is set.
      */
     boolean hasNumVotesAgainstKicking();
     /**
      * <code>required uint32 numVotesAgainstKicking = 3;</code>
-     * @return The numVotesAgainstKicking.
      */
     int getNumVotesAgainstKicking();
 
     /**
      * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-     * @return Whether the numVotesInFavourOfKicking field is set.
      */
     boolean hasNumVotesInFavourOfKicking();
     /**
      * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-     * @return The numVotesInFavourOfKicking.
      */
     int getNumVotesInFavourOfKicking();
 
     /**
      * <code>required uint32 resultPlayerKicked = 5;</code>
-     * @return Whether the resultPlayerKicked field is set.
      */
     boolean hasResultPlayerKicked();
     /**
      * <code>required uint32 resultPlayerKicked = 5;</code>
-     * @return The resultPlayerKicked.
      */
     int getResultPlayerKicked();
 
     /**
      * <code>required .EndKickPetitionMessage.PetitionEndReason petitionEndReason = 6;</code>
-     * @return Whether the petitionEndReason field is set.
      */
     boolean hasPetitionEndReason();
     /**
      * <code>required .EndKickPetitionMessage.PetitionEndReason petitionEndReason = 6;</code>
-     * @return The petitionEndReason.
      */
     de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage.PetitionEndReason getPetitionEndReason();
   }
   /**
    * Protobuf type {@code EndKickPetitionMessage}
    */
-  public static final class EndKickPetitionMessage extends
+  public  static final class EndKickPetitionMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:EndKickPetitionMessage)
       EndKickPetitionMessageOrBuilder {
@@ -59648,8 +56767,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -59657,10 +56774,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static PetitionEndReason forNumber(int value) {
         switch (value) {
           case 0: return petitionEndEnoughVotes;
@@ -59721,17 +56834,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -59740,17 +56849,13 @@ public final class ProtoBuf {
     private int petitionId_;
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return Whether the petitionId field is set.
      */
-    @java.lang.Override
     public boolean hasPetitionId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 petitionId = 2;</code>
-     * @return The petitionId.
      */
-    @java.lang.Override
     public int getPetitionId() {
       return petitionId_;
     }
@@ -59759,17 +56864,13 @@ public final class ProtoBuf {
     private int numVotesAgainstKicking_;
     /**
      * <code>required uint32 numVotesAgainstKicking = 3;</code>
-     * @return Whether the numVotesAgainstKicking field is set.
      */
-    @java.lang.Override
     public boolean hasNumVotesAgainstKicking() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required uint32 numVotesAgainstKicking = 3;</code>
-     * @return The numVotesAgainstKicking.
      */
-    @java.lang.Override
     public int getNumVotesAgainstKicking() {
       return numVotesAgainstKicking_;
     }
@@ -59778,17 +56879,13 @@ public final class ProtoBuf {
     private int numVotesInFavourOfKicking_;
     /**
      * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-     * @return Whether the numVotesInFavourOfKicking field is set.
      */
-    @java.lang.Override
     public boolean hasNumVotesInFavourOfKicking() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-     * @return The numVotesInFavourOfKicking.
      */
-    @java.lang.Override
     public int getNumVotesInFavourOfKicking() {
       return numVotesInFavourOfKicking_;
     }
@@ -59797,17 +56894,13 @@ public final class ProtoBuf {
     private int resultPlayerKicked_;
     /**
      * <code>required uint32 resultPlayerKicked = 5;</code>
-     * @return Whether the resultPlayerKicked field is set.
      */
-    @java.lang.Override
     public boolean hasResultPlayerKicked() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
      * <code>required uint32 resultPlayerKicked = 5;</code>
-     * @return The resultPlayerKicked.
      */
-    @java.lang.Override
     public int getResultPlayerKicked() {
       return resultPlayerKicked_;
     }
@@ -59816,16 +56909,14 @@ public final class ProtoBuf {
     private int petitionEndReason_;
     /**
      * <code>required .EndKickPetitionMessage.PetitionEndReason petitionEndReason = 6;</code>
-     * @return Whether the petitionEndReason field is set.
      */
-    @java.lang.Override public boolean hasPetitionEndReason() {
+    public boolean hasPetitionEndReason() {
       return ((bitField0_ & 0x00000020) != 0);
     }
     /**
      * <code>required .EndKickPetitionMessage.PetitionEndReason petitionEndReason = 6;</code>
-     * @return The petitionEndReason.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage.PetitionEndReason getPetitionEndReason() {
+    public de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage.PetitionEndReason getPetitionEndReason() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage.PetitionEndReason result = de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage.PetitionEndReason.valueOf(petitionEndReason_);
       return result == null ? de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage.PetitionEndReason.petitionEndEnoughVotes : result;
@@ -60314,24 +57405,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -60341,7 +57426,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -60353,24 +57437,18 @@ public final class ProtoBuf {
       private int petitionId_ ;
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return Whether the petitionId field is set.
        */
-      @java.lang.Override
       public boolean hasPetitionId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return The petitionId.
        */
-      @java.lang.Override
       public int getPetitionId() {
         return petitionId_;
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @param value The petitionId to set.
-       * @return This builder for chaining.
        */
       public Builder setPetitionId(int value) {
         bitField0_ |= 0x00000002;
@@ -60380,7 +57458,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 petitionId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPetitionId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -60392,24 +57469,18 @@ public final class ProtoBuf {
       private int numVotesAgainstKicking_ ;
       /**
        * <code>required uint32 numVotesAgainstKicking = 3;</code>
-       * @return Whether the numVotesAgainstKicking field is set.
        */
-      @java.lang.Override
       public boolean hasNumVotesAgainstKicking() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required uint32 numVotesAgainstKicking = 3;</code>
-       * @return The numVotesAgainstKicking.
        */
-      @java.lang.Override
       public int getNumVotesAgainstKicking() {
         return numVotesAgainstKicking_;
       }
       /**
        * <code>required uint32 numVotesAgainstKicking = 3;</code>
-       * @param value The numVotesAgainstKicking to set.
-       * @return This builder for chaining.
        */
       public Builder setNumVotesAgainstKicking(int value) {
         bitField0_ |= 0x00000004;
@@ -60419,7 +57490,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 numVotesAgainstKicking = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearNumVotesAgainstKicking() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -60431,24 +57501,18 @@ public final class ProtoBuf {
       private int numVotesInFavourOfKicking_ ;
       /**
        * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-       * @return Whether the numVotesInFavourOfKicking field is set.
        */
-      @java.lang.Override
       public boolean hasNumVotesInFavourOfKicking() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-       * @return The numVotesInFavourOfKicking.
        */
-      @java.lang.Override
       public int getNumVotesInFavourOfKicking() {
         return numVotesInFavourOfKicking_;
       }
       /**
        * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-       * @param value The numVotesInFavourOfKicking to set.
-       * @return This builder for chaining.
        */
       public Builder setNumVotesInFavourOfKicking(int value) {
         bitField0_ |= 0x00000008;
@@ -60458,7 +57522,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 numVotesInFavourOfKicking = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearNumVotesInFavourOfKicking() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -60470,24 +57533,18 @@ public final class ProtoBuf {
       private int resultPlayerKicked_ ;
       /**
        * <code>required uint32 resultPlayerKicked = 5;</code>
-       * @return Whether the resultPlayerKicked field is set.
        */
-      @java.lang.Override
       public boolean hasResultPlayerKicked() {
         return ((bitField0_ & 0x00000010) != 0);
       }
       /**
        * <code>required uint32 resultPlayerKicked = 5;</code>
-       * @return The resultPlayerKicked.
        */
-      @java.lang.Override
       public int getResultPlayerKicked() {
         return resultPlayerKicked_;
       }
       /**
        * <code>required uint32 resultPlayerKicked = 5;</code>
-       * @param value The resultPlayerKicked to set.
-       * @return This builder for chaining.
        */
       public Builder setResultPlayerKicked(int value) {
         bitField0_ |= 0x00000010;
@@ -60497,7 +57554,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 resultPlayerKicked = 5;</code>
-       * @return This builder for chaining.
        */
       public Builder clearResultPlayerKicked() {
         bitField0_ = (bitField0_ & ~0x00000010);
@@ -60509,16 +57565,13 @@ public final class ProtoBuf {
       private int petitionEndReason_ = 0;
       /**
        * <code>required .EndKickPetitionMessage.PetitionEndReason petitionEndReason = 6;</code>
-       * @return Whether the petitionEndReason field is set.
        */
-      @java.lang.Override public boolean hasPetitionEndReason() {
+      public boolean hasPetitionEndReason() {
         return ((bitField0_ & 0x00000020) != 0);
       }
       /**
        * <code>required .EndKickPetitionMessage.PetitionEndReason petitionEndReason = 6;</code>
-       * @return The petitionEndReason.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage.PetitionEndReason getPetitionEndReason() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage.PetitionEndReason result = de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage.PetitionEndReason.valueOf(petitionEndReason_);
@@ -60526,8 +57579,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .EndKickPetitionMessage.PetitionEndReason petitionEndReason = 6;</code>
-       * @param value The petitionEndReason to set.
-       * @return This builder for chaining.
        */
       public Builder setPetitionEndReason(de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage.PetitionEndReason value) {
         if (value == null) {
@@ -60540,7 +57591,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .EndKickPetitionMessage.PetitionEndReason petitionEndReason = 6;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPetitionEndReason() {
         bitField0_ = (bitField0_ & ~0x00000020);
@@ -60632,7 +57682,7 @@ public final class ProtoBuf {
   /**
    * Protobuf type {@code StatisticsMessage}
    */
-  public static final class StatisticsMessage extends
+  public  static final class StatisticsMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:StatisticsMessage)
       StatisticsMessageOrBuilder {
@@ -60726,30 +57776,26 @@ public final class ProtoBuf {
 
       /**
        * <code>required .StatisticsMessage.StatisticsData.StatisticsType statisticsType = 1;</code>
-       * @return Whether the statisticsType field is set.
        */
       boolean hasStatisticsType();
       /**
        * <code>required .StatisticsMessage.StatisticsData.StatisticsType statisticsType = 1;</code>
-       * @return The statisticsType.
        */
       de.pokerth.protocol.ProtoBuf.StatisticsMessage.StatisticsData.StatisticsType getStatisticsType();
 
       /**
        * <code>required uint32 statisticsValue = 2;</code>
-       * @return Whether the statisticsValue field is set.
        */
       boolean hasStatisticsValue();
       /**
        * <code>required uint32 statisticsValue = 2;</code>
-       * @return The statisticsValue.
        */
       int getStatisticsValue();
     }
     /**
      * Protobuf type {@code StatisticsMessage.StatisticsData}
      */
-    public static final class StatisticsData extends
+    public  static final class StatisticsData extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:StatisticsMessage.StatisticsData)
         StatisticsDataOrBuilder {
@@ -60864,8 +57910,6 @@ public final class ProtoBuf {
         }
 
         /**
-         * @param value The numeric wire value of the corresponding enum entry.
-         * @return The enum associated with the given numeric wire value.
          * @deprecated Use {@link #forNumber(int)} instead.
          */
         @java.lang.Deprecated
@@ -60873,10 +57917,6 @@ public final class ProtoBuf {
           return forNumber(value);
         }
 
-        /**
-         * @param value The numeric wire value of the corresponding enum entry.
-         * @return The enum associated with the given numeric wire value.
-         */
         public static StatisticsType forNumber(int value) {
           switch (value) {
             case 1: return statNumberOfPlayers;
@@ -60934,16 +57974,14 @@ public final class ProtoBuf {
       private int statisticsType_;
       /**
        * <code>required .StatisticsMessage.StatisticsData.StatisticsType statisticsType = 1;</code>
-       * @return Whether the statisticsType field is set.
        */
-      @java.lang.Override public boolean hasStatisticsType() {
+      public boolean hasStatisticsType() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required .StatisticsMessage.StatisticsData.StatisticsType statisticsType = 1;</code>
-       * @return The statisticsType.
        */
-      @java.lang.Override public de.pokerth.protocol.ProtoBuf.StatisticsMessage.StatisticsData.StatisticsType getStatisticsType() {
+      public de.pokerth.protocol.ProtoBuf.StatisticsMessage.StatisticsData.StatisticsType getStatisticsType() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.StatisticsMessage.StatisticsData.StatisticsType result = de.pokerth.protocol.ProtoBuf.StatisticsMessage.StatisticsData.StatisticsType.valueOf(statisticsType_);
         return result == null ? de.pokerth.protocol.ProtoBuf.StatisticsMessage.StatisticsData.StatisticsType.statNumberOfPlayers : result;
@@ -60953,17 +57991,13 @@ public final class ProtoBuf {
       private int statisticsValue_;
       /**
        * <code>required uint32 statisticsValue = 2;</code>
-       * @return Whether the statisticsValue field is set.
        */
-      @java.lang.Override
       public boolean hasStatisticsValue() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 statisticsValue = 2;</code>
-       * @return The statisticsValue.
        */
-      @java.lang.Override
       public int getStatisticsValue() {
         return statisticsValue_;
       }
@@ -61323,16 +58357,13 @@ public final class ProtoBuf {
         private int statisticsType_ = 1;
         /**
          * <code>required .StatisticsMessage.StatisticsData.StatisticsType statisticsType = 1;</code>
-         * @return Whether the statisticsType field is set.
          */
-        @java.lang.Override public boolean hasStatisticsType() {
+        public boolean hasStatisticsType() {
           return ((bitField0_ & 0x00000001) != 0);
         }
         /**
          * <code>required .StatisticsMessage.StatisticsData.StatisticsType statisticsType = 1;</code>
-         * @return The statisticsType.
          */
-        @java.lang.Override
         public de.pokerth.protocol.ProtoBuf.StatisticsMessage.StatisticsData.StatisticsType getStatisticsType() {
           @SuppressWarnings("deprecation")
           de.pokerth.protocol.ProtoBuf.StatisticsMessage.StatisticsData.StatisticsType result = de.pokerth.protocol.ProtoBuf.StatisticsMessage.StatisticsData.StatisticsType.valueOf(statisticsType_);
@@ -61340,8 +58371,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required .StatisticsMessage.StatisticsData.StatisticsType statisticsType = 1;</code>
-         * @param value The statisticsType to set.
-         * @return This builder for chaining.
          */
         public Builder setStatisticsType(de.pokerth.protocol.ProtoBuf.StatisticsMessage.StatisticsData.StatisticsType value) {
           if (value == null) {
@@ -61354,7 +58383,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required .StatisticsMessage.StatisticsData.StatisticsType statisticsType = 1;</code>
-         * @return This builder for chaining.
          */
         public Builder clearStatisticsType() {
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -61366,24 +58394,18 @@ public final class ProtoBuf {
         private int statisticsValue_ ;
         /**
          * <code>required uint32 statisticsValue = 2;</code>
-         * @return Whether the statisticsValue field is set.
          */
-        @java.lang.Override
         public boolean hasStatisticsValue() {
           return ((bitField0_ & 0x00000002) != 0);
         }
         /**
          * <code>required uint32 statisticsValue = 2;</code>
-         * @return The statisticsValue.
          */
-        @java.lang.Override
         public int getStatisticsValue() {
           return statisticsValue_;
         }
         /**
          * <code>required uint32 statisticsValue = 2;</code>
-         * @param value The statisticsValue to set.
-         * @return This builder for chaining.
          */
         public Builder setStatisticsValue(int value) {
           bitField0_ |= 0x00000002;
@@ -61393,7 +58415,6 @@ public final class ProtoBuf {
         }
         /**
          * <code>required uint32 statisticsValue = 2;</code>
-         * @return This builder for chaining.
          */
         public Builder clearStatisticsValue() {
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -61459,14 +58480,12 @@ public final class ProtoBuf {
     /**
      * <code>repeated .StatisticsMessage.StatisticsData statisticsData = 1;</code>
      */
-    @java.lang.Override
     public java.util.List<de.pokerth.protocol.ProtoBuf.StatisticsMessage.StatisticsData> getStatisticsDataList() {
       return statisticsData_;
     }
     /**
      * <code>repeated .StatisticsMessage.StatisticsData statisticsData = 1;</code>
      */
-    @java.lang.Override
     public java.util.List<? extends de.pokerth.protocol.ProtoBuf.StatisticsMessage.StatisticsDataOrBuilder> 
         getStatisticsDataOrBuilderList() {
       return statisticsData_;
@@ -61474,21 +58493,18 @@ public final class ProtoBuf {
     /**
      * <code>repeated .StatisticsMessage.StatisticsData statisticsData = 1;</code>
      */
-    @java.lang.Override
     public int getStatisticsDataCount() {
       return statisticsData_.size();
     }
     /**
      * <code>repeated .StatisticsMessage.StatisticsData statisticsData = 1;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.StatisticsMessage.StatisticsData getStatisticsData(int index) {
       return statisticsData_.get(index);
     }
     /**
      * <code>repeated .StatisticsMessage.StatisticsData statisticsData = 1;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.StatisticsMessage.StatisticsDataOrBuilder getStatisticsDataOrBuilder(
         int index) {
       return statisticsData_.get(index);
@@ -62145,39 +59161,32 @@ public final class ProtoBuf {
 
     /**
      * <code>optional uint32 targetGameId = 1;</code>
-     * @return Whether the targetGameId field is set.
      */
     boolean hasTargetGameId();
     /**
      * <code>optional uint32 targetGameId = 1;</code>
-     * @return The targetGameId.
      */
     int getTargetGameId();
 
     /**
      * <code>optional uint32 targetPlayerId = 2;</code>
-     * @return Whether the targetPlayerId field is set.
      */
     boolean hasTargetPlayerId();
     /**
      * <code>optional uint32 targetPlayerId = 2;</code>
-     * @return The targetPlayerId.
      */
     int getTargetPlayerId();
 
     /**
      * <code>required string chatText = 3;</code>
-     * @return Whether the chatText field is set.
      */
     boolean hasChatText();
     /**
      * <code>required string chatText = 3;</code>
-     * @return The chatText.
      */
     java.lang.String getChatText();
     /**
      * <code>required string chatText = 3;</code>
-     * @return The bytes for chatText.
      */
     com.google.protobuf.ByteString
         getChatTextBytes();
@@ -62185,7 +59194,7 @@ public final class ProtoBuf {
   /**
    * Protobuf type {@code ChatRequestMessage}
    */
-  public static final class ChatRequestMessage extends
+  public  static final class ChatRequestMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:ChatRequestMessage)
       ChatRequestMessageOrBuilder {
@@ -62282,17 +59291,13 @@ public final class ProtoBuf {
     private int targetGameId_;
     /**
      * <code>optional uint32 targetGameId = 1;</code>
-     * @return Whether the targetGameId field is set.
      */
-    @java.lang.Override
     public boolean hasTargetGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>optional uint32 targetGameId = 1;</code>
-     * @return The targetGameId.
      */
-    @java.lang.Override
     public int getTargetGameId() {
       return targetGameId_;
     }
@@ -62301,17 +59306,13 @@ public final class ProtoBuf {
     private int targetPlayerId_;
     /**
      * <code>optional uint32 targetPlayerId = 2;</code>
-     * @return Whether the targetPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasTargetPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>optional uint32 targetPlayerId = 2;</code>
-     * @return The targetPlayerId.
      */
-    @java.lang.Override
     public int getTargetPlayerId() {
       return targetPlayerId_;
     }
@@ -62320,17 +59321,13 @@ public final class ProtoBuf {
     private volatile java.lang.Object chatText_;
     /**
      * <code>required string chatText = 3;</code>
-     * @return Whether the chatText field is set.
      */
-    @java.lang.Override
     public boolean hasChatText() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required string chatText = 3;</code>
-     * @return The chatText.
      */
-    @java.lang.Override
     public java.lang.String getChatText() {
       java.lang.Object ref = chatText_;
       if (ref instanceof java.lang.String) {
@@ -62347,9 +59344,7 @@ public final class ProtoBuf {
     }
     /**
      * <code>required string chatText = 3;</code>
-     * @return The bytes for chatText.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getChatTextBytes() {
       java.lang.Object ref = chatText_;
@@ -62739,24 +59734,18 @@ public final class ProtoBuf {
       private int targetGameId_ ;
       /**
        * <code>optional uint32 targetGameId = 1;</code>
-       * @return Whether the targetGameId field is set.
        */
-      @java.lang.Override
       public boolean hasTargetGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>optional uint32 targetGameId = 1;</code>
-       * @return The targetGameId.
        */
-      @java.lang.Override
       public int getTargetGameId() {
         return targetGameId_;
       }
       /**
        * <code>optional uint32 targetGameId = 1;</code>
-       * @param value The targetGameId to set.
-       * @return This builder for chaining.
        */
       public Builder setTargetGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -62766,7 +59755,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional uint32 targetGameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearTargetGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -62778,24 +59766,18 @@ public final class ProtoBuf {
       private int targetPlayerId_ ;
       /**
        * <code>optional uint32 targetPlayerId = 2;</code>
-       * @return Whether the targetPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasTargetPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>optional uint32 targetPlayerId = 2;</code>
-       * @return The targetPlayerId.
        */
-      @java.lang.Override
       public int getTargetPlayerId() {
         return targetPlayerId_;
       }
       /**
        * <code>optional uint32 targetPlayerId = 2;</code>
-       * @param value The targetPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setTargetPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -62805,7 +59787,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional uint32 targetPlayerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearTargetPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -62817,14 +59798,12 @@ public final class ProtoBuf {
       private java.lang.Object chatText_ = "";
       /**
        * <code>required string chatText = 3;</code>
-       * @return Whether the chatText field is set.
        */
       public boolean hasChatText() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required string chatText = 3;</code>
-       * @return The chatText.
        */
       public java.lang.String getChatText() {
         java.lang.Object ref = chatText_;
@@ -62842,7 +59821,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string chatText = 3;</code>
-       * @return The bytes for chatText.
        */
       public com.google.protobuf.ByteString
           getChatTextBytes() {
@@ -62859,8 +59837,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string chatText = 3;</code>
-       * @param value The chatText to set.
-       * @return This builder for chaining.
        */
       public Builder setChatText(
           java.lang.String value) {
@@ -62874,7 +59850,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string chatText = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearChatText() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -62884,8 +59859,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string chatText = 3;</code>
-       * @param value The bytes for chatText to set.
-       * @return This builder for chaining.
        */
       public Builder setChatTextBytes(
           com.google.protobuf.ByteString value) {
@@ -62956,50 +59929,41 @@ public final class ProtoBuf {
 
     /**
      * <code>optional uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
     boolean hasGameId();
     /**
      * <code>optional uint32 gameId = 1;</code>
-     * @return The gameId.
      */
     int getGameId();
 
     /**
      * <code>optional uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
     boolean hasPlayerId();
     /**
      * <code>optional uint32 playerId = 2;</code>
-     * @return The playerId.
      */
     int getPlayerId();
 
     /**
      * <code>required .ChatMessage.ChatType chatType = 3;</code>
-     * @return Whether the chatType field is set.
      */
     boolean hasChatType();
     /**
      * <code>required .ChatMessage.ChatType chatType = 3;</code>
-     * @return The chatType.
      */
     de.pokerth.protocol.ProtoBuf.ChatMessage.ChatType getChatType();
 
     /**
      * <code>required string chatText = 4;</code>
-     * @return Whether the chatText field is set.
      */
     boolean hasChatText();
     /**
      * <code>required string chatText = 4;</code>
-     * @return The chatText.
      */
     java.lang.String getChatText();
     /**
      * <code>required string chatText = 4;</code>
-     * @return The bytes for chatText.
      */
     com.google.protobuf.ByteString
         getChatTextBytes();
@@ -63007,7 +59971,7 @@ public final class ProtoBuf {
   /**
    * Protobuf type {@code ChatMessage}
    */
-  public static final class ChatMessage extends
+  public  static final class ChatMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:ChatMessage)
       ChatMessageOrBuilder {
@@ -63166,8 +60130,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -63175,10 +60137,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static ChatType forNumber(int value) {
         switch (value) {
           case 0: return chatTypeLobby;
@@ -63240,17 +60198,13 @@ public final class ProtoBuf {
     private int gameId_;
     /**
      * <code>optional uint32 gameId = 1;</code>
-     * @return Whether the gameId field is set.
      */
-    @java.lang.Override
     public boolean hasGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>optional uint32 gameId = 1;</code>
-     * @return The gameId.
      */
-    @java.lang.Override
     public int getGameId() {
       return gameId_;
     }
@@ -63259,17 +60213,13 @@ public final class ProtoBuf {
     private int playerId_;
     /**
      * <code>optional uint32 playerId = 2;</code>
-     * @return Whether the playerId field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>optional uint32 playerId = 2;</code>
-     * @return The playerId.
      */
-    @java.lang.Override
     public int getPlayerId() {
       return playerId_;
     }
@@ -63278,16 +60228,14 @@ public final class ProtoBuf {
     private int chatType_;
     /**
      * <code>required .ChatMessage.ChatType chatType = 3;</code>
-     * @return Whether the chatType field is set.
      */
-    @java.lang.Override public boolean hasChatType() {
+    public boolean hasChatType() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>required .ChatMessage.ChatType chatType = 3;</code>
-     * @return The chatType.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.ChatMessage.ChatType getChatType() {
+    public de.pokerth.protocol.ProtoBuf.ChatMessage.ChatType getChatType() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.ChatMessage.ChatType result = de.pokerth.protocol.ProtoBuf.ChatMessage.ChatType.valueOf(chatType_);
       return result == null ? de.pokerth.protocol.ProtoBuf.ChatMessage.ChatType.chatTypeLobby : result;
@@ -63297,17 +60245,13 @@ public final class ProtoBuf {
     private volatile java.lang.Object chatText_;
     /**
      * <code>required string chatText = 4;</code>
-     * @return Whether the chatText field is set.
      */
-    @java.lang.Override
     public boolean hasChatText() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>required string chatText = 4;</code>
-     * @return The chatText.
      */
-    @java.lang.Override
     public java.lang.String getChatText() {
       java.lang.Object ref = chatText_;
       if (ref instanceof java.lang.String) {
@@ -63324,9 +60268,7 @@ public final class ProtoBuf {
     }
     /**
      * <code>required string chatText = 4;</code>
-     * @return The bytes for chatText.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getChatTextBytes() {
       java.lang.Object ref = chatText_;
@@ -63747,24 +60689,18 @@ public final class ProtoBuf {
       private int gameId_ ;
       /**
        * <code>optional uint32 gameId = 1;</code>
-       * @return Whether the gameId field is set.
        */
-      @java.lang.Override
       public boolean hasGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>optional uint32 gameId = 1;</code>
-       * @return The gameId.
        */
-      @java.lang.Override
       public int getGameId() {
         return gameId_;
       }
       /**
        * <code>optional uint32 gameId = 1;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
        */
       public Builder setGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -63774,7 +60710,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional uint32 gameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -63786,24 +60721,18 @@ public final class ProtoBuf {
       private int playerId_ ;
       /**
        * <code>optional uint32 playerId = 2;</code>
-       * @return Whether the playerId field is set.
        */
-      @java.lang.Override
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>optional uint32 playerId = 2;</code>
-       * @return The playerId.
        */
-      @java.lang.Override
       public int getPlayerId() {
         return playerId_;
       }
       /**
        * <code>optional uint32 playerId = 2;</code>
-       * @param value The playerId to set.
-       * @return This builder for chaining.
        */
       public Builder setPlayerId(int value) {
         bitField0_ |= 0x00000002;
@@ -63813,7 +60742,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>optional uint32 playerId = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -63825,16 +60753,13 @@ public final class ProtoBuf {
       private int chatType_ = 0;
       /**
        * <code>required .ChatMessage.ChatType chatType = 3;</code>
-       * @return Whether the chatType field is set.
        */
-      @java.lang.Override public boolean hasChatType() {
+      public boolean hasChatType() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>required .ChatMessage.ChatType chatType = 3;</code>
-       * @return The chatType.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.ChatMessage.ChatType getChatType() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.ChatMessage.ChatType result = de.pokerth.protocol.ProtoBuf.ChatMessage.ChatType.valueOf(chatType_);
@@ -63842,8 +60767,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .ChatMessage.ChatType chatType = 3;</code>
-       * @param value The chatType to set.
-       * @return This builder for chaining.
        */
       public Builder setChatType(de.pokerth.protocol.ProtoBuf.ChatMessage.ChatType value) {
         if (value == null) {
@@ -63856,7 +60779,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .ChatMessage.ChatType chatType = 3;</code>
-       * @return This builder for chaining.
        */
       public Builder clearChatType() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -63868,14 +60790,12 @@ public final class ProtoBuf {
       private java.lang.Object chatText_ = "";
       /**
        * <code>required string chatText = 4;</code>
-       * @return Whether the chatText field is set.
        */
       public boolean hasChatText() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>required string chatText = 4;</code>
-       * @return The chatText.
        */
       public java.lang.String getChatText() {
         java.lang.Object ref = chatText_;
@@ -63893,7 +60813,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string chatText = 4;</code>
-       * @return The bytes for chatText.
        */
       public com.google.protobuf.ByteString
           getChatTextBytes() {
@@ -63910,8 +60829,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string chatText = 4;</code>
-       * @param value The chatText to set.
-       * @return This builder for chaining.
        */
       public Builder setChatText(
           java.lang.String value) {
@@ -63925,7 +60842,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string chatText = 4;</code>
-       * @return This builder for chaining.
        */
       public Builder clearChatText() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -63935,8 +60851,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string chatText = 4;</code>
-       * @param value The bytes for chatText to set.
-       * @return This builder for chaining.
        */
       public Builder setChatTextBytes(
           com.google.protobuf.ByteString value) {
@@ -64007,17 +60921,14 @@ public final class ProtoBuf {
 
     /**
      * <code>required string chatText = 1;</code>
-     * @return Whether the chatText field is set.
      */
     boolean hasChatText();
     /**
      * <code>required string chatText = 1;</code>
-     * @return The chatText.
      */
     java.lang.String getChatText();
     /**
      * <code>required string chatText = 1;</code>
-     * @return The bytes for chatText.
      */
     com.google.protobuf.ByteString
         getChatTextBytes();
@@ -64025,7 +60936,7 @@ public final class ProtoBuf {
   /**
    * Protobuf type {@code ChatRejectMessage}
    */
-  public static final class ChatRejectMessage extends
+  public  static final class ChatRejectMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:ChatRejectMessage)
       ChatRejectMessageOrBuilder {
@@ -64112,17 +61023,13 @@ public final class ProtoBuf {
     private volatile java.lang.Object chatText_;
     /**
      * <code>required string chatText = 1;</code>
-     * @return Whether the chatText field is set.
      */
-    @java.lang.Override
     public boolean hasChatText() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required string chatText = 1;</code>
-     * @return The chatText.
      */
-    @java.lang.Override
     public java.lang.String getChatText() {
       java.lang.Object ref = chatText_;
       if (ref instanceof java.lang.String) {
@@ -64139,9 +61046,7 @@ public final class ProtoBuf {
     }
     /**
      * <code>required string chatText = 1;</code>
-     * @return The bytes for chatText.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getChatTextBytes() {
       java.lang.Object ref = chatText_;
@@ -64481,14 +61386,12 @@ public final class ProtoBuf {
       private java.lang.Object chatText_ = "";
       /**
        * <code>required string chatText = 1;</code>
-       * @return Whether the chatText field is set.
        */
       public boolean hasChatText() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required string chatText = 1;</code>
-       * @return The chatText.
        */
       public java.lang.String getChatText() {
         java.lang.Object ref = chatText_;
@@ -64506,7 +61409,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string chatText = 1;</code>
-       * @return The bytes for chatText.
        */
       public com.google.protobuf.ByteString
           getChatTextBytes() {
@@ -64523,8 +61425,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string chatText = 1;</code>
-       * @param value The chatText to set.
-       * @return This builder for chaining.
        */
       public Builder setChatText(
           java.lang.String value) {
@@ -64538,7 +61438,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string chatText = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearChatText() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -64548,8 +61447,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string chatText = 1;</code>
-       * @param value The bytes for chatText to set.
-       * @return This builder for chaining.
        */
       public Builder setChatTextBytes(
           com.google.protobuf.ByteString value) {
@@ -64620,17 +61517,14 @@ public final class ProtoBuf {
 
     /**
      * <code>required string notificationText = 1;</code>
-     * @return Whether the notificationText field is set.
      */
     boolean hasNotificationText();
     /**
      * <code>required string notificationText = 1;</code>
-     * @return The notificationText.
      */
     java.lang.String getNotificationText();
     /**
      * <code>required string notificationText = 1;</code>
-     * @return The bytes for notificationText.
      */
     com.google.protobuf.ByteString
         getNotificationTextBytes();
@@ -64638,7 +61532,7 @@ public final class ProtoBuf {
   /**
    * Protobuf type {@code DialogMessage}
    */
-  public static final class DialogMessage extends
+  public  static final class DialogMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:DialogMessage)
       DialogMessageOrBuilder {
@@ -64725,17 +61619,13 @@ public final class ProtoBuf {
     private volatile java.lang.Object notificationText_;
     /**
      * <code>required string notificationText = 1;</code>
-     * @return Whether the notificationText field is set.
      */
-    @java.lang.Override
     public boolean hasNotificationText() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required string notificationText = 1;</code>
-     * @return The notificationText.
      */
-    @java.lang.Override
     public java.lang.String getNotificationText() {
       java.lang.Object ref = notificationText_;
       if (ref instanceof java.lang.String) {
@@ -64752,9 +61642,7 @@ public final class ProtoBuf {
     }
     /**
      * <code>required string notificationText = 1;</code>
-     * @return The bytes for notificationText.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getNotificationTextBytes() {
       java.lang.Object ref = notificationText_;
@@ -65094,14 +61982,12 @@ public final class ProtoBuf {
       private java.lang.Object notificationText_ = "";
       /**
        * <code>required string notificationText = 1;</code>
-       * @return Whether the notificationText field is set.
        */
       public boolean hasNotificationText() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required string notificationText = 1;</code>
-       * @return The notificationText.
        */
       public java.lang.String getNotificationText() {
         java.lang.Object ref = notificationText_;
@@ -65119,7 +62005,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string notificationText = 1;</code>
-       * @return The bytes for notificationText.
        */
       public com.google.protobuf.ByteString
           getNotificationTextBytes() {
@@ -65136,8 +62021,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string notificationText = 1;</code>
-       * @param value The notificationText to set.
-       * @return This builder for chaining.
        */
       public Builder setNotificationText(
           java.lang.String value) {
@@ -65151,7 +62034,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string notificationText = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearNotificationText() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -65161,8 +62043,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required string notificationText = 1;</code>
-       * @param value The bytes for notificationText to set.
-       * @return This builder for chaining.
        */
       public Builder setNotificationTextBytes(
           com.google.protobuf.ByteString value) {
@@ -65233,30 +62113,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required .TimeoutWarningMessage.TimeoutReason timeoutReason = 1;</code>
-     * @return Whether the timeoutReason field is set.
      */
     boolean hasTimeoutReason();
     /**
      * <code>required .TimeoutWarningMessage.TimeoutReason timeoutReason = 1;</code>
-     * @return The timeoutReason.
      */
     de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage.TimeoutReason getTimeoutReason();
 
     /**
      * <code>required uint32 remainingSeconds = 2;</code>
-     * @return Whether the remainingSeconds field is set.
      */
     boolean hasRemainingSeconds();
     /**
      * <code>required uint32 remainingSeconds = 2;</code>
-     * @return The remainingSeconds.
      */
     int getRemainingSeconds();
   }
   /**
    * Protobuf type {@code TimeoutWarningMessage}
    */
-  public static final class TimeoutWarningMessage extends
+  public  static final class TimeoutWarningMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:TimeoutWarningMessage)
       TimeoutWarningMessageOrBuilder {
@@ -65387,8 +62263,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -65396,10 +62270,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static TimeoutReason forNumber(int value) {
         switch (value) {
           case 0: return timeoutNoDataReceived;
@@ -65459,16 +62329,14 @@ public final class ProtoBuf {
     private int timeoutReason_;
     /**
      * <code>required .TimeoutWarningMessage.TimeoutReason timeoutReason = 1;</code>
-     * @return Whether the timeoutReason field is set.
      */
-    @java.lang.Override public boolean hasTimeoutReason() {
+    public boolean hasTimeoutReason() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required .TimeoutWarningMessage.TimeoutReason timeoutReason = 1;</code>
-     * @return The timeoutReason.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage.TimeoutReason getTimeoutReason() {
+    public de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage.TimeoutReason getTimeoutReason() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage.TimeoutReason result = de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage.TimeoutReason.valueOf(timeoutReason_);
       return result == null ? de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage.TimeoutReason.timeoutNoDataReceived : result;
@@ -65478,17 +62346,13 @@ public final class ProtoBuf {
     private int remainingSeconds_;
     /**
      * <code>required uint32 remainingSeconds = 2;</code>
-     * @return Whether the remainingSeconds field is set.
      */
-    @java.lang.Override
     public boolean hasRemainingSeconds() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required uint32 remainingSeconds = 2;</code>
-     * @return The remainingSeconds.
      */
-    @java.lang.Override
     public int getRemainingSeconds() {
       return remainingSeconds_;
     }
@@ -65848,16 +62712,13 @@ public final class ProtoBuf {
       private int timeoutReason_ = 0;
       /**
        * <code>required .TimeoutWarningMessage.TimeoutReason timeoutReason = 1;</code>
-       * @return Whether the timeoutReason field is set.
        */
-      @java.lang.Override public boolean hasTimeoutReason() {
+      public boolean hasTimeoutReason() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required .TimeoutWarningMessage.TimeoutReason timeoutReason = 1;</code>
-       * @return The timeoutReason.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage.TimeoutReason getTimeoutReason() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage.TimeoutReason result = de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage.TimeoutReason.valueOf(timeoutReason_);
@@ -65865,8 +62726,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .TimeoutWarningMessage.TimeoutReason timeoutReason = 1;</code>
-       * @param value The timeoutReason to set.
-       * @return This builder for chaining.
        */
       public Builder setTimeoutReason(de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage.TimeoutReason value) {
         if (value == null) {
@@ -65879,7 +62738,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .TimeoutWarningMessage.TimeoutReason timeoutReason = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearTimeoutReason() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -65891,24 +62749,18 @@ public final class ProtoBuf {
       private int remainingSeconds_ ;
       /**
        * <code>required uint32 remainingSeconds = 2;</code>
-       * @return Whether the remainingSeconds field is set.
        */
-      @java.lang.Override
       public boolean hasRemainingSeconds() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required uint32 remainingSeconds = 2;</code>
-       * @return The remainingSeconds.
        */
-      @java.lang.Override
       public int getRemainingSeconds() {
         return remainingSeconds_;
       }
       /**
        * <code>required uint32 remainingSeconds = 2;</code>
-       * @param value The remainingSeconds to set.
-       * @return This builder for chaining.
        */
       public Builder setRemainingSeconds(int value) {
         bitField0_ |= 0x00000002;
@@ -65918,7 +62770,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 remainingSeconds = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRemainingSeconds() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -65986,7 +62837,7 @@ public final class ProtoBuf {
   /**
    * Protobuf type {@code ResetTimeoutMessage}
    */
-  public static final class ResetTimeoutMessage extends
+  public  static final class ResetTimeoutMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:ResetTimeoutMessage)
       ResetTimeoutMessageOrBuilder {
@@ -66403,30 +63254,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 reportedPlayerId = 1;</code>
-     * @return Whether the reportedPlayerId field is set.
      */
     boolean hasReportedPlayerId();
     /**
      * <code>required uint32 reportedPlayerId = 1;</code>
-     * @return The reportedPlayerId.
      */
     int getReportedPlayerId();
 
     /**
      * <code>required bytes reportedAvatarHash = 2;</code>
-     * @return Whether the reportedAvatarHash field is set.
      */
     boolean hasReportedAvatarHash();
     /**
      * <code>required bytes reportedAvatarHash = 2;</code>
-     * @return The reportedAvatarHash.
      */
     com.google.protobuf.ByteString getReportedAvatarHash();
   }
   /**
    * Protobuf type {@code ReportAvatarMessage}
    */
-  public static final class ReportAvatarMessage extends
+  public  static final class ReportAvatarMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:ReportAvatarMessage)
       ReportAvatarMessageOrBuilder {
@@ -66517,17 +63364,13 @@ public final class ProtoBuf {
     private int reportedPlayerId_;
     /**
      * <code>required uint32 reportedPlayerId = 1;</code>
-     * @return Whether the reportedPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasReportedPlayerId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 reportedPlayerId = 1;</code>
-     * @return The reportedPlayerId.
      */
-    @java.lang.Override
     public int getReportedPlayerId() {
       return reportedPlayerId_;
     }
@@ -66536,17 +63379,13 @@ public final class ProtoBuf {
     private com.google.protobuf.ByteString reportedAvatarHash_;
     /**
      * <code>required bytes reportedAvatarHash = 2;</code>
-     * @return Whether the reportedAvatarHash field is set.
      */
-    @java.lang.Override
     public boolean hasReportedAvatarHash() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required bytes reportedAvatarHash = 2;</code>
-     * @return The reportedAvatarHash.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getReportedAvatarHash() {
       return reportedAvatarHash_;
     }
@@ -66907,24 +63746,18 @@ public final class ProtoBuf {
       private int reportedPlayerId_ ;
       /**
        * <code>required uint32 reportedPlayerId = 1;</code>
-       * @return Whether the reportedPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasReportedPlayerId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 reportedPlayerId = 1;</code>
-       * @return The reportedPlayerId.
        */
-      @java.lang.Override
       public int getReportedPlayerId() {
         return reportedPlayerId_;
       }
       /**
        * <code>required uint32 reportedPlayerId = 1;</code>
-       * @param value The reportedPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setReportedPlayerId(int value) {
         bitField0_ |= 0x00000001;
@@ -66934,7 +63767,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 reportedPlayerId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearReportedPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -66946,24 +63778,18 @@ public final class ProtoBuf {
       private com.google.protobuf.ByteString reportedAvatarHash_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>required bytes reportedAvatarHash = 2;</code>
-       * @return Whether the reportedAvatarHash field is set.
        */
-      @java.lang.Override
       public boolean hasReportedAvatarHash() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required bytes reportedAvatarHash = 2;</code>
-       * @return The reportedAvatarHash.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getReportedAvatarHash() {
         return reportedAvatarHash_;
       }
       /**
        * <code>required bytes reportedAvatarHash = 2;</code>
-       * @param value The reportedAvatarHash to set.
-       * @return This builder for chaining.
        */
       public Builder setReportedAvatarHash(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -66976,7 +63802,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required bytes reportedAvatarHash = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearReportedAvatarHash() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -67043,30 +63868,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 reportedPlayerId = 1;</code>
-     * @return Whether the reportedPlayerId field is set.
      */
     boolean hasReportedPlayerId();
     /**
      * <code>required uint32 reportedPlayerId = 1;</code>
-     * @return The reportedPlayerId.
      */
     int getReportedPlayerId();
 
     /**
      * <code>required .ReportAvatarAckMessage.ReportAvatarResult reportAvatarResult = 2;</code>
-     * @return Whether the reportAvatarResult field is set.
      */
     boolean hasReportAvatarResult();
     /**
      * <code>required .ReportAvatarAckMessage.ReportAvatarResult reportAvatarResult = 2;</code>
-     * @return The reportAvatarResult.
      */
     de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage.ReportAvatarResult getReportAvatarResult();
   }
   /**
    * Protobuf type {@code ReportAvatarAckMessage}
    */
-  public static final class ReportAvatarAckMessage extends
+  public  static final class ReportAvatarAckMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:ReportAvatarAckMessage)
       ReportAvatarAckMessageOrBuilder {
@@ -67197,8 +64018,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -67206,10 +64025,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static ReportAvatarResult forNumber(int value) {
         switch (value) {
           case 0: return avatarReportAccepted;
@@ -67269,17 +64084,13 @@ public final class ProtoBuf {
     private int reportedPlayerId_;
     /**
      * <code>required uint32 reportedPlayerId = 1;</code>
-     * @return Whether the reportedPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasReportedPlayerId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 reportedPlayerId = 1;</code>
-     * @return The reportedPlayerId.
      */
-    @java.lang.Override
     public int getReportedPlayerId() {
       return reportedPlayerId_;
     }
@@ -67288,16 +64099,14 @@ public final class ProtoBuf {
     private int reportAvatarResult_;
     /**
      * <code>required .ReportAvatarAckMessage.ReportAvatarResult reportAvatarResult = 2;</code>
-     * @return Whether the reportAvatarResult field is set.
      */
-    @java.lang.Override public boolean hasReportAvatarResult() {
+    public boolean hasReportAvatarResult() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .ReportAvatarAckMessage.ReportAvatarResult reportAvatarResult = 2;</code>
-     * @return The reportAvatarResult.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage.ReportAvatarResult getReportAvatarResult() {
+    public de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage.ReportAvatarResult getReportAvatarResult() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage.ReportAvatarResult result = de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage.ReportAvatarResult.valueOf(reportAvatarResult_);
       return result == null ? de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage.ReportAvatarResult.avatarReportAccepted : result;
@@ -67658,24 +64467,18 @@ public final class ProtoBuf {
       private int reportedPlayerId_ ;
       /**
        * <code>required uint32 reportedPlayerId = 1;</code>
-       * @return Whether the reportedPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasReportedPlayerId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 reportedPlayerId = 1;</code>
-       * @return The reportedPlayerId.
        */
-      @java.lang.Override
       public int getReportedPlayerId() {
         return reportedPlayerId_;
       }
       /**
        * <code>required uint32 reportedPlayerId = 1;</code>
-       * @param value The reportedPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setReportedPlayerId(int value) {
         bitField0_ |= 0x00000001;
@@ -67685,7 +64488,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 reportedPlayerId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearReportedPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -67697,16 +64499,13 @@ public final class ProtoBuf {
       private int reportAvatarResult_ = 0;
       /**
        * <code>required .ReportAvatarAckMessage.ReportAvatarResult reportAvatarResult = 2;</code>
-       * @return Whether the reportAvatarResult field is set.
        */
-      @java.lang.Override public boolean hasReportAvatarResult() {
+      public boolean hasReportAvatarResult() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .ReportAvatarAckMessage.ReportAvatarResult reportAvatarResult = 2;</code>
-       * @return The reportAvatarResult.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage.ReportAvatarResult getReportAvatarResult() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage.ReportAvatarResult result = de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage.ReportAvatarResult.valueOf(reportAvatarResult_);
@@ -67714,8 +64513,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .ReportAvatarAckMessage.ReportAvatarResult reportAvatarResult = 2;</code>
-       * @param value The reportAvatarResult to set.
-       * @return This builder for chaining.
        */
       public Builder setReportAvatarResult(de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage.ReportAvatarResult value) {
         if (value == null) {
@@ -67728,7 +64525,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .ReportAvatarAckMessage.ReportAvatarResult reportAvatarResult = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearReportAvatarResult() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -67795,19 +64591,17 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 reportedGameId = 1;</code>
-     * @return Whether the reportedGameId field is set.
      */
     boolean hasReportedGameId();
     /**
      * <code>required uint32 reportedGameId = 1;</code>
-     * @return The reportedGameId.
      */
     int getReportedGameId();
   }
   /**
    * Protobuf type {@code ReportGameMessage}
    */
-  public static final class ReportGameMessage extends
+  public  static final class ReportGameMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:ReportGameMessage)
       ReportGameMessageOrBuilder {
@@ -67892,17 +64686,13 @@ public final class ProtoBuf {
     private int reportedGameId_;
     /**
      * <code>required uint32 reportedGameId = 1;</code>
-     * @return Whether the reportedGameId field is set.
      */
-    @java.lang.Override
     public boolean hasReportedGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 reportedGameId = 1;</code>
-     * @return The reportedGameId.
      */
-    @java.lang.Override
     public int getReportedGameId() {
       return reportedGameId_;
     }
@@ -68231,24 +65021,18 @@ public final class ProtoBuf {
       private int reportedGameId_ ;
       /**
        * <code>required uint32 reportedGameId = 1;</code>
-       * @return Whether the reportedGameId field is set.
        */
-      @java.lang.Override
       public boolean hasReportedGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 reportedGameId = 1;</code>
-       * @return The reportedGameId.
        */
-      @java.lang.Override
       public int getReportedGameId() {
         return reportedGameId_;
       }
       /**
        * <code>required uint32 reportedGameId = 1;</code>
-       * @param value The reportedGameId to set.
-       * @return This builder for chaining.
        */
       public Builder setReportedGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -68258,7 +65042,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 reportedGameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearReportedGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -68325,30 +65108,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 reportedGameId = 1;</code>
-     * @return Whether the reportedGameId field is set.
      */
     boolean hasReportedGameId();
     /**
      * <code>required uint32 reportedGameId = 1;</code>
-     * @return The reportedGameId.
      */
     int getReportedGameId();
 
     /**
      * <code>required .ReportGameAckMessage.ReportGameResult reportGameResult = 2;</code>
-     * @return Whether the reportGameResult field is set.
      */
     boolean hasReportGameResult();
     /**
      * <code>required .ReportGameAckMessage.ReportGameResult reportGameResult = 2;</code>
-     * @return The reportGameResult.
      */
     de.pokerth.protocol.ProtoBuf.ReportGameAckMessage.ReportGameResult getReportGameResult();
   }
   /**
    * Protobuf type {@code ReportGameAckMessage}
    */
-  public static final class ReportGameAckMessage extends
+  public  static final class ReportGameAckMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:ReportGameAckMessage)
       ReportGameAckMessageOrBuilder {
@@ -68479,8 +65258,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -68488,10 +65265,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static ReportGameResult forNumber(int value) {
         switch (value) {
           case 0: return gameReportAccepted;
@@ -68551,17 +65324,13 @@ public final class ProtoBuf {
     private int reportedGameId_;
     /**
      * <code>required uint32 reportedGameId = 1;</code>
-     * @return Whether the reportedGameId field is set.
      */
-    @java.lang.Override
     public boolean hasReportedGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 reportedGameId = 1;</code>
-     * @return The reportedGameId.
      */
-    @java.lang.Override
     public int getReportedGameId() {
       return reportedGameId_;
     }
@@ -68570,16 +65339,14 @@ public final class ProtoBuf {
     private int reportGameResult_;
     /**
      * <code>required .ReportGameAckMessage.ReportGameResult reportGameResult = 2;</code>
-     * @return Whether the reportGameResult field is set.
      */
-    @java.lang.Override public boolean hasReportGameResult() {
+    public boolean hasReportGameResult() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .ReportGameAckMessage.ReportGameResult reportGameResult = 2;</code>
-     * @return The reportGameResult.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.ReportGameAckMessage.ReportGameResult getReportGameResult() {
+    public de.pokerth.protocol.ProtoBuf.ReportGameAckMessage.ReportGameResult getReportGameResult() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.ReportGameAckMessage.ReportGameResult result = de.pokerth.protocol.ProtoBuf.ReportGameAckMessage.ReportGameResult.valueOf(reportGameResult_);
       return result == null ? de.pokerth.protocol.ProtoBuf.ReportGameAckMessage.ReportGameResult.gameReportAccepted : result;
@@ -68940,24 +65707,18 @@ public final class ProtoBuf {
       private int reportedGameId_ ;
       /**
        * <code>required uint32 reportedGameId = 1;</code>
-       * @return Whether the reportedGameId field is set.
        */
-      @java.lang.Override
       public boolean hasReportedGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 reportedGameId = 1;</code>
-       * @return The reportedGameId.
        */
-      @java.lang.Override
       public int getReportedGameId() {
         return reportedGameId_;
       }
       /**
        * <code>required uint32 reportedGameId = 1;</code>
-       * @param value The reportedGameId to set.
-       * @return This builder for chaining.
        */
       public Builder setReportedGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -68967,7 +65728,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 reportedGameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearReportedGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -68979,16 +65739,13 @@ public final class ProtoBuf {
       private int reportGameResult_ = 0;
       /**
        * <code>required .ReportGameAckMessage.ReportGameResult reportGameResult = 2;</code>
-       * @return Whether the reportGameResult field is set.
        */
-      @java.lang.Override public boolean hasReportGameResult() {
+      public boolean hasReportGameResult() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .ReportGameAckMessage.ReportGameResult reportGameResult = 2;</code>
-       * @return The reportGameResult.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.ReportGameAckMessage.ReportGameResult getReportGameResult() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.ReportGameAckMessage.ReportGameResult result = de.pokerth.protocol.ProtoBuf.ReportGameAckMessage.ReportGameResult.valueOf(reportGameResult_);
@@ -68996,8 +65753,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .ReportGameAckMessage.ReportGameResult reportGameResult = 2;</code>
-       * @param value The reportGameResult to set.
-       * @return This builder for chaining.
        */
       public Builder setReportGameResult(de.pokerth.protocol.ProtoBuf.ReportGameAckMessage.ReportGameResult value) {
         if (value == null) {
@@ -69010,7 +65765,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .ReportGameAckMessage.ReportGameResult reportGameResult = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearReportGameResult() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -69077,19 +65831,17 @@ public final class ProtoBuf {
 
     /**
      * <code>required .ErrorMessage.ErrorReason errorReason = 1;</code>
-     * @return Whether the errorReason field is set.
      */
     boolean hasErrorReason();
     /**
      * <code>required .ErrorMessage.ErrorReason errorReason = 1;</code>
-     * @return The errorReason.
      */
     de.pokerth.protocol.ProtoBuf.ErrorMessage.ErrorReason getErrorReason();
   }
   /**
    * Protobuf type {@code ErrorMessage}
    */
-  public static final class ErrorMessage extends
+  public  static final class ErrorMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:ErrorMessage)
       ErrorMessageOrBuilder {
@@ -69311,8 +66063,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -69320,10 +66070,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static ErrorReason forNumber(int value) {
         switch (value) {
           case 0: return custReserved;
@@ -69395,16 +66141,14 @@ public final class ProtoBuf {
     private int errorReason_;
     /**
      * <code>required .ErrorMessage.ErrorReason errorReason = 1;</code>
-     * @return Whether the errorReason field is set.
      */
-    @java.lang.Override public boolean hasErrorReason() {
+    public boolean hasErrorReason() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required .ErrorMessage.ErrorReason errorReason = 1;</code>
-     * @return The errorReason.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.ErrorMessage.ErrorReason getErrorReason() {
+    public de.pokerth.protocol.ProtoBuf.ErrorMessage.ErrorReason getErrorReason() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.ErrorMessage.ErrorReason result = de.pokerth.protocol.ProtoBuf.ErrorMessage.ErrorReason.valueOf(errorReason_);
       return result == null ? de.pokerth.protocol.ProtoBuf.ErrorMessage.ErrorReason.custReserved : result;
@@ -69733,16 +66477,13 @@ public final class ProtoBuf {
       private int errorReason_ = 0;
       /**
        * <code>required .ErrorMessage.ErrorReason errorReason = 1;</code>
-       * @return Whether the errorReason field is set.
        */
-      @java.lang.Override public boolean hasErrorReason() {
+      public boolean hasErrorReason() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required .ErrorMessage.ErrorReason errorReason = 1;</code>
-       * @return The errorReason.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.ErrorMessage.ErrorReason getErrorReason() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.ErrorMessage.ErrorReason result = de.pokerth.protocol.ProtoBuf.ErrorMessage.ErrorReason.valueOf(errorReason_);
@@ -69750,8 +66491,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .ErrorMessage.ErrorReason errorReason = 1;</code>
-       * @param value The errorReason to set.
-       * @return This builder for chaining.
        */
       public Builder setErrorReason(de.pokerth.protocol.ProtoBuf.ErrorMessage.ErrorReason value) {
         if (value == null) {
@@ -69764,7 +66503,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .ErrorMessage.ErrorReason errorReason = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearErrorReason() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -69831,19 +66569,17 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 removeGameId = 1;</code>
-     * @return Whether the removeGameId field is set.
      */
     boolean hasRemoveGameId();
     /**
      * <code>required uint32 removeGameId = 1;</code>
-     * @return The removeGameId.
      */
     int getRemoveGameId();
   }
   /**
    * Protobuf type {@code AdminRemoveGameMessage}
    */
-  public static final class AdminRemoveGameMessage extends
+  public  static final class AdminRemoveGameMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AdminRemoveGameMessage)
       AdminRemoveGameMessageOrBuilder {
@@ -69928,17 +66664,13 @@ public final class ProtoBuf {
     private int removeGameId_;
     /**
      * <code>required uint32 removeGameId = 1;</code>
-     * @return Whether the removeGameId field is set.
      */
-    @java.lang.Override
     public boolean hasRemoveGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 removeGameId = 1;</code>
-     * @return The removeGameId.
      */
-    @java.lang.Override
     public int getRemoveGameId() {
       return removeGameId_;
     }
@@ -70267,24 +66999,18 @@ public final class ProtoBuf {
       private int removeGameId_ ;
       /**
        * <code>required uint32 removeGameId = 1;</code>
-       * @return Whether the removeGameId field is set.
        */
-      @java.lang.Override
       public boolean hasRemoveGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 removeGameId = 1;</code>
-       * @return The removeGameId.
        */
-      @java.lang.Override
       public int getRemoveGameId() {
         return removeGameId_;
       }
       /**
        * <code>required uint32 removeGameId = 1;</code>
-       * @param value The removeGameId to set.
-       * @return This builder for chaining.
        */
       public Builder setRemoveGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -70294,7 +67020,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 removeGameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRemoveGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -70361,30 +67086,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 removeGameId = 1;</code>
-     * @return Whether the removeGameId field is set.
      */
     boolean hasRemoveGameId();
     /**
      * <code>required uint32 removeGameId = 1;</code>
-     * @return The removeGameId.
      */
     int getRemoveGameId();
 
     /**
      * <code>required .AdminRemoveGameAckMessage.AdminRemoveGameResult removeGameResult = 2;</code>
-     * @return Whether the removeGameResult field is set.
      */
     boolean hasRemoveGameResult();
     /**
      * <code>required .AdminRemoveGameAckMessage.AdminRemoveGameResult removeGameResult = 2;</code>
-     * @return The removeGameResult.
      */
     de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage.AdminRemoveGameResult getRemoveGameResult();
   }
   /**
    * Protobuf type {@code AdminRemoveGameAckMessage}
    */
-  public static final class AdminRemoveGameAckMessage extends
+  public  static final class AdminRemoveGameAckMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AdminRemoveGameAckMessage)
       AdminRemoveGameAckMessageOrBuilder {
@@ -70507,8 +67228,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -70516,10 +67235,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static AdminRemoveGameResult forNumber(int value) {
         switch (value) {
           case 0: return gameRemoveAccepted;
@@ -70578,17 +67293,13 @@ public final class ProtoBuf {
     private int removeGameId_;
     /**
      * <code>required uint32 removeGameId = 1;</code>
-     * @return Whether the removeGameId field is set.
      */
-    @java.lang.Override
     public boolean hasRemoveGameId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 removeGameId = 1;</code>
-     * @return The removeGameId.
      */
-    @java.lang.Override
     public int getRemoveGameId() {
       return removeGameId_;
     }
@@ -70597,16 +67308,14 @@ public final class ProtoBuf {
     private int removeGameResult_;
     /**
      * <code>required .AdminRemoveGameAckMessage.AdminRemoveGameResult removeGameResult = 2;</code>
-     * @return Whether the removeGameResult field is set.
      */
-    @java.lang.Override public boolean hasRemoveGameResult() {
+    public boolean hasRemoveGameResult() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .AdminRemoveGameAckMessage.AdminRemoveGameResult removeGameResult = 2;</code>
-     * @return The removeGameResult.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage.AdminRemoveGameResult getRemoveGameResult() {
+    public de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage.AdminRemoveGameResult getRemoveGameResult() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage.AdminRemoveGameResult result = de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage.AdminRemoveGameResult.valueOf(removeGameResult_);
       return result == null ? de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage.AdminRemoveGameResult.gameRemoveAccepted : result;
@@ -70967,24 +67676,18 @@ public final class ProtoBuf {
       private int removeGameId_ ;
       /**
        * <code>required uint32 removeGameId = 1;</code>
-       * @return Whether the removeGameId field is set.
        */
-      @java.lang.Override
       public boolean hasRemoveGameId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 removeGameId = 1;</code>
-       * @return The removeGameId.
        */
-      @java.lang.Override
       public int getRemoveGameId() {
         return removeGameId_;
       }
       /**
        * <code>required uint32 removeGameId = 1;</code>
-       * @param value The removeGameId to set.
-       * @return This builder for chaining.
        */
       public Builder setRemoveGameId(int value) {
         bitField0_ |= 0x00000001;
@@ -70994,7 +67697,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 removeGameId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRemoveGameId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -71006,16 +67708,13 @@ public final class ProtoBuf {
       private int removeGameResult_ = 0;
       /**
        * <code>required .AdminRemoveGameAckMessage.AdminRemoveGameResult removeGameResult = 2;</code>
-       * @return Whether the removeGameResult field is set.
        */
-      @java.lang.Override public boolean hasRemoveGameResult() {
+      public boolean hasRemoveGameResult() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .AdminRemoveGameAckMessage.AdminRemoveGameResult removeGameResult = 2;</code>
-       * @return The removeGameResult.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage.AdminRemoveGameResult getRemoveGameResult() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage.AdminRemoveGameResult result = de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage.AdminRemoveGameResult.valueOf(removeGameResult_);
@@ -71023,8 +67722,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .AdminRemoveGameAckMessage.AdminRemoveGameResult removeGameResult = 2;</code>
-       * @param value The removeGameResult to set.
-       * @return This builder for chaining.
        */
       public Builder setRemoveGameResult(de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage.AdminRemoveGameResult value) {
         if (value == null) {
@@ -71037,7 +67734,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .AdminRemoveGameAckMessage.AdminRemoveGameResult removeGameResult = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearRemoveGameResult() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -71104,19 +67800,17 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 banPlayerId = 1;</code>
-     * @return Whether the banPlayerId field is set.
      */
     boolean hasBanPlayerId();
     /**
      * <code>required uint32 banPlayerId = 1;</code>
-     * @return The banPlayerId.
      */
     int getBanPlayerId();
   }
   /**
    * Protobuf type {@code AdminBanPlayerMessage}
    */
-  public static final class AdminBanPlayerMessage extends
+  public  static final class AdminBanPlayerMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AdminBanPlayerMessage)
       AdminBanPlayerMessageOrBuilder {
@@ -71201,17 +67895,13 @@ public final class ProtoBuf {
     private int banPlayerId_;
     /**
      * <code>required uint32 banPlayerId = 1;</code>
-     * @return Whether the banPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasBanPlayerId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 banPlayerId = 1;</code>
-     * @return The banPlayerId.
      */
-    @java.lang.Override
     public int getBanPlayerId() {
       return banPlayerId_;
     }
@@ -71540,24 +68230,18 @@ public final class ProtoBuf {
       private int banPlayerId_ ;
       /**
        * <code>required uint32 banPlayerId = 1;</code>
-       * @return Whether the banPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasBanPlayerId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 banPlayerId = 1;</code>
-       * @return The banPlayerId.
        */
-      @java.lang.Override
       public int getBanPlayerId() {
         return banPlayerId_;
       }
       /**
        * <code>required uint32 banPlayerId = 1;</code>
-       * @param value The banPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setBanPlayerId(int value) {
         bitField0_ |= 0x00000001;
@@ -71567,7 +68251,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 banPlayerId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearBanPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -71634,30 +68317,26 @@ public final class ProtoBuf {
 
     /**
      * <code>required uint32 banPlayerId = 1;</code>
-     * @return Whether the banPlayerId field is set.
      */
     boolean hasBanPlayerId();
     /**
      * <code>required uint32 banPlayerId = 1;</code>
-     * @return The banPlayerId.
      */
     int getBanPlayerId();
 
     /**
      * <code>required .AdminBanPlayerAckMessage.AdminBanPlayerResult banPlayerResult = 2;</code>
-     * @return Whether the banPlayerResult field is set.
      */
     boolean hasBanPlayerResult();
     /**
      * <code>required .AdminBanPlayerAckMessage.AdminBanPlayerResult banPlayerResult = 2;</code>
-     * @return The banPlayerResult.
      */
     de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage.AdminBanPlayerResult getBanPlayerResult();
   }
   /**
    * Protobuf type {@code AdminBanPlayerAckMessage}
    */
-  public static final class AdminBanPlayerAckMessage extends
+  public  static final class AdminBanPlayerAckMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:AdminBanPlayerAckMessage)
       AdminBanPlayerAckMessageOrBuilder {
@@ -71804,8 +68483,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -71813,10 +68490,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static AdminBanPlayerResult forNumber(int value) {
         switch (value) {
           case 0: return banPlayerAccepted;
@@ -71878,17 +68551,13 @@ public final class ProtoBuf {
     private int banPlayerId_;
     /**
      * <code>required uint32 banPlayerId = 1;</code>
-     * @return Whether the banPlayerId field is set.
      */
-    @java.lang.Override
     public boolean hasBanPlayerId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required uint32 banPlayerId = 1;</code>
-     * @return The banPlayerId.
      */
-    @java.lang.Override
     public int getBanPlayerId() {
       return banPlayerId_;
     }
@@ -71897,16 +68566,14 @@ public final class ProtoBuf {
     private int banPlayerResult_;
     /**
      * <code>required .AdminBanPlayerAckMessage.AdminBanPlayerResult banPlayerResult = 2;</code>
-     * @return Whether the banPlayerResult field is set.
      */
-    @java.lang.Override public boolean hasBanPlayerResult() {
+    public boolean hasBanPlayerResult() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>required .AdminBanPlayerAckMessage.AdminBanPlayerResult banPlayerResult = 2;</code>
-     * @return The banPlayerResult.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage.AdminBanPlayerResult getBanPlayerResult() {
+    public de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage.AdminBanPlayerResult getBanPlayerResult() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage.AdminBanPlayerResult result = de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage.AdminBanPlayerResult.valueOf(banPlayerResult_);
       return result == null ? de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage.AdminBanPlayerResult.banPlayerAccepted : result;
@@ -72267,24 +68934,18 @@ public final class ProtoBuf {
       private int banPlayerId_ ;
       /**
        * <code>required uint32 banPlayerId = 1;</code>
-       * @return Whether the banPlayerId field is set.
        */
-      @java.lang.Override
       public boolean hasBanPlayerId() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required uint32 banPlayerId = 1;</code>
-       * @return The banPlayerId.
        */
-      @java.lang.Override
       public int getBanPlayerId() {
         return banPlayerId_;
       }
       /**
        * <code>required uint32 banPlayerId = 1;</code>
-       * @param value The banPlayerId to set.
-       * @return This builder for chaining.
        */
       public Builder setBanPlayerId(int value) {
         bitField0_ |= 0x00000001;
@@ -72294,7 +68955,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required uint32 banPlayerId = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearBanPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -72306,16 +68966,13 @@ public final class ProtoBuf {
       private int banPlayerResult_ = 0;
       /**
        * <code>required .AdminBanPlayerAckMessage.AdminBanPlayerResult banPlayerResult = 2;</code>
-       * @return Whether the banPlayerResult field is set.
        */
-      @java.lang.Override public boolean hasBanPlayerResult() {
+      public boolean hasBanPlayerResult() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>required .AdminBanPlayerAckMessage.AdminBanPlayerResult banPlayerResult = 2;</code>
-       * @return The banPlayerResult.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage.AdminBanPlayerResult getBanPlayerResult() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage.AdminBanPlayerResult result = de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage.AdminBanPlayerResult.valueOf(banPlayerResult_);
@@ -72323,8 +68980,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .AdminBanPlayerAckMessage.AdminBanPlayerResult banPlayerResult = 2;</code>
-       * @param value The banPlayerResult to set.
-       * @return This builder for chaining.
        */
       public Builder setBanPlayerResult(de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage.AdminBanPlayerResult value) {
         if (value == null) {
@@ -72337,7 +68992,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .AdminBanPlayerAckMessage.AdminBanPlayerResult banPlayerResult = 2;</code>
-       * @return This builder for chaining.
        */
       public Builder clearBanPlayerResult() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -72404,23 +69058,19 @@ public final class ProtoBuf {
 
     /**
      * <code>required .PokerTHMessage.PokerTHMessageType messageType = 1;</code>
-     * @return Whether the messageType field is set.
      */
     boolean hasMessageType();
     /**
      * <code>required .PokerTHMessage.PokerTHMessageType messageType = 1;</code>
-     * @return The messageType.
      */
     de.pokerth.protocol.ProtoBuf.PokerTHMessage.PokerTHMessageType getMessageType();
 
     /**
      * <code>optional .AnnounceMessage announceMessage = 2;</code>
-     * @return Whether the announceMessage field is set.
      */
     boolean hasAnnounceMessage();
     /**
      * <code>optional .AnnounceMessage announceMessage = 2;</code>
-     * @return The announceMessage.
      */
     de.pokerth.protocol.ProtoBuf.AnnounceMessage getAnnounceMessage();
     /**
@@ -72430,12 +69080,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .InitMessage initMessage = 3;</code>
-     * @return Whether the initMessage field is set.
      */
     boolean hasInitMessage();
     /**
      * <code>optional .InitMessage initMessage = 3;</code>
-     * @return The initMessage.
      */
     de.pokerth.protocol.ProtoBuf.InitMessage getInitMessage();
     /**
@@ -72445,12 +69093,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AuthServerChallengeMessage authServerChallengeMessage = 4;</code>
-     * @return Whether the authServerChallengeMessage field is set.
      */
     boolean hasAuthServerChallengeMessage();
     /**
      * <code>optional .AuthServerChallengeMessage authServerChallengeMessage = 4;</code>
-     * @return The authServerChallengeMessage.
      */
     de.pokerth.protocol.ProtoBuf.AuthServerChallengeMessage getAuthServerChallengeMessage();
     /**
@@ -72460,12 +69106,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AuthClientResponseMessage authClientResponseMessage = 5;</code>
-     * @return Whether the authClientResponseMessage field is set.
      */
     boolean hasAuthClientResponseMessage();
     /**
      * <code>optional .AuthClientResponseMessage authClientResponseMessage = 5;</code>
-     * @return The authClientResponseMessage.
      */
     de.pokerth.protocol.ProtoBuf.AuthClientResponseMessage getAuthClientResponseMessage();
     /**
@@ -72475,12 +69119,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AuthServerVerificationMessage authServerVerificationMessage = 6;</code>
-     * @return Whether the authServerVerificationMessage field is set.
      */
     boolean hasAuthServerVerificationMessage();
     /**
      * <code>optional .AuthServerVerificationMessage authServerVerificationMessage = 6;</code>
-     * @return The authServerVerificationMessage.
      */
     de.pokerth.protocol.ProtoBuf.AuthServerVerificationMessage getAuthServerVerificationMessage();
     /**
@@ -72490,12 +69132,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .InitAckMessage initAckMessage = 7;</code>
-     * @return Whether the initAckMessage field is set.
      */
     boolean hasInitAckMessage();
     /**
      * <code>optional .InitAckMessage initAckMessage = 7;</code>
-     * @return The initAckMessage.
      */
     de.pokerth.protocol.ProtoBuf.InitAckMessage getInitAckMessage();
     /**
@@ -72505,12 +69145,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AvatarRequestMessage avatarRequestMessage = 8;</code>
-     * @return Whether the avatarRequestMessage field is set.
      */
     boolean hasAvatarRequestMessage();
     /**
      * <code>optional .AvatarRequestMessage avatarRequestMessage = 8;</code>
-     * @return The avatarRequestMessage.
      */
     de.pokerth.protocol.ProtoBuf.AvatarRequestMessage getAvatarRequestMessage();
     /**
@@ -72520,12 +69158,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AvatarHeaderMessage avatarHeaderMessage = 9;</code>
-     * @return Whether the avatarHeaderMessage field is set.
      */
     boolean hasAvatarHeaderMessage();
     /**
      * <code>optional .AvatarHeaderMessage avatarHeaderMessage = 9;</code>
-     * @return The avatarHeaderMessage.
      */
     de.pokerth.protocol.ProtoBuf.AvatarHeaderMessage getAvatarHeaderMessage();
     /**
@@ -72535,12 +69171,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AvatarDataMessage avatarDataMessage = 10;</code>
-     * @return Whether the avatarDataMessage field is set.
      */
     boolean hasAvatarDataMessage();
     /**
      * <code>optional .AvatarDataMessage avatarDataMessage = 10;</code>
-     * @return The avatarDataMessage.
      */
     de.pokerth.protocol.ProtoBuf.AvatarDataMessage getAvatarDataMessage();
     /**
@@ -72550,12 +69184,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AvatarEndMessage avatarEndMessage = 11;</code>
-     * @return Whether the avatarEndMessage field is set.
      */
     boolean hasAvatarEndMessage();
     /**
      * <code>optional .AvatarEndMessage avatarEndMessage = 11;</code>
-     * @return The avatarEndMessage.
      */
     de.pokerth.protocol.ProtoBuf.AvatarEndMessage getAvatarEndMessage();
     /**
@@ -72565,12 +69197,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .UnknownAvatarMessage unknownAvatarMessage = 12;</code>
-     * @return Whether the unknownAvatarMessage field is set.
      */
     boolean hasUnknownAvatarMessage();
     /**
      * <code>optional .UnknownAvatarMessage unknownAvatarMessage = 12;</code>
-     * @return The unknownAvatarMessage.
      */
     de.pokerth.protocol.ProtoBuf.UnknownAvatarMessage getUnknownAvatarMessage();
     /**
@@ -72580,12 +69210,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .PlayerListMessage playerListMessage = 13;</code>
-     * @return Whether the playerListMessage field is set.
      */
     boolean hasPlayerListMessage();
     /**
      * <code>optional .PlayerListMessage playerListMessage = 13;</code>
-     * @return The playerListMessage.
      */
     de.pokerth.protocol.ProtoBuf.PlayerListMessage getPlayerListMessage();
     /**
@@ -72595,12 +69223,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .GameListNewMessage gameListNewMessage = 14;</code>
-     * @return Whether the gameListNewMessage field is set.
      */
     boolean hasGameListNewMessage();
     /**
      * <code>optional .GameListNewMessage gameListNewMessage = 14;</code>
-     * @return The gameListNewMessage.
      */
     de.pokerth.protocol.ProtoBuf.GameListNewMessage getGameListNewMessage();
     /**
@@ -72610,12 +69236,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .GameListUpdateMessage gameListUpdateMessage = 15;</code>
-     * @return Whether the gameListUpdateMessage field is set.
      */
     boolean hasGameListUpdateMessage();
     /**
      * <code>optional .GameListUpdateMessage gameListUpdateMessage = 15;</code>
-     * @return The gameListUpdateMessage.
      */
     de.pokerth.protocol.ProtoBuf.GameListUpdateMessage getGameListUpdateMessage();
     /**
@@ -72625,12 +69249,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .GameListPlayerJoinedMessage gameListPlayerJoinedMessage = 16;</code>
-     * @return Whether the gameListPlayerJoinedMessage field is set.
      */
     boolean hasGameListPlayerJoinedMessage();
     /**
      * <code>optional .GameListPlayerJoinedMessage gameListPlayerJoinedMessage = 16;</code>
-     * @return The gameListPlayerJoinedMessage.
      */
     de.pokerth.protocol.ProtoBuf.GameListPlayerJoinedMessage getGameListPlayerJoinedMessage();
     /**
@@ -72640,12 +69262,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .GameListPlayerLeftMessage gameListPlayerLeftMessage = 17;</code>
-     * @return Whether the gameListPlayerLeftMessage field is set.
      */
     boolean hasGameListPlayerLeftMessage();
     /**
      * <code>optional .GameListPlayerLeftMessage gameListPlayerLeftMessage = 17;</code>
-     * @return The gameListPlayerLeftMessage.
      */
     de.pokerth.protocol.ProtoBuf.GameListPlayerLeftMessage getGameListPlayerLeftMessage();
     /**
@@ -72655,12 +69275,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .GameListAdminChangedMessage gameListAdminChangedMessage = 18;</code>
-     * @return Whether the gameListAdminChangedMessage field is set.
      */
     boolean hasGameListAdminChangedMessage();
     /**
      * <code>optional .GameListAdminChangedMessage gameListAdminChangedMessage = 18;</code>
-     * @return The gameListAdminChangedMessage.
      */
     de.pokerth.protocol.ProtoBuf.GameListAdminChangedMessage getGameListAdminChangedMessage();
     /**
@@ -72670,12 +69288,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .PlayerInfoRequestMessage playerInfoRequestMessage = 19;</code>
-     * @return Whether the playerInfoRequestMessage field is set.
      */
     boolean hasPlayerInfoRequestMessage();
     /**
      * <code>optional .PlayerInfoRequestMessage playerInfoRequestMessage = 19;</code>
-     * @return The playerInfoRequestMessage.
      */
     de.pokerth.protocol.ProtoBuf.PlayerInfoRequestMessage getPlayerInfoRequestMessage();
     /**
@@ -72685,12 +69301,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .PlayerInfoReplyMessage playerInfoReplyMessage = 20;</code>
-     * @return Whether the playerInfoReplyMessage field is set.
      */
     boolean hasPlayerInfoReplyMessage();
     /**
      * <code>optional .PlayerInfoReplyMessage playerInfoReplyMessage = 20;</code>
-     * @return The playerInfoReplyMessage.
      */
     de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage getPlayerInfoReplyMessage();
     /**
@@ -72700,12 +69314,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .SubscriptionRequestMessage subscriptionRequestMessage = 21;</code>
-     * @return Whether the subscriptionRequestMessage field is set.
      */
     boolean hasSubscriptionRequestMessage();
     /**
      * <code>optional .SubscriptionRequestMessage subscriptionRequestMessage = 21;</code>
-     * @return The subscriptionRequestMessage.
      */
     de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage getSubscriptionRequestMessage();
     /**
@@ -72715,12 +69327,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .JoinExistingGameMessage joinExistingGameMessage = 22;</code>
-     * @return Whether the joinExistingGameMessage field is set.
      */
     boolean hasJoinExistingGameMessage();
     /**
      * <code>optional .JoinExistingGameMessage joinExistingGameMessage = 22;</code>
-     * @return The joinExistingGameMessage.
      */
     de.pokerth.protocol.ProtoBuf.JoinExistingGameMessage getJoinExistingGameMessage();
     /**
@@ -72730,12 +69340,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .JoinNewGameMessage joinNewGameMessage = 23;</code>
-     * @return Whether the joinNewGameMessage field is set.
      */
     boolean hasJoinNewGameMessage();
     /**
      * <code>optional .JoinNewGameMessage joinNewGameMessage = 23;</code>
-     * @return The joinNewGameMessage.
      */
     de.pokerth.protocol.ProtoBuf.JoinNewGameMessage getJoinNewGameMessage();
     /**
@@ -72745,12 +69353,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .RejoinExistingGameMessage rejoinExistingGameMessage = 24;</code>
-     * @return Whether the rejoinExistingGameMessage field is set.
      */
     boolean hasRejoinExistingGameMessage();
     /**
      * <code>optional .RejoinExistingGameMessage rejoinExistingGameMessage = 24;</code>
-     * @return The rejoinExistingGameMessage.
      */
     de.pokerth.protocol.ProtoBuf.RejoinExistingGameMessage getRejoinExistingGameMessage();
     /**
@@ -72760,12 +69366,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .JoinGameAckMessage joinGameAckMessage = 25;</code>
-     * @return Whether the joinGameAckMessage field is set.
      */
     boolean hasJoinGameAckMessage();
     /**
      * <code>optional .JoinGameAckMessage joinGameAckMessage = 25;</code>
-     * @return The joinGameAckMessage.
      */
     de.pokerth.protocol.ProtoBuf.JoinGameAckMessage getJoinGameAckMessage();
     /**
@@ -72775,12 +69379,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .JoinGameFailedMessage joinGameFailedMessage = 26;</code>
-     * @return Whether the joinGameFailedMessage field is set.
      */
     boolean hasJoinGameFailedMessage();
     /**
      * <code>optional .JoinGameFailedMessage joinGameFailedMessage = 26;</code>
-     * @return The joinGameFailedMessage.
      */
     de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage getJoinGameFailedMessage();
     /**
@@ -72790,12 +69392,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .GamePlayerJoinedMessage gamePlayerJoinedMessage = 27;</code>
-     * @return Whether the gamePlayerJoinedMessage field is set.
      */
     boolean hasGamePlayerJoinedMessage();
     /**
      * <code>optional .GamePlayerJoinedMessage gamePlayerJoinedMessage = 27;</code>
-     * @return The gamePlayerJoinedMessage.
      */
     de.pokerth.protocol.ProtoBuf.GamePlayerJoinedMessage getGamePlayerJoinedMessage();
     /**
@@ -72805,12 +69405,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .GamePlayerLeftMessage gamePlayerLeftMessage = 28;</code>
-     * @return Whether the gamePlayerLeftMessage field is set.
      */
     boolean hasGamePlayerLeftMessage();
     /**
      * <code>optional .GamePlayerLeftMessage gamePlayerLeftMessage = 28;</code>
-     * @return The gamePlayerLeftMessage.
      */
     de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage getGamePlayerLeftMessage();
     /**
@@ -72820,12 +69418,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .GameAdminChangedMessage gameAdminChangedMessage = 29;</code>
-     * @return Whether the gameAdminChangedMessage field is set.
      */
     boolean hasGameAdminChangedMessage();
     /**
      * <code>optional .GameAdminChangedMessage gameAdminChangedMessage = 29;</code>
-     * @return The gameAdminChangedMessage.
      */
     de.pokerth.protocol.ProtoBuf.GameAdminChangedMessage getGameAdminChangedMessage();
     /**
@@ -72835,12 +69431,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .RemovedFromGameMessage removedFromGameMessage = 30;</code>
-     * @return Whether the removedFromGameMessage field is set.
      */
     boolean hasRemovedFromGameMessage();
     /**
      * <code>optional .RemovedFromGameMessage removedFromGameMessage = 30;</code>
-     * @return The removedFromGameMessage.
      */
     de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage getRemovedFromGameMessage();
     /**
@@ -72850,12 +69444,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .KickPlayerRequestMessage kickPlayerRequestMessage = 31;</code>
-     * @return Whether the kickPlayerRequestMessage field is set.
      */
     boolean hasKickPlayerRequestMessage();
     /**
      * <code>optional .KickPlayerRequestMessage kickPlayerRequestMessage = 31;</code>
-     * @return The kickPlayerRequestMessage.
      */
     de.pokerth.protocol.ProtoBuf.KickPlayerRequestMessage getKickPlayerRequestMessage();
     /**
@@ -72865,12 +69457,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .LeaveGameRequestMessage leaveGameRequestMessage = 32;</code>
-     * @return Whether the leaveGameRequestMessage field is set.
      */
     boolean hasLeaveGameRequestMessage();
     /**
      * <code>optional .LeaveGameRequestMessage leaveGameRequestMessage = 32;</code>
-     * @return The leaveGameRequestMessage.
      */
     de.pokerth.protocol.ProtoBuf.LeaveGameRequestMessage getLeaveGameRequestMessage();
     /**
@@ -72880,12 +69470,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .InvitePlayerToGameMessage invitePlayerToGameMessage = 33;</code>
-     * @return Whether the invitePlayerToGameMessage field is set.
      */
     boolean hasInvitePlayerToGameMessage();
     /**
      * <code>optional .InvitePlayerToGameMessage invitePlayerToGameMessage = 33;</code>
-     * @return The invitePlayerToGameMessage.
      */
     de.pokerth.protocol.ProtoBuf.InvitePlayerToGameMessage getInvitePlayerToGameMessage();
     /**
@@ -72895,12 +69483,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .InviteNotifyMessage inviteNotifyMessage = 34;</code>
-     * @return Whether the inviteNotifyMessage field is set.
      */
     boolean hasInviteNotifyMessage();
     /**
      * <code>optional .InviteNotifyMessage inviteNotifyMessage = 34;</code>
-     * @return The inviteNotifyMessage.
      */
     de.pokerth.protocol.ProtoBuf.InviteNotifyMessage getInviteNotifyMessage();
     /**
@@ -72910,12 +69496,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .RejectGameInvitationMessage rejectGameInvitationMessage = 35;</code>
-     * @return Whether the rejectGameInvitationMessage field is set.
      */
     boolean hasRejectGameInvitationMessage();
     /**
      * <code>optional .RejectGameInvitationMessage rejectGameInvitationMessage = 35;</code>
-     * @return The rejectGameInvitationMessage.
      */
     de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage getRejectGameInvitationMessage();
     /**
@@ -72925,12 +69509,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .RejectInvNotifyMessage rejectInvNotifyMessage = 36;</code>
-     * @return Whether the rejectInvNotifyMessage field is set.
      */
     boolean hasRejectInvNotifyMessage();
     /**
      * <code>optional .RejectInvNotifyMessage rejectInvNotifyMessage = 36;</code>
-     * @return The rejectInvNotifyMessage.
      */
     de.pokerth.protocol.ProtoBuf.RejectInvNotifyMessage getRejectInvNotifyMessage();
     /**
@@ -72940,12 +69522,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .StartEventMessage startEventMessage = 37;</code>
-     * @return Whether the startEventMessage field is set.
      */
     boolean hasStartEventMessage();
     /**
      * <code>optional .StartEventMessage startEventMessage = 37;</code>
-     * @return The startEventMessage.
      */
     de.pokerth.protocol.ProtoBuf.StartEventMessage getStartEventMessage();
     /**
@@ -72955,12 +69535,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .StartEventAckMessage startEventAckMessage = 38;</code>
-     * @return Whether the startEventAckMessage field is set.
      */
     boolean hasStartEventAckMessage();
     /**
      * <code>optional .StartEventAckMessage startEventAckMessage = 38;</code>
-     * @return The startEventAckMessage.
      */
     de.pokerth.protocol.ProtoBuf.StartEventAckMessage getStartEventAckMessage();
     /**
@@ -72970,12 +69548,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .GameStartInitialMessage gameStartInitialMessage = 39;</code>
-     * @return Whether the gameStartInitialMessage field is set.
      */
     boolean hasGameStartInitialMessage();
     /**
      * <code>optional .GameStartInitialMessage gameStartInitialMessage = 39;</code>
-     * @return The gameStartInitialMessage.
      */
     de.pokerth.protocol.ProtoBuf.GameStartInitialMessage getGameStartInitialMessage();
     /**
@@ -72985,12 +69561,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .GameStartRejoinMessage gameStartRejoinMessage = 40;</code>
-     * @return Whether the gameStartRejoinMessage field is set.
      */
     boolean hasGameStartRejoinMessage();
     /**
      * <code>optional .GameStartRejoinMessage gameStartRejoinMessage = 40;</code>
-     * @return The gameStartRejoinMessage.
      */
     de.pokerth.protocol.ProtoBuf.GameStartRejoinMessage getGameStartRejoinMessage();
     /**
@@ -73000,12 +69574,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .HandStartMessage handStartMessage = 41;</code>
-     * @return Whether the handStartMessage field is set.
      */
     boolean hasHandStartMessage();
     /**
      * <code>optional .HandStartMessage handStartMessage = 41;</code>
-     * @return The handStartMessage.
      */
     de.pokerth.protocol.ProtoBuf.HandStartMessage getHandStartMessage();
     /**
@@ -73015,12 +69587,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .PlayersTurnMessage playersTurnMessage = 42;</code>
-     * @return Whether the playersTurnMessage field is set.
      */
     boolean hasPlayersTurnMessage();
     /**
      * <code>optional .PlayersTurnMessage playersTurnMessage = 42;</code>
-     * @return The playersTurnMessage.
      */
     de.pokerth.protocol.ProtoBuf.PlayersTurnMessage getPlayersTurnMessage();
     /**
@@ -73030,12 +69600,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .MyActionRequestMessage myActionRequestMessage = 43;</code>
-     * @return Whether the myActionRequestMessage field is set.
      */
     boolean hasMyActionRequestMessage();
     /**
      * <code>optional .MyActionRequestMessage myActionRequestMessage = 43;</code>
-     * @return The myActionRequestMessage.
      */
     de.pokerth.protocol.ProtoBuf.MyActionRequestMessage getMyActionRequestMessage();
     /**
@@ -73045,12 +69613,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .YourActionRejectedMessage yourActionRejectedMessage = 44;</code>
-     * @return Whether the yourActionRejectedMessage field is set.
      */
     boolean hasYourActionRejectedMessage();
     /**
      * <code>optional .YourActionRejectedMessage yourActionRejectedMessage = 44;</code>
-     * @return The yourActionRejectedMessage.
      */
     de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage getYourActionRejectedMessage();
     /**
@@ -73060,12 +69626,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .PlayersActionDoneMessage playersActionDoneMessage = 45;</code>
-     * @return Whether the playersActionDoneMessage field is set.
      */
     boolean hasPlayersActionDoneMessage();
     /**
      * <code>optional .PlayersActionDoneMessage playersActionDoneMessage = 45;</code>
-     * @return The playersActionDoneMessage.
      */
     de.pokerth.protocol.ProtoBuf.PlayersActionDoneMessage getPlayersActionDoneMessage();
     /**
@@ -73075,12 +69639,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .DealFlopCardsMessage dealFlopCardsMessage = 46;</code>
-     * @return Whether the dealFlopCardsMessage field is set.
      */
     boolean hasDealFlopCardsMessage();
     /**
      * <code>optional .DealFlopCardsMessage dealFlopCardsMessage = 46;</code>
-     * @return The dealFlopCardsMessage.
      */
     de.pokerth.protocol.ProtoBuf.DealFlopCardsMessage getDealFlopCardsMessage();
     /**
@@ -73090,12 +69652,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .DealTurnCardMessage dealTurnCardMessage = 47;</code>
-     * @return Whether the dealTurnCardMessage field is set.
      */
     boolean hasDealTurnCardMessage();
     /**
      * <code>optional .DealTurnCardMessage dealTurnCardMessage = 47;</code>
-     * @return The dealTurnCardMessage.
      */
     de.pokerth.protocol.ProtoBuf.DealTurnCardMessage getDealTurnCardMessage();
     /**
@@ -73105,12 +69665,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .DealRiverCardMessage dealRiverCardMessage = 48;</code>
-     * @return Whether the dealRiverCardMessage field is set.
      */
     boolean hasDealRiverCardMessage();
     /**
      * <code>optional .DealRiverCardMessage dealRiverCardMessage = 48;</code>
-     * @return The dealRiverCardMessage.
      */
     de.pokerth.protocol.ProtoBuf.DealRiverCardMessage getDealRiverCardMessage();
     /**
@@ -73120,12 +69678,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AllInShowCardsMessage allInShowCardsMessage = 49;</code>
-     * @return Whether the allInShowCardsMessage field is set.
      */
     boolean hasAllInShowCardsMessage();
     /**
      * <code>optional .AllInShowCardsMessage allInShowCardsMessage = 49;</code>
-     * @return The allInShowCardsMessage.
      */
     de.pokerth.protocol.ProtoBuf.AllInShowCardsMessage getAllInShowCardsMessage();
     /**
@@ -73135,12 +69691,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .EndOfHandShowCardsMessage endOfHandShowCardsMessage = 50;</code>
-     * @return Whether the endOfHandShowCardsMessage field is set.
      */
     boolean hasEndOfHandShowCardsMessage();
     /**
      * <code>optional .EndOfHandShowCardsMessage endOfHandShowCardsMessage = 50;</code>
-     * @return The endOfHandShowCardsMessage.
      */
     de.pokerth.protocol.ProtoBuf.EndOfHandShowCardsMessage getEndOfHandShowCardsMessage();
     /**
@@ -73150,12 +69704,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .EndOfHandHideCardsMessage endOfHandHideCardsMessage = 51;</code>
-     * @return Whether the endOfHandHideCardsMessage field is set.
      */
     boolean hasEndOfHandHideCardsMessage();
     /**
      * <code>optional .EndOfHandHideCardsMessage endOfHandHideCardsMessage = 51;</code>
-     * @return The endOfHandHideCardsMessage.
      */
     de.pokerth.protocol.ProtoBuf.EndOfHandHideCardsMessage getEndOfHandHideCardsMessage();
     /**
@@ -73165,12 +69717,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .ShowMyCardsRequestMessage showMyCardsRequestMessage = 52;</code>
-     * @return Whether the showMyCardsRequestMessage field is set.
      */
     boolean hasShowMyCardsRequestMessage();
     /**
      * <code>optional .ShowMyCardsRequestMessage showMyCardsRequestMessage = 52;</code>
-     * @return The showMyCardsRequestMessage.
      */
     de.pokerth.protocol.ProtoBuf.ShowMyCardsRequestMessage getShowMyCardsRequestMessage();
     /**
@@ -73180,12 +69730,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AfterHandShowCardsMessage afterHandShowCardsMessage = 53;</code>
-     * @return Whether the afterHandShowCardsMessage field is set.
      */
     boolean hasAfterHandShowCardsMessage();
     /**
      * <code>optional .AfterHandShowCardsMessage afterHandShowCardsMessage = 53;</code>
-     * @return The afterHandShowCardsMessage.
      */
     de.pokerth.protocol.ProtoBuf.AfterHandShowCardsMessage getAfterHandShowCardsMessage();
     /**
@@ -73195,12 +69743,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .EndOfGameMessage endOfGameMessage = 54;</code>
-     * @return Whether the endOfGameMessage field is set.
      */
     boolean hasEndOfGameMessage();
     /**
      * <code>optional .EndOfGameMessage endOfGameMessage = 54;</code>
-     * @return The endOfGameMessage.
      */
     de.pokerth.protocol.ProtoBuf.EndOfGameMessage getEndOfGameMessage();
     /**
@@ -73210,12 +69756,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .PlayerIdChangedMessage playerIdChangedMessage = 55;</code>
-     * @return Whether the playerIdChangedMessage field is set.
      */
     boolean hasPlayerIdChangedMessage();
     /**
      * <code>optional .PlayerIdChangedMessage playerIdChangedMessage = 55;</code>
-     * @return The playerIdChangedMessage.
      */
     de.pokerth.protocol.ProtoBuf.PlayerIdChangedMessage getPlayerIdChangedMessage();
     /**
@@ -73225,12 +69769,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AskKickPlayerMessage askKickPlayerMessage = 56;</code>
-     * @return Whether the askKickPlayerMessage field is set.
      */
     boolean hasAskKickPlayerMessage();
     /**
      * <code>optional .AskKickPlayerMessage askKickPlayerMessage = 56;</code>
-     * @return The askKickPlayerMessage.
      */
     de.pokerth.protocol.ProtoBuf.AskKickPlayerMessage getAskKickPlayerMessage();
     /**
@@ -73240,12 +69782,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AskKickDeniedMessage askKickDeniedMessage = 57;</code>
-     * @return Whether the askKickDeniedMessage field is set.
      */
     boolean hasAskKickDeniedMessage();
     /**
      * <code>optional .AskKickDeniedMessage askKickDeniedMessage = 57;</code>
-     * @return The askKickDeniedMessage.
      */
     de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage getAskKickDeniedMessage();
     /**
@@ -73255,12 +69795,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .StartKickPetitionMessage startKickPetitionMessage = 58;</code>
-     * @return Whether the startKickPetitionMessage field is set.
      */
     boolean hasStartKickPetitionMessage();
     /**
      * <code>optional .StartKickPetitionMessage startKickPetitionMessage = 58;</code>
-     * @return The startKickPetitionMessage.
      */
     de.pokerth.protocol.ProtoBuf.StartKickPetitionMessage getStartKickPetitionMessage();
     /**
@@ -73270,12 +69808,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .VoteKickRequestMessage voteKickRequestMessage = 59;</code>
-     * @return Whether the voteKickRequestMessage field is set.
      */
     boolean hasVoteKickRequestMessage();
     /**
      * <code>optional .VoteKickRequestMessage voteKickRequestMessage = 59;</code>
-     * @return The voteKickRequestMessage.
      */
     de.pokerth.protocol.ProtoBuf.VoteKickRequestMessage getVoteKickRequestMessage();
     /**
@@ -73285,12 +69821,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .VoteKickReplyMessage voteKickReplyMessage = 60;</code>
-     * @return Whether the voteKickReplyMessage field is set.
      */
     boolean hasVoteKickReplyMessage();
     /**
      * <code>optional .VoteKickReplyMessage voteKickReplyMessage = 60;</code>
-     * @return The voteKickReplyMessage.
      */
     de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage getVoteKickReplyMessage();
     /**
@@ -73300,12 +69834,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .KickPetitionUpdateMessage kickPetitionUpdateMessage = 61;</code>
-     * @return Whether the kickPetitionUpdateMessage field is set.
      */
     boolean hasKickPetitionUpdateMessage();
     /**
      * <code>optional .KickPetitionUpdateMessage kickPetitionUpdateMessage = 61;</code>
-     * @return The kickPetitionUpdateMessage.
      */
     de.pokerth.protocol.ProtoBuf.KickPetitionUpdateMessage getKickPetitionUpdateMessage();
     /**
@@ -73315,12 +69847,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .EndKickPetitionMessage endKickPetitionMessage = 62;</code>
-     * @return Whether the endKickPetitionMessage field is set.
      */
     boolean hasEndKickPetitionMessage();
     /**
      * <code>optional .EndKickPetitionMessage endKickPetitionMessage = 62;</code>
-     * @return The endKickPetitionMessage.
      */
     de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage getEndKickPetitionMessage();
     /**
@@ -73330,12 +69860,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .StatisticsMessage statisticsMessage = 63;</code>
-     * @return Whether the statisticsMessage field is set.
      */
     boolean hasStatisticsMessage();
     /**
      * <code>optional .StatisticsMessage statisticsMessage = 63;</code>
-     * @return The statisticsMessage.
      */
     de.pokerth.protocol.ProtoBuf.StatisticsMessage getStatisticsMessage();
     /**
@@ -73345,12 +69873,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .ChatRequestMessage chatRequestMessage = 64;</code>
-     * @return Whether the chatRequestMessage field is set.
      */
     boolean hasChatRequestMessage();
     /**
      * <code>optional .ChatRequestMessage chatRequestMessage = 64;</code>
-     * @return The chatRequestMessage.
      */
     de.pokerth.protocol.ProtoBuf.ChatRequestMessage getChatRequestMessage();
     /**
@@ -73360,12 +69886,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .ChatMessage chatMessage = 65;</code>
-     * @return Whether the chatMessage field is set.
      */
     boolean hasChatMessage();
     /**
      * <code>optional .ChatMessage chatMessage = 65;</code>
-     * @return The chatMessage.
      */
     de.pokerth.protocol.ProtoBuf.ChatMessage getChatMessage();
     /**
@@ -73375,12 +69899,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .ChatRejectMessage chatRejectMessage = 66;</code>
-     * @return Whether the chatRejectMessage field is set.
      */
     boolean hasChatRejectMessage();
     /**
      * <code>optional .ChatRejectMessage chatRejectMessage = 66;</code>
-     * @return The chatRejectMessage.
      */
     de.pokerth.protocol.ProtoBuf.ChatRejectMessage getChatRejectMessage();
     /**
@@ -73390,12 +69912,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .DialogMessage dialogMessage = 67;</code>
-     * @return Whether the dialogMessage field is set.
      */
     boolean hasDialogMessage();
     /**
      * <code>optional .DialogMessage dialogMessage = 67;</code>
-     * @return The dialogMessage.
      */
     de.pokerth.protocol.ProtoBuf.DialogMessage getDialogMessage();
     /**
@@ -73405,12 +69925,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .TimeoutWarningMessage timeoutWarningMessage = 68;</code>
-     * @return Whether the timeoutWarningMessage field is set.
      */
     boolean hasTimeoutWarningMessage();
     /**
      * <code>optional .TimeoutWarningMessage timeoutWarningMessage = 68;</code>
-     * @return The timeoutWarningMessage.
      */
     de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage getTimeoutWarningMessage();
     /**
@@ -73420,12 +69938,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .ResetTimeoutMessage resetTimeoutMessage = 69;</code>
-     * @return Whether the resetTimeoutMessage field is set.
      */
     boolean hasResetTimeoutMessage();
     /**
      * <code>optional .ResetTimeoutMessage resetTimeoutMessage = 69;</code>
-     * @return The resetTimeoutMessage.
      */
     de.pokerth.protocol.ProtoBuf.ResetTimeoutMessage getResetTimeoutMessage();
     /**
@@ -73435,12 +69951,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .ReportAvatarMessage reportAvatarMessage = 70;</code>
-     * @return Whether the reportAvatarMessage field is set.
      */
     boolean hasReportAvatarMessage();
     /**
      * <code>optional .ReportAvatarMessage reportAvatarMessage = 70;</code>
-     * @return The reportAvatarMessage.
      */
     de.pokerth.protocol.ProtoBuf.ReportAvatarMessage getReportAvatarMessage();
     /**
@@ -73450,12 +69964,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .ReportAvatarAckMessage reportAvatarAckMessage = 71;</code>
-     * @return Whether the reportAvatarAckMessage field is set.
      */
     boolean hasReportAvatarAckMessage();
     /**
      * <code>optional .ReportAvatarAckMessage reportAvatarAckMessage = 71;</code>
-     * @return The reportAvatarAckMessage.
      */
     de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage getReportAvatarAckMessage();
     /**
@@ -73465,12 +69977,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .ReportGameMessage reportGameMessage = 72;</code>
-     * @return Whether the reportGameMessage field is set.
      */
     boolean hasReportGameMessage();
     /**
      * <code>optional .ReportGameMessage reportGameMessage = 72;</code>
-     * @return The reportGameMessage.
      */
     de.pokerth.protocol.ProtoBuf.ReportGameMessage getReportGameMessage();
     /**
@@ -73480,12 +69990,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .ReportGameAckMessage reportGameAckMessage = 73;</code>
-     * @return Whether the reportGameAckMessage field is set.
      */
     boolean hasReportGameAckMessage();
     /**
      * <code>optional .ReportGameAckMessage reportGameAckMessage = 73;</code>
-     * @return The reportGameAckMessage.
      */
     de.pokerth.protocol.ProtoBuf.ReportGameAckMessage getReportGameAckMessage();
     /**
@@ -73495,12 +70003,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .ErrorMessage errorMessage = 74;</code>
-     * @return Whether the errorMessage field is set.
      */
     boolean hasErrorMessage();
     /**
      * <code>optional .ErrorMessage errorMessage = 74;</code>
-     * @return The errorMessage.
      */
     de.pokerth.protocol.ProtoBuf.ErrorMessage getErrorMessage();
     /**
@@ -73510,12 +70016,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AdminRemoveGameMessage adminRemoveGameMessage = 75;</code>
-     * @return Whether the adminRemoveGameMessage field is set.
      */
     boolean hasAdminRemoveGameMessage();
     /**
      * <code>optional .AdminRemoveGameMessage adminRemoveGameMessage = 75;</code>
-     * @return The adminRemoveGameMessage.
      */
     de.pokerth.protocol.ProtoBuf.AdminRemoveGameMessage getAdminRemoveGameMessage();
     /**
@@ -73525,12 +70029,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AdminRemoveGameAckMessage adminRemoveGameAckMessage = 76;</code>
-     * @return Whether the adminRemoveGameAckMessage field is set.
      */
     boolean hasAdminRemoveGameAckMessage();
     /**
      * <code>optional .AdminRemoveGameAckMessage adminRemoveGameAckMessage = 76;</code>
-     * @return The adminRemoveGameAckMessage.
      */
     de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage getAdminRemoveGameAckMessage();
     /**
@@ -73540,12 +70042,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AdminBanPlayerMessage adminBanPlayerMessage = 77;</code>
-     * @return Whether the adminBanPlayerMessage field is set.
      */
     boolean hasAdminBanPlayerMessage();
     /**
      * <code>optional .AdminBanPlayerMessage adminBanPlayerMessage = 77;</code>
-     * @return The adminBanPlayerMessage.
      */
     de.pokerth.protocol.ProtoBuf.AdminBanPlayerMessage getAdminBanPlayerMessage();
     /**
@@ -73555,12 +70055,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .AdminBanPlayerAckMessage adminBanPlayerAckMessage = 78;</code>
-     * @return Whether the adminBanPlayerAckMessage field is set.
      */
     boolean hasAdminBanPlayerAckMessage();
     /**
      * <code>optional .AdminBanPlayerAckMessage adminBanPlayerAckMessage = 78;</code>
-     * @return The adminBanPlayerAckMessage.
      */
     de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage getAdminBanPlayerAckMessage();
     /**
@@ -73570,12 +70068,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .GameListSpectatorJoinedMessage gameListSpectatorJoinedMessage = 79;</code>
-     * @return Whether the gameListSpectatorJoinedMessage field is set.
      */
     boolean hasGameListSpectatorJoinedMessage();
     /**
      * <code>optional .GameListSpectatorJoinedMessage gameListSpectatorJoinedMessage = 79;</code>
-     * @return The gameListSpectatorJoinedMessage.
      */
     de.pokerth.protocol.ProtoBuf.GameListSpectatorJoinedMessage getGameListSpectatorJoinedMessage();
     /**
@@ -73585,12 +70081,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .GameListSpectatorLeftMessage gameListSpectatorLeftMessage = 80;</code>
-     * @return Whether the gameListSpectatorLeftMessage field is set.
      */
     boolean hasGameListSpectatorLeftMessage();
     /**
      * <code>optional .GameListSpectatorLeftMessage gameListSpectatorLeftMessage = 80;</code>
-     * @return The gameListSpectatorLeftMessage.
      */
     de.pokerth.protocol.ProtoBuf.GameListSpectatorLeftMessage getGameListSpectatorLeftMessage();
     /**
@@ -73600,12 +70094,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .GameSpectatorJoinedMessage gameSpectatorJoinedMessage = 81;</code>
-     * @return Whether the gameSpectatorJoinedMessage field is set.
      */
     boolean hasGameSpectatorJoinedMessage();
     /**
      * <code>optional .GameSpectatorJoinedMessage gameSpectatorJoinedMessage = 81;</code>
-     * @return The gameSpectatorJoinedMessage.
      */
     de.pokerth.protocol.ProtoBuf.GameSpectatorJoinedMessage getGameSpectatorJoinedMessage();
     /**
@@ -73615,12 +70107,10 @@ public final class ProtoBuf {
 
     /**
      * <code>optional .GameSpectatorLeftMessage gameSpectatorLeftMessage = 82;</code>
-     * @return Whether the gameSpectatorLeftMessage field is set.
      */
     boolean hasGameSpectatorLeftMessage();
     /**
      * <code>optional .GameSpectatorLeftMessage gameSpectatorLeftMessage = 82;</code>
-     * @return The gameSpectatorLeftMessage.
      */
     de.pokerth.protocol.ProtoBuf.GameSpectatorLeftMessage getGameSpectatorLeftMessage();
     /**
@@ -73631,7 +70121,7 @@ public final class ProtoBuf {
   /**
    * Protobuf type {@code PokerTHMessage}
    */
-  public static final class PokerTHMessage extends
+  public  static final class PokerTHMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:PokerTHMessage)
       PokerTHMessageOrBuilder {
@@ -75436,8 +71926,6 @@ public final class ProtoBuf {
       }
 
       /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -75445,10 +71933,6 @@ public final class ProtoBuf {
         return forNumber(value);
       }
 
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
       public static PokerTHMessageType forNumber(int value) {
         switch (value) {
           case 1: return Type_AnnounceMessage;
@@ -75588,16 +72072,14 @@ public final class ProtoBuf {
     private int messageType_;
     /**
      * <code>required .PokerTHMessage.PokerTHMessageType messageType = 1;</code>
-     * @return Whether the messageType field is set.
      */
-    @java.lang.Override public boolean hasMessageType() {
+    public boolean hasMessageType() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required .PokerTHMessage.PokerTHMessageType messageType = 1;</code>
-     * @return The messageType.
      */
-    @java.lang.Override public de.pokerth.protocol.ProtoBuf.PokerTHMessage.PokerTHMessageType getMessageType() {
+    public de.pokerth.protocol.ProtoBuf.PokerTHMessage.PokerTHMessageType getMessageType() {
       @SuppressWarnings("deprecation")
       de.pokerth.protocol.ProtoBuf.PokerTHMessage.PokerTHMessageType result = de.pokerth.protocol.ProtoBuf.PokerTHMessage.PokerTHMessageType.valueOf(messageType_);
       return result == null ? de.pokerth.protocol.ProtoBuf.PokerTHMessage.PokerTHMessageType.Type_AnnounceMessage : result;
@@ -75607,24 +72089,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AnnounceMessage announceMessage_;
     /**
      * <code>optional .AnnounceMessage announceMessage = 2;</code>
-     * @return Whether the announceMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAnnounceMessage() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>optional .AnnounceMessage announceMessage = 2;</code>
-     * @return The announceMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AnnounceMessage getAnnounceMessage() {
       return announceMessage_ == null ? de.pokerth.protocol.ProtoBuf.AnnounceMessage.getDefaultInstance() : announceMessage_;
     }
     /**
      * <code>optional .AnnounceMessage announceMessage = 2;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AnnounceMessageOrBuilder getAnnounceMessageOrBuilder() {
       return announceMessage_ == null ? de.pokerth.protocol.ProtoBuf.AnnounceMessage.getDefaultInstance() : announceMessage_;
     }
@@ -75633,24 +72110,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.InitMessage initMessage_;
     /**
      * <code>optional .InitMessage initMessage = 3;</code>
-     * @return Whether the initMessage field is set.
      */
-    @java.lang.Override
     public boolean hasInitMessage() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>optional .InitMessage initMessage = 3;</code>
-     * @return The initMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.InitMessage getInitMessage() {
       return initMessage_ == null ? de.pokerth.protocol.ProtoBuf.InitMessage.getDefaultInstance() : initMessage_;
     }
     /**
      * <code>optional .InitMessage initMessage = 3;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.InitMessageOrBuilder getInitMessageOrBuilder() {
       return initMessage_ == null ? de.pokerth.protocol.ProtoBuf.InitMessage.getDefaultInstance() : initMessage_;
     }
@@ -75659,24 +72131,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AuthServerChallengeMessage authServerChallengeMessage_;
     /**
      * <code>optional .AuthServerChallengeMessage authServerChallengeMessage = 4;</code>
-     * @return Whether the authServerChallengeMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAuthServerChallengeMessage() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>optional .AuthServerChallengeMessage authServerChallengeMessage = 4;</code>
-     * @return The authServerChallengeMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AuthServerChallengeMessage getAuthServerChallengeMessage() {
       return authServerChallengeMessage_ == null ? de.pokerth.protocol.ProtoBuf.AuthServerChallengeMessage.getDefaultInstance() : authServerChallengeMessage_;
     }
     /**
      * <code>optional .AuthServerChallengeMessage authServerChallengeMessage = 4;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AuthServerChallengeMessageOrBuilder getAuthServerChallengeMessageOrBuilder() {
       return authServerChallengeMessage_ == null ? de.pokerth.protocol.ProtoBuf.AuthServerChallengeMessage.getDefaultInstance() : authServerChallengeMessage_;
     }
@@ -75685,24 +72152,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AuthClientResponseMessage authClientResponseMessage_;
     /**
      * <code>optional .AuthClientResponseMessage authClientResponseMessage = 5;</code>
-     * @return Whether the authClientResponseMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAuthClientResponseMessage() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
      * <code>optional .AuthClientResponseMessage authClientResponseMessage = 5;</code>
-     * @return The authClientResponseMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AuthClientResponseMessage getAuthClientResponseMessage() {
       return authClientResponseMessage_ == null ? de.pokerth.protocol.ProtoBuf.AuthClientResponseMessage.getDefaultInstance() : authClientResponseMessage_;
     }
     /**
      * <code>optional .AuthClientResponseMessage authClientResponseMessage = 5;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AuthClientResponseMessageOrBuilder getAuthClientResponseMessageOrBuilder() {
       return authClientResponseMessage_ == null ? de.pokerth.protocol.ProtoBuf.AuthClientResponseMessage.getDefaultInstance() : authClientResponseMessage_;
     }
@@ -75711,24 +72173,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AuthServerVerificationMessage authServerVerificationMessage_;
     /**
      * <code>optional .AuthServerVerificationMessage authServerVerificationMessage = 6;</code>
-     * @return Whether the authServerVerificationMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAuthServerVerificationMessage() {
       return ((bitField0_ & 0x00000020) != 0);
     }
     /**
      * <code>optional .AuthServerVerificationMessage authServerVerificationMessage = 6;</code>
-     * @return The authServerVerificationMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AuthServerVerificationMessage getAuthServerVerificationMessage() {
       return authServerVerificationMessage_ == null ? de.pokerth.protocol.ProtoBuf.AuthServerVerificationMessage.getDefaultInstance() : authServerVerificationMessage_;
     }
     /**
      * <code>optional .AuthServerVerificationMessage authServerVerificationMessage = 6;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AuthServerVerificationMessageOrBuilder getAuthServerVerificationMessageOrBuilder() {
       return authServerVerificationMessage_ == null ? de.pokerth.protocol.ProtoBuf.AuthServerVerificationMessage.getDefaultInstance() : authServerVerificationMessage_;
     }
@@ -75737,24 +72194,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.InitAckMessage initAckMessage_;
     /**
      * <code>optional .InitAckMessage initAckMessage = 7;</code>
-     * @return Whether the initAckMessage field is set.
      */
-    @java.lang.Override
     public boolean hasInitAckMessage() {
       return ((bitField0_ & 0x00000040) != 0);
     }
     /**
      * <code>optional .InitAckMessage initAckMessage = 7;</code>
-     * @return The initAckMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.InitAckMessage getInitAckMessage() {
       return initAckMessage_ == null ? de.pokerth.protocol.ProtoBuf.InitAckMessage.getDefaultInstance() : initAckMessage_;
     }
     /**
      * <code>optional .InitAckMessage initAckMessage = 7;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.InitAckMessageOrBuilder getInitAckMessageOrBuilder() {
       return initAckMessage_ == null ? de.pokerth.protocol.ProtoBuf.InitAckMessage.getDefaultInstance() : initAckMessage_;
     }
@@ -75763,24 +72215,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AvatarRequestMessage avatarRequestMessage_;
     /**
      * <code>optional .AvatarRequestMessage avatarRequestMessage = 8;</code>
-     * @return Whether the avatarRequestMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAvatarRequestMessage() {
       return ((bitField0_ & 0x00000080) != 0);
     }
     /**
      * <code>optional .AvatarRequestMessage avatarRequestMessage = 8;</code>
-     * @return The avatarRequestMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AvatarRequestMessage getAvatarRequestMessage() {
       return avatarRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.AvatarRequestMessage.getDefaultInstance() : avatarRequestMessage_;
     }
     /**
      * <code>optional .AvatarRequestMessage avatarRequestMessage = 8;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AvatarRequestMessageOrBuilder getAvatarRequestMessageOrBuilder() {
       return avatarRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.AvatarRequestMessage.getDefaultInstance() : avatarRequestMessage_;
     }
@@ -75789,24 +72236,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AvatarHeaderMessage avatarHeaderMessage_;
     /**
      * <code>optional .AvatarHeaderMessage avatarHeaderMessage = 9;</code>
-     * @return Whether the avatarHeaderMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAvatarHeaderMessage() {
       return ((bitField0_ & 0x00000100) != 0);
     }
     /**
      * <code>optional .AvatarHeaderMessage avatarHeaderMessage = 9;</code>
-     * @return The avatarHeaderMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AvatarHeaderMessage getAvatarHeaderMessage() {
       return avatarHeaderMessage_ == null ? de.pokerth.protocol.ProtoBuf.AvatarHeaderMessage.getDefaultInstance() : avatarHeaderMessage_;
     }
     /**
      * <code>optional .AvatarHeaderMessage avatarHeaderMessage = 9;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AvatarHeaderMessageOrBuilder getAvatarHeaderMessageOrBuilder() {
       return avatarHeaderMessage_ == null ? de.pokerth.protocol.ProtoBuf.AvatarHeaderMessage.getDefaultInstance() : avatarHeaderMessage_;
     }
@@ -75815,24 +72257,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AvatarDataMessage avatarDataMessage_;
     /**
      * <code>optional .AvatarDataMessage avatarDataMessage = 10;</code>
-     * @return Whether the avatarDataMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAvatarDataMessage() {
       return ((bitField0_ & 0x00000200) != 0);
     }
     /**
      * <code>optional .AvatarDataMessage avatarDataMessage = 10;</code>
-     * @return The avatarDataMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AvatarDataMessage getAvatarDataMessage() {
       return avatarDataMessage_ == null ? de.pokerth.protocol.ProtoBuf.AvatarDataMessage.getDefaultInstance() : avatarDataMessage_;
     }
     /**
      * <code>optional .AvatarDataMessage avatarDataMessage = 10;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AvatarDataMessageOrBuilder getAvatarDataMessageOrBuilder() {
       return avatarDataMessage_ == null ? de.pokerth.protocol.ProtoBuf.AvatarDataMessage.getDefaultInstance() : avatarDataMessage_;
     }
@@ -75841,24 +72278,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AvatarEndMessage avatarEndMessage_;
     /**
      * <code>optional .AvatarEndMessage avatarEndMessage = 11;</code>
-     * @return Whether the avatarEndMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAvatarEndMessage() {
       return ((bitField0_ & 0x00000400) != 0);
     }
     /**
      * <code>optional .AvatarEndMessage avatarEndMessage = 11;</code>
-     * @return The avatarEndMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AvatarEndMessage getAvatarEndMessage() {
       return avatarEndMessage_ == null ? de.pokerth.protocol.ProtoBuf.AvatarEndMessage.getDefaultInstance() : avatarEndMessage_;
     }
     /**
      * <code>optional .AvatarEndMessage avatarEndMessage = 11;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AvatarEndMessageOrBuilder getAvatarEndMessageOrBuilder() {
       return avatarEndMessage_ == null ? de.pokerth.protocol.ProtoBuf.AvatarEndMessage.getDefaultInstance() : avatarEndMessage_;
     }
@@ -75867,24 +72299,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.UnknownAvatarMessage unknownAvatarMessage_;
     /**
      * <code>optional .UnknownAvatarMessage unknownAvatarMessage = 12;</code>
-     * @return Whether the unknownAvatarMessage field is set.
      */
-    @java.lang.Override
     public boolean hasUnknownAvatarMessage() {
       return ((bitField0_ & 0x00000800) != 0);
     }
     /**
      * <code>optional .UnknownAvatarMessage unknownAvatarMessage = 12;</code>
-     * @return The unknownAvatarMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.UnknownAvatarMessage getUnknownAvatarMessage() {
       return unknownAvatarMessage_ == null ? de.pokerth.protocol.ProtoBuf.UnknownAvatarMessage.getDefaultInstance() : unknownAvatarMessage_;
     }
     /**
      * <code>optional .UnknownAvatarMessage unknownAvatarMessage = 12;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.UnknownAvatarMessageOrBuilder getUnknownAvatarMessageOrBuilder() {
       return unknownAvatarMessage_ == null ? de.pokerth.protocol.ProtoBuf.UnknownAvatarMessage.getDefaultInstance() : unknownAvatarMessage_;
     }
@@ -75893,24 +72320,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.PlayerListMessage playerListMessage_;
     /**
      * <code>optional .PlayerListMessage playerListMessage = 13;</code>
-     * @return Whether the playerListMessage field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerListMessage() {
       return ((bitField0_ & 0x00001000) != 0);
     }
     /**
      * <code>optional .PlayerListMessage playerListMessage = 13;</code>
-     * @return The playerListMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayerListMessage getPlayerListMessage() {
       return playerListMessage_ == null ? de.pokerth.protocol.ProtoBuf.PlayerListMessage.getDefaultInstance() : playerListMessage_;
     }
     /**
      * <code>optional .PlayerListMessage playerListMessage = 13;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayerListMessageOrBuilder getPlayerListMessageOrBuilder() {
       return playerListMessage_ == null ? de.pokerth.protocol.ProtoBuf.PlayerListMessage.getDefaultInstance() : playerListMessage_;
     }
@@ -75919,24 +72341,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.GameListNewMessage gameListNewMessage_;
     /**
      * <code>optional .GameListNewMessage gameListNewMessage = 14;</code>
-     * @return Whether the gameListNewMessage field is set.
      */
-    @java.lang.Override
     public boolean hasGameListNewMessage() {
       return ((bitField0_ & 0x00002000) != 0);
     }
     /**
      * <code>optional .GameListNewMessage gameListNewMessage = 14;</code>
-     * @return The gameListNewMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameListNewMessage getGameListNewMessage() {
       return gameListNewMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameListNewMessage.getDefaultInstance() : gameListNewMessage_;
     }
     /**
      * <code>optional .GameListNewMessage gameListNewMessage = 14;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameListNewMessageOrBuilder getGameListNewMessageOrBuilder() {
       return gameListNewMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameListNewMessage.getDefaultInstance() : gameListNewMessage_;
     }
@@ -75945,24 +72362,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.GameListUpdateMessage gameListUpdateMessage_;
     /**
      * <code>optional .GameListUpdateMessage gameListUpdateMessage = 15;</code>
-     * @return Whether the gameListUpdateMessage field is set.
      */
-    @java.lang.Override
     public boolean hasGameListUpdateMessage() {
       return ((bitField0_ & 0x00004000) != 0);
     }
     /**
      * <code>optional .GameListUpdateMessage gameListUpdateMessage = 15;</code>
-     * @return The gameListUpdateMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameListUpdateMessage getGameListUpdateMessage() {
       return gameListUpdateMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameListUpdateMessage.getDefaultInstance() : gameListUpdateMessage_;
     }
     /**
      * <code>optional .GameListUpdateMessage gameListUpdateMessage = 15;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameListUpdateMessageOrBuilder getGameListUpdateMessageOrBuilder() {
       return gameListUpdateMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameListUpdateMessage.getDefaultInstance() : gameListUpdateMessage_;
     }
@@ -75971,24 +72383,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.GameListPlayerJoinedMessage gameListPlayerJoinedMessage_;
     /**
      * <code>optional .GameListPlayerJoinedMessage gameListPlayerJoinedMessage = 16;</code>
-     * @return Whether the gameListPlayerJoinedMessage field is set.
      */
-    @java.lang.Override
     public boolean hasGameListPlayerJoinedMessage() {
       return ((bitField0_ & 0x00008000) != 0);
     }
     /**
      * <code>optional .GameListPlayerJoinedMessage gameListPlayerJoinedMessage = 16;</code>
-     * @return The gameListPlayerJoinedMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameListPlayerJoinedMessage getGameListPlayerJoinedMessage() {
       return gameListPlayerJoinedMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameListPlayerJoinedMessage.getDefaultInstance() : gameListPlayerJoinedMessage_;
     }
     /**
      * <code>optional .GameListPlayerJoinedMessage gameListPlayerJoinedMessage = 16;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameListPlayerJoinedMessageOrBuilder getGameListPlayerJoinedMessageOrBuilder() {
       return gameListPlayerJoinedMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameListPlayerJoinedMessage.getDefaultInstance() : gameListPlayerJoinedMessage_;
     }
@@ -75997,24 +72404,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.GameListPlayerLeftMessage gameListPlayerLeftMessage_;
     /**
      * <code>optional .GameListPlayerLeftMessage gameListPlayerLeftMessage = 17;</code>
-     * @return Whether the gameListPlayerLeftMessage field is set.
      */
-    @java.lang.Override
     public boolean hasGameListPlayerLeftMessage() {
       return ((bitField0_ & 0x00010000) != 0);
     }
     /**
      * <code>optional .GameListPlayerLeftMessage gameListPlayerLeftMessage = 17;</code>
-     * @return The gameListPlayerLeftMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameListPlayerLeftMessage getGameListPlayerLeftMessage() {
       return gameListPlayerLeftMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameListPlayerLeftMessage.getDefaultInstance() : gameListPlayerLeftMessage_;
     }
     /**
      * <code>optional .GameListPlayerLeftMessage gameListPlayerLeftMessage = 17;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameListPlayerLeftMessageOrBuilder getGameListPlayerLeftMessageOrBuilder() {
       return gameListPlayerLeftMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameListPlayerLeftMessage.getDefaultInstance() : gameListPlayerLeftMessage_;
     }
@@ -76023,24 +72425,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.GameListAdminChangedMessage gameListAdminChangedMessage_;
     /**
      * <code>optional .GameListAdminChangedMessage gameListAdminChangedMessage = 18;</code>
-     * @return Whether the gameListAdminChangedMessage field is set.
      */
-    @java.lang.Override
     public boolean hasGameListAdminChangedMessage() {
       return ((bitField0_ & 0x00020000) != 0);
     }
     /**
      * <code>optional .GameListAdminChangedMessage gameListAdminChangedMessage = 18;</code>
-     * @return The gameListAdminChangedMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameListAdminChangedMessage getGameListAdminChangedMessage() {
       return gameListAdminChangedMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameListAdminChangedMessage.getDefaultInstance() : gameListAdminChangedMessage_;
     }
     /**
      * <code>optional .GameListAdminChangedMessage gameListAdminChangedMessage = 18;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameListAdminChangedMessageOrBuilder getGameListAdminChangedMessageOrBuilder() {
       return gameListAdminChangedMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameListAdminChangedMessage.getDefaultInstance() : gameListAdminChangedMessage_;
     }
@@ -76049,24 +72446,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.PlayerInfoRequestMessage playerInfoRequestMessage_;
     /**
      * <code>optional .PlayerInfoRequestMessage playerInfoRequestMessage = 19;</code>
-     * @return Whether the playerInfoRequestMessage field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerInfoRequestMessage() {
       return ((bitField0_ & 0x00040000) != 0);
     }
     /**
      * <code>optional .PlayerInfoRequestMessage playerInfoRequestMessage = 19;</code>
-     * @return The playerInfoRequestMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayerInfoRequestMessage getPlayerInfoRequestMessage() {
       return playerInfoRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.PlayerInfoRequestMessage.getDefaultInstance() : playerInfoRequestMessage_;
     }
     /**
      * <code>optional .PlayerInfoRequestMessage playerInfoRequestMessage = 19;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayerInfoRequestMessageOrBuilder getPlayerInfoRequestMessageOrBuilder() {
       return playerInfoRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.PlayerInfoRequestMessage.getDefaultInstance() : playerInfoRequestMessage_;
     }
@@ -76075,24 +72467,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage playerInfoReplyMessage_;
     /**
      * <code>optional .PlayerInfoReplyMessage playerInfoReplyMessage = 20;</code>
-     * @return Whether the playerInfoReplyMessage field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerInfoReplyMessage() {
       return ((bitField0_ & 0x00080000) != 0);
     }
     /**
      * <code>optional .PlayerInfoReplyMessage playerInfoReplyMessage = 20;</code>
-     * @return The playerInfoReplyMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage getPlayerInfoReplyMessage() {
       return playerInfoReplyMessage_ == null ? de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.getDefaultInstance() : playerInfoReplyMessage_;
     }
     /**
      * <code>optional .PlayerInfoReplyMessage playerInfoReplyMessage = 20;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessageOrBuilder getPlayerInfoReplyMessageOrBuilder() {
       return playerInfoReplyMessage_ == null ? de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.getDefaultInstance() : playerInfoReplyMessage_;
     }
@@ -76101,24 +72488,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage subscriptionRequestMessage_;
     /**
      * <code>optional .SubscriptionRequestMessage subscriptionRequestMessage = 21;</code>
-     * @return Whether the subscriptionRequestMessage field is set.
      */
-    @java.lang.Override
     public boolean hasSubscriptionRequestMessage() {
       return ((bitField0_ & 0x00100000) != 0);
     }
     /**
      * <code>optional .SubscriptionRequestMessage subscriptionRequestMessage = 21;</code>
-     * @return The subscriptionRequestMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage getSubscriptionRequestMessage() {
       return subscriptionRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage.getDefaultInstance() : subscriptionRequestMessage_;
     }
     /**
      * <code>optional .SubscriptionRequestMessage subscriptionRequestMessage = 21;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessageOrBuilder getSubscriptionRequestMessageOrBuilder() {
       return subscriptionRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage.getDefaultInstance() : subscriptionRequestMessage_;
     }
@@ -76127,24 +72509,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.JoinExistingGameMessage joinExistingGameMessage_;
     /**
      * <code>optional .JoinExistingGameMessage joinExistingGameMessage = 22;</code>
-     * @return Whether the joinExistingGameMessage field is set.
      */
-    @java.lang.Override
     public boolean hasJoinExistingGameMessage() {
       return ((bitField0_ & 0x00200000) != 0);
     }
     /**
      * <code>optional .JoinExistingGameMessage joinExistingGameMessage = 22;</code>
-     * @return The joinExistingGameMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.JoinExistingGameMessage getJoinExistingGameMessage() {
       return joinExistingGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.JoinExistingGameMessage.getDefaultInstance() : joinExistingGameMessage_;
     }
     /**
      * <code>optional .JoinExistingGameMessage joinExistingGameMessage = 22;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.JoinExistingGameMessageOrBuilder getJoinExistingGameMessageOrBuilder() {
       return joinExistingGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.JoinExistingGameMessage.getDefaultInstance() : joinExistingGameMessage_;
     }
@@ -76153,24 +72530,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.JoinNewGameMessage joinNewGameMessage_;
     /**
      * <code>optional .JoinNewGameMessage joinNewGameMessage = 23;</code>
-     * @return Whether the joinNewGameMessage field is set.
      */
-    @java.lang.Override
     public boolean hasJoinNewGameMessage() {
       return ((bitField0_ & 0x00400000) != 0);
     }
     /**
      * <code>optional .JoinNewGameMessage joinNewGameMessage = 23;</code>
-     * @return The joinNewGameMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.JoinNewGameMessage getJoinNewGameMessage() {
       return joinNewGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.JoinNewGameMessage.getDefaultInstance() : joinNewGameMessage_;
     }
     /**
      * <code>optional .JoinNewGameMessage joinNewGameMessage = 23;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.JoinNewGameMessageOrBuilder getJoinNewGameMessageOrBuilder() {
       return joinNewGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.JoinNewGameMessage.getDefaultInstance() : joinNewGameMessage_;
     }
@@ -76179,24 +72551,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.RejoinExistingGameMessage rejoinExistingGameMessage_;
     /**
      * <code>optional .RejoinExistingGameMessage rejoinExistingGameMessage = 24;</code>
-     * @return Whether the rejoinExistingGameMessage field is set.
      */
-    @java.lang.Override
     public boolean hasRejoinExistingGameMessage() {
       return ((bitField0_ & 0x00800000) != 0);
     }
     /**
      * <code>optional .RejoinExistingGameMessage rejoinExistingGameMessage = 24;</code>
-     * @return The rejoinExistingGameMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.RejoinExistingGameMessage getRejoinExistingGameMessage() {
       return rejoinExistingGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.RejoinExistingGameMessage.getDefaultInstance() : rejoinExistingGameMessage_;
     }
     /**
      * <code>optional .RejoinExistingGameMessage rejoinExistingGameMessage = 24;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.RejoinExistingGameMessageOrBuilder getRejoinExistingGameMessageOrBuilder() {
       return rejoinExistingGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.RejoinExistingGameMessage.getDefaultInstance() : rejoinExistingGameMessage_;
     }
@@ -76205,24 +72572,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.JoinGameAckMessage joinGameAckMessage_;
     /**
      * <code>optional .JoinGameAckMessage joinGameAckMessage = 25;</code>
-     * @return Whether the joinGameAckMessage field is set.
      */
-    @java.lang.Override
     public boolean hasJoinGameAckMessage() {
       return ((bitField0_ & 0x01000000) != 0);
     }
     /**
      * <code>optional .JoinGameAckMessage joinGameAckMessage = 25;</code>
-     * @return The joinGameAckMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.JoinGameAckMessage getJoinGameAckMessage() {
       return joinGameAckMessage_ == null ? de.pokerth.protocol.ProtoBuf.JoinGameAckMessage.getDefaultInstance() : joinGameAckMessage_;
     }
     /**
      * <code>optional .JoinGameAckMessage joinGameAckMessage = 25;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.JoinGameAckMessageOrBuilder getJoinGameAckMessageOrBuilder() {
       return joinGameAckMessage_ == null ? de.pokerth.protocol.ProtoBuf.JoinGameAckMessage.getDefaultInstance() : joinGameAckMessage_;
     }
@@ -76231,24 +72593,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage joinGameFailedMessage_;
     /**
      * <code>optional .JoinGameFailedMessage joinGameFailedMessage = 26;</code>
-     * @return Whether the joinGameFailedMessage field is set.
      */
-    @java.lang.Override
     public boolean hasJoinGameFailedMessage() {
       return ((bitField0_ & 0x02000000) != 0);
     }
     /**
      * <code>optional .JoinGameFailedMessage joinGameFailedMessage = 26;</code>
-     * @return The joinGameFailedMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage getJoinGameFailedMessage() {
       return joinGameFailedMessage_ == null ? de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage.getDefaultInstance() : joinGameFailedMessage_;
     }
     /**
      * <code>optional .JoinGameFailedMessage joinGameFailedMessage = 26;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.JoinGameFailedMessageOrBuilder getJoinGameFailedMessageOrBuilder() {
       return joinGameFailedMessage_ == null ? de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage.getDefaultInstance() : joinGameFailedMessage_;
     }
@@ -76257,24 +72614,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.GamePlayerJoinedMessage gamePlayerJoinedMessage_;
     /**
      * <code>optional .GamePlayerJoinedMessage gamePlayerJoinedMessage = 27;</code>
-     * @return Whether the gamePlayerJoinedMessage field is set.
      */
-    @java.lang.Override
     public boolean hasGamePlayerJoinedMessage() {
       return ((bitField0_ & 0x04000000) != 0);
     }
     /**
      * <code>optional .GamePlayerJoinedMessage gamePlayerJoinedMessage = 27;</code>
-     * @return The gamePlayerJoinedMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GamePlayerJoinedMessage getGamePlayerJoinedMessage() {
       return gamePlayerJoinedMessage_ == null ? de.pokerth.protocol.ProtoBuf.GamePlayerJoinedMessage.getDefaultInstance() : gamePlayerJoinedMessage_;
     }
     /**
      * <code>optional .GamePlayerJoinedMessage gamePlayerJoinedMessage = 27;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GamePlayerJoinedMessageOrBuilder getGamePlayerJoinedMessageOrBuilder() {
       return gamePlayerJoinedMessage_ == null ? de.pokerth.protocol.ProtoBuf.GamePlayerJoinedMessage.getDefaultInstance() : gamePlayerJoinedMessage_;
     }
@@ -76283,24 +72635,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage gamePlayerLeftMessage_;
     /**
      * <code>optional .GamePlayerLeftMessage gamePlayerLeftMessage = 28;</code>
-     * @return Whether the gamePlayerLeftMessage field is set.
      */
-    @java.lang.Override
     public boolean hasGamePlayerLeftMessage() {
       return ((bitField0_ & 0x08000000) != 0);
     }
     /**
      * <code>optional .GamePlayerLeftMessage gamePlayerLeftMessage = 28;</code>
-     * @return The gamePlayerLeftMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage getGamePlayerLeftMessage() {
       return gamePlayerLeftMessage_ == null ? de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.getDefaultInstance() : gamePlayerLeftMessage_;
     }
     /**
      * <code>optional .GamePlayerLeftMessage gamePlayerLeftMessage = 28;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessageOrBuilder getGamePlayerLeftMessageOrBuilder() {
       return gamePlayerLeftMessage_ == null ? de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.getDefaultInstance() : gamePlayerLeftMessage_;
     }
@@ -76309,24 +72656,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.GameAdminChangedMessage gameAdminChangedMessage_;
     /**
      * <code>optional .GameAdminChangedMessage gameAdminChangedMessage = 29;</code>
-     * @return Whether the gameAdminChangedMessage field is set.
      */
-    @java.lang.Override
     public boolean hasGameAdminChangedMessage() {
       return ((bitField0_ & 0x10000000) != 0);
     }
     /**
      * <code>optional .GameAdminChangedMessage gameAdminChangedMessage = 29;</code>
-     * @return The gameAdminChangedMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameAdminChangedMessage getGameAdminChangedMessage() {
       return gameAdminChangedMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameAdminChangedMessage.getDefaultInstance() : gameAdminChangedMessage_;
     }
     /**
      * <code>optional .GameAdminChangedMessage gameAdminChangedMessage = 29;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameAdminChangedMessageOrBuilder getGameAdminChangedMessageOrBuilder() {
       return gameAdminChangedMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameAdminChangedMessage.getDefaultInstance() : gameAdminChangedMessage_;
     }
@@ -76335,24 +72677,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage removedFromGameMessage_;
     /**
      * <code>optional .RemovedFromGameMessage removedFromGameMessage = 30;</code>
-     * @return Whether the removedFromGameMessage field is set.
      */
-    @java.lang.Override
     public boolean hasRemovedFromGameMessage() {
       return ((bitField0_ & 0x20000000) != 0);
     }
     /**
      * <code>optional .RemovedFromGameMessage removedFromGameMessage = 30;</code>
-     * @return The removedFromGameMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage getRemovedFromGameMessage() {
       return removedFromGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage.getDefaultInstance() : removedFromGameMessage_;
     }
     /**
      * <code>optional .RemovedFromGameMessage removedFromGameMessage = 30;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.RemovedFromGameMessageOrBuilder getRemovedFromGameMessageOrBuilder() {
       return removedFromGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage.getDefaultInstance() : removedFromGameMessage_;
     }
@@ -76361,24 +72698,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.KickPlayerRequestMessage kickPlayerRequestMessage_;
     /**
      * <code>optional .KickPlayerRequestMessage kickPlayerRequestMessage = 31;</code>
-     * @return Whether the kickPlayerRequestMessage field is set.
      */
-    @java.lang.Override
     public boolean hasKickPlayerRequestMessage() {
       return ((bitField0_ & 0x40000000) != 0);
     }
     /**
      * <code>optional .KickPlayerRequestMessage kickPlayerRequestMessage = 31;</code>
-     * @return The kickPlayerRequestMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.KickPlayerRequestMessage getKickPlayerRequestMessage() {
       return kickPlayerRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.KickPlayerRequestMessage.getDefaultInstance() : kickPlayerRequestMessage_;
     }
     /**
      * <code>optional .KickPlayerRequestMessage kickPlayerRequestMessage = 31;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.KickPlayerRequestMessageOrBuilder getKickPlayerRequestMessageOrBuilder() {
       return kickPlayerRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.KickPlayerRequestMessage.getDefaultInstance() : kickPlayerRequestMessage_;
     }
@@ -76387,24 +72719,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.LeaveGameRequestMessage leaveGameRequestMessage_;
     /**
      * <code>optional .LeaveGameRequestMessage leaveGameRequestMessage = 32;</code>
-     * @return Whether the leaveGameRequestMessage field is set.
      */
-    @java.lang.Override
     public boolean hasLeaveGameRequestMessage() {
       return ((bitField0_ & 0x80000000) != 0);
     }
     /**
      * <code>optional .LeaveGameRequestMessage leaveGameRequestMessage = 32;</code>
-     * @return The leaveGameRequestMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.LeaveGameRequestMessage getLeaveGameRequestMessage() {
       return leaveGameRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.LeaveGameRequestMessage.getDefaultInstance() : leaveGameRequestMessage_;
     }
     /**
      * <code>optional .LeaveGameRequestMessage leaveGameRequestMessage = 32;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.LeaveGameRequestMessageOrBuilder getLeaveGameRequestMessageOrBuilder() {
       return leaveGameRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.LeaveGameRequestMessage.getDefaultInstance() : leaveGameRequestMessage_;
     }
@@ -76413,24 +72740,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.InvitePlayerToGameMessage invitePlayerToGameMessage_;
     /**
      * <code>optional .InvitePlayerToGameMessage invitePlayerToGameMessage = 33;</code>
-     * @return Whether the invitePlayerToGameMessage field is set.
      */
-    @java.lang.Override
     public boolean hasInvitePlayerToGameMessage() {
       return ((bitField1_ & 0x00000001) != 0);
     }
     /**
      * <code>optional .InvitePlayerToGameMessage invitePlayerToGameMessage = 33;</code>
-     * @return The invitePlayerToGameMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.InvitePlayerToGameMessage getInvitePlayerToGameMessage() {
       return invitePlayerToGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.InvitePlayerToGameMessage.getDefaultInstance() : invitePlayerToGameMessage_;
     }
     /**
      * <code>optional .InvitePlayerToGameMessage invitePlayerToGameMessage = 33;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.InvitePlayerToGameMessageOrBuilder getInvitePlayerToGameMessageOrBuilder() {
       return invitePlayerToGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.InvitePlayerToGameMessage.getDefaultInstance() : invitePlayerToGameMessage_;
     }
@@ -76439,24 +72761,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.InviteNotifyMessage inviteNotifyMessage_;
     /**
      * <code>optional .InviteNotifyMessage inviteNotifyMessage = 34;</code>
-     * @return Whether the inviteNotifyMessage field is set.
      */
-    @java.lang.Override
     public boolean hasInviteNotifyMessage() {
       return ((bitField1_ & 0x00000002) != 0);
     }
     /**
      * <code>optional .InviteNotifyMessage inviteNotifyMessage = 34;</code>
-     * @return The inviteNotifyMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.InviteNotifyMessage getInviteNotifyMessage() {
       return inviteNotifyMessage_ == null ? de.pokerth.protocol.ProtoBuf.InviteNotifyMessage.getDefaultInstance() : inviteNotifyMessage_;
     }
     /**
      * <code>optional .InviteNotifyMessage inviteNotifyMessage = 34;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.InviteNotifyMessageOrBuilder getInviteNotifyMessageOrBuilder() {
       return inviteNotifyMessage_ == null ? de.pokerth.protocol.ProtoBuf.InviteNotifyMessage.getDefaultInstance() : inviteNotifyMessage_;
     }
@@ -76465,24 +72782,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage rejectGameInvitationMessage_;
     /**
      * <code>optional .RejectGameInvitationMessage rejectGameInvitationMessage = 35;</code>
-     * @return Whether the rejectGameInvitationMessage field is set.
      */
-    @java.lang.Override
     public boolean hasRejectGameInvitationMessage() {
       return ((bitField1_ & 0x00000004) != 0);
     }
     /**
      * <code>optional .RejectGameInvitationMessage rejectGameInvitationMessage = 35;</code>
-     * @return The rejectGameInvitationMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage getRejectGameInvitationMessage() {
       return rejectGameInvitationMessage_ == null ? de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.getDefaultInstance() : rejectGameInvitationMessage_;
     }
     /**
      * <code>optional .RejectGameInvitationMessage rejectGameInvitationMessage = 35;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessageOrBuilder getRejectGameInvitationMessageOrBuilder() {
       return rejectGameInvitationMessage_ == null ? de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.getDefaultInstance() : rejectGameInvitationMessage_;
     }
@@ -76491,24 +72803,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.RejectInvNotifyMessage rejectInvNotifyMessage_;
     /**
      * <code>optional .RejectInvNotifyMessage rejectInvNotifyMessage = 36;</code>
-     * @return Whether the rejectInvNotifyMessage field is set.
      */
-    @java.lang.Override
     public boolean hasRejectInvNotifyMessage() {
       return ((bitField1_ & 0x00000008) != 0);
     }
     /**
      * <code>optional .RejectInvNotifyMessage rejectInvNotifyMessage = 36;</code>
-     * @return The rejectInvNotifyMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.RejectInvNotifyMessage getRejectInvNotifyMessage() {
       return rejectInvNotifyMessage_ == null ? de.pokerth.protocol.ProtoBuf.RejectInvNotifyMessage.getDefaultInstance() : rejectInvNotifyMessage_;
     }
     /**
      * <code>optional .RejectInvNotifyMessage rejectInvNotifyMessage = 36;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.RejectInvNotifyMessageOrBuilder getRejectInvNotifyMessageOrBuilder() {
       return rejectInvNotifyMessage_ == null ? de.pokerth.protocol.ProtoBuf.RejectInvNotifyMessage.getDefaultInstance() : rejectInvNotifyMessage_;
     }
@@ -76517,24 +72824,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.StartEventMessage startEventMessage_;
     /**
      * <code>optional .StartEventMessage startEventMessage = 37;</code>
-     * @return Whether the startEventMessage field is set.
      */
-    @java.lang.Override
     public boolean hasStartEventMessage() {
       return ((bitField1_ & 0x00000010) != 0);
     }
     /**
      * <code>optional .StartEventMessage startEventMessage = 37;</code>
-     * @return The startEventMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.StartEventMessage getStartEventMessage() {
       return startEventMessage_ == null ? de.pokerth.protocol.ProtoBuf.StartEventMessage.getDefaultInstance() : startEventMessage_;
     }
     /**
      * <code>optional .StartEventMessage startEventMessage = 37;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.StartEventMessageOrBuilder getStartEventMessageOrBuilder() {
       return startEventMessage_ == null ? de.pokerth.protocol.ProtoBuf.StartEventMessage.getDefaultInstance() : startEventMessage_;
     }
@@ -76543,24 +72845,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.StartEventAckMessage startEventAckMessage_;
     /**
      * <code>optional .StartEventAckMessage startEventAckMessage = 38;</code>
-     * @return Whether the startEventAckMessage field is set.
      */
-    @java.lang.Override
     public boolean hasStartEventAckMessage() {
       return ((bitField1_ & 0x00000020) != 0);
     }
     /**
      * <code>optional .StartEventAckMessage startEventAckMessage = 38;</code>
-     * @return The startEventAckMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.StartEventAckMessage getStartEventAckMessage() {
       return startEventAckMessage_ == null ? de.pokerth.protocol.ProtoBuf.StartEventAckMessage.getDefaultInstance() : startEventAckMessage_;
     }
     /**
      * <code>optional .StartEventAckMessage startEventAckMessage = 38;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.StartEventAckMessageOrBuilder getStartEventAckMessageOrBuilder() {
       return startEventAckMessage_ == null ? de.pokerth.protocol.ProtoBuf.StartEventAckMessage.getDefaultInstance() : startEventAckMessage_;
     }
@@ -76569,24 +72866,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.GameStartInitialMessage gameStartInitialMessage_;
     /**
      * <code>optional .GameStartInitialMessage gameStartInitialMessage = 39;</code>
-     * @return Whether the gameStartInitialMessage field is set.
      */
-    @java.lang.Override
     public boolean hasGameStartInitialMessage() {
       return ((bitField1_ & 0x00000040) != 0);
     }
     /**
      * <code>optional .GameStartInitialMessage gameStartInitialMessage = 39;</code>
-     * @return The gameStartInitialMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameStartInitialMessage getGameStartInitialMessage() {
       return gameStartInitialMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameStartInitialMessage.getDefaultInstance() : gameStartInitialMessage_;
     }
     /**
      * <code>optional .GameStartInitialMessage gameStartInitialMessage = 39;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameStartInitialMessageOrBuilder getGameStartInitialMessageOrBuilder() {
       return gameStartInitialMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameStartInitialMessage.getDefaultInstance() : gameStartInitialMessage_;
     }
@@ -76595,24 +72887,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.GameStartRejoinMessage gameStartRejoinMessage_;
     /**
      * <code>optional .GameStartRejoinMessage gameStartRejoinMessage = 40;</code>
-     * @return Whether the gameStartRejoinMessage field is set.
      */
-    @java.lang.Override
     public boolean hasGameStartRejoinMessage() {
       return ((bitField1_ & 0x00000080) != 0);
     }
     /**
      * <code>optional .GameStartRejoinMessage gameStartRejoinMessage = 40;</code>
-     * @return The gameStartRejoinMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameStartRejoinMessage getGameStartRejoinMessage() {
       return gameStartRejoinMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameStartRejoinMessage.getDefaultInstance() : gameStartRejoinMessage_;
     }
     /**
      * <code>optional .GameStartRejoinMessage gameStartRejoinMessage = 40;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameStartRejoinMessageOrBuilder getGameStartRejoinMessageOrBuilder() {
       return gameStartRejoinMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameStartRejoinMessage.getDefaultInstance() : gameStartRejoinMessage_;
     }
@@ -76621,24 +72908,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.HandStartMessage handStartMessage_;
     /**
      * <code>optional .HandStartMessage handStartMessage = 41;</code>
-     * @return Whether the handStartMessage field is set.
      */
-    @java.lang.Override
     public boolean hasHandStartMessage() {
       return ((bitField1_ & 0x00000100) != 0);
     }
     /**
      * <code>optional .HandStartMessage handStartMessage = 41;</code>
-     * @return The handStartMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.HandStartMessage getHandStartMessage() {
       return handStartMessage_ == null ? de.pokerth.protocol.ProtoBuf.HandStartMessage.getDefaultInstance() : handStartMessage_;
     }
     /**
      * <code>optional .HandStartMessage handStartMessage = 41;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.HandStartMessageOrBuilder getHandStartMessageOrBuilder() {
       return handStartMessage_ == null ? de.pokerth.protocol.ProtoBuf.HandStartMessage.getDefaultInstance() : handStartMessage_;
     }
@@ -76647,24 +72929,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.PlayersTurnMessage playersTurnMessage_;
     /**
      * <code>optional .PlayersTurnMessage playersTurnMessage = 42;</code>
-     * @return Whether the playersTurnMessage field is set.
      */
-    @java.lang.Override
     public boolean hasPlayersTurnMessage() {
       return ((bitField1_ & 0x00000200) != 0);
     }
     /**
      * <code>optional .PlayersTurnMessage playersTurnMessage = 42;</code>
-     * @return The playersTurnMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayersTurnMessage getPlayersTurnMessage() {
       return playersTurnMessage_ == null ? de.pokerth.protocol.ProtoBuf.PlayersTurnMessage.getDefaultInstance() : playersTurnMessage_;
     }
     /**
      * <code>optional .PlayersTurnMessage playersTurnMessage = 42;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayersTurnMessageOrBuilder getPlayersTurnMessageOrBuilder() {
       return playersTurnMessage_ == null ? de.pokerth.protocol.ProtoBuf.PlayersTurnMessage.getDefaultInstance() : playersTurnMessage_;
     }
@@ -76673,24 +72950,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.MyActionRequestMessage myActionRequestMessage_;
     /**
      * <code>optional .MyActionRequestMessage myActionRequestMessage = 43;</code>
-     * @return Whether the myActionRequestMessage field is set.
      */
-    @java.lang.Override
     public boolean hasMyActionRequestMessage() {
       return ((bitField1_ & 0x00000400) != 0);
     }
     /**
      * <code>optional .MyActionRequestMessage myActionRequestMessage = 43;</code>
-     * @return The myActionRequestMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.MyActionRequestMessage getMyActionRequestMessage() {
       return myActionRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.MyActionRequestMessage.getDefaultInstance() : myActionRequestMessage_;
     }
     /**
      * <code>optional .MyActionRequestMessage myActionRequestMessage = 43;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.MyActionRequestMessageOrBuilder getMyActionRequestMessageOrBuilder() {
       return myActionRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.MyActionRequestMessage.getDefaultInstance() : myActionRequestMessage_;
     }
@@ -76699,24 +72971,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage yourActionRejectedMessage_;
     /**
      * <code>optional .YourActionRejectedMessage yourActionRejectedMessage = 44;</code>
-     * @return Whether the yourActionRejectedMessage field is set.
      */
-    @java.lang.Override
     public boolean hasYourActionRejectedMessage() {
       return ((bitField1_ & 0x00000800) != 0);
     }
     /**
      * <code>optional .YourActionRejectedMessage yourActionRejectedMessage = 44;</code>
-     * @return The yourActionRejectedMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage getYourActionRejectedMessage() {
       return yourActionRejectedMessage_ == null ? de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage.getDefaultInstance() : yourActionRejectedMessage_;
     }
     /**
      * <code>optional .YourActionRejectedMessage yourActionRejectedMessage = 44;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.YourActionRejectedMessageOrBuilder getYourActionRejectedMessageOrBuilder() {
       return yourActionRejectedMessage_ == null ? de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage.getDefaultInstance() : yourActionRejectedMessage_;
     }
@@ -76725,24 +72992,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.PlayersActionDoneMessage playersActionDoneMessage_;
     /**
      * <code>optional .PlayersActionDoneMessage playersActionDoneMessage = 45;</code>
-     * @return Whether the playersActionDoneMessage field is set.
      */
-    @java.lang.Override
     public boolean hasPlayersActionDoneMessage() {
       return ((bitField1_ & 0x00001000) != 0);
     }
     /**
      * <code>optional .PlayersActionDoneMessage playersActionDoneMessage = 45;</code>
-     * @return The playersActionDoneMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayersActionDoneMessage getPlayersActionDoneMessage() {
       return playersActionDoneMessage_ == null ? de.pokerth.protocol.ProtoBuf.PlayersActionDoneMessage.getDefaultInstance() : playersActionDoneMessage_;
     }
     /**
      * <code>optional .PlayersActionDoneMessage playersActionDoneMessage = 45;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayersActionDoneMessageOrBuilder getPlayersActionDoneMessageOrBuilder() {
       return playersActionDoneMessage_ == null ? de.pokerth.protocol.ProtoBuf.PlayersActionDoneMessage.getDefaultInstance() : playersActionDoneMessage_;
     }
@@ -76751,24 +73013,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.DealFlopCardsMessage dealFlopCardsMessage_;
     /**
      * <code>optional .DealFlopCardsMessage dealFlopCardsMessage = 46;</code>
-     * @return Whether the dealFlopCardsMessage field is set.
      */
-    @java.lang.Override
     public boolean hasDealFlopCardsMessage() {
       return ((bitField1_ & 0x00002000) != 0);
     }
     /**
      * <code>optional .DealFlopCardsMessage dealFlopCardsMessage = 46;</code>
-     * @return The dealFlopCardsMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.DealFlopCardsMessage getDealFlopCardsMessage() {
       return dealFlopCardsMessage_ == null ? de.pokerth.protocol.ProtoBuf.DealFlopCardsMessage.getDefaultInstance() : dealFlopCardsMessage_;
     }
     /**
      * <code>optional .DealFlopCardsMessage dealFlopCardsMessage = 46;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.DealFlopCardsMessageOrBuilder getDealFlopCardsMessageOrBuilder() {
       return dealFlopCardsMessage_ == null ? de.pokerth.protocol.ProtoBuf.DealFlopCardsMessage.getDefaultInstance() : dealFlopCardsMessage_;
     }
@@ -76777,24 +73034,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.DealTurnCardMessage dealTurnCardMessage_;
     /**
      * <code>optional .DealTurnCardMessage dealTurnCardMessage = 47;</code>
-     * @return Whether the dealTurnCardMessage field is set.
      */
-    @java.lang.Override
     public boolean hasDealTurnCardMessage() {
       return ((bitField1_ & 0x00004000) != 0);
     }
     /**
      * <code>optional .DealTurnCardMessage dealTurnCardMessage = 47;</code>
-     * @return The dealTurnCardMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.DealTurnCardMessage getDealTurnCardMessage() {
       return dealTurnCardMessage_ == null ? de.pokerth.protocol.ProtoBuf.DealTurnCardMessage.getDefaultInstance() : dealTurnCardMessage_;
     }
     /**
      * <code>optional .DealTurnCardMessage dealTurnCardMessage = 47;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.DealTurnCardMessageOrBuilder getDealTurnCardMessageOrBuilder() {
       return dealTurnCardMessage_ == null ? de.pokerth.protocol.ProtoBuf.DealTurnCardMessage.getDefaultInstance() : dealTurnCardMessage_;
     }
@@ -76803,24 +73055,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.DealRiverCardMessage dealRiverCardMessage_;
     /**
      * <code>optional .DealRiverCardMessage dealRiverCardMessage = 48;</code>
-     * @return Whether the dealRiverCardMessage field is set.
      */
-    @java.lang.Override
     public boolean hasDealRiverCardMessage() {
       return ((bitField1_ & 0x00008000) != 0);
     }
     /**
      * <code>optional .DealRiverCardMessage dealRiverCardMessage = 48;</code>
-     * @return The dealRiverCardMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.DealRiverCardMessage getDealRiverCardMessage() {
       return dealRiverCardMessage_ == null ? de.pokerth.protocol.ProtoBuf.DealRiverCardMessage.getDefaultInstance() : dealRiverCardMessage_;
     }
     /**
      * <code>optional .DealRiverCardMessage dealRiverCardMessage = 48;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.DealRiverCardMessageOrBuilder getDealRiverCardMessageOrBuilder() {
       return dealRiverCardMessage_ == null ? de.pokerth.protocol.ProtoBuf.DealRiverCardMessage.getDefaultInstance() : dealRiverCardMessage_;
     }
@@ -76829,24 +73076,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AllInShowCardsMessage allInShowCardsMessage_;
     /**
      * <code>optional .AllInShowCardsMessage allInShowCardsMessage = 49;</code>
-     * @return Whether the allInShowCardsMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAllInShowCardsMessage() {
       return ((bitField1_ & 0x00010000) != 0);
     }
     /**
      * <code>optional .AllInShowCardsMessage allInShowCardsMessage = 49;</code>
-     * @return The allInShowCardsMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AllInShowCardsMessage getAllInShowCardsMessage() {
       return allInShowCardsMessage_ == null ? de.pokerth.protocol.ProtoBuf.AllInShowCardsMessage.getDefaultInstance() : allInShowCardsMessage_;
     }
     /**
      * <code>optional .AllInShowCardsMessage allInShowCardsMessage = 49;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AllInShowCardsMessageOrBuilder getAllInShowCardsMessageOrBuilder() {
       return allInShowCardsMessage_ == null ? de.pokerth.protocol.ProtoBuf.AllInShowCardsMessage.getDefaultInstance() : allInShowCardsMessage_;
     }
@@ -76855,24 +73097,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.EndOfHandShowCardsMessage endOfHandShowCardsMessage_;
     /**
      * <code>optional .EndOfHandShowCardsMessage endOfHandShowCardsMessage = 50;</code>
-     * @return Whether the endOfHandShowCardsMessage field is set.
      */
-    @java.lang.Override
     public boolean hasEndOfHandShowCardsMessage() {
       return ((bitField1_ & 0x00020000) != 0);
     }
     /**
      * <code>optional .EndOfHandShowCardsMessage endOfHandShowCardsMessage = 50;</code>
-     * @return The endOfHandShowCardsMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.EndOfHandShowCardsMessage getEndOfHandShowCardsMessage() {
       return endOfHandShowCardsMessage_ == null ? de.pokerth.protocol.ProtoBuf.EndOfHandShowCardsMessage.getDefaultInstance() : endOfHandShowCardsMessage_;
     }
     /**
      * <code>optional .EndOfHandShowCardsMessage endOfHandShowCardsMessage = 50;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.EndOfHandShowCardsMessageOrBuilder getEndOfHandShowCardsMessageOrBuilder() {
       return endOfHandShowCardsMessage_ == null ? de.pokerth.protocol.ProtoBuf.EndOfHandShowCardsMessage.getDefaultInstance() : endOfHandShowCardsMessage_;
     }
@@ -76881,24 +73118,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.EndOfHandHideCardsMessage endOfHandHideCardsMessage_;
     /**
      * <code>optional .EndOfHandHideCardsMessage endOfHandHideCardsMessage = 51;</code>
-     * @return Whether the endOfHandHideCardsMessage field is set.
      */
-    @java.lang.Override
     public boolean hasEndOfHandHideCardsMessage() {
       return ((bitField1_ & 0x00040000) != 0);
     }
     /**
      * <code>optional .EndOfHandHideCardsMessage endOfHandHideCardsMessage = 51;</code>
-     * @return The endOfHandHideCardsMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.EndOfHandHideCardsMessage getEndOfHandHideCardsMessage() {
       return endOfHandHideCardsMessage_ == null ? de.pokerth.protocol.ProtoBuf.EndOfHandHideCardsMessage.getDefaultInstance() : endOfHandHideCardsMessage_;
     }
     /**
      * <code>optional .EndOfHandHideCardsMessage endOfHandHideCardsMessage = 51;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.EndOfHandHideCardsMessageOrBuilder getEndOfHandHideCardsMessageOrBuilder() {
       return endOfHandHideCardsMessage_ == null ? de.pokerth.protocol.ProtoBuf.EndOfHandHideCardsMessage.getDefaultInstance() : endOfHandHideCardsMessage_;
     }
@@ -76907,24 +73139,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.ShowMyCardsRequestMessage showMyCardsRequestMessage_;
     /**
      * <code>optional .ShowMyCardsRequestMessage showMyCardsRequestMessage = 52;</code>
-     * @return Whether the showMyCardsRequestMessage field is set.
      */
-    @java.lang.Override
     public boolean hasShowMyCardsRequestMessage() {
       return ((bitField1_ & 0x00080000) != 0);
     }
     /**
      * <code>optional .ShowMyCardsRequestMessage showMyCardsRequestMessage = 52;</code>
-     * @return The showMyCardsRequestMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ShowMyCardsRequestMessage getShowMyCardsRequestMessage() {
       return showMyCardsRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.ShowMyCardsRequestMessage.getDefaultInstance() : showMyCardsRequestMessage_;
     }
     /**
      * <code>optional .ShowMyCardsRequestMessage showMyCardsRequestMessage = 52;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ShowMyCardsRequestMessageOrBuilder getShowMyCardsRequestMessageOrBuilder() {
       return showMyCardsRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.ShowMyCardsRequestMessage.getDefaultInstance() : showMyCardsRequestMessage_;
     }
@@ -76933,24 +73160,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AfterHandShowCardsMessage afterHandShowCardsMessage_;
     /**
      * <code>optional .AfterHandShowCardsMessage afterHandShowCardsMessage = 53;</code>
-     * @return Whether the afterHandShowCardsMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAfterHandShowCardsMessage() {
       return ((bitField1_ & 0x00100000) != 0);
     }
     /**
      * <code>optional .AfterHandShowCardsMessage afterHandShowCardsMessage = 53;</code>
-     * @return The afterHandShowCardsMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AfterHandShowCardsMessage getAfterHandShowCardsMessage() {
       return afterHandShowCardsMessage_ == null ? de.pokerth.protocol.ProtoBuf.AfterHandShowCardsMessage.getDefaultInstance() : afterHandShowCardsMessage_;
     }
     /**
      * <code>optional .AfterHandShowCardsMessage afterHandShowCardsMessage = 53;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AfterHandShowCardsMessageOrBuilder getAfterHandShowCardsMessageOrBuilder() {
       return afterHandShowCardsMessage_ == null ? de.pokerth.protocol.ProtoBuf.AfterHandShowCardsMessage.getDefaultInstance() : afterHandShowCardsMessage_;
     }
@@ -76959,24 +73181,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.EndOfGameMessage endOfGameMessage_;
     /**
      * <code>optional .EndOfGameMessage endOfGameMessage = 54;</code>
-     * @return Whether the endOfGameMessage field is set.
      */
-    @java.lang.Override
     public boolean hasEndOfGameMessage() {
       return ((bitField1_ & 0x00200000) != 0);
     }
     /**
      * <code>optional .EndOfGameMessage endOfGameMessage = 54;</code>
-     * @return The endOfGameMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.EndOfGameMessage getEndOfGameMessage() {
       return endOfGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.EndOfGameMessage.getDefaultInstance() : endOfGameMessage_;
     }
     /**
      * <code>optional .EndOfGameMessage endOfGameMessage = 54;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.EndOfGameMessageOrBuilder getEndOfGameMessageOrBuilder() {
       return endOfGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.EndOfGameMessage.getDefaultInstance() : endOfGameMessage_;
     }
@@ -76985,24 +73202,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.PlayerIdChangedMessage playerIdChangedMessage_;
     /**
      * <code>optional .PlayerIdChangedMessage playerIdChangedMessage = 55;</code>
-     * @return Whether the playerIdChangedMessage field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerIdChangedMessage() {
       return ((bitField1_ & 0x00400000) != 0);
     }
     /**
      * <code>optional .PlayerIdChangedMessage playerIdChangedMessage = 55;</code>
-     * @return The playerIdChangedMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayerIdChangedMessage getPlayerIdChangedMessage() {
       return playerIdChangedMessage_ == null ? de.pokerth.protocol.ProtoBuf.PlayerIdChangedMessage.getDefaultInstance() : playerIdChangedMessage_;
     }
     /**
      * <code>optional .PlayerIdChangedMessage playerIdChangedMessage = 55;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.PlayerIdChangedMessageOrBuilder getPlayerIdChangedMessageOrBuilder() {
       return playerIdChangedMessage_ == null ? de.pokerth.protocol.ProtoBuf.PlayerIdChangedMessage.getDefaultInstance() : playerIdChangedMessage_;
     }
@@ -77011,24 +73223,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AskKickPlayerMessage askKickPlayerMessage_;
     /**
      * <code>optional .AskKickPlayerMessage askKickPlayerMessage = 56;</code>
-     * @return Whether the askKickPlayerMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAskKickPlayerMessage() {
       return ((bitField1_ & 0x00800000) != 0);
     }
     /**
      * <code>optional .AskKickPlayerMessage askKickPlayerMessage = 56;</code>
-     * @return The askKickPlayerMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AskKickPlayerMessage getAskKickPlayerMessage() {
       return askKickPlayerMessage_ == null ? de.pokerth.protocol.ProtoBuf.AskKickPlayerMessage.getDefaultInstance() : askKickPlayerMessage_;
     }
     /**
      * <code>optional .AskKickPlayerMessage askKickPlayerMessage = 56;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AskKickPlayerMessageOrBuilder getAskKickPlayerMessageOrBuilder() {
       return askKickPlayerMessage_ == null ? de.pokerth.protocol.ProtoBuf.AskKickPlayerMessage.getDefaultInstance() : askKickPlayerMessage_;
     }
@@ -77037,24 +73244,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage askKickDeniedMessage_;
     /**
      * <code>optional .AskKickDeniedMessage askKickDeniedMessage = 57;</code>
-     * @return Whether the askKickDeniedMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAskKickDeniedMessage() {
       return ((bitField1_ & 0x01000000) != 0);
     }
     /**
      * <code>optional .AskKickDeniedMessage askKickDeniedMessage = 57;</code>
-     * @return The askKickDeniedMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage getAskKickDeniedMessage() {
       return askKickDeniedMessage_ == null ? de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage.getDefaultInstance() : askKickDeniedMessage_;
     }
     /**
      * <code>optional .AskKickDeniedMessage askKickDeniedMessage = 57;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AskKickDeniedMessageOrBuilder getAskKickDeniedMessageOrBuilder() {
       return askKickDeniedMessage_ == null ? de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage.getDefaultInstance() : askKickDeniedMessage_;
     }
@@ -77063,24 +73265,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.StartKickPetitionMessage startKickPetitionMessage_;
     /**
      * <code>optional .StartKickPetitionMessage startKickPetitionMessage = 58;</code>
-     * @return Whether the startKickPetitionMessage field is set.
      */
-    @java.lang.Override
     public boolean hasStartKickPetitionMessage() {
       return ((bitField1_ & 0x02000000) != 0);
     }
     /**
      * <code>optional .StartKickPetitionMessage startKickPetitionMessage = 58;</code>
-     * @return The startKickPetitionMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.StartKickPetitionMessage getStartKickPetitionMessage() {
       return startKickPetitionMessage_ == null ? de.pokerth.protocol.ProtoBuf.StartKickPetitionMessage.getDefaultInstance() : startKickPetitionMessage_;
     }
     /**
      * <code>optional .StartKickPetitionMessage startKickPetitionMessage = 58;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.StartKickPetitionMessageOrBuilder getStartKickPetitionMessageOrBuilder() {
       return startKickPetitionMessage_ == null ? de.pokerth.protocol.ProtoBuf.StartKickPetitionMessage.getDefaultInstance() : startKickPetitionMessage_;
     }
@@ -77089,24 +73286,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.VoteKickRequestMessage voteKickRequestMessage_;
     /**
      * <code>optional .VoteKickRequestMessage voteKickRequestMessage = 59;</code>
-     * @return Whether the voteKickRequestMessage field is set.
      */
-    @java.lang.Override
     public boolean hasVoteKickRequestMessage() {
       return ((bitField1_ & 0x04000000) != 0);
     }
     /**
      * <code>optional .VoteKickRequestMessage voteKickRequestMessage = 59;</code>
-     * @return The voteKickRequestMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.VoteKickRequestMessage getVoteKickRequestMessage() {
       return voteKickRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.VoteKickRequestMessage.getDefaultInstance() : voteKickRequestMessage_;
     }
     /**
      * <code>optional .VoteKickRequestMessage voteKickRequestMessage = 59;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.VoteKickRequestMessageOrBuilder getVoteKickRequestMessageOrBuilder() {
       return voteKickRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.VoteKickRequestMessage.getDefaultInstance() : voteKickRequestMessage_;
     }
@@ -77115,24 +73307,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage voteKickReplyMessage_;
     /**
      * <code>optional .VoteKickReplyMessage voteKickReplyMessage = 60;</code>
-     * @return Whether the voteKickReplyMessage field is set.
      */
-    @java.lang.Override
     public boolean hasVoteKickReplyMessage() {
       return ((bitField1_ & 0x08000000) != 0);
     }
     /**
      * <code>optional .VoteKickReplyMessage voteKickReplyMessage = 60;</code>
-     * @return The voteKickReplyMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage getVoteKickReplyMessage() {
       return voteKickReplyMessage_ == null ? de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage.getDefaultInstance() : voteKickReplyMessage_;
     }
     /**
      * <code>optional .VoteKickReplyMessage voteKickReplyMessage = 60;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.VoteKickReplyMessageOrBuilder getVoteKickReplyMessageOrBuilder() {
       return voteKickReplyMessage_ == null ? de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage.getDefaultInstance() : voteKickReplyMessage_;
     }
@@ -77141,24 +73328,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.KickPetitionUpdateMessage kickPetitionUpdateMessage_;
     /**
      * <code>optional .KickPetitionUpdateMessage kickPetitionUpdateMessage = 61;</code>
-     * @return Whether the kickPetitionUpdateMessage field is set.
      */
-    @java.lang.Override
     public boolean hasKickPetitionUpdateMessage() {
       return ((bitField1_ & 0x10000000) != 0);
     }
     /**
      * <code>optional .KickPetitionUpdateMessage kickPetitionUpdateMessage = 61;</code>
-     * @return The kickPetitionUpdateMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.KickPetitionUpdateMessage getKickPetitionUpdateMessage() {
       return kickPetitionUpdateMessage_ == null ? de.pokerth.protocol.ProtoBuf.KickPetitionUpdateMessage.getDefaultInstance() : kickPetitionUpdateMessage_;
     }
     /**
      * <code>optional .KickPetitionUpdateMessage kickPetitionUpdateMessage = 61;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.KickPetitionUpdateMessageOrBuilder getKickPetitionUpdateMessageOrBuilder() {
       return kickPetitionUpdateMessage_ == null ? de.pokerth.protocol.ProtoBuf.KickPetitionUpdateMessage.getDefaultInstance() : kickPetitionUpdateMessage_;
     }
@@ -77167,24 +73349,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage endKickPetitionMessage_;
     /**
      * <code>optional .EndKickPetitionMessage endKickPetitionMessage = 62;</code>
-     * @return Whether the endKickPetitionMessage field is set.
      */
-    @java.lang.Override
     public boolean hasEndKickPetitionMessage() {
       return ((bitField1_ & 0x20000000) != 0);
     }
     /**
      * <code>optional .EndKickPetitionMessage endKickPetitionMessage = 62;</code>
-     * @return The endKickPetitionMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage getEndKickPetitionMessage() {
       return endKickPetitionMessage_ == null ? de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage.getDefaultInstance() : endKickPetitionMessage_;
     }
     /**
      * <code>optional .EndKickPetitionMessage endKickPetitionMessage = 62;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.EndKickPetitionMessageOrBuilder getEndKickPetitionMessageOrBuilder() {
       return endKickPetitionMessage_ == null ? de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage.getDefaultInstance() : endKickPetitionMessage_;
     }
@@ -77193,24 +73370,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.StatisticsMessage statisticsMessage_;
     /**
      * <code>optional .StatisticsMessage statisticsMessage = 63;</code>
-     * @return Whether the statisticsMessage field is set.
      */
-    @java.lang.Override
     public boolean hasStatisticsMessage() {
       return ((bitField1_ & 0x40000000) != 0);
     }
     /**
      * <code>optional .StatisticsMessage statisticsMessage = 63;</code>
-     * @return The statisticsMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.StatisticsMessage getStatisticsMessage() {
       return statisticsMessage_ == null ? de.pokerth.protocol.ProtoBuf.StatisticsMessage.getDefaultInstance() : statisticsMessage_;
     }
     /**
      * <code>optional .StatisticsMessage statisticsMessage = 63;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.StatisticsMessageOrBuilder getStatisticsMessageOrBuilder() {
       return statisticsMessage_ == null ? de.pokerth.protocol.ProtoBuf.StatisticsMessage.getDefaultInstance() : statisticsMessage_;
     }
@@ -77219,24 +73391,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.ChatRequestMessage chatRequestMessage_;
     /**
      * <code>optional .ChatRequestMessage chatRequestMessage = 64;</code>
-     * @return Whether the chatRequestMessage field is set.
      */
-    @java.lang.Override
     public boolean hasChatRequestMessage() {
       return ((bitField1_ & 0x80000000) != 0);
     }
     /**
      * <code>optional .ChatRequestMessage chatRequestMessage = 64;</code>
-     * @return The chatRequestMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ChatRequestMessage getChatRequestMessage() {
       return chatRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.ChatRequestMessage.getDefaultInstance() : chatRequestMessage_;
     }
     /**
      * <code>optional .ChatRequestMessage chatRequestMessage = 64;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ChatRequestMessageOrBuilder getChatRequestMessageOrBuilder() {
       return chatRequestMessage_ == null ? de.pokerth.protocol.ProtoBuf.ChatRequestMessage.getDefaultInstance() : chatRequestMessage_;
     }
@@ -77245,24 +73412,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.ChatMessage chatMessage_;
     /**
      * <code>optional .ChatMessage chatMessage = 65;</code>
-     * @return Whether the chatMessage field is set.
      */
-    @java.lang.Override
     public boolean hasChatMessage() {
       return ((bitField2_ & 0x00000001) != 0);
     }
     /**
      * <code>optional .ChatMessage chatMessage = 65;</code>
-     * @return The chatMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ChatMessage getChatMessage() {
       return chatMessage_ == null ? de.pokerth.protocol.ProtoBuf.ChatMessage.getDefaultInstance() : chatMessage_;
     }
     /**
      * <code>optional .ChatMessage chatMessage = 65;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ChatMessageOrBuilder getChatMessageOrBuilder() {
       return chatMessage_ == null ? de.pokerth.protocol.ProtoBuf.ChatMessage.getDefaultInstance() : chatMessage_;
     }
@@ -77271,24 +73433,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.ChatRejectMessage chatRejectMessage_;
     /**
      * <code>optional .ChatRejectMessage chatRejectMessage = 66;</code>
-     * @return Whether the chatRejectMessage field is set.
      */
-    @java.lang.Override
     public boolean hasChatRejectMessage() {
       return ((bitField2_ & 0x00000002) != 0);
     }
     /**
      * <code>optional .ChatRejectMessage chatRejectMessage = 66;</code>
-     * @return The chatRejectMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ChatRejectMessage getChatRejectMessage() {
       return chatRejectMessage_ == null ? de.pokerth.protocol.ProtoBuf.ChatRejectMessage.getDefaultInstance() : chatRejectMessage_;
     }
     /**
      * <code>optional .ChatRejectMessage chatRejectMessage = 66;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ChatRejectMessageOrBuilder getChatRejectMessageOrBuilder() {
       return chatRejectMessage_ == null ? de.pokerth.protocol.ProtoBuf.ChatRejectMessage.getDefaultInstance() : chatRejectMessage_;
     }
@@ -77297,24 +73454,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.DialogMessage dialogMessage_;
     /**
      * <code>optional .DialogMessage dialogMessage = 67;</code>
-     * @return Whether the dialogMessage field is set.
      */
-    @java.lang.Override
     public boolean hasDialogMessage() {
       return ((bitField2_ & 0x00000004) != 0);
     }
     /**
      * <code>optional .DialogMessage dialogMessage = 67;</code>
-     * @return The dialogMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.DialogMessage getDialogMessage() {
       return dialogMessage_ == null ? de.pokerth.protocol.ProtoBuf.DialogMessage.getDefaultInstance() : dialogMessage_;
     }
     /**
      * <code>optional .DialogMessage dialogMessage = 67;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.DialogMessageOrBuilder getDialogMessageOrBuilder() {
       return dialogMessage_ == null ? de.pokerth.protocol.ProtoBuf.DialogMessage.getDefaultInstance() : dialogMessage_;
     }
@@ -77323,24 +73475,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage timeoutWarningMessage_;
     /**
      * <code>optional .TimeoutWarningMessage timeoutWarningMessage = 68;</code>
-     * @return Whether the timeoutWarningMessage field is set.
      */
-    @java.lang.Override
     public boolean hasTimeoutWarningMessage() {
       return ((bitField2_ & 0x00000008) != 0);
     }
     /**
      * <code>optional .TimeoutWarningMessage timeoutWarningMessage = 68;</code>
-     * @return The timeoutWarningMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage getTimeoutWarningMessage() {
       return timeoutWarningMessage_ == null ? de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage.getDefaultInstance() : timeoutWarningMessage_;
     }
     /**
      * <code>optional .TimeoutWarningMessage timeoutWarningMessage = 68;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.TimeoutWarningMessageOrBuilder getTimeoutWarningMessageOrBuilder() {
       return timeoutWarningMessage_ == null ? de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage.getDefaultInstance() : timeoutWarningMessage_;
     }
@@ -77349,24 +73496,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.ResetTimeoutMessage resetTimeoutMessage_;
     /**
      * <code>optional .ResetTimeoutMessage resetTimeoutMessage = 69;</code>
-     * @return Whether the resetTimeoutMessage field is set.
      */
-    @java.lang.Override
     public boolean hasResetTimeoutMessage() {
       return ((bitField2_ & 0x00000010) != 0);
     }
     /**
      * <code>optional .ResetTimeoutMessage resetTimeoutMessage = 69;</code>
-     * @return The resetTimeoutMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ResetTimeoutMessage getResetTimeoutMessage() {
       return resetTimeoutMessage_ == null ? de.pokerth.protocol.ProtoBuf.ResetTimeoutMessage.getDefaultInstance() : resetTimeoutMessage_;
     }
     /**
      * <code>optional .ResetTimeoutMessage resetTimeoutMessage = 69;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ResetTimeoutMessageOrBuilder getResetTimeoutMessageOrBuilder() {
       return resetTimeoutMessage_ == null ? de.pokerth.protocol.ProtoBuf.ResetTimeoutMessage.getDefaultInstance() : resetTimeoutMessage_;
     }
@@ -77375,24 +73517,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.ReportAvatarMessage reportAvatarMessage_;
     /**
      * <code>optional .ReportAvatarMessage reportAvatarMessage = 70;</code>
-     * @return Whether the reportAvatarMessage field is set.
      */
-    @java.lang.Override
     public boolean hasReportAvatarMessage() {
       return ((bitField2_ & 0x00000020) != 0);
     }
     /**
      * <code>optional .ReportAvatarMessage reportAvatarMessage = 70;</code>
-     * @return The reportAvatarMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ReportAvatarMessage getReportAvatarMessage() {
       return reportAvatarMessage_ == null ? de.pokerth.protocol.ProtoBuf.ReportAvatarMessage.getDefaultInstance() : reportAvatarMessage_;
     }
     /**
      * <code>optional .ReportAvatarMessage reportAvatarMessage = 70;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ReportAvatarMessageOrBuilder getReportAvatarMessageOrBuilder() {
       return reportAvatarMessage_ == null ? de.pokerth.protocol.ProtoBuf.ReportAvatarMessage.getDefaultInstance() : reportAvatarMessage_;
     }
@@ -77401,24 +73538,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage reportAvatarAckMessage_;
     /**
      * <code>optional .ReportAvatarAckMessage reportAvatarAckMessage = 71;</code>
-     * @return Whether the reportAvatarAckMessage field is set.
      */
-    @java.lang.Override
     public boolean hasReportAvatarAckMessage() {
       return ((bitField2_ & 0x00000040) != 0);
     }
     /**
      * <code>optional .ReportAvatarAckMessage reportAvatarAckMessage = 71;</code>
-     * @return The reportAvatarAckMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage getReportAvatarAckMessage() {
       return reportAvatarAckMessage_ == null ? de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage.getDefaultInstance() : reportAvatarAckMessage_;
     }
     /**
      * <code>optional .ReportAvatarAckMessage reportAvatarAckMessage = 71;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessageOrBuilder getReportAvatarAckMessageOrBuilder() {
       return reportAvatarAckMessage_ == null ? de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage.getDefaultInstance() : reportAvatarAckMessage_;
     }
@@ -77427,24 +73559,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.ReportGameMessage reportGameMessage_;
     /**
      * <code>optional .ReportGameMessage reportGameMessage = 72;</code>
-     * @return Whether the reportGameMessage field is set.
      */
-    @java.lang.Override
     public boolean hasReportGameMessage() {
       return ((bitField2_ & 0x00000080) != 0);
     }
     /**
      * <code>optional .ReportGameMessage reportGameMessage = 72;</code>
-     * @return The reportGameMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ReportGameMessage getReportGameMessage() {
       return reportGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.ReportGameMessage.getDefaultInstance() : reportGameMessage_;
     }
     /**
      * <code>optional .ReportGameMessage reportGameMessage = 72;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ReportGameMessageOrBuilder getReportGameMessageOrBuilder() {
       return reportGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.ReportGameMessage.getDefaultInstance() : reportGameMessage_;
     }
@@ -77453,24 +73580,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.ReportGameAckMessage reportGameAckMessage_;
     /**
      * <code>optional .ReportGameAckMessage reportGameAckMessage = 73;</code>
-     * @return Whether the reportGameAckMessage field is set.
      */
-    @java.lang.Override
     public boolean hasReportGameAckMessage() {
       return ((bitField2_ & 0x00000100) != 0);
     }
     /**
      * <code>optional .ReportGameAckMessage reportGameAckMessage = 73;</code>
-     * @return The reportGameAckMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ReportGameAckMessage getReportGameAckMessage() {
       return reportGameAckMessage_ == null ? de.pokerth.protocol.ProtoBuf.ReportGameAckMessage.getDefaultInstance() : reportGameAckMessage_;
     }
     /**
      * <code>optional .ReportGameAckMessage reportGameAckMessage = 73;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ReportGameAckMessageOrBuilder getReportGameAckMessageOrBuilder() {
       return reportGameAckMessage_ == null ? de.pokerth.protocol.ProtoBuf.ReportGameAckMessage.getDefaultInstance() : reportGameAckMessage_;
     }
@@ -77479,24 +73601,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.ErrorMessage errorMessage_;
     /**
      * <code>optional .ErrorMessage errorMessage = 74;</code>
-     * @return Whether the errorMessage field is set.
      */
-    @java.lang.Override
     public boolean hasErrorMessage() {
       return ((bitField2_ & 0x00000200) != 0);
     }
     /**
      * <code>optional .ErrorMessage errorMessage = 74;</code>
-     * @return The errorMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ErrorMessage getErrorMessage() {
       return errorMessage_ == null ? de.pokerth.protocol.ProtoBuf.ErrorMessage.getDefaultInstance() : errorMessage_;
     }
     /**
      * <code>optional .ErrorMessage errorMessage = 74;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.ErrorMessageOrBuilder getErrorMessageOrBuilder() {
       return errorMessage_ == null ? de.pokerth.protocol.ProtoBuf.ErrorMessage.getDefaultInstance() : errorMessage_;
     }
@@ -77505,24 +73622,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AdminRemoveGameMessage adminRemoveGameMessage_;
     /**
      * <code>optional .AdminRemoveGameMessage adminRemoveGameMessage = 75;</code>
-     * @return Whether the adminRemoveGameMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAdminRemoveGameMessage() {
       return ((bitField2_ & 0x00000400) != 0);
     }
     /**
      * <code>optional .AdminRemoveGameMessage adminRemoveGameMessage = 75;</code>
-     * @return The adminRemoveGameMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AdminRemoveGameMessage getAdminRemoveGameMessage() {
       return adminRemoveGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.AdminRemoveGameMessage.getDefaultInstance() : adminRemoveGameMessage_;
     }
     /**
      * <code>optional .AdminRemoveGameMessage adminRemoveGameMessage = 75;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AdminRemoveGameMessageOrBuilder getAdminRemoveGameMessageOrBuilder() {
       return adminRemoveGameMessage_ == null ? de.pokerth.protocol.ProtoBuf.AdminRemoveGameMessage.getDefaultInstance() : adminRemoveGameMessage_;
     }
@@ -77531,24 +73643,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage adminRemoveGameAckMessage_;
     /**
      * <code>optional .AdminRemoveGameAckMessage adminRemoveGameAckMessage = 76;</code>
-     * @return Whether the adminRemoveGameAckMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAdminRemoveGameAckMessage() {
       return ((bitField2_ & 0x00000800) != 0);
     }
     /**
      * <code>optional .AdminRemoveGameAckMessage adminRemoveGameAckMessage = 76;</code>
-     * @return The adminRemoveGameAckMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage getAdminRemoveGameAckMessage() {
       return adminRemoveGameAckMessage_ == null ? de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage.getDefaultInstance() : adminRemoveGameAckMessage_;
     }
     /**
      * <code>optional .AdminRemoveGameAckMessage adminRemoveGameAckMessage = 76;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessageOrBuilder getAdminRemoveGameAckMessageOrBuilder() {
       return adminRemoveGameAckMessage_ == null ? de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage.getDefaultInstance() : adminRemoveGameAckMessage_;
     }
@@ -77557,24 +73664,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AdminBanPlayerMessage adminBanPlayerMessage_;
     /**
      * <code>optional .AdminBanPlayerMessage adminBanPlayerMessage = 77;</code>
-     * @return Whether the adminBanPlayerMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAdminBanPlayerMessage() {
       return ((bitField2_ & 0x00001000) != 0);
     }
     /**
      * <code>optional .AdminBanPlayerMessage adminBanPlayerMessage = 77;</code>
-     * @return The adminBanPlayerMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AdminBanPlayerMessage getAdminBanPlayerMessage() {
       return adminBanPlayerMessage_ == null ? de.pokerth.protocol.ProtoBuf.AdminBanPlayerMessage.getDefaultInstance() : adminBanPlayerMessage_;
     }
     /**
      * <code>optional .AdminBanPlayerMessage adminBanPlayerMessage = 77;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AdminBanPlayerMessageOrBuilder getAdminBanPlayerMessageOrBuilder() {
       return adminBanPlayerMessage_ == null ? de.pokerth.protocol.ProtoBuf.AdminBanPlayerMessage.getDefaultInstance() : adminBanPlayerMessage_;
     }
@@ -77583,24 +73685,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage adminBanPlayerAckMessage_;
     /**
      * <code>optional .AdminBanPlayerAckMessage adminBanPlayerAckMessage = 78;</code>
-     * @return Whether the adminBanPlayerAckMessage field is set.
      */
-    @java.lang.Override
     public boolean hasAdminBanPlayerAckMessage() {
       return ((bitField2_ & 0x00002000) != 0);
     }
     /**
      * <code>optional .AdminBanPlayerAckMessage adminBanPlayerAckMessage = 78;</code>
-     * @return The adminBanPlayerAckMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage getAdminBanPlayerAckMessage() {
       return adminBanPlayerAckMessage_ == null ? de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage.getDefaultInstance() : adminBanPlayerAckMessage_;
     }
     /**
      * <code>optional .AdminBanPlayerAckMessage adminBanPlayerAckMessage = 78;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessageOrBuilder getAdminBanPlayerAckMessageOrBuilder() {
       return adminBanPlayerAckMessage_ == null ? de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage.getDefaultInstance() : adminBanPlayerAckMessage_;
     }
@@ -77609,24 +73706,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.GameListSpectatorJoinedMessage gameListSpectatorJoinedMessage_;
     /**
      * <code>optional .GameListSpectatorJoinedMessage gameListSpectatorJoinedMessage = 79;</code>
-     * @return Whether the gameListSpectatorJoinedMessage field is set.
      */
-    @java.lang.Override
     public boolean hasGameListSpectatorJoinedMessage() {
       return ((bitField2_ & 0x00004000) != 0);
     }
     /**
      * <code>optional .GameListSpectatorJoinedMessage gameListSpectatorJoinedMessage = 79;</code>
-     * @return The gameListSpectatorJoinedMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameListSpectatorJoinedMessage getGameListSpectatorJoinedMessage() {
       return gameListSpectatorJoinedMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameListSpectatorJoinedMessage.getDefaultInstance() : gameListSpectatorJoinedMessage_;
     }
     /**
      * <code>optional .GameListSpectatorJoinedMessage gameListSpectatorJoinedMessage = 79;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameListSpectatorJoinedMessageOrBuilder getGameListSpectatorJoinedMessageOrBuilder() {
       return gameListSpectatorJoinedMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameListSpectatorJoinedMessage.getDefaultInstance() : gameListSpectatorJoinedMessage_;
     }
@@ -77635,24 +73727,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.GameListSpectatorLeftMessage gameListSpectatorLeftMessage_;
     /**
      * <code>optional .GameListSpectatorLeftMessage gameListSpectatorLeftMessage = 80;</code>
-     * @return Whether the gameListSpectatorLeftMessage field is set.
      */
-    @java.lang.Override
     public boolean hasGameListSpectatorLeftMessage() {
       return ((bitField2_ & 0x00008000) != 0);
     }
     /**
      * <code>optional .GameListSpectatorLeftMessage gameListSpectatorLeftMessage = 80;</code>
-     * @return The gameListSpectatorLeftMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameListSpectatorLeftMessage getGameListSpectatorLeftMessage() {
       return gameListSpectatorLeftMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameListSpectatorLeftMessage.getDefaultInstance() : gameListSpectatorLeftMessage_;
     }
     /**
      * <code>optional .GameListSpectatorLeftMessage gameListSpectatorLeftMessage = 80;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameListSpectatorLeftMessageOrBuilder getGameListSpectatorLeftMessageOrBuilder() {
       return gameListSpectatorLeftMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameListSpectatorLeftMessage.getDefaultInstance() : gameListSpectatorLeftMessage_;
     }
@@ -77661,24 +73748,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.GameSpectatorJoinedMessage gameSpectatorJoinedMessage_;
     /**
      * <code>optional .GameSpectatorJoinedMessage gameSpectatorJoinedMessage = 81;</code>
-     * @return Whether the gameSpectatorJoinedMessage field is set.
      */
-    @java.lang.Override
     public boolean hasGameSpectatorJoinedMessage() {
       return ((bitField2_ & 0x00010000) != 0);
     }
     /**
      * <code>optional .GameSpectatorJoinedMessage gameSpectatorJoinedMessage = 81;</code>
-     * @return The gameSpectatorJoinedMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameSpectatorJoinedMessage getGameSpectatorJoinedMessage() {
       return gameSpectatorJoinedMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameSpectatorJoinedMessage.getDefaultInstance() : gameSpectatorJoinedMessage_;
     }
     /**
      * <code>optional .GameSpectatorJoinedMessage gameSpectatorJoinedMessage = 81;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameSpectatorJoinedMessageOrBuilder getGameSpectatorJoinedMessageOrBuilder() {
       return gameSpectatorJoinedMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameSpectatorJoinedMessage.getDefaultInstance() : gameSpectatorJoinedMessage_;
     }
@@ -77687,24 +73769,19 @@ public final class ProtoBuf {
     private de.pokerth.protocol.ProtoBuf.GameSpectatorLeftMessage gameSpectatorLeftMessage_;
     /**
      * <code>optional .GameSpectatorLeftMessage gameSpectatorLeftMessage = 82;</code>
-     * @return Whether the gameSpectatorLeftMessage field is set.
      */
-    @java.lang.Override
     public boolean hasGameSpectatorLeftMessage() {
       return ((bitField2_ & 0x00020000) != 0);
     }
     /**
      * <code>optional .GameSpectatorLeftMessage gameSpectatorLeftMessage = 82;</code>
-     * @return The gameSpectatorLeftMessage.
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameSpectatorLeftMessage getGameSpectatorLeftMessage() {
       return gameSpectatorLeftMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameSpectatorLeftMessage.getDefaultInstance() : gameSpectatorLeftMessage_;
     }
     /**
      * <code>optional .GameSpectatorLeftMessage gameSpectatorLeftMessage = 82;</code>
      */
-    @java.lang.Override
     public de.pokerth.protocol.ProtoBuf.GameSpectatorLeftMessageOrBuilder getGameSpectatorLeftMessageOrBuilder() {
       return gameSpectatorLeftMessage_ == null ? de.pokerth.protocol.ProtoBuf.GameSpectatorLeftMessage.getDefaultInstance() : gameSpectatorLeftMessage_;
     }
@@ -81652,16 +77729,13 @@ public final class ProtoBuf {
       private int messageType_ = 1;
       /**
        * <code>required .PokerTHMessage.PokerTHMessageType messageType = 1;</code>
-       * @return Whether the messageType field is set.
        */
-      @java.lang.Override public boolean hasMessageType() {
+      public boolean hasMessageType() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required .PokerTHMessage.PokerTHMessageType messageType = 1;</code>
-       * @return The messageType.
        */
-      @java.lang.Override
       public de.pokerth.protocol.ProtoBuf.PokerTHMessage.PokerTHMessageType getMessageType() {
         @SuppressWarnings("deprecation")
         de.pokerth.protocol.ProtoBuf.PokerTHMessage.PokerTHMessageType result = de.pokerth.protocol.ProtoBuf.PokerTHMessage.PokerTHMessageType.valueOf(messageType_);
@@ -81669,8 +77743,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .PokerTHMessage.PokerTHMessageType messageType = 1;</code>
-       * @param value The messageType to set.
-       * @return This builder for chaining.
        */
       public Builder setMessageType(de.pokerth.protocol.ProtoBuf.PokerTHMessage.PokerTHMessageType value) {
         if (value == null) {
@@ -81683,7 +77755,6 @@ public final class ProtoBuf {
       }
       /**
        * <code>required .PokerTHMessage.PokerTHMessageType messageType = 1;</code>
-       * @return This builder for chaining.
        */
       public Builder clearMessageType() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -81697,14 +77768,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AnnounceMessage, de.pokerth.protocol.ProtoBuf.AnnounceMessage.Builder, de.pokerth.protocol.ProtoBuf.AnnounceMessageOrBuilder> announceMessageBuilder_;
       /**
        * <code>optional .AnnounceMessage announceMessage = 2;</code>
-       * @return Whether the announceMessage field is set.
        */
       public boolean hasAnnounceMessage() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>optional .AnnounceMessage announceMessage = 2;</code>
-       * @return The announceMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AnnounceMessage getAnnounceMessage() {
         if (announceMessageBuilder_ == null) {
@@ -81817,14 +77886,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.InitMessage, de.pokerth.protocol.ProtoBuf.InitMessage.Builder, de.pokerth.protocol.ProtoBuf.InitMessageOrBuilder> initMessageBuilder_;
       /**
        * <code>optional .InitMessage initMessage = 3;</code>
-       * @return Whether the initMessage field is set.
        */
       public boolean hasInitMessage() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>optional .InitMessage initMessage = 3;</code>
-       * @return The initMessage.
        */
       public de.pokerth.protocol.ProtoBuf.InitMessage getInitMessage() {
         if (initMessageBuilder_ == null) {
@@ -81937,14 +78004,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AuthServerChallengeMessage, de.pokerth.protocol.ProtoBuf.AuthServerChallengeMessage.Builder, de.pokerth.protocol.ProtoBuf.AuthServerChallengeMessageOrBuilder> authServerChallengeMessageBuilder_;
       /**
        * <code>optional .AuthServerChallengeMessage authServerChallengeMessage = 4;</code>
-       * @return Whether the authServerChallengeMessage field is set.
        */
       public boolean hasAuthServerChallengeMessage() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>optional .AuthServerChallengeMessage authServerChallengeMessage = 4;</code>
-       * @return The authServerChallengeMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AuthServerChallengeMessage getAuthServerChallengeMessage() {
         if (authServerChallengeMessageBuilder_ == null) {
@@ -82057,14 +78122,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AuthClientResponseMessage, de.pokerth.protocol.ProtoBuf.AuthClientResponseMessage.Builder, de.pokerth.protocol.ProtoBuf.AuthClientResponseMessageOrBuilder> authClientResponseMessageBuilder_;
       /**
        * <code>optional .AuthClientResponseMessage authClientResponseMessage = 5;</code>
-       * @return Whether the authClientResponseMessage field is set.
        */
       public boolean hasAuthClientResponseMessage() {
         return ((bitField0_ & 0x00000010) != 0);
       }
       /**
        * <code>optional .AuthClientResponseMessage authClientResponseMessage = 5;</code>
-       * @return The authClientResponseMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AuthClientResponseMessage getAuthClientResponseMessage() {
         if (authClientResponseMessageBuilder_ == null) {
@@ -82177,14 +78240,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AuthServerVerificationMessage, de.pokerth.protocol.ProtoBuf.AuthServerVerificationMessage.Builder, de.pokerth.protocol.ProtoBuf.AuthServerVerificationMessageOrBuilder> authServerVerificationMessageBuilder_;
       /**
        * <code>optional .AuthServerVerificationMessage authServerVerificationMessage = 6;</code>
-       * @return Whether the authServerVerificationMessage field is set.
        */
       public boolean hasAuthServerVerificationMessage() {
         return ((bitField0_ & 0x00000020) != 0);
       }
       /**
        * <code>optional .AuthServerVerificationMessage authServerVerificationMessage = 6;</code>
-       * @return The authServerVerificationMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AuthServerVerificationMessage getAuthServerVerificationMessage() {
         if (authServerVerificationMessageBuilder_ == null) {
@@ -82297,14 +78358,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.InitAckMessage, de.pokerth.protocol.ProtoBuf.InitAckMessage.Builder, de.pokerth.protocol.ProtoBuf.InitAckMessageOrBuilder> initAckMessageBuilder_;
       /**
        * <code>optional .InitAckMessage initAckMessage = 7;</code>
-       * @return Whether the initAckMessage field is set.
        */
       public boolean hasInitAckMessage() {
         return ((bitField0_ & 0x00000040) != 0);
       }
       /**
        * <code>optional .InitAckMessage initAckMessage = 7;</code>
-       * @return The initAckMessage.
        */
       public de.pokerth.protocol.ProtoBuf.InitAckMessage getInitAckMessage() {
         if (initAckMessageBuilder_ == null) {
@@ -82417,14 +78476,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AvatarRequestMessage, de.pokerth.protocol.ProtoBuf.AvatarRequestMessage.Builder, de.pokerth.protocol.ProtoBuf.AvatarRequestMessageOrBuilder> avatarRequestMessageBuilder_;
       /**
        * <code>optional .AvatarRequestMessage avatarRequestMessage = 8;</code>
-       * @return Whether the avatarRequestMessage field is set.
        */
       public boolean hasAvatarRequestMessage() {
         return ((bitField0_ & 0x00000080) != 0);
       }
       /**
        * <code>optional .AvatarRequestMessage avatarRequestMessage = 8;</code>
-       * @return The avatarRequestMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AvatarRequestMessage getAvatarRequestMessage() {
         if (avatarRequestMessageBuilder_ == null) {
@@ -82537,14 +78594,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AvatarHeaderMessage, de.pokerth.protocol.ProtoBuf.AvatarHeaderMessage.Builder, de.pokerth.protocol.ProtoBuf.AvatarHeaderMessageOrBuilder> avatarHeaderMessageBuilder_;
       /**
        * <code>optional .AvatarHeaderMessage avatarHeaderMessage = 9;</code>
-       * @return Whether the avatarHeaderMessage field is set.
        */
       public boolean hasAvatarHeaderMessage() {
         return ((bitField0_ & 0x00000100) != 0);
       }
       /**
        * <code>optional .AvatarHeaderMessage avatarHeaderMessage = 9;</code>
-       * @return The avatarHeaderMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AvatarHeaderMessage getAvatarHeaderMessage() {
         if (avatarHeaderMessageBuilder_ == null) {
@@ -82657,14 +78712,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AvatarDataMessage, de.pokerth.protocol.ProtoBuf.AvatarDataMessage.Builder, de.pokerth.protocol.ProtoBuf.AvatarDataMessageOrBuilder> avatarDataMessageBuilder_;
       /**
        * <code>optional .AvatarDataMessage avatarDataMessage = 10;</code>
-       * @return Whether the avatarDataMessage field is set.
        */
       public boolean hasAvatarDataMessage() {
         return ((bitField0_ & 0x00000200) != 0);
       }
       /**
        * <code>optional .AvatarDataMessage avatarDataMessage = 10;</code>
-       * @return The avatarDataMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AvatarDataMessage getAvatarDataMessage() {
         if (avatarDataMessageBuilder_ == null) {
@@ -82777,14 +78830,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AvatarEndMessage, de.pokerth.protocol.ProtoBuf.AvatarEndMessage.Builder, de.pokerth.protocol.ProtoBuf.AvatarEndMessageOrBuilder> avatarEndMessageBuilder_;
       /**
        * <code>optional .AvatarEndMessage avatarEndMessage = 11;</code>
-       * @return Whether the avatarEndMessage field is set.
        */
       public boolean hasAvatarEndMessage() {
         return ((bitField0_ & 0x00000400) != 0);
       }
       /**
        * <code>optional .AvatarEndMessage avatarEndMessage = 11;</code>
-       * @return The avatarEndMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AvatarEndMessage getAvatarEndMessage() {
         if (avatarEndMessageBuilder_ == null) {
@@ -82897,14 +78948,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.UnknownAvatarMessage, de.pokerth.protocol.ProtoBuf.UnknownAvatarMessage.Builder, de.pokerth.protocol.ProtoBuf.UnknownAvatarMessageOrBuilder> unknownAvatarMessageBuilder_;
       /**
        * <code>optional .UnknownAvatarMessage unknownAvatarMessage = 12;</code>
-       * @return Whether the unknownAvatarMessage field is set.
        */
       public boolean hasUnknownAvatarMessage() {
         return ((bitField0_ & 0x00000800) != 0);
       }
       /**
        * <code>optional .UnknownAvatarMessage unknownAvatarMessage = 12;</code>
-       * @return The unknownAvatarMessage.
        */
       public de.pokerth.protocol.ProtoBuf.UnknownAvatarMessage getUnknownAvatarMessage() {
         if (unknownAvatarMessageBuilder_ == null) {
@@ -83017,14 +79066,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.PlayerListMessage, de.pokerth.protocol.ProtoBuf.PlayerListMessage.Builder, de.pokerth.protocol.ProtoBuf.PlayerListMessageOrBuilder> playerListMessageBuilder_;
       /**
        * <code>optional .PlayerListMessage playerListMessage = 13;</code>
-       * @return Whether the playerListMessage field is set.
        */
       public boolean hasPlayerListMessage() {
         return ((bitField0_ & 0x00001000) != 0);
       }
       /**
        * <code>optional .PlayerListMessage playerListMessage = 13;</code>
-       * @return The playerListMessage.
        */
       public de.pokerth.protocol.ProtoBuf.PlayerListMessage getPlayerListMessage() {
         if (playerListMessageBuilder_ == null) {
@@ -83137,14 +79184,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.GameListNewMessage, de.pokerth.protocol.ProtoBuf.GameListNewMessage.Builder, de.pokerth.protocol.ProtoBuf.GameListNewMessageOrBuilder> gameListNewMessageBuilder_;
       /**
        * <code>optional .GameListNewMessage gameListNewMessage = 14;</code>
-       * @return Whether the gameListNewMessage field is set.
        */
       public boolean hasGameListNewMessage() {
         return ((bitField0_ & 0x00002000) != 0);
       }
       /**
        * <code>optional .GameListNewMessage gameListNewMessage = 14;</code>
-       * @return The gameListNewMessage.
        */
       public de.pokerth.protocol.ProtoBuf.GameListNewMessage getGameListNewMessage() {
         if (gameListNewMessageBuilder_ == null) {
@@ -83257,14 +79302,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.GameListUpdateMessage, de.pokerth.protocol.ProtoBuf.GameListUpdateMessage.Builder, de.pokerth.protocol.ProtoBuf.GameListUpdateMessageOrBuilder> gameListUpdateMessageBuilder_;
       /**
        * <code>optional .GameListUpdateMessage gameListUpdateMessage = 15;</code>
-       * @return Whether the gameListUpdateMessage field is set.
        */
       public boolean hasGameListUpdateMessage() {
         return ((bitField0_ & 0x00004000) != 0);
       }
       /**
        * <code>optional .GameListUpdateMessage gameListUpdateMessage = 15;</code>
-       * @return The gameListUpdateMessage.
        */
       public de.pokerth.protocol.ProtoBuf.GameListUpdateMessage getGameListUpdateMessage() {
         if (gameListUpdateMessageBuilder_ == null) {
@@ -83377,14 +79420,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.GameListPlayerJoinedMessage, de.pokerth.protocol.ProtoBuf.GameListPlayerJoinedMessage.Builder, de.pokerth.protocol.ProtoBuf.GameListPlayerJoinedMessageOrBuilder> gameListPlayerJoinedMessageBuilder_;
       /**
        * <code>optional .GameListPlayerJoinedMessage gameListPlayerJoinedMessage = 16;</code>
-       * @return Whether the gameListPlayerJoinedMessage field is set.
        */
       public boolean hasGameListPlayerJoinedMessage() {
         return ((bitField0_ & 0x00008000) != 0);
       }
       /**
        * <code>optional .GameListPlayerJoinedMessage gameListPlayerJoinedMessage = 16;</code>
-       * @return The gameListPlayerJoinedMessage.
        */
       public de.pokerth.protocol.ProtoBuf.GameListPlayerJoinedMessage getGameListPlayerJoinedMessage() {
         if (gameListPlayerJoinedMessageBuilder_ == null) {
@@ -83497,14 +79538,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.GameListPlayerLeftMessage, de.pokerth.protocol.ProtoBuf.GameListPlayerLeftMessage.Builder, de.pokerth.protocol.ProtoBuf.GameListPlayerLeftMessageOrBuilder> gameListPlayerLeftMessageBuilder_;
       /**
        * <code>optional .GameListPlayerLeftMessage gameListPlayerLeftMessage = 17;</code>
-       * @return Whether the gameListPlayerLeftMessage field is set.
        */
       public boolean hasGameListPlayerLeftMessage() {
         return ((bitField0_ & 0x00010000) != 0);
       }
       /**
        * <code>optional .GameListPlayerLeftMessage gameListPlayerLeftMessage = 17;</code>
-       * @return The gameListPlayerLeftMessage.
        */
       public de.pokerth.protocol.ProtoBuf.GameListPlayerLeftMessage getGameListPlayerLeftMessage() {
         if (gameListPlayerLeftMessageBuilder_ == null) {
@@ -83617,14 +79656,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.GameListAdminChangedMessage, de.pokerth.protocol.ProtoBuf.GameListAdminChangedMessage.Builder, de.pokerth.protocol.ProtoBuf.GameListAdminChangedMessageOrBuilder> gameListAdminChangedMessageBuilder_;
       /**
        * <code>optional .GameListAdminChangedMessage gameListAdminChangedMessage = 18;</code>
-       * @return Whether the gameListAdminChangedMessage field is set.
        */
       public boolean hasGameListAdminChangedMessage() {
         return ((bitField0_ & 0x00020000) != 0);
       }
       /**
        * <code>optional .GameListAdminChangedMessage gameListAdminChangedMessage = 18;</code>
-       * @return The gameListAdminChangedMessage.
        */
       public de.pokerth.protocol.ProtoBuf.GameListAdminChangedMessage getGameListAdminChangedMessage() {
         if (gameListAdminChangedMessageBuilder_ == null) {
@@ -83737,14 +79774,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.PlayerInfoRequestMessage, de.pokerth.protocol.ProtoBuf.PlayerInfoRequestMessage.Builder, de.pokerth.protocol.ProtoBuf.PlayerInfoRequestMessageOrBuilder> playerInfoRequestMessageBuilder_;
       /**
        * <code>optional .PlayerInfoRequestMessage playerInfoRequestMessage = 19;</code>
-       * @return Whether the playerInfoRequestMessage field is set.
        */
       public boolean hasPlayerInfoRequestMessage() {
         return ((bitField0_ & 0x00040000) != 0);
       }
       /**
        * <code>optional .PlayerInfoRequestMessage playerInfoRequestMessage = 19;</code>
-       * @return The playerInfoRequestMessage.
        */
       public de.pokerth.protocol.ProtoBuf.PlayerInfoRequestMessage getPlayerInfoRequestMessage() {
         if (playerInfoRequestMessageBuilder_ == null) {
@@ -83857,14 +79892,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage, de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage.Builder, de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessageOrBuilder> playerInfoReplyMessageBuilder_;
       /**
        * <code>optional .PlayerInfoReplyMessage playerInfoReplyMessage = 20;</code>
-       * @return Whether the playerInfoReplyMessage field is set.
        */
       public boolean hasPlayerInfoReplyMessage() {
         return ((bitField0_ & 0x00080000) != 0);
       }
       /**
        * <code>optional .PlayerInfoReplyMessage playerInfoReplyMessage = 20;</code>
-       * @return The playerInfoReplyMessage.
        */
       public de.pokerth.protocol.ProtoBuf.PlayerInfoReplyMessage getPlayerInfoReplyMessage() {
         if (playerInfoReplyMessageBuilder_ == null) {
@@ -83977,14 +80010,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage, de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage.Builder, de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessageOrBuilder> subscriptionRequestMessageBuilder_;
       /**
        * <code>optional .SubscriptionRequestMessage subscriptionRequestMessage = 21;</code>
-       * @return Whether the subscriptionRequestMessage field is set.
        */
       public boolean hasSubscriptionRequestMessage() {
         return ((bitField0_ & 0x00100000) != 0);
       }
       /**
        * <code>optional .SubscriptionRequestMessage subscriptionRequestMessage = 21;</code>
-       * @return The subscriptionRequestMessage.
        */
       public de.pokerth.protocol.ProtoBuf.SubscriptionRequestMessage getSubscriptionRequestMessage() {
         if (subscriptionRequestMessageBuilder_ == null) {
@@ -84097,14 +80128,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.JoinExistingGameMessage, de.pokerth.protocol.ProtoBuf.JoinExistingGameMessage.Builder, de.pokerth.protocol.ProtoBuf.JoinExistingGameMessageOrBuilder> joinExistingGameMessageBuilder_;
       /**
        * <code>optional .JoinExistingGameMessage joinExistingGameMessage = 22;</code>
-       * @return Whether the joinExistingGameMessage field is set.
        */
       public boolean hasJoinExistingGameMessage() {
         return ((bitField0_ & 0x00200000) != 0);
       }
       /**
        * <code>optional .JoinExistingGameMessage joinExistingGameMessage = 22;</code>
-       * @return The joinExistingGameMessage.
        */
       public de.pokerth.protocol.ProtoBuf.JoinExistingGameMessage getJoinExistingGameMessage() {
         if (joinExistingGameMessageBuilder_ == null) {
@@ -84217,14 +80246,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.JoinNewGameMessage, de.pokerth.protocol.ProtoBuf.JoinNewGameMessage.Builder, de.pokerth.protocol.ProtoBuf.JoinNewGameMessageOrBuilder> joinNewGameMessageBuilder_;
       /**
        * <code>optional .JoinNewGameMessage joinNewGameMessage = 23;</code>
-       * @return Whether the joinNewGameMessage field is set.
        */
       public boolean hasJoinNewGameMessage() {
         return ((bitField0_ & 0x00400000) != 0);
       }
       /**
        * <code>optional .JoinNewGameMessage joinNewGameMessage = 23;</code>
-       * @return The joinNewGameMessage.
        */
       public de.pokerth.protocol.ProtoBuf.JoinNewGameMessage getJoinNewGameMessage() {
         if (joinNewGameMessageBuilder_ == null) {
@@ -84337,14 +80364,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.RejoinExistingGameMessage, de.pokerth.protocol.ProtoBuf.RejoinExistingGameMessage.Builder, de.pokerth.protocol.ProtoBuf.RejoinExistingGameMessageOrBuilder> rejoinExistingGameMessageBuilder_;
       /**
        * <code>optional .RejoinExistingGameMessage rejoinExistingGameMessage = 24;</code>
-       * @return Whether the rejoinExistingGameMessage field is set.
        */
       public boolean hasRejoinExistingGameMessage() {
         return ((bitField0_ & 0x00800000) != 0);
       }
       /**
        * <code>optional .RejoinExistingGameMessage rejoinExistingGameMessage = 24;</code>
-       * @return The rejoinExistingGameMessage.
        */
       public de.pokerth.protocol.ProtoBuf.RejoinExistingGameMessage getRejoinExistingGameMessage() {
         if (rejoinExistingGameMessageBuilder_ == null) {
@@ -84457,14 +80482,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.JoinGameAckMessage, de.pokerth.protocol.ProtoBuf.JoinGameAckMessage.Builder, de.pokerth.protocol.ProtoBuf.JoinGameAckMessageOrBuilder> joinGameAckMessageBuilder_;
       /**
        * <code>optional .JoinGameAckMessage joinGameAckMessage = 25;</code>
-       * @return Whether the joinGameAckMessage field is set.
        */
       public boolean hasJoinGameAckMessage() {
         return ((bitField0_ & 0x01000000) != 0);
       }
       /**
        * <code>optional .JoinGameAckMessage joinGameAckMessage = 25;</code>
-       * @return The joinGameAckMessage.
        */
       public de.pokerth.protocol.ProtoBuf.JoinGameAckMessage getJoinGameAckMessage() {
         if (joinGameAckMessageBuilder_ == null) {
@@ -84577,14 +80600,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage, de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage.Builder, de.pokerth.protocol.ProtoBuf.JoinGameFailedMessageOrBuilder> joinGameFailedMessageBuilder_;
       /**
        * <code>optional .JoinGameFailedMessage joinGameFailedMessage = 26;</code>
-       * @return Whether the joinGameFailedMessage field is set.
        */
       public boolean hasJoinGameFailedMessage() {
         return ((bitField0_ & 0x02000000) != 0);
       }
       /**
        * <code>optional .JoinGameFailedMessage joinGameFailedMessage = 26;</code>
-       * @return The joinGameFailedMessage.
        */
       public de.pokerth.protocol.ProtoBuf.JoinGameFailedMessage getJoinGameFailedMessage() {
         if (joinGameFailedMessageBuilder_ == null) {
@@ -84697,14 +80718,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.GamePlayerJoinedMessage, de.pokerth.protocol.ProtoBuf.GamePlayerJoinedMessage.Builder, de.pokerth.protocol.ProtoBuf.GamePlayerJoinedMessageOrBuilder> gamePlayerJoinedMessageBuilder_;
       /**
        * <code>optional .GamePlayerJoinedMessage gamePlayerJoinedMessage = 27;</code>
-       * @return Whether the gamePlayerJoinedMessage field is set.
        */
       public boolean hasGamePlayerJoinedMessage() {
         return ((bitField0_ & 0x04000000) != 0);
       }
       /**
        * <code>optional .GamePlayerJoinedMessage gamePlayerJoinedMessage = 27;</code>
-       * @return The gamePlayerJoinedMessage.
        */
       public de.pokerth.protocol.ProtoBuf.GamePlayerJoinedMessage getGamePlayerJoinedMessage() {
         if (gamePlayerJoinedMessageBuilder_ == null) {
@@ -84817,14 +80836,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage, de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage.Builder, de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessageOrBuilder> gamePlayerLeftMessageBuilder_;
       /**
        * <code>optional .GamePlayerLeftMessage gamePlayerLeftMessage = 28;</code>
-       * @return Whether the gamePlayerLeftMessage field is set.
        */
       public boolean hasGamePlayerLeftMessage() {
         return ((bitField0_ & 0x08000000) != 0);
       }
       /**
        * <code>optional .GamePlayerLeftMessage gamePlayerLeftMessage = 28;</code>
-       * @return The gamePlayerLeftMessage.
        */
       public de.pokerth.protocol.ProtoBuf.GamePlayerLeftMessage getGamePlayerLeftMessage() {
         if (gamePlayerLeftMessageBuilder_ == null) {
@@ -84937,14 +80954,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.GameAdminChangedMessage, de.pokerth.protocol.ProtoBuf.GameAdminChangedMessage.Builder, de.pokerth.protocol.ProtoBuf.GameAdminChangedMessageOrBuilder> gameAdminChangedMessageBuilder_;
       /**
        * <code>optional .GameAdminChangedMessage gameAdminChangedMessage = 29;</code>
-       * @return Whether the gameAdminChangedMessage field is set.
        */
       public boolean hasGameAdminChangedMessage() {
         return ((bitField0_ & 0x10000000) != 0);
       }
       /**
        * <code>optional .GameAdminChangedMessage gameAdminChangedMessage = 29;</code>
-       * @return The gameAdminChangedMessage.
        */
       public de.pokerth.protocol.ProtoBuf.GameAdminChangedMessage getGameAdminChangedMessage() {
         if (gameAdminChangedMessageBuilder_ == null) {
@@ -85057,14 +81072,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage, de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage.Builder, de.pokerth.protocol.ProtoBuf.RemovedFromGameMessageOrBuilder> removedFromGameMessageBuilder_;
       /**
        * <code>optional .RemovedFromGameMessage removedFromGameMessage = 30;</code>
-       * @return Whether the removedFromGameMessage field is set.
        */
       public boolean hasRemovedFromGameMessage() {
         return ((bitField0_ & 0x20000000) != 0);
       }
       /**
        * <code>optional .RemovedFromGameMessage removedFromGameMessage = 30;</code>
-       * @return The removedFromGameMessage.
        */
       public de.pokerth.protocol.ProtoBuf.RemovedFromGameMessage getRemovedFromGameMessage() {
         if (removedFromGameMessageBuilder_ == null) {
@@ -85177,14 +81190,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.KickPlayerRequestMessage, de.pokerth.protocol.ProtoBuf.KickPlayerRequestMessage.Builder, de.pokerth.protocol.ProtoBuf.KickPlayerRequestMessageOrBuilder> kickPlayerRequestMessageBuilder_;
       /**
        * <code>optional .KickPlayerRequestMessage kickPlayerRequestMessage = 31;</code>
-       * @return Whether the kickPlayerRequestMessage field is set.
        */
       public boolean hasKickPlayerRequestMessage() {
         return ((bitField0_ & 0x40000000) != 0);
       }
       /**
        * <code>optional .KickPlayerRequestMessage kickPlayerRequestMessage = 31;</code>
-       * @return The kickPlayerRequestMessage.
        */
       public de.pokerth.protocol.ProtoBuf.KickPlayerRequestMessage getKickPlayerRequestMessage() {
         if (kickPlayerRequestMessageBuilder_ == null) {
@@ -85297,14 +81308,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.LeaveGameRequestMessage, de.pokerth.protocol.ProtoBuf.LeaveGameRequestMessage.Builder, de.pokerth.protocol.ProtoBuf.LeaveGameRequestMessageOrBuilder> leaveGameRequestMessageBuilder_;
       /**
        * <code>optional .LeaveGameRequestMessage leaveGameRequestMessage = 32;</code>
-       * @return Whether the leaveGameRequestMessage field is set.
        */
       public boolean hasLeaveGameRequestMessage() {
         return ((bitField0_ & 0x80000000) != 0);
       }
       /**
        * <code>optional .LeaveGameRequestMessage leaveGameRequestMessage = 32;</code>
-       * @return The leaveGameRequestMessage.
        */
       public de.pokerth.protocol.ProtoBuf.LeaveGameRequestMessage getLeaveGameRequestMessage() {
         if (leaveGameRequestMessageBuilder_ == null) {
@@ -85417,14 +81426,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.InvitePlayerToGameMessage, de.pokerth.protocol.ProtoBuf.InvitePlayerToGameMessage.Builder, de.pokerth.protocol.ProtoBuf.InvitePlayerToGameMessageOrBuilder> invitePlayerToGameMessageBuilder_;
       /**
        * <code>optional .InvitePlayerToGameMessage invitePlayerToGameMessage = 33;</code>
-       * @return Whether the invitePlayerToGameMessage field is set.
        */
       public boolean hasInvitePlayerToGameMessage() {
         return ((bitField1_ & 0x00000001) != 0);
       }
       /**
        * <code>optional .InvitePlayerToGameMessage invitePlayerToGameMessage = 33;</code>
-       * @return The invitePlayerToGameMessage.
        */
       public de.pokerth.protocol.ProtoBuf.InvitePlayerToGameMessage getInvitePlayerToGameMessage() {
         if (invitePlayerToGameMessageBuilder_ == null) {
@@ -85537,14 +81544,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.InviteNotifyMessage, de.pokerth.protocol.ProtoBuf.InviteNotifyMessage.Builder, de.pokerth.protocol.ProtoBuf.InviteNotifyMessageOrBuilder> inviteNotifyMessageBuilder_;
       /**
        * <code>optional .InviteNotifyMessage inviteNotifyMessage = 34;</code>
-       * @return Whether the inviteNotifyMessage field is set.
        */
       public boolean hasInviteNotifyMessage() {
         return ((bitField1_ & 0x00000002) != 0);
       }
       /**
        * <code>optional .InviteNotifyMessage inviteNotifyMessage = 34;</code>
-       * @return The inviteNotifyMessage.
        */
       public de.pokerth.protocol.ProtoBuf.InviteNotifyMessage getInviteNotifyMessage() {
         if (inviteNotifyMessageBuilder_ == null) {
@@ -85657,14 +81662,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage, de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage.Builder, de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessageOrBuilder> rejectGameInvitationMessageBuilder_;
       /**
        * <code>optional .RejectGameInvitationMessage rejectGameInvitationMessage = 35;</code>
-       * @return Whether the rejectGameInvitationMessage field is set.
        */
       public boolean hasRejectGameInvitationMessage() {
         return ((bitField1_ & 0x00000004) != 0);
       }
       /**
        * <code>optional .RejectGameInvitationMessage rejectGameInvitationMessage = 35;</code>
-       * @return The rejectGameInvitationMessage.
        */
       public de.pokerth.protocol.ProtoBuf.RejectGameInvitationMessage getRejectGameInvitationMessage() {
         if (rejectGameInvitationMessageBuilder_ == null) {
@@ -85777,14 +81780,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.RejectInvNotifyMessage, de.pokerth.protocol.ProtoBuf.RejectInvNotifyMessage.Builder, de.pokerth.protocol.ProtoBuf.RejectInvNotifyMessageOrBuilder> rejectInvNotifyMessageBuilder_;
       /**
        * <code>optional .RejectInvNotifyMessage rejectInvNotifyMessage = 36;</code>
-       * @return Whether the rejectInvNotifyMessage field is set.
        */
       public boolean hasRejectInvNotifyMessage() {
         return ((bitField1_ & 0x00000008) != 0);
       }
       /**
        * <code>optional .RejectInvNotifyMessage rejectInvNotifyMessage = 36;</code>
-       * @return The rejectInvNotifyMessage.
        */
       public de.pokerth.protocol.ProtoBuf.RejectInvNotifyMessage getRejectInvNotifyMessage() {
         if (rejectInvNotifyMessageBuilder_ == null) {
@@ -85897,14 +81898,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.StartEventMessage, de.pokerth.protocol.ProtoBuf.StartEventMessage.Builder, de.pokerth.protocol.ProtoBuf.StartEventMessageOrBuilder> startEventMessageBuilder_;
       /**
        * <code>optional .StartEventMessage startEventMessage = 37;</code>
-       * @return Whether the startEventMessage field is set.
        */
       public boolean hasStartEventMessage() {
         return ((bitField1_ & 0x00000010) != 0);
       }
       /**
        * <code>optional .StartEventMessage startEventMessage = 37;</code>
-       * @return The startEventMessage.
        */
       public de.pokerth.protocol.ProtoBuf.StartEventMessage getStartEventMessage() {
         if (startEventMessageBuilder_ == null) {
@@ -86017,14 +82016,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.StartEventAckMessage, de.pokerth.protocol.ProtoBuf.StartEventAckMessage.Builder, de.pokerth.protocol.ProtoBuf.StartEventAckMessageOrBuilder> startEventAckMessageBuilder_;
       /**
        * <code>optional .StartEventAckMessage startEventAckMessage = 38;</code>
-       * @return Whether the startEventAckMessage field is set.
        */
       public boolean hasStartEventAckMessage() {
         return ((bitField1_ & 0x00000020) != 0);
       }
       /**
        * <code>optional .StartEventAckMessage startEventAckMessage = 38;</code>
-       * @return The startEventAckMessage.
        */
       public de.pokerth.protocol.ProtoBuf.StartEventAckMessage getStartEventAckMessage() {
         if (startEventAckMessageBuilder_ == null) {
@@ -86137,14 +82134,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.GameStartInitialMessage, de.pokerth.protocol.ProtoBuf.GameStartInitialMessage.Builder, de.pokerth.protocol.ProtoBuf.GameStartInitialMessageOrBuilder> gameStartInitialMessageBuilder_;
       /**
        * <code>optional .GameStartInitialMessage gameStartInitialMessage = 39;</code>
-       * @return Whether the gameStartInitialMessage field is set.
        */
       public boolean hasGameStartInitialMessage() {
         return ((bitField1_ & 0x00000040) != 0);
       }
       /**
        * <code>optional .GameStartInitialMessage gameStartInitialMessage = 39;</code>
-       * @return The gameStartInitialMessage.
        */
       public de.pokerth.protocol.ProtoBuf.GameStartInitialMessage getGameStartInitialMessage() {
         if (gameStartInitialMessageBuilder_ == null) {
@@ -86257,14 +82252,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.GameStartRejoinMessage, de.pokerth.protocol.ProtoBuf.GameStartRejoinMessage.Builder, de.pokerth.protocol.ProtoBuf.GameStartRejoinMessageOrBuilder> gameStartRejoinMessageBuilder_;
       /**
        * <code>optional .GameStartRejoinMessage gameStartRejoinMessage = 40;</code>
-       * @return Whether the gameStartRejoinMessage field is set.
        */
       public boolean hasGameStartRejoinMessage() {
         return ((bitField1_ & 0x00000080) != 0);
       }
       /**
        * <code>optional .GameStartRejoinMessage gameStartRejoinMessage = 40;</code>
-       * @return The gameStartRejoinMessage.
        */
       public de.pokerth.protocol.ProtoBuf.GameStartRejoinMessage getGameStartRejoinMessage() {
         if (gameStartRejoinMessageBuilder_ == null) {
@@ -86377,14 +82370,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.HandStartMessage, de.pokerth.protocol.ProtoBuf.HandStartMessage.Builder, de.pokerth.protocol.ProtoBuf.HandStartMessageOrBuilder> handStartMessageBuilder_;
       /**
        * <code>optional .HandStartMessage handStartMessage = 41;</code>
-       * @return Whether the handStartMessage field is set.
        */
       public boolean hasHandStartMessage() {
         return ((bitField1_ & 0x00000100) != 0);
       }
       /**
        * <code>optional .HandStartMessage handStartMessage = 41;</code>
-       * @return The handStartMessage.
        */
       public de.pokerth.protocol.ProtoBuf.HandStartMessage getHandStartMessage() {
         if (handStartMessageBuilder_ == null) {
@@ -86497,14 +82488,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.PlayersTurnMessage, de.pokerth.protocol.ProtoBuf.PlayersTurnMessage.Builder, de.pokerth.protocol.ProtoBuf.PlayersTurnMessageOrBuilder> playersTurnMessageBuilder_;
       /**
        * <code>optional .PlayersTurnMessage playersTurnMessage = 42;</code>
-       * @return Whether the playersTurnMessage field is set.
        */
       public boolean hasPlayersTurnMessage() {
         return ((bitField1_ & 0x00000200) != 0);
       }
       /**
        * <code>optional .PlayersTurnMessage playersTurnMessage = 42;</code>
-       * @return The playersTurnMessage.
        */
       public de.pokerth.protocol.ProtoBuf.PlayersTurnMessage getPlayersTurnMessage() {
         if (playersTurnMessageBuilder_ == null) {
@@ -86617,14 +82606,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.MyActionRequestMessage, de.pokerth.protocol.ProtoBuf.MyActionRequestMessage.Builder, de.pokerth.protocol.ProtoBuf.MyActionRequestMessageOrBuilder> myActionRequestMessageBuilder_;
       /**
        * <code>optional .MyActionRequestMessage myActionRequestMessage = 43;</code>
-       * @return Whether the myActionRequestMessage field is set.
        */
       public boolean hasMyActionRequestMessage() {
         return ((bitField1_ & 0x00000400) != 0);
       }
       /**
        * <code>optional .MyActionRequestMessage myActionRequestMessage = 43;</code>
-       * @return The myActionRequestMessage.
        */
       public de.pokerth.protocol.ProtoBuf.MyActionRequestMessage getMyActionRequestMessage() {
         if (myActionRequestMessageBuilder_ == null) {
@@ -86737,14 +82724,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage, de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage.Builder, de.pokerth.protocol.ProtoBuf.YourActionRejectedMessageOrBuilder> yourActionRejectedMessageBuilder_;
       /**
        * <code>optional .YourActionRejectedMessage yourActionRejectedMessage = 44;</code>
-       * @return Whether the yourActionRejectedMessage field is set.
        */
       public boolean hasYourActionRejectedMessage() {
         return ((bitField1_ & 0x00000800) != 0);
       }
       /**
        * <code>optional .YourActionRejectedMessage yourActionRejectedMessage = 44;</code>
-       * @return The yourActionRejectedMessage.
        */
       public de.pokerth.protocol.ProtoBuf.YourActionRejectedMessage getYourActionRejectedMessage() {
         if (yourActionRejectedMessageBuilder_ == null) {
@@ -86857,14 +82842,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.PlayersActionDoneMessage, de.pokerth.protocol.ProtoBuf.PlayersActionDoneMessage.Builder, de.pokerth.protocol.ProtoBuf.PlayersActionDoneMessageOrBuilder> playersActionDoneMessageBuilder_;
       /**
        * <code>optional .PlayersActionDoneMessage playersActionDoneMessage = 45;</code>
-       * @return Whether the playersActionDoneMessage field is set.
        */
       public boolean hasPlayersActionDoneMessage() {
         return ((bitField1_ & 0x00001000) != 0);
       }
       /**
        * <code>optional .PlayersActionDoneMessage playersActionDoneMessage = 45;</code>
-       * @return The playersActionDoneMessage.
        */
       public de.pokerth.protocol.ProtoBuf.PlayersActionDoneMessage getPlayersActionDoneMessage() {
         if (playersActionDoneMessageBuilder_ == null) {
@@ -86977,14 +82960,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.DealFlopCardsMessage, de.pokerth.protocol.ProtoBuf.DealFlopCardsMessage.Builder, de.pokerth.protocol.ProtoBuf.DealFlopCardsMessageOrBuilder> dealFlopCardsMessageBuilder_;
       /**
        * <code>optional .DealFlopCardsMessage dealFlopCardsMessage = 46;</code>
-       * @return Whether the dealFlopCardsMessage field is set.
        */
       public boolean hasDealFlopCardsMessage() {
         return ((bitField1_ & 0x00002000) != 0);
       }
       /**
        * <code>optional .DealFlopCardsMessage dealFlopCardsMessage = 46;</code>
-       * @return The dealFlopCardsMessage.
        */
       public de.pokerth.protocol.ProtoBuf.DealFlopCardsMessage getDealFlopCardsMessage() {
         if (dealFlopCardsMessageBuilder_ == null) {
@@ -87097,14 +83078,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.DealTurnCardMessage, de.pokerth.protocol.ProtoBuf.DealTurnCardMessage.Builder, de.pokerth.protocol.ProtoBuf.DealTurnCardMessageOrBuilder> dealTurnCardMessageBuilder_;
       /**
        * <code>optional .DealTurnCardMessage dealTurnCardMessage = 47;</code>
-       * @return Whether the dealTurnCardMessage field is set.
        */
       public boolean hasDealTurnCardMessage() {
         return ((bitField1_ & 0x00004000) != 0);
       }
       /**
        * <code>optional .DealTurnCardMessage dealTurnCardMessage = 47;</code>
-       * @return The dealTurnCardMessage.
        */
       public de.pokerth.protocol.ProtoBuf.DealTurnCardMessage getDealTurnCardMessage() {
         if (dealTurnCardMessageBuilder_ == null) {
@@ -87217,14 +83196,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.DealRiverCardMessage, de.pokerth.protocol.ProtoBuf.DealRiverCardMessage.Builder, de.pokerth.protocol.ProtoBuf.DealRiverCardMessageOrBuilder> dealRiverCardMessageBuilder_;
       /**
        * <code>optional .DealRiverCardMessage dealRiverCardMessage = 48;</code>
-       * @return Whether the dealRiverCardMessage field is set.
        */
       public boolean hasDealRiverCardMessage() {
         return ((bitField1_ & 0x00008000) != 0);
       }
       /**
        * <code>optional .DealRiverCardMessage dealRiverCardMessage = 48;</code>
-       * @return The dealRiverCardMessage.
        */
       public de.pokerth.protocol.ProtoBuf.DealRiverCardMessage getDealRiverCardMessage() {
         if (dealRiverCardMessageBuilder_ == null) {
@@ -87337,14 +83314,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AllInShowCardsMessage, de.pokerth.protocol.ProtoBuf.AllInShowCardsMessage.Builder, de.pokerth.protocol.ProtoBuf.AllInShowCardsMessageOrBuilder> allInShowCardsMessageBuilder_;
       /**
        * <code>optional .AllInShowCardsMessage allInShowCardsMessage = 49;</code>
-       * @return Whether the allInShowCardsMessage field is set.
        */
       public boolean hasAllInShowCardsMessage() {
         return ((bitField1_ & 0x00010000) != 0);
       }
       /**
        * <code>optional .AllInShowCardsMessage allInShowCardsMessage = 49;</code>
-       * @return The allInShowCardsMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AllInShowCardsMessage getAllInShowCardsMessage() {
         if (allInShowCardsMessageBuilder_ == null) {
@@ -87457,14 +83432,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.EndOfHandShowCardsMessage, de.pokerth.protocol.ProtoBuf.EndOfHandShowCardsMessage.Builder, de.pokerth.protocol.ProtoBuf.EndOfHandShowCardsMessageOrBuilder> endOfHandShowCardsMessageBuilder_;
       /**
        * <code>optional .EndOfHandShowCardsMessage endOfHandShowCardsMessage = 50;</code>
-       * @return Whether the endOfHandShowCardsMessage field is set.
        */
       public boolean hasEndOfHandShowCardsMessage() {
         return ((bitField1_ & 0x00020000) != 0);
       }
       /**
        * <code>optional .EndOfHandShowCardsMessage endOfHandShowCardsMessage = 50;</code>
-       * @return The endOfHandShowCardsMessage.
        */
       public de.pokerth.protocol.ProtoBuf.EndOfHandShowCardsMessage getEndOfHandShowCardsMessage() {
         if (endOfHandShowCardsMessageBuilder_ == null) {
@@ -87577,14 +83550,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.EndOfHandHideCardsMessage, de.pokerth.protocol.ProtoBuf.EndOfHandHideCardsMessage.Builder, de.pokerth.protocol.ProtoBuf.EndOfHandHideCardsMessageOrBuilder> endOfHandHideCardsMessageBuilder_;
       /**
        * <code>optional .EndOfHandHideCardsMessage endOfHandHideCardsMessage = 51;</code>
-       * @return Whether the endOfHandHideCardsMessage field is set.
        */
       public boolean hasEndOfHandHideCardsMessage() {
         return ((bitField1_ & 0x00040000) != 0);
       }
       /**
        * <code>optional .EndOfHandHideCardsMessage endOfHandHideCardsMessage = 51;</code>
-       * @return The endOfHandHideCardsMessage.
        */
       public de.pokerth.protocol.ProtoBuf.EndOfHandHideCardsMessage getEndOfHandHideCardsMessage() {
         if (endOfHandHideCardsMessageBuilder_ == null) {
@@ -87697,14 +83668,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.ShowMyCardsRequestMessage, de.pokerth.protocol.ProtoBuf.ShowMyCardsRequestMessage.Builder, de.pokerth.protocol.ProtoBuf.ShowMyCardsRequestMessageOrBuilder> showMyCardsRequestMessageBuilder_;
       /**
        * <code>optional .ShowMyCardsRequestMessage showMyCardsRequestMessage = 52;</code>
-       * @return Whether the showMyCardsRequestMessage field is set.
        */
       public boolean hasShowMyCardsRequestMessage() {
         return ((bitField1_ & 0x00080000) != 0);
       }
       /**
        * <code>optional .ShowMyCardsRequestMessage showMyCardsRequestMessage = 52;</code>
-       * @return The showMyCardsRequestMessage.
        */
       public de.pokerth.protocol.ProtoBuf.ShowMyCardsRequestMessage getShowMyCardsRequestMessage() {
         if (showMyCardsRequestMessageBuilder_ == null) {
@@ -87817,14 +83786,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AfterHandShowCardsMessage, de.pokerth.protocol.ProtoBuf.AfterHandShowCardsMessage.Builder, de.pokerth.protocol.ProtoBuf.AfterHandShowCardsMessageOrBuilder> afterHandShowCardsMessageBuilder_;
       /**
        * <code>optional .AfterHandShowCardsMessage afterHandShowCardsMessage = 53;</code>
-       * @return Whether the afterHandShowCardsMessage field is set.
        */
       public boolean hasAfterHandShowCardsMessage() {
         return ((bitField1_ & 0x00100000) != 0);
       }
       /**
        * <code>optional .AfterHandShowCardsMessage afterHandShowCardsMessage = 53;</code>
-       * @return The afterHandShowCardsMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AfterHandShowCardsMessage getAfterHandShowCardsMessage() {
         if (afterHandShowCardsMessageBuilder_ == null) {
@@ -87937,14 +83904,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.EndOfGameMessage, de.pokerth.protocol.ProtoBuf.EndOfGameMessage.Builder, de.pokerth.protocol.ProtoBuf.EndOfGameMessageOrBuilder> endOfGameMessageBuilder_;
       /**
        * <code>optional .EndOfGameMessage endOfGameMessage = 54;</code>
-       * @return Whether the endOfGameMessage field is set.
        */
       public boolean hasEndOfGameMessage() {
         return ((bitField1_ & 0x00200000) != 0);
       }
       /**
        * <code>optional .EndOfGameMessage endOfGameMessage = 54;</code>
-       * @return The endOfGameMessage.
        */
       public de.pokerth.protocol.ProtoBuf.EndOfGameMessage getEndOfGameMessage() {
         if (endOfGameMessageBuilder_ == null) {
@@ -88057,14 +84022,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.PlayerIdChangedMessage, de.pokerth.protocol.ProtoBuf.PlayerIdChangedMessage.Builder, de.pokerth.protocol.ProtoBuf.PlayerIdChangedMessageOrBuilder> playerIdChangedMessageBuilder_;
       /**
        * <code>optional .PlayerIdChangedMessage playerIdChangedMessage = 55;</code>
-       * @return Whether the playerIdChangedMessage field is set.
        */
       public boolean hasPlayerIdChangedMessage() {
         return ((bitField1_ & 0x00400000) != 0);
       }
       /**
        * <code>optional .PlayerIdChangedMessage playerIdChangedMessage = 55;</code>
-       * @return The playerIdChangedMessage.
        */
       public de.pokerth.protocol.ProtoBuf.PlayerIdChangedMessage getPlayerIdChangedMessage() {
         if (playerIdChangedMessageBuilder_ == null) {
@@ -88177,14 +84140,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AskKickPlayerMessage, de.pokerth.protocol.ProtoBuf.AskKickPlayerMessage.Builder, de.pokerth.protocol.ProtoBuf.AskKickPlayerMessageOrBuilder> askKickPlayerMessageBuilder_;
       /**
        * <code>optional .AskKickPlayerMessage askKickPlayerMessage = 56;</code>
-       * @return Whether the askKickPlayerMessage field is set.
        */
       public boolean hasAskKickPlayerMessage() {
         return ((bitField1_ & 0x00800000) != 0);
       }
       /**
        * <code>optional .AskKickPlayerMessage askKickPlayerMessage = 56;</code>
-       * @return The askKickPlayerMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AskKickPlayerMessage getAskKickPlayerMessage() {
         if (askKickPlayerMessageBuilder_ == null) {
@@ -88297,14 +84258,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage, de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage.Builder, de.pokerth.protocol.ProtoBuf.AskKickDeniedMessageOrBuilder> askKickDeniedMessageBuilder_;
       /**
        * <code>optional .AskKickDeniedMessage askKickDeniedMessage = 57;</code>
-       * @return Whether the askKickDeniedMessage field is set.
        */
       public boolean hasAskKickDeniedMessage() {
         return ((bitField1_ & 0x01000000) != 0);
       }
       /**
        * <code>optional .AskKickDeniedMessage askKickDeniedMessage = 57;</code>
-       * @return The askKickDeniedMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AskKickDeniedMessage getAskKickDeniedMessage() {
         if (askKickDeniedMessageBuilder_ == null) {
@@ -88417,14 +84376,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.StartKickPetitionMessage, de.pokerth.protocol.ProtoBuf.StartKickPetitionMessage.Builder, de.pokerth.protocol.ProtoBuf.StartKickPetitionMessageOrBuilder> startKickPetitionMessageBuilder_;
       /**
        * <code>optional .StartKickPetitionMessage startKickPetitionMessage = 58;</code>
-       * @return Whether the startKickPetitionMessage field is set.
        */
       public boolean hasStartKickPetitionMessage() {
         return ((bitField1_ & 0x02000000) != 0);
       }
       /**
        * <code>optional .StartKickPetitionMessage startKickPetitionMessage = 58;</code>
-       * @return The startKickPetitionMessage.
        */
       public de.pokerth.protocol.ProtoBuf.StartKickPetitionMessage getStartKickPetitionMessage() {
         if (startKickPetitionMessageBuilder_ == null) {
@@ -88537,14 +84494,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.VoteKickRequestMessage, de.pokerth.protocol.ProtoBuf.VoteKickRequestMessage.Builder, de.pokerth.protocol.ProtoBuf.VoteKickRequestMessageOrBuilder> voteKickRequestMessageBuilder_;
       /**
        * <code>optional .VoteKickRequestMessage voteKickRequestMessage = 59;</code>
-       * @return Whether the voteKickRequestMessage field is set.
        */
       public boolean hasVoteKickRequestMessage() {
         return ((bitField1_ & 0x04000000) != 0);
       }
       /**
        * <code>optional .VoteKickRequestMessage voteKickRequestMessage = 59;</code>
-       * @return The voteKickRequestMessage.
        */
       public de.pokerth.protocol.ProtoBuf.VoteKickRequestMessage getVoteKickRequestMessage() {
         if (voteKickRequestMessageBuilder_ == null) {
@@ -88657,14 +84612,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage, de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage.Builder, de.pokerth.protocol.ProtoBuf.VoteKickReplyMessageOrBuilder> voteKickReplyMessageBuilder_;
       /**
        * <code>optional .VoteKickReplyMessage voteKickReplyMessage = 60;</code>
-       * @return Whether the voteKickReplyMessage field is set.
        */
       public boolean hasVoteKickReplyMessage() {
         return ((bitField1_ & 0x08000000) != 0);
       }
       /**
        * <code>optional .VoteKickReplyMessage voteKickReplyMessage = 60;</code>
-       * @return The voteKickReplyMessage.
        */
       public de.pokerth.protocol.ProtoBuf.VoteKickReplyMessage getVoteKickReplyMessage() {
         if (voteKickReplyMessageBuilder_ == null) {
@@ -88777,14 +84730,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.KickPetitionUpdateMessage, de.pokerth.protocol.ProtoBuf.KickPetitionUpdateMessage.Builder, de.pokerth.protocol.ProtoBuf.KickPetitionUpdateMessageOrBuilder> kickPetitionUpdateMessageBuilder_;
       /**
        * <code>optional .KickPetitionUpdateMessage kickPetitionUpdateMessage = 61;</code>
-       * @return Whether the kickPetitionUpdateMessage field is set.
        */
       public boolean hasKickPetitionUpdateMessage() {
         return ((bitField1_ & 0x10000000) != 0);
       }
       /**
        * <code>optional .KickPetitionUpdateMessage kickPetitionUpdateMessage = 61;</code>
-       * @return The kickPetitionUpdateMessage.
        */
       public de.pokerth.protocol.ProtoBuf.KickPetitionUpdateMessage getKickPetitionUpdateMessage() {
         if (kickPetitionUpdateMessageBuilder_ == null) {
@@ -88897,14 +84848,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage, de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage.Builder, de.pokerth.protocol.ProtoBuf.EndKickPetitionMessageOrBuilder> endKickPetitionMessageBuilder_;
       /**
        * <code>optional .EndKickPetitionMessage endKickPetitionMessage = 62;</code>
-       * @return Whether the endKickPetitionMessage field is set.
        */
       public boolean hasEndKickPetitionMessage() {
         return ((bitField1_ & 0x20000000) != 0);
       }
       /**
        * <code>optional .EndKickPetitionMessage endKickPetitionMessage = 62;</code>
-       * @return The endKickPetitionMessage.
        */
       public de.pokerth.protocol.ProtoBuf.EndKickPetitionMessage getEndKickPetitionMessage() {
         if (endKickPetitionMessageBuilder_ == null) {
@@ -89017,14 +84966,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.StatisticsMessage, de.pokerth.protocol.ProtoBuf.StatisticsMessage.Builder, de.pokerth.protocol.ProtoBuf.StatisticsMessageOrBuilder> statisticsMessageBuilder_;
       /**
        * <code>optional .StatisticsMessage statisticsMessage = 63;</code>
-       * @return Whether the statisticsMessage field is set.
        */
       public boolean hasStatisticsMessage() {
         return ((bitField1_ & 0x40000000) != 0);
       }
       /**
        * <code>optional .StatisticsMessage statisticsMessage = 63;</code>
-       * @return The statisticsMessage.
        */
       public de.pokerth.protocol.ProtoBuf.StatisticsMessage getStatisticsMessage() {
         if (statisticsMessageBuilder_ == null) {
@@ -89137,14 +85084,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.ChatRequestMessage, de.pokerth.protocol.ProtoBuf.ChatRequestMessage.Builder, de.pokerth.protocol.ProtoBuf.ChatRequestMessageOrBuilder> chatRequestMessageBuilder_;
       /**
        * <code>optional .ChatRequestMessage chatRequestMessage = 64;</code>
-       * @return Whether the chatRequestMessage field is set.
        */
       public boolean hasChatRequestMessage() {
         return ((bitField1_ & 0x80000000) != 0);
       }
       /**
        * <code>optional .ChatRequestMessage chatRequestMessage = 64;</code>
-       * @return The chatRequestMessage.
        */
       public de.pokerth.protocol.ProtoBuf.ChatRequestMessage getChatRequestMessage() {
         if (chatRequestMessageBuilder_ == null) {
@@ -89257,14 +85202,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.ChatMessage, de.pokerth.protocol.ProtoBuf.ChatMessage.Builder, de.pokerth.protocol.ProtoBuf.ChatMessageOrBuilder> chatMessageBuilder_;
       /**
        * <code>optional .ChatMessage chatMessage = 65;</code>
-       * @return Whether the chatMessage field is set.
        */
       public boolean hasChatMessage() {
         return ((bitField2_ & 0x00000001) != 0);
       }
       /**
        * <code>optional .ChatMessage chatMessage = 65;</code>
-       * @return The chatMessage.
        */
       public de.pokerth.protocol.ProtoBuf.ChatMessage getChatMessage() {
         if (chatMessageBuilder_ == null) {
@@ -89377,14 +85320,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.ChatRejectMessage, de.pokerth.protocol.ProtoBuf.ChatRejectMessage.Builder, de.pokerth.protocol.ProtoBuf.ChatRejectMessageOrBuilder> chatRejectMessageBuilder_;
       /**
        * <code>optional .ChatRejectMessage chatRejectMessage = 66;</code>
-       * @return Whether the chatRejectMessage field is set.
        */
       public boolean hasChatRejectMessage() {
         return ((bitField2_ & 0x00000002) != 0);
       }
       /**
        * <code>optional .ChatRejectMessage chatRejectMessage = 66;</code>
-       * @return The chatRejectMessage.
        */
       public de.pokerth.protocol.ProtoBuf.ChatRejectMessage getChatRejectMessage() {
         if (chatRejectMessageBuilder_ == null) {
@@ -89497,14 +85438,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.DialogMessage, de.pokerth.protocol.ProtoBuf.DialogMessage.Builder, de.pokerth.protocol.ProtoBuf.DialogMessageOrBuilder> dialogMessageBuilder_;
       /**
        * <code>optional .DialogMessage dialogMessage = 67;</code>
-       * @return Whether the dialogMessage field is set.
        */
       public boolean hasDialogMessage() {
         return ((bitField2_ & 0x00000004) != 0);
       }
       /**
        * <code>optional .DialogMessage dialogMessage = 67;</code>
-       * @return The dialogMessage.
        */
       public de.pokerth.protocol.ProtoBuf.DialogMessage getDialogMessage() {
         if (dialogMessageBuilder_ == null) {
@@ -89617,14 +85556,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage, de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage.Builder, de.pokerth.protocol.ProtoBuf.TimeoutWarningMessageOrBuilder> timeoutWarningMessageBuilder_;
       /**
        * <code>optional .TimeoutWarningMessage timeoutWarningMessage = 68;</code>
-       * @return Whether the timeoutWarningMessage field is set.
        */
       public boolean hasTimeoutWarningMessage() {
         return ((bitField2_ & 0x00000008) != 0);
       }
       /**
        * <code>optional .TimeoutWarningMessage timeoutWarningMessage = 68;</code>
-       * @return The timeoutWarningMessage.
        */
       public de.pokerth.protocol.ProtoBuf.TimeoutWarningMessage getTimeoutWarningMessage() {
         if (timeoutWarningMessageBuilder_ == null) {
@@ -89737,14 +85674,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.ResetTimeoutMessage, de.pokerth.protocol.ProtoBuf.ResetTimeoutMessage.Builder, de.pokerth.protocol.ProtoBuf.ResetTimeoutMessageOrBuilder> resetTimeoutMessageBuilder_;
       /**
        * <code>optional .ResetTimeoutMessage resetTimeoutMessage = 69;</code>
-       * @return Whether the resetTimeoutMessage field is set.
        */
       public boolean hasResetTimeoutMessage() {
         return ((bitField2_ & 0x00000010) != 0);
       }
       /**
        * <code>optional .ResetTimeoutMessage resetTimeoutMessage = 69;</code>
-       * @return The resetTimeoutMessage.
        */
       public de.pokerth.protocol.ProtoBuf.ResetTimeoutMessage getResetTimeoutMessage() {
         if (resetTimeoutMessageBuilder_ == null) {
@@ -89857,14 +85792,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.ReportAvatarMessage, de.pokerth.protocol.ProtoBuf.ReportAvatarMessage.Builder, de.pokerth.protocol.ProtoBuf.ReportAvatarMessageOrBuilder> reportAvatarMessageBuilder_;
       /**
        * <code>optional .ReportAvatarMessage reportAvatarMessage = 70;</code>
-       * @return Whether the reportAvatarMessage field is set.
        */
       public boolean hasReportAvatarMessage() {
         return ((bitField2_ & 0x00000020) != 0);
       }
       /**
        * <code>optional .ReportAvatarMessage reportAvatarMessage = 70;</code>
-       * @return The reportAvatarMessage.
        */
       public de.pokerth.protocol.ProtoBuf.ReportAvatarMessage getReportAvatarMessage() {
         if (reportAvatarMessageBuilder_ == null) {
@@ -89977,14 +85910,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage, de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage.Builder, de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessageOrBuilder> reportAvatarAckMessageBuilder_;
       /**
        * <code>optional .ReportAvatarAckMessage reportAvatarAckMessage = 71;</code>
-       * @return Whether the reportAvatarAckMessage field is set.
        */
       public boolean hasReportAvatarAckMessage() {
         return ((bitField2_ & 0x00000040) != 0);
       }
       /**
        * <code>optional .ReportAvatarAckMessage reportAvatarAckMessage = 71;</code>
-       * @return The reportAvatarAckMessage.
        */
       public de.pokerth.protocol.ProtoBuf.ReportAvatarAckMessage getReportAvatarAckMessage() {
         if (reportAvatarAckMessageBuilder_ == null) {
@@ -90097,14 +86028,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.ReportGameMessage, de.pokerth.protocol.ProtoBuf.ReportGameMessage.Builder, de.pokerth.protocol.ProtoBuf.ReportGameMessageOrBuilder> reportGameMessageBuilder_;
       /**
        * <code>optional .ReportGameMessage reportGameMessage = 72;</code>
-       * @return Whether the reportGameMessage field is set.
        */
       public boolean hasReportGameMessage() {
         return ((bitField2_ & 0x00000080) != 0);
       }
       /**
        * <code>optional .ReportGameMessage reportGameMessage = 72;</code>
-       * @return The reportGameMessage.
        */
       public de.pokerth.protocol.ProtoBuf.ReportGameMessage getReportGameMessage() {
         if (reportGameMessageBuilder_ == null) {
@@ -90217,14 +86146,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.ReportGameAckMessage, de.pokerth.protocol.ProtoBuf.ReportGameAckMessage.Builder, de.pokerth.protocol.ProtoBuf.ReportGameAckMessageOrBuilder> reportGameAckMessageBuilder_;
       /**
        * <code>optional .ReportGameAckMessage reportGameAckMessage = 73;</code>
-       * @return Whether the reportGameAckMessage field is set.
        */
       public boolean hasReportGameAckMessage() {
         return ((bitField2_ & 0x00000100) != 0);
       }
       /**
        * <code>optional .ReportGameAckMessage reportGameAckMessage = 73;</code>
-       * @return The reportGameAckMessage.
        */
       public de.pokerth.protocol.ProtoBuf.ReportGameAckMessage getReportGameAckMessage() {
         if (reportGameAckMessageBuilder_ == null) {
@@ -90337,14 +86264,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.ErrorMessage, de.pokerth.protocol.ProtoBuf.ErrorMessage.Builder, de.pokerth.protocol.ProtoBuf.ErrorMessageOrBuilder> errorMessageBuilder_;
       /**
        * <code>optional .ErrorMessage errorMessage = 74;</code>
-       * @return Whether the errorMessage field is set.
        */
       public boolean hasErrorMessage() {
         return ((bitField2_ & 0x00000200) != 0);
       }
       /**
        * <code>optional .ErrorMessage errorMessage = 74;</code>
-       * @return The errorMessage.
        */
       public de.pokerth.protocol.ProtoBuf.ErrorMessage getErrorMessage() {
         if (errorMessageBuilder_ == null) {
@@ -90457,14 +86382,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AdminRemoveGameMessage, de.pokerth.protocol.ProtoBuf.AdminRemoveGameMessage.Builder, de.pokerth.protocol.ProtoBuf.AdminRemoveGameMessageOrBuilder> adminRemoveGameMessageBuilder_;
       /**
        * <code>optional .AdminRemoveGameMessage adminRemoveGameMessage = 75;</code>
-       * @return Whether the adminRemoveGameMessage field is set.
        */
       public boolean hasAdminRemoveGameMessage() {
         return ((bitField2_ & 0x00000400) != 0);
       }
       /**
        * <code>optional .AdminRemoveGameMessage adminRemoveGameMessage = 75;</code>
-       * @return The adminRemoveGameMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AdminRemoveGameMessage getAdminRemoveGameMessage() {
         if (adminRemoveGameMessageBuilder_ == null) {
@@ -90577,14 +86500,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage, de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage.Builder, de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessageOrBuilder> adminRemoveGameAckMessageBuilder_;
       /**
        * <code>optional .AdminRemoveGameAckMessage adminRemoveGameAckMessage = 76;</code>
-       * @return Whether the adminRemoveGameAckMessage field is set.
        */
       public boolean hasAdminRemoveGameAckMessage() {
         return ((bitField2_ & 0x00000800) != 0);
       }
       /**
        * <code>optional .AdminRemoveGameAckMessage adminRemoveGameAckMessage = 76;</code>
-       * @return The adminRemoveGameAckMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AdminRemoveGameAckMessage getAdminRemoveGameAckMessage() {
         if (adminRemoveGameAckMessageBuilder_ == null) {
@@ -90697,14 +86618,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AdminBanPlayerMessage, de.pokerth.protocol.ProtoBuf.AdminBanPlayerMessage.Builder, de.pokerth.protocol.ProtoBuf.AdminBanPlayerMessageOrBuilder> adminBanPlayerMessageBuilder_;
       /**
        * <code>optional .AdminBanPlayerMessage adminBanPlayerMessage = 77;</code>
-       * @return Whether the adminBanPlayerMessage field is set.
        */
       public boolean hasAdminBanPlayerMessage() {
         return ((bitField2_ & 0x00001000) != 0);
       }
       /**
        * <code>optional .AdminBanPlayerMessage adminBanPlayerMessage = 77;</code>
-       * @return The adminBanPlayerMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AdminBanPlayerMessage getAdminBanPlayerMessage() {
         if (adminBanPlayerMessageBuilder_ == null) {
@@ -90817,14 +86736,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage, de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage.Builder, de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessageOrBuilder> adminBanPlayerAckMessageBuilder_;
       /**
        * <code>optional .AdminBanPlayerAckMessage adminBanPlayerAckMessage = 78;</code>
-       * @return Whether the adminBanPlayerAckMessage field is set.
        */
       public boolean hasAdminBanPlayerAckMessage() {
         return ((bitField2_ & 0x00002000) != 0);
       }
       /**
        * <code>optional .AdminBanPlayerAckMessage adminBanPlayerAckMessage = 78;</code>
-       * @return The adminBanPlayerAckMessage.
        */
       public de.pokerth.protocol.ProtoBuf.AdminBanPlayerAckMessage getAdminBanPlayerAckMessage() {
         if (adminBanPlayerAckMessageBuilder_ == null) {
@@ -90937,14 +86854,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.GameListSpectatorJoinedMessage, de.pokerth.protocol.ProtoBuf.GameListSpectatorJoinedMessage.Builder, de.pokerth.protocol.ProtoBuf.GameListSpectatorJoinedMessageOrBuilder> gameListSpectatorJoinedMessageBuilder_;
       /**
        * <code>optional .GameListSpectatorJoinedMessage gameListSpectatorJoinedMessage = 79;</code>
-       * @return Whether the gameListSpectatorJoinedMessage field is set.
        */
       public boolean hasGameListSpectatorJoinedMessage() {
         return ((bitField2_ & 0x00004000) != 0);
       }
       /**
        * <code>optional .GameListSpectatorJoinedMessage gameListSpectatorJoinedMessage = 79;</code>
-       * @return The gameListSpectatorJoinedMessage.
        */
       public de.pokerth.protocol.ProtoBuf.GameListSpectatorJoinedMessage getGameListSpectatorJoinedMessage() {
         if (gameListSpectatorJoinedMessageBuilder_ == null) {
@@ -91057,14 +86972,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.GameListSpectatorLeftMessage, de.pokerth.protocol.ProtoBuf.GameListSpectatorLeftMessage.Builder, de.pokerth.protocol.ProtoBuf.GameListSpectatorLeftMessageOrBuilder> gameListSpectatorLeftMessageBuilder_;
       /**
        * <code>optional .GameListSpectatorLeftMessage gameListSpectatorLeftMessage = 80;</code>
-       * @return Whether the gameListSpectatorLeftMessage field is set.
        */
       public boolean hasGameListSpectatorLeftMessage() {
         return ((bitField2_ & 0x00008000) != 0);
       }
       /**
        * <code>optional .GameListSpectatorLeftMessage gameListSpectatorLeftMessage = 80;</code>
-       * @return The gameListSpectatorLeftMessage.
        */
       public de.pokerth.protocol.ProtoBuf.GameListSpectatorLeftMessage getGameListSpectatorLeftMessage() {
         if (gameListSpectatorLeftMessageBuilder_ == null) {
@@ -91177,14 +87090,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.GameSpectatorJoinedMessage, de.pokerth.protocol.ProtoBuf.GameSpectatorJoinedMessage.Builder, de.pokerth.protocol.ProtoBuf.GameSpectatorJoinedMessageOrBuilder> gameSpectatorJoinedMessageBuilder_;
       /**
        * <code>optional .GameSpectatorJoinedMessage gameSpectatorJoinedMessage = 81;</code>
-       * @return Whether the gameSpectatorJoinedMessage field is set.
        */
       public boolean hasGameSpectatorJoinedMessage() {
         return ((bitField2_ & 0x00010000) != 0);
       }
       /**
        * <code>optional .GameSpectatorJoinedMessage gameSpectatorJoinedMessage = 81;</code>
-       * @return The gameSpectatorJoinedMessage.
        */
       public de.pokerth.protocol.ProtoBuf.GameSpectatorJoinedMessage getGameSpectatorJoinedMessage() {
         if (gameSpectatorJoinedMessageBuilder_ == null) {
@@ -91297,14 +87208,12 @@ public final class ProtoBuf {
           de.pokerth.protocol.ProtoBuf.GameSpectatorLeftMessage, de.pokerth.protocol.ProtoBuf.GameSpectatorLeftMessage.Builder, de.pokerth.protocol.ProtoBuf.GameSpectatorLeftMessageOrBuilder> gameSpectatorLeftMessageBuilder_;
       /**
        * <code>optional .GameSpectatorLeftMessage gameSpectatorLeftMessage = 82;</code>
-       * @return Whether the gameSpectatorLeftMessage field is set.
        */
       public boolean hasGameSpectatorLeftMessage() {
         return ((bitField2_ & 0x00020000) != 0);
       }
       /**
        * <code>optional .GameSpectatorLeftMessage gameSpectatorLeftMessage = 82;</code>
-       * @return The gameSpectatorLeftMessage.
        */
       public de.pokerth.protocol.ProtoBuf.GameSpectatorLeftMessage getGameSpectatorLeftMessage() {
         if (gameSpectatorLeftMessageBuilder_ == null) {
