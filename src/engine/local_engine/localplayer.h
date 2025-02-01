@@ -358,10 +358,12 @@ public:
 	void markRemoteAction();
 	unsigned getTimeSecSinceLastRemoteAction() const;
 
+protected:
+	HandInterface *currentHand;
+
 private:
 
 	ConfigFile *myConfig;
-	HandInterface *currentHand;
 
 	// Konstanten
 	int myID;

@@ -12,7 +12,13 @@ CONFIG += thread console embed_manifest_exe exceptions rtti stl warn_on
 UI_DIR = uics
 TARGET = bin/connectivity
 MOC_DIR = mocs
-OBJECTS_DIR = obj
+CONFIG(debug, debug|release) {
+    OBJECTS_DIR = objdebug
+}
+
+CONFIG(release, debug|release) {
+    OBJECTS_DIR = obj
+}
 DEFINES += PREFIX=\"$${PREFIX}\"
 QT -= core gui
 #PRECOMPILED_HEADER = src/pch_lib.h

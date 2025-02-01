@@ -64,6 +64,8 @@
 
 #include <cmath>
 
+#include <third_party/NeuroIntegration/NeuroNotifier.h>
+
 #define FORMATLEFT(X) "<p align='center'>(X)"
 #define FORMATRIGHT(X) "(X)</p>"
 
@@ -595,7 +597,7 @@ gameTableImpl::gameTableImpl(ConfigFile *c, QMainWindow *parent)
 
 	connect( pushButton_BetRaise, SIGNAL( clicked(bool) ), this, SLOT( pushButtonBetRaiseClicked(bool) ) );
 	connect( pushButton_Fold, SIGNAL( clicked(bool) ), this, SLOT( pushButtonFoldClicked(bool) ) );
-	connect( pushButton_CallCheck, SIGNAL( clicked(bool) ), this, SLOT( pushButtonCallCheckClicked(bool) ) );
+	connect( pushButton_CallCheck, SIGNAL( clicked(bool) ), this, SLOT( pushButton.CallCheckClicked(bool) ) );
 	connect( pushButton_AllIn, SIGNAL( clicked(bool) ), this, SLOT(pushButtonAllInClicked(bool) ) );
 	connect( horizontalSlider_bet, SIGNAL( valueChanged(int)), this, SLOT ( changeSpinBoxBetValue(int) ) );
 	connect( spinBox_betValue, SIGNAL( valueChanged(int)), this, SLOT ( spinBoxBetValueChanged(int) ) );
@@ -1868,7 +1870,6 @@ void gameTableImpl::provideMyActions(int mode)
 
 void gameTableImpl::meInAction()
 {
-
 	myButtonsCheckable(false);
 
 	horizontalSlider_bet->setEnabled(true);
@@ -1955,6 +1956,7 @@ void gameTableImpl::meInAction()
 		}
 		break;
 	}
+	NeuroNotifier::getInstance().notifyTurnStart();
 }
 
 void gameTableImpl::startTimeoutAnimation(int playerId, int timeoutSec)
@@ -2132,6 +2134,71 @@ void gameTableImpl::mySet()
 		humanPlayer->setMySet(getBetRaisePushButtonValue());
 
 		if (getBetRaisePushButtonValue() >= tempCash ) {
+
+			humanPlayer->setMySet(humanPlayer->getMyCash());
+			humanPlayer->setMyCash(0);
+			humanPlayer->setMyAction(PLAYER_ACTION_ALLIN,true);
+
+			// full bet rule
+			if(currentHand->getCurrentBeRo()->getHighestSet() + currentHand->getCurrentBeRo()->getMinimumRaise() > humanPlayer->getMySet()) {
+				currentHand->getCurrentBeRo()->setFullBetRule(true);
+			}
+		}
+
+		if(myActionIsRaise) {
+			//do not if allIn
+			if(humanPlayer->getMyAction() != 6) {
+				humanPlayer->setMyAction(PLAYER_ACTION_RAISE,true);
+			}
+			myActionIsRaise = 0;
+
+			currentHand->getCurrentBeRo()->setMinimumRaise(humanPlayer->getMySet() - currentHand->getCurrentBeRo()->getHighestSet());
+		}
+
+		if(myActionIsBet) {
+			//do not if allIn
+			if(humanPlayer->getMyAction() != 6) {
+				humanPlayer->setMyAction(PLAYER_ACTION_BET,true);
+			}
+			myActionIsBet = 0;
+
+			currentHand->getCurrentBeRo()->setMinimumRaise(humanPlayer->getMySet());
+		}
+
+		currentHand->getCurrentBeRo()->setHighestSet(humanPlayer->getMySet());
+
+		humanPlayer->setMyTurn(0);
+
+		currentHand->getBoard()->collectSets();
+		refreshPot();
+
+		// 		statusBar()->clearMessage();
+
+		//set that i was the last active player. need this for unhighlighting groupbox
+		currentHand->setPreviousPlayerID(0);
+
+		// lastPlayerAction für Karten umblättern reihenfolge setzrn
+		currentHand->setLastActionPlayerID(humanPlayer->getMyUniqueID());
+
+		//Spiel läuft weiter
+		myActionDone();
+	}
+}
+
+void gameTableImpl::mySet(int betSize)
+{
+
+	if(pushButton_BetRaise->text() != "") {
+
+		boost::shared_ptr<HandInterface> currentHand = myStartWindow->getSession()->getCurrentGame()->getCurrentHand();
+		boost::shared_ptr<PlayerInterface> humanPlayer = currentHand->getSeatsList()->front();
+
+		int tempCash = humanPlayer->getMyCash();
+
+		// 		cout << "Set-Value " << getBetRaisePushButtonValue() << endl;
+		humanPlayer->setMySet(betSize);
+
+		if (betSize >= tempCash ) {
 
 			humanPlayer->setMySet(humanPlayer->getMyCash());
 			humanPlayer->setMyCash(0);

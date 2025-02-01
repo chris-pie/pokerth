@@ -241,6 +241,9 @@ public slots:
 	int getMyBetAmount();
 	void myCall();
 	void mySet();
+
+	void mySet(int betSize);
+
 	void myAllIn();
 
 	void myActionDone();

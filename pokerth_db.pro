@@ -12,7 +12,13 @@ UI_DIR = uics
 TARGET = lib/pokerth_db
 QMAKE_CLEAN += ./lib/libpokerth_db.a
 MOC_DIR = mocs
-OBJECTS_DIR = obj
+CONFIG(debug, debug|release) {
+    OBJECTS_DIR = objdebug
+}
+
+CONFIG(release, debug|release) {
+    OBJECTS_DIR = obj
+}
 DEFINES += ENABLE_IPV6 TIXML_USE_STL
 QT -= core gui
 #PRECOMPILED_HEADER = src/pch_lib.h

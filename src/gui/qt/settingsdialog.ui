@@ -20,6 +20,23 @@
    <string>Settings</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
+     </property>
+    </widget>
+   </item>
    <item row="0" column="0">
     <layout class="QHBoxLayout">
      <item>
@@ -129,12 +146,21 @@
           <normaloff>:/gfx/document-revert.png</normaloff>:/gfx/document-revert.png</iconset>
         </property>
        </item>
+       <item>
+        <property name="text">
+         <string>Neuro</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>data/gfx/Neurosama_new_model.png</normaloff>data/gfx/Neurosama_new_model.png</iconset>
+        </property>
+       </item>
       </widget>
      </item>
      <item>
       <widget class="QStackedWidget" name="stackedWidget">
        <property name="currentIndex">
-        <number>0</number>
+        <number>9</number>
        </property>
        <widget class="QWidget" name="page">
         <layout class="QGridLayout" name="gridLayout_8">
@@ -151,7 +177,7 @@
          <item row="1" column="0">
           <widget class="Line" name="line_6">
            <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+            <enum>Qt::Orientation::Horizontal</enum>
            </property>
           </widget>
          </item>
@@ -183,7 +209,7 @@
                <item>
                 <spacer>
                  <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
+                  <enum>Qt::Orientation::Horizontal</enum>
                  </property>
                  <property name="sizeHint" stdset="0">
                   <size>
@@ -272,7 +298,7 @@
              <item row="2" column="0">
               <spacer name="verticalSpacer_8">
                <property name="orientation">
-                <enum>Qt::Vertical</enum>
+                <enum>Qt::Orientation::Vertical</enum>
                </property>
                <property name="sizeHint" stdset="0">
                 <size>
@@ -292,7 +318,7 @@
              <item row="7" column="1">
               <spacer name="verticalSpacer_9">
                <property name="orientation">
-                <enum>Qt::Vertical</enum>
+                <enum>Qt::Orientation::Vertical</enum>
                </property>
                <property name="sizeHint" stdset="0">
                 <size>
@@ -372,7 +398,7 @@
          <item row="1" column="0">
           <widget class="Line" name="line_7">
            <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+            <enum>Qt::Orientation::Horizontal</enum>
            </property>
           </widget>
          </item>
@@ -405,7 +431,7 @@
                <item>
                 <spacer name="verticalSpacer_3">
                  <property name="orientation">
-                  <enum>Qt::Vertical</enum>
+                  <enum>Qt::Orientation::Vertical</enum>
                  </property>
                  <property name="sizeHint" stdset="0">
                   <size>
@@ -448,10 +474,10 @@
                    <string/>
                   </property>
                   <property name="textFormat">
-                   <enum>Qt::RichText</enum>
+                   <enum>Qt::TextFormat::RichText</enum>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                   <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
                   </property>
                  </widget>
                 </item>
@@ -541,7 +567,7 @@ p, li { white-space: pre-wrap; }
                <item>
                 <spacer name="verticalSpacer_333">
                  <property name="orientation">
-                  <enum>Qt::Vertical</enum>
+                  <enum>Qt::Orientation::Vertical</enum>
                  </property>
                  <property name="sizeHint" stdset="0">
                   <size>
@@ -584,10 +610,10 @@ p, li { white-space: pre-wrap; }
                    <string/>
                   </property>
                   <property name="textFormat">
-                   <enum>Qt::RichText</enum>
+                   <enum>Qt::TextFormat::RichText</enum>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                   <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
                   </property>
                  </widget>
                 </item>
@@ -757,7 +783,7 @@ p, li { white-space: pre-wrap; }
              <item row="2" column="0">
               <spacer name="verticalSpacer_4">
                <property name="orientation">
-                <enum>Qt::Vertical</enum>
+                <enum>Qt::Orientation::Vertical</enum>
                </property>
                <property name="sizeHint" stdset="0">
                 <size>
@@ -788,7 +814,7 @@ p, li { white-space: pre-wrap; }
          <item row="1" column="0">
           <widget class="Line" name="line_8">
            <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+            <enum>Qt::Orientation::Horizontal</enum>
            </property>
           </widget>
          </item>
@@ -853,7 +879,7 @@ p, li { white-space: pre-wrap; }
                  <number>8</number>
                 </property>
                 <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
+                 <enum>Qt::Orientation::Horizontal</enum>
                 </property>
                </widget>
               </item>
@@ -908,7 +934,7 @@ p, li { white-space: pre-wrap; }
          <item row="3" column="0">
           <spacer>
            <property name="orientation">
-            <enum>Qt::Vertical</enum>
+            <enum>Qt::Orientation::Vertical</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
@@ -935,12 +961,12 @@ p, li { white-space: pre-wrap; }
          <item>
           <widget class="Line" name="line_3">
            <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+            <enum>Qt::Orientation::Horizontal</enum>
            </property>
           </widget>
          </item>
          <item>
-          <layout class="QHBoxLayout">
+          <layout class="QHBoxLayout" name="_11">
            <item>
             <widget class="QLabel" name="label_4">
              <property name="text">
@@ -1100,7 +1126,7 @@ p, li { white-space: pre-wrap; }
               <item row="2" column="1">
                <spacer>
                 <property name="orientation">
-                 <enum>Qt::Vertical</enum>
+                 <enum>Qt::Orientation::Vertical</enum>
                 </property>
                 <property name="sizeHint" stdset="0">
                  <size>
@@ -1204,7 +1230,7 @@ p, li { white-space: pre-wrap; }
          <item>
           <spacer>
            <property name="orientation">
-            <enum>Qt::Vertical</enum>
+            <enum>Qt::Orientation::Vertical</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
@@ -1231,7 +1257,7 @@ p, li { white-space: pre-wrap; }
          <item>
           <widget class="Line" name="line_5">
            <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+            <enum>Qt::Orientation::Horizontal</enum>
            </property>
           </widget>
          </item>
@@ -1408,7 +1434,7 @@ p, li { white-space: pre-wrap; }
               <item row="2" column="1">
                <spacer>
                 <property name="orientation">
-                 <enum>Qt::Vertical</enum>
+                 <enum>Qt::Orientation::Vertical</enum>
                 </property>
                 <property name="sizeHint" stdset="0">
                  <size>
@@ -1628,7 +1654,7 @@ p, li { white-space: pre-wrap; }
          <item>
           <spacer name="verticalSpacer_2">
            <property name="orientation">
-            <enum>Qt::Vertical</enum>
+            <enum>Qt::Orientation::Vertical</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
@@ -1655,14 +1681,14 @@ p, li { white-space: pre-wrap; }
          <item>
           <widget class="Line" name="line_9">
            <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+            <enum>Qt::Orientation::Horizontal</enum>
            </property>
           </widget>
          </item>
          <item>
           <widget class="QTabWidget" name="tabWidget_2">
            <property name="currentIndex">
-            <number>0</number>
+            <number>1</number>
            </property>
            <widget class="QWidget" name="tab_2">
             <attribute name="title">
@@ -1766,7 +1792,7 @@ p, li { white-space: pre-wrap; }
                 <item row="2" column="2">
                  <widget class="QLineEdit" name="lineEdit_InternetServerPassword">
                   <property name="echoMode">
-                   <enum>QLineEdit::Password</enum>
+                   <enum>QLineEdit::EchoMode::Password</enum>
                   </property>
                  </widget>
                 </item>
@@ -1886,7 +1912,7 @@ p, li { white-space: pre-wrap; }
                   <bool>false</bool>
                  </property>
                  <property name="echoMode">
-                  <enum>QLineEdit::Password</enum>
+                  <enum>QLineEdit::EchoMode::Password</enum>
                  </property>
                 </widget>
                </item>
@@ -1895,7 +1921,7 @@ p, li { white-space: pre-wrap; }
              <item row="6" column="0">
               <spacer name="spacer">
                <property name="orientation">
-                <enum>Qt::Vertical</enum>
+                <enum>Qt::Orientation::Vertical</enum>
                </property>
                <property name="sizeHint" stdset="0">
                 <size>
@@ -1984,7 +2010,7 @@ p, li { white-space: pre-wrap; }
            <item>
             <spacer name="horizontalSpacer">
              <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+              <enum>Qt::Orientation::Horizontal</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
@@ -2014,7 +2040,7 @@ p, li { white-space: pre-wrap; }
            <item>
             <spacer name="horizontalSpacer_8">
              <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+              <enum>Qt::Orientation::Horizontal</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
@@ -2029,10 +2055,10 @@ p, li { white-space: pre-wrap; }
          <item>
           <spacer name="verticalSpacer">
            <property name="orientation">
-            <enum>Qt::Vertical</enum>
+            <enum>Qt::Orientation::Vertical</enum>
            </property>
            <property name="sizeType">
-            <enum>QSizePolicy::Expanding</enum>
+            <enum>QSizePolicy::Policy::Expanding</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
@@ -2065,7 +2091,7 @@ p, li { white-space: pre-wrap; }
          <item row="1" column="0">
           <widget class="Line" name="line_4">
            <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+            <enum>Qt::Orientation::Horizontal</enum>
            </property>
           </widget>
          </item>
@@ -2077,7 +2103,7 @@ p, li { white-space: pre-wrap; }
            <item row="0" column="0">
             <spacer name="horizontalSpacer_4">
              <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+              <enum>Qt::Orientation::Horizontal</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
@@ -2097,14 +2123,14 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Human Player:&lt;br /&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;(This nick will also be used for the online game login)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="alignment">
-              <set>Qt::AlignCenter</set>
+              <set>Qt::AlignmentFlag::AlignCenter</set>
              </property>
             </widget>
            </item>
            <item row="0" column="4">
             <spacer name="horizontalSpacer_5">
              <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+              <enum>Qt::Orientation::Horizontal</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
@@ -2119,7 +2145,7 @@ p, li { white-space: pre-wrap; }
              <item>
               <spacer name="horizontalSpacer_3">
                <property name="orientation">
-                <enum>Qt::Horizontal</enum>
+                <enum>Qt::Orientation::Horizontal</enum>
                </property>
                <property name="sizeHint" stdset="0">
                 <size>
@@ -2157,7 +2183,7 @@ p, li { white-space: pre-wrap; }
              <item>
               <spacer name="horizontalSpacer_2">
                <property name="orientation">
-                <enum>Qt::Horizontal</enum>
+                <enum>Qt::Orientation::Horizontal</enum>
                </property>
                <property name="sizeHint" stdset="0">
                 <size>
@@ -2172,7 +2198,7 @@ p, li { white-space: pre-wrap; }
            <item row="2" column="0" colspan="2">
             <spacer name="horizontalSpacer_6">
              <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+              <enum>Qt::Orientation::Horizontal</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
@@ -2210,7 +2236,7 @@ p, li { white-space: pre-wrap; }
            <item row="2" column="3" colspan="2">
             <spacer name="horizontalSpacer_7">
              <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+              <enum>Qt::Orientation::Horizontal</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
@@ -2302,7 +2328,7 @@ p, li { white-space: pre-wrap; }
                    <string>Opponent 1:</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -2326,10 +2352,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -2370,10 +2396,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -2453,7 +2479,7 @@ p, li { white-space: pre-wrap; }
                    <string>Opponent 2:</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -2477,10 +2503,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -2521,10 +2547,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -2579,7 +2605,7 @@ p, li { white-space: pre-wrap; }
                    <string>Opponent 3:</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -2628,10 +2654,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -2672,10 +2698,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -2755,7 +2781,7 @@ p, li { white-space: pre-wrap; }
                    <string>Opponent 4:</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -2779,10 +2805,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -2823,10 +2849,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -2881,7 +2907,7 @@ p, li { white-space: pre-wrap; }
                    <string>Opponent 5:</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -2905,10 +2931,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -2949,10 +2975,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -3032,10 +3058,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -3076,10 +3102,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -3140,7 +3166,7 @@ p, li { white-space: pre-wrap; }
                    <string>Opponent 6:</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -3183,10 +3209,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -3227,10 +3253,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -3291,7 +3317,7 @@ p, li { white-space: pre-wrap; }
                    <string>Opponent 7:</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -3334,10 +3360,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -3378,10 +3404,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -3442,7 +3468,7 @@ p, li { white-space: pre-wrap; }
                    <string>Opponent 8:</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -3485,10 +3511,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -3529,10 +3555,10 @@ p, li { white-space: pre-wrap; }
                   <item>
                    <spacer>
                     <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                     <enum>Qt::Orientation::Horizontal</enum>
                     </property>
                     <property name="sizeType">
-                     <enum>QSizePolicy::Fixed</enum>
+                     <enum>QSizePolicy::Policy::Fixed</enum>
                     </property>
                     <property name="sizeHint" stdset="0">
                      <size>
@@ -3593,7 +3619,7 @@ p, li { white-space: pre-wrap; }
                    <string>Opponent 9:</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -3620,7 +3646,7 @@ p, li { white-space: pre-wrap; }
          <item row="5" column="0">
           <spacer>
            <property name="orientation">
-            <enum>Qt::Vertical</enum>
+            <enum>Qt::Orientation::Vertical</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
@@ -3647,7 +3673,7 @@ p, li { white-space: pre-wrap; }
          <item row="1" column="0">
           <widget class="Line" name="line_2">
            <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+            <enum>Qt::Orientation::Horizontal</enum>
            </property>
           </widget>
          </item>
@@ -3762,7 +3788,7 @@ p, li { white-space: pre-wrap; }
              </widget>
             </item>
             <item row="2" column="1">
-             <layout class="QHBoxLayout">
+             <layout class="QHBoxLayout" name="_2">
               <property name="spacing">
                <number>2</number>
               </property>
@@ -3797,7 +3823,7 @@ p, li { white-space: pre-wrap; }
          <item row="3" column="0">
           <spacer name="verticalSpacer_7">
            <property name="orientation">
-            <enum>Qt::Vertical</enum>
+            <enum>Qt::Orientation::Vertical</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
@@ -3815,7 +3841,6 @@ p, li { white-space: pre-wrap; }
           <widget class="QLabel" name="label_44">
            <property name="font">
             <font>
-             <weight>75</weight>
              <bold>true</bold>
             </font>
            </property>
@@ -3827,10 +3852,10 @@ p, li { white-space: pre-wrap; }
          <item row="3" column="1">
           <spacer name="verticalSpacer_5">
            <property name="orientation">
-            <enum>Qt::Vertical</enum>
+            <enum>Qt::Orientation::Vertical</enum>
            </property>
            <property name="sizeType">
-            <enum>QSizePolicy::Fixed</enum>
+            <enum>QSizePolicy::Policy::Fixed</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
@@ -3845,7 +3870,7 @@ p, li { white-space: pre-wrap; }
            <item>
             <spacer name="horizontalSpacer_9">
              <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+              <enum>Qt::Orientation::Horizontal</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
@@ -3865,7 +3890,6 @@ p, li { white-space: pre-wrap; }
              </property>
              <property name="font">
               <font>
-               <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
@@ -3877,7 +3901,7 @@ p, li { white-space: pre-wrap; }
            <item>
             <spacer name="horizontalSpacer_10">
              <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+              <enum>Qt::Orientation::Horizontal</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
@@ -3892,7 +3916,7 @@ p, li { white-space: pre-wrap; }
          <item row="6" column="1">
           <spacer name="verticalSpacer_6">
            <property name="orientation">
-            <enum>Qt::Vertical</enum>
+            <enum>Qt::Orientation::Vertical</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
@@ -3905,7 +3929,7 @@ p, li { white-space: pre-wrap; }
          <item row="1" column="0" colspan="2">
           <widget class="Line" name="line_10">
            <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+            <enum>Qt::Orientation::Horizontal</enum>
            </property>
           </widget>
          </item>
@@ -3923,26 +3947,113 @@ p, li { white-space: pre-wrap; }
          </item>
         </layout>
        </widget>
+       <widget class="QWidget" name="page_10">
+        <widget class="QWidget" name="horizontalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>30</y>
+           <width>561</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QLabel" name="label_42">
+            <property name="text">
+             <string>Neuro log file</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_logNeuro"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_openLogDir_2">
+            <property name="minimumSize">
+             <size>
+              <width>27</width>
+              <height>26</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>27</width>
+              <height>26</height>
+             </size>
+            </property>
+            <property name="icon">
+             <iconset resource="resources/pokerth.qrc">
+              <normaloff>:/gfx/document-open-folder.png</normaloff>:/gfx/document-open-folder.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>80</y>
+           <width>561</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <widget class="QLabel" name="label_45">
+            <property name="text">
+             <string>URI (if empty defaults to env var NEURO_SDK_WS_URL)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_uriNeuro"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>130</y>
+           <width>561</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <item>
+           <widget class="QLabel" name="label_46">
+            <property name="text">
+             <string>Timeout threshold in seconds (-1 to never time out)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinBox_neuroTimeout">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="minimum">
+             <number>-1</number>
+            </property>
+            <property name="maximum">
+             <number>99</number>
+            </property>
+            <property name="value">
+             <number>-1</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
       </widget>
      </item>
     </layout>
-   </item>
-   <item row="1" column="0">
-    <widget class="Line" name="line">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="0">
-    <widget class="QDialogButtonBox" name="buttonBox">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="standardButtons">
-      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-     </property>
-    </widget>
    </item>
   </layout>
  </widget>

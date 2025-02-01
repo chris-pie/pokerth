@@ -21,7 +21,13 @@ QT += sql
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 UI_DIR = uics
 MOC_DIR = mocs
-OBJECTS_DIR = obj
+CONFIG(debug, debug|release) {
+    OBJECTS_DIR = objdebug
+}
+
+CONFIG(release, debug|release) {
+    OBJECTS_DIR = obj
+}
 DEFINES += ENABLE_IPV6 TIXML_USE_STL BOOST_FILESYSTEM_DEPRECATED
 DEFINES += PREFIX=\"$${PREFIX}\"
 TARGET = pokerth
@@ -75,7 +81,10 @@ INCLUDEPATH += . \
 	src/gui/qt/gamelobbydialog \
 	src/gui/qt/timeoutmsgbox \
 	src/gui/qt/logfiledialog \
-	src/gui/qt/mymessagebox
+	src/gui/qt/mymessagebox \
+	src/third_party/websocketpp \
+    src/third_party/NeuroIntegration \
+    src/third_party/NeuroIntegration/Websocketpp
 
 DEPENDPATH += . \
 	src \
@@ -116,7 +125,9 @@ DEPENDPATH += . \
 	src/gui/qt/gamelobbydialog \
 	src/gui/qt/timeoutmsgbox \
 	src/gui/qt/logfiledialog \
-	src/gui/qt/mymessagebox
+	src/gui/qt/mymessagebox \
+    src/third_party/NeuroIntegration \
+    src/third_party/NeuroIntegration/Websocketpp
 
 # Input
 HEADERS += src/engine/game.h \
@@ -214,7 +225,12 @@ HEADERS += src/engine/game.h \
 	src/gui/qt/gametable/mycashlabel.h \
 	src/gui/qt/sound/soundevents.h \
 	src/gui/qt/mymessagebox/mymessagebox.h \
-	src/gui/qt/logfiledialog/logfiledialog.h
+	src/gui/qt/logfiledialog/logfiledialog.h \
+	src/net/websocketdata.h \
+    src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/NeuroGameSdkWebsocketpp.hpp \
+    src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/json.hpp \
+    src/engine/local_engine/localNeuro.h \
+    src/third_party/NeuroIntegration/NeuroNotifier.h
 
 !gui_800x480 {
 	FORMS += src/gui/qt/gametable.ui \
@@ -290,7 +306,9 @@ SOURCES += src/pokerth.cpp \
 	src/gui/qt/gametable/mycashlabel.cpp \
 	src/gui/qt/sound/soundevents.cpp \
 	src/gui/qt/mymessagebox/mymessagebox.cpp \
-	src/gui/qt/logfiledialog/logfiledialog.cpp
+	src/gui/qt/logfiledialog/logfiledialog.cpp \
+	src/engine/local_engine/localNeuro.cpp \
+    src/third_party/NeuroIntegration/NeuroNotifier.cpp
 
 TRANSLATIONS = ts/pokerth_af.ts \
 	ts/pokerth_bg.ts \
@@ -373,13 +391,13 @@ win32 {
 	release:LIBPATH += release/lib
 			LIBS += -lsqlite3
 			LIBS += -lntlm -lmodplug -lddraw -ldxguid -lvorbisfile -lvorbis -logg
-			LIBS += -lboost_thread_win32-mt
-			LIBS += -lboost_filesystem-mt
-			LIBS += -lboost_regex-mt
-			LIBS += -lboost_iostreams-mt
-			LIBS += -lboost_random-mt
-			LIBS += -lboost_chrono-mt
-			LIBS += -lboost_system-mt
+			LIBS += -lboost_thread-mt-x32
+			LIBS += -lboost_filesystem-mt-x32
+			LIBS += -lboost_regex-mt-x32
+			LIBS += -lboost_iostreams-mt-x32
+			LIBS += -lboost_random-mt-x32
+			LIBS += -lboost_chrono-mt-x32
+			LIBS += -lboost_system-mt-x32
 
 	LIBS += \
 		-lgdi32 \
@@ -398,7 +416,7 @@ win32 {
 		-lws2_32 \
 		-ladvapi32 \
 		-lwldap32 \
-		-lcrypt32
+		-lcrypt32 -lbcrypt -lpsl -lnghttp2 -lgcrypt -lidn2 -lunistring -lgpg-error -lws2_32
 	RC_FILE = pokerth.rc
 }
 unix:!mac { 

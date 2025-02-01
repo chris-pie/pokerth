@@ -12,7 +12,13 @@ CONFIG += thread console embed_manifest_exe exceptions rtti stl warn_on
 UI_DIR = uics
 TARGET = bin/pokerth_server
 MOC_DIR = mocs
-OBJECTS_DIR = obj
+CONFIG(debug, debug|release) {
+    OBJECTS_DIR = objdebug
+}
+
+CONFIG(release, debug|release) {
+    OBJECTS_DIR = obj
+}
 DEFINES += POKERTH_DEDICATED_SERVER
 DEFINES += ENABLE_IPV6 TIXML_USE_STL BOOST_FILESYSTEM_DEPRECATED
 DEFINES += PREFIX=\"$${PREFIX}\"
@@ -34,6 +40,8 @@ INCLUDEPATH += . \
 		src/engine/network_engine \
 		src/config \
 		src/core \
+		src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp \
+		src/third_party/NeuroIntegration
 
 DEPENDPATH += . \
 		src \
@@ -48,6 +56,8 @@ DEPENDPATH += . \
 		src/engine/local_engine \
 		src/engine/network_engine \
 		src/net/common \
+		src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp \
+		src/third_party/NeuroIntegration
 
 # Input
 HEADERS += \
@@ -82,9 +92,12 @@ HEADERS += \
 		src/core/loghelper.h \
 		src/engine/local_engine/cardsvalue.h \
 		src/engine/local_engine/localboard.h \
+		src/engine/local_engine/localboard.h \
 		src/engine/local_engine/localenginefactory.h \
+		src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/NeuroGameSdkWebsocketpp.hpp \
 		src/engine/local_engine/localhand.h \
 		src/engine/local_engine/localplayer.h \
+		src/engine/local_engine/localNeuro.h \
 		src/engine/local_engine/localberopreflop.h \
 		src/engine/local_engine/localberoflop.h \
 		src/engine/local_engine/localberoturn.h \
@@ -133,15 +146,15 @@ win32 {
 	debug:LIBPATH += debug/lib
 	release:LIBPATH += release/lib
 
-	LIBS += -lssl -lcrypto -lssh2 -lgnutls -lhogweed -lgmp -lgcrypt -lgpg-error -lgsasl -lnettle -lidn -lintl -lprotobuf -ltinyxml -lsqlite3 -lntlm
-	LIBS += -lboost_thread_win32-mt
-	LIBS += -lboost_filesystem-mt
-	LIBS += -lboost_regex-mt
-	LIBS += -lboost_program_options-mt
-	LIBS += -lboost_iostreams-mt
-	LIBS += -lboost_random-mt
-	LIBS += -lboost_chrono-mt
-	LIBS += -lboost_system-mt
+	LIBS += -lssl -lcrypto -lssh2 -lgnutls -lhogweed -lgmp -lgcrypt -lgpg-error -lgsasl -lnettle -lidn -lintl -lprotobuf -ltinyxml -lsqlite3 -lntlm -lpsl -lbcrypt -lnghttp2
+	LIBS += -lboost_thread-mt-x32
+	LIBS += -lboost_filesystem-mt-x32
+	LIBS += -lboost_regex-mt-x32
+	LIBS += -lboost_program_options-mt-x32
+	LIBS += -lboost_iostreams-mt-x32
+	LIBS += -lboost_random-mt-x32
+	LIBS += -lboost_chrono-mt-x32
+	LIBS += -lboost_system-mt-x32
 
 	LIBS += -liconv \
 			-lz \

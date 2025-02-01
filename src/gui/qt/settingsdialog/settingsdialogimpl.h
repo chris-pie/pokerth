@@ -95,6 +95,7 @@ public slots:
 	};
 	void setFlipsidePicFileName();
 	void setLogDir();
+	void setNeuroLog();
 	void setAvatarFile0();
 	void setAvatarFile1();
 	void setAvatarFile2();

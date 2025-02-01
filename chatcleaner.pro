@@ -9,7 +9,13 @@ CONFIG += console
 CONFIG -= app_bundle
 DEFINES += TIXML_USE_STL
 MOC_DIR = mocs
-OBJECTS_DIR = obj
+CONFIG(debug, debug|release) {
+    OBJECTS_DIR = objdebug
+}
+
+CONFIG(release, debug|release) {
+    OBJECTS_DIR = obj
+}
 TEMPLATE = app
 INCLUDEPATH += src/ \
 	src/chatcleaner/ \

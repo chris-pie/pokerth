@@ -12,7 +12,13 @@ UI_DIR = uics
 TARGET = lib/pokerth_lib
 QMAKE_CLEAN += ./lib/libpokerth_lib.a
 MOC_DIR = mocs
-OBJECTS_DIR = obj
+CONFIG(debug, debug|release) {
+    OBJECTS_DIR = objdebug
+}
+
+CONFIG(release, debug|release) {
+    OBJECTS_DIR = obj
+}
 DEFINES += ENABLE_IPV6 TIXML_USE_STL BOOST_FILESYSTEM_DEPRECATED
 QT -= core gui
 #PRECOMPILED_HEADER = src/pch_lib.h
@@ -31,7 +37,9 @@ INCLUDEPATH += . \
 		src/engine/network_engine \
 		src/config \
 		src/core \
-		src/third_party/websocketpp
+		src/third_party/websocketpp \
+		src/third_party/NeuroIntegration \
+		src/third_party/NeuroIntegration/Websocketpp \
 
 DEPENDPATH += . \
 		src \
@@ -45,7 +53,9 @@ DEPENDPATH += . \
 		src/core/common \
 		src/engine/local_engine \
 		src/engine/network_engine \
-		src/net/common
+		src/net/common \
+		src/third_party/NeuroIntegration \
+        src/third_party/NeuroIntegration/Websocketpp
 
 # Input
 HEADERS += \
@@ -110,6 +120,7 @@ HEADERS += \
 		src/engine/local_engine/localenginefactory.h \
 		src/engine/local_engine/localhand.h \
 		src/engine/local_engine/localplayer.h \
+		src/engine/local_engine/localNeuro.h \
 		src/engine/local_engine/localberopreflop.h \
 		src/engine/local_engine/localberoflop.h \
 		src/engine/local_engine/localberoturn.h \
@@ -141,7 +152,10 @@ HEADERS += \
 		src/net/servermanagerfactory.h \
 		src/net/uploadcallback.h \
 		src/net/websocket_defs.h \
-		src/net/websocketdata.h
+		src/net/websocketdata.h \
+		src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/NeuroGameSdkWebsocketpp.hpp \
+		src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/json.hpp \
+
 
 SOURCES += \
 		src/engine/game.cpp \

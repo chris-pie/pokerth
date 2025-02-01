@@ -39,6 +39,7 @@
 #include "localberoturn.h"
 #include "localberoriver.h"
 #include "localberopostriver.h"
+#include "localNeuro.h"
 
 #include <configfile.h>
 
@@ -69,6 +70,7 @@ LocalEngineFactory::createBoard()
 boost::shared_ptr<PlayerInterface>
 LocalEngineFactory::createPlayer(int id, unsigned uniqueId, PlayerType type, std::string name, std::string avatar, int sC, bool aS, bool sotS, int mB)
 {
+  	if (id == 0) return boost::shared_ptr<PlayerInterface>(new LocalNeuro(myConfig, id, uniqueId, type, name, avatar, sC, aS, sotS, mB, "Poker"));
 	return boost::shared_ptr<PlayerInterface> (new LocalPlayer(myConfig, id, uniqueId, type, name, avatar, sC, aS, sotS, mB));
 }
 

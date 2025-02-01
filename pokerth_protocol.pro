@@ -11,7 +11,13 @@ UI_DIR = uics
 TARGET = lib/pokerth_protocol
 QMAKE_CLEAN += ./lib/libpokerth_protocol.a
 MOC_DIR = mocs
-OBJECTS_DIR = obj
+CONFIG(debug, debug|release) {
+    OBJECTS_DIR = objdebug
+}
+
+CONFIG(release, debug|release) {
+    OBJECTS_DIR = obj
+}
 DEFINES += ENABLE_IPV6
 QT -= core \
 	gui

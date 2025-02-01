@@ -124,6 +124,7 @@ settingsDialogImpl::settingsDialogImpl(QWidget *parent, ConfigFile *c, selectAva
 	connect( lineEdit_Opponent9Name, SIGNAL( textChanged(const QString &) ), this, SLOT( playerNickChanged() ) );
 	connect( pushButton_openFlipsidePicture, SIGNAL( clicked() ), this, SLOT( setFlipsidePicFileName()) );
 	connect( pushButton_openLogDir, SIGNAL( clicked() ), this, SLOT( setLogDir()) );
+	connect( pushButton_openLogDir_2, SIGNAL( clicked() ), this, SLOT( setNeuroLog()) );
 	connect( pushButton_HumanPlayerAvatar, SIGNAL( clicked() ), this, SLOT( setAvatarFile0()) );
 	connect( pushButton_Opponent1Avatar, SIGNAL( clicked() ), this, SLOT( setAvatarFile1()) );
 	connect( pushButton_Opponent2Avatar, SIGNAL( clicked() ), this, SLOT( setAvatarFile2()) );
@@ -304,6 +305,10 @@ void settingsDialogImpl::prepareDialog()
 	checkBox_dontHideAvatarsOfIgnored->setChecked(myConfig->readConfigInt("DontHideAvatarsOfIgnored"));
 	checkBox_disableChatEmoticons->setChecked(myConfig->readConfigInt("DisableChatEmoticons"));
 
+    //Neuro
+    lineEdit_uriNeuro->setText(QString::fromUtf8(myConfig->readConfigString("NeuroUri").c_str()));
+    lineEdit_logNeuro->setText(QString::fromUtf8(myConfig->readConfigString("NeuroLogFile").c_str()));
+    spinBox_neuroTimeout->setValue(myConfig->readConfigInt("NeuroTimeout");
 
 	//S t y l e
 	//TABLE
@@ -846,6 +851,12 @@ void settingsDialogImpl::isAccepted()
 	myConfig->writeConfigInt("NetAfterMBAlwaysRaiseAbout",myNetAfterMBAlwaysRaiseAbout);
 	myConfig->writeConfigInt("NetAfterMBAlwaysRaiseValue",myNetAfterMBAlwaysRaiseValue);
 	myConfig->writeConfigInt("NetAfterMBStayAtLastBlind",myNetAfterMBStayAtLastBlind);
+    myConfig->writeConfigInt("NetAfterMBAlwaysRaiseValue",myNetAfterMBAlwaysRaiseValue);
+
+    //Neuro settings
+    myConfig->writeConfigString("NeuroUri", lineEdit_uriNeuro->text().toUtf8().constData());
+	myConfig->writeConfigInt("NeuroTimeout", spinBox_neuroTimeout->value());
+	myConfig->writeConfigString("NeuroLogFile", lineEdit_logNeuro->text().toUtf8().constData());
 
 
 	//write buffer to disc
@@ -1002,6 +1013,14 @@ void settingsDialogImpl::setLogDir()
 								  QMessageBox::Ok);
 		}
 	}
+}
+
+void settingsDialogImpl::setNeuroLog()
+{
+	QString neuroLog = QFileDialog::getSaveFileName(this, tr("Select file for Neuro's log"),
+				  QDir::homePath(),
+				  tr("Text Files (*.txt);;All Files (*.*)"));
+	lineEdit_logNeuro->setText(neuroLog);
 }
 
 void settingsDialogImpl::clearInternetGamePassword(bool clear)

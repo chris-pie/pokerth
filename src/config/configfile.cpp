@@ -317,6 +317,9 @@ ConfigFile::ConfigFile(char *argv0, bool readonly) : noWriteAccess(readonly)
 	configList.push_back(ConfigInfo("ServerRestrictGuestLogin", CONFIG_TYPE_INT, "0"));
 	configList.push_back(ConfigInfo("ServerLimitRankNum", CONFIG_TYPE_INT, "4"));
 	configList.push_back(ConfigInfo("ServerLimitRankPeriod", CONFIG_TYPE_INT, "60"));
+	configList.push_back(ConfigInfo("NeuroUri", CONFIG_TYPE_STRING, ""));
+	configList.push_back(ConfigInfo("NeuroTimeout", CONFIG_TYPE_INT, "-1"));
+	configList.push_back(ConfigInfo("NeuroLogFile", CONFIG_TYPE_STRING, ""));
 
 	//fill tempList firstTime
 	configBufferList = configList;

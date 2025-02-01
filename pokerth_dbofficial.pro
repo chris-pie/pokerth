@@ -10,7 +10,13 @@ CONFIG += staticlib \
 UI_DIR = uics
 TARGET = lib/pokerth_dbofficial
 MOC_DIR = mocs
-OBJECTS_DIR = obj
+CONFIG(debug, debug|release) {
+    OBJECTS_DIR = objdebug
+}
+
+CONFIG(release, debug|release) {
+    OBJECTS_DIR = obj
+}
 QT -= core \
     gui
 

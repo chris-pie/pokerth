@@ -35,6 +35,7 @@
 #include "gamelobbydialogimpl.h"
 #include "soundevents.h"
 #include <iostream>
+#include <third_party/NeuroIntegration/NeuroNotifier.h>
 
 
 using namespace std;
@@ -79,7 +80,10 @@ void ChatTools::sendMessage()
 void ChatTools::receiveMessage(QString playerName, QString message, bool pm)
 {
 
+	NeuroNotifier::getInstance().sendChatMessage((playerName + ": " + message).toUtf8().constData());
+
 	if(myTextBrowser) {
+
 
 		message = message.replace("<","&lt;");
 		message = message.replace(">","&gt;");

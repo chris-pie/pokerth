@@ -32,7 +32,7 @@
 #ifndef HANDINTERFACE_H
 #define HANDINTERFACE_H
 
-#include "guiinterface.h"
+#include "gui/guiinterface.h"
 #include "boardinterface.h"
 #include "playerinterface.h"
 #include "berointerface.h"

@@ -37,8 +37,13 @@
 #include <cardsvalue.h>
 #include <game_defs.h>
 #include "gametablestylereader.h"
+#include <third_party/NeuroIntegration/NeuroNotifier.h>
 
 using namespace std;
+
+void sendLogToNeuro(const QString& message, bool silent=true) {
+	NeuroNotifier::getInstance().sendLogMessage(message.toUtf8().constData(), silent);
+}
 
 guiLog::guiLog(gameTableImpl* w, ConfigFile *c) : myW(w), myConfig(c), myLogDir(0), myHtmlLogFile(0), myHtmlLogFile_old(0), myTxtLogFile(0), tb(0)
 {
@@ -190,6 +195,7 @@ void guiLog::logPlayerActionMsg(QString msg, int action, int setValue)
 #else
 	myW->textBrowser_Log->append("<span style=\"color:#"+myStyle->getChatLogTextColor()+";\">"+msg+"</span>");
 #endif
+	sendLogToNeuro(msg);
 
 
 	if(HTML_LOG) {
@@ -222,6 +228,7 @@ void guiLog::logNewGameHandMsg(int gameID, int handID)
 #else
 	myW->textBrowser_Log->append("<span style=\"color:#"+myStyle->getChatLogTextColor()+"; font-size:large; font-weight:bold\">## Game: "+QString::number(gameID,10)+" | Hand: "+QString::number(handID,10)+" ##</span>");
 #endif
+	sendLogToNeuro("Game: "+QString::number(gameID,10)+" | Hand: "+QString::number(handID,10));
 
 	if(HTML_LOG) {
 
@@ -255,6 +262,9 @@ void guiLog::logNewBlindsSetsMsg(int sbSet, int bbSet, QString sbName, QString b
 	myW->textBrowser_Log->append("<span style=\"color:#"+myStyle->getChatLogTextColor()+";\">"+sbName+" posts small blind ($"+QString::number(sbSet,10)+")</span>");
 	myW->textBrowser_Log->append("<span style=\"color:#"+myStyle->getChatLogTextColor()+";\">"+bbName+" posts big blind ($"+QString::number(bbSet,10)+")</span>");
 #endif
+	sendLogToNeuro(sbName+" posts small blind ($"+QString::number(sbSet,10)+")");
+	sendLogToNeuro(bbName+" posts big blind ($"+QString::number(bbSet,10)+")");
+
 
 	if(HTML_LOG) {
 
@@ -311,7 +321,14 @@ void guiLog::logPlayerWinsMsg(QString playerName, int pot, bool main)
 	} else {
 		myW->textBrowser_Log->append("<span style=\"color:#"+myStyle->getLogWinnerSidePotColor()+";\">"+playerName+" wins $"+QString::number(pot,10)+" (side pot)</span>");
 	}
+
 #endif
+
+	if(main) {
+		sendLogToNeuro(playerName+" wins $"+QString::number(pot,10), false);
+	} else {
+		sendLogToNeuro(playerName+" wins $"+QString::number(pot,10)+" (side pot)", false);
+	}
 
 	if(HTML_LOG) {
 
@@ -341,6 +358,7 @@ void guiLog::logPlayerSitsOut(QString playerName)
 #else
 	myW->textBrowser_Log->append("<i><span style=\"color:#"+myStyle->getLogPlayerSitsOutColor()+";\">"+playerName+" sits out</span></i>");
 #endif
+	sendLogToNeuro(playerName+" sits out");
 
 	if(HTML_LOG) {
 
@@ -370,6 +388,7 @@ void guiLog::logDealBoardCardsMsg(int roundID, int card1, int card2, int card3, 
 		myW->tabs.textBrowser_Log->append("<span style=\"color:#"+myStyle->getLogPlayerSitsOutColor()+";\">--- "+round+" --- "+"["+translateCardCode(card1).at(0)+translateCardCode(card1).at(1)+","+translateCardCode(card2).at(0)+translateCardCode(card2).at(1)+","+translateCardCode(card3).at(0)+translateCardCode(card3).at(1)+"]</span>");
 #else
 		myW->textBrowser_Log->append("<span style=\"color:#"+myStyle->getLogPlayerSitsOutColor()+";\">--- "+round+" --- "+"["+translateCardCode(card1).at(0)+translateCardCode(card1).at(1)+","+translateCardCode(card2).at(0)+translateCardCode(card2).at(1)+","+translateCardCode(card3).at(0)+translateCardCode(card3).at(1)+"]</span>");
+		sendLogToNeuro("--- "+round+" --- "+"["+translateCardCode(card1).at(0)+translateCardCode(card1).at(1)+","+translateCardCode(card2).at(0)+translateCardCode(card2).at(1)+","+translateCardCode(card3).at(0)+translateCardCode(card3).at(1)+"]");
 #endif
 		break;
 	case 2:
@@ -379,6 +398,8 @@ void guiLog::logDealBoardCardsMsg(int roundID, int card1, int card2, int card3, 
 #else
 		myW->textBrowser_Log->append("<span style=\"color:#"+myStyle->getLogPlayerSitsOutColor()+";\">--- "+round+" --- "+"["+translateCardCode(card1).at(0)+translateCardCode(card1).at(1)+","+translateCardCode(card2).at(0)+translateCardCode(card2).at(1)+","+translateCardCode(card3).at(0)+translateCardCode(card3).at(1)+","+translateCardCode(card4).at(0)+translateCardCode(card4).at(1)+"]</span>");
 #endif
+		sendLogToNeuro("--- "+round+" --- "+"["+translateCardCode(card1).at(0)+translateCardCode(card1).at(1)+","+translateCardCode(card2).at(0)+translateCardCode(card2).at(1)+","+translateCardCode(card3).at(0)+translateCardCode(card3).at(1)+","+translateCardCode(card4).at(0)+translateCardCode(card4).at(1)+"]");
+
 		break;
 	case 3:
 		round = "River";
@@ -387,6 +408,8 @@ void guiLog::logDealBoardCardsMsg(int roundID, int card1, int card2, int card3, 
 #else
 		myW->textBrowser_Log->append("<span style=\"color:#"+myStyle->getLogPlayerSitsOutColor()+";\">--- "+round+" --- "+"["+translateCardCode(card1).at(0)+translateCardCode(card1).at(1)+","+translateCardCode(card2).at(0)+translateCardCode(card2).at(1)+","+translateCardCode(card3).at(0)+translateCardCode(card3).at(1)+","+translateCardCode(card4).at(0)+translateCardCode(card4).at(1)+","+translateCardCode(card5).at(0)+translateCardCode(card5).at(1)+"]</span>");
 #endif
+		sendLogToNeuro("--- "+round+" --- "+"["+translateCardCode(card1).at(0)+translateCardCode(card1).at(1)+","+translateCardCode(card2).at(0)+translateCardCode(card2).at(1)+","+translateCardCode(card3).at(0)+translateCardCode(card3).at(1)+","+translateCardCode(card4).at(0)+translateCardCode(card4).at(1)+","+translateCardCode(card5).at(0)+translateCardCode(card5).at(1)+"]");
+
 		break;
 	default:
 		round = "ERROR";
@@ -439,6 +462,8 @@ void guiLog::logFlipHoleCardsMsg(QString playerName, int card1, int card2, int c
 #else
 		myW->textBrowser_Log->append("<span style=\"color:#"+myStyle->getChatLogTextColor()+";\">"+playerName+" "+showHas+" ["+translateCardCode(card1).at(0)+translateCardCode(card1).at(1)+","+translateCardCode(card2).at(0)+translateCardCode(card2).at(1)+"] - \""+tempHandName+"\"</span>");
 #endif
+		sendLogToNeuro(playerName+" "+showHas+" ["+translateCardCode(card1).at(0)+translateCardCode(card1).at(1)+","+translateCardCode(card2).at(0)+translateCardCode(card2).at(1)+"] - \""+tempHandName+"\"", false);
+
 
 	} else {
 #ifdef GUI_800x480
@@ -446,6 +471,7 @@ void guiLog::logFlipHoleCardsMsg(QString playerName, int card1, int card2, int c
 #else
 		myW->textBrowser_Log->append("<span style=\"color:#"+myStyle->getChatLogTextColor()+";\">"+playerName+" "+showHas+" ["+translateCardCode(card1).at(0)+translateCardCode(card1).at(1)+","+translateCardCode(card2).at(0)+translateCardCode(card2).at(1)+"]</span>");
 #endif
+		sendLogToNeuro(playerName+" "+showHas+" ["+translateCardCode(card1).at(0)+translateCardCode(card1).at(1)+","+translateCardCode(card2).at(0)+translateCardCode(card2).at(1)+"]", false);
 	}
 
 	if(HTML_LOG) {
@@ -490,6 +516,7 @@ void guiLog::logPlayerLeftMsg(QString playerName, int wasKicked)
 #else
 	myW->textBrowser_Log->append( "<span style=\"color:#"+myStyle->getChatLogTextColor()+";\"><i>"+playerName+" "+action+" the game!</i></span>");
 #endif
+	sendLogToNeuro(playerName+" "+action+" the game");
 
 	if(HTML_LOG) {
 
@@ -537,6 +564,8 @@ void guiLog::logPlayerJoinedMsg(QString playerName)
 #else
 	myW->textBrowser_Log->append("<span style=\"color:#"+myStyle->getChatLogTextColor()+";\"><i>"+playerName+" has joined the game!</i></span>");
 #endif
+	sendLogToNeuro(playerName+" has joined the game!");
+
 }
 
 void guiLog::logSpectatorLeftMsg(QString playerName, int wasKicked)
@@ -557,6 +586,8 @@ void guiLog::logPlayerWinGame(QString playerName, int gameID)
 #else
 	myW->textBrowser_Log->append( "<i><b>"+playerName+" wins game " + QString::number(gameID,10)  +"!</i></b><br>");
 #endif
+	sendLogToNeuro(playerName+" wins game " + QString::number(gameID,10)  +"!");
+
 
 	if(HTML_LOG) {
 
