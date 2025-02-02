@@ -1,6 +1,6 @@
 #ifndef LOCALNEURO_H
 #define LOCALNEURO_H
-#include "localPlayer.h"
+#include "localplayer.h"
 #include <third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/NeuroGameSdkWebsocketpp.hpp>
 
 #include <NeuroNotifier.h>
@@ -54,7 +54,6 @@ private:
     NeuroNotifier& notifier;
     static bool neuroActive;
     std::unique_ptr<std::ofstream> owned_output_stream;
-    bool shutting_down = false;
 
 };
 

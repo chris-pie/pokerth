@@ -31,15 +31,16 @@ bool LocalNeuro::neuroActive = false;
 
 LocalNeuro::~LocalNeuro() {
     shutting_down = true;
+    condition.notify_all();
     NeuroNotifier::getInstance().killListeners();
     if (chat_thread.joinable()) {
         chat_thread.join();
     }
     if (log_thread.joinable()) {
-        chat_thread.join();
+        log_thread.join();
     }
     if (turn_thread.joinable()) {
-        chat_thread.join();
+        turn_thread.join();
     }
     neuroActive = false;
     if (owned_output_stream) owned_output_stream->close();
@@ -95,13 +96,12 @@ void LocalNeuro::init() {
         throw std::logic_error("Attempted to create new Neuro player while Neuro is already playing.");
     }
     neuroActive = true;
-
+    notifier.reEnable();
+    sendStartup();
     chat_thread = std::thread(&LocalNeuro::listenForChat, this);
     log_thread = std::thread(&LocalNeuro::listenForLog, this);
     turn_thread = std::thread(&LocalNeuro::listenForTurn, this);
-    sendStartup();
     sendRegisterActions({chat});
-    sendContext(std::string("You are now playing a game of no-limit Texas Hold'em. There are ") + std::to_string(currentHand->getActivePlayerList()->size()) + std::string(" players and starting cash is $") + std::to_string(LocalPlayer::getMyCash()), false);
 
 }
 
@@ -166,7 +166,7 @@ void LocalNeuro::listenForTurn() {
                     actions.push_back(allin);
                 }
             }
-            forceDisposableActions(state, "Please make your move. Do not tell anyone what your hole cards are!", true, actions);
+            forceDisposableActions(state.dump(), "Please make your move. Do not tell anyone what your hole cards are!", true, actions);
         }
     }
 }
@@ -262,28 +262,28 @@ void LocalNeuro::handleMessage(NeuroResponse const &response) {
             sendUnregisterActions(disposableActions);
             sendActionResult(response, true, resp);
             waitingForForcedAction = false;
-            currentHand->getGuiInterface()->getMyW()->myFold();
+            currentHand->getGuiInterface()->getMyW()->neuroFold();
         }
         else if (response.getName() == "call") {
             resp = "You called";
             sendUnregisterActions(disposableActions);
             sendActionResult(response, true, resp);
             waitingForForcedAction = false;
-            currentHand->getGuiInterface()->getMyW()->myCall();
+            currentHand->getGuiInterface()->getMyW()->neuroCheckCall();
         }
         else if (response.getName() == "check") {
             resp = "You checked";
             sendUnregisterActions(disposableActions);
             sendActionResult(response, true, resp);
             waitingForForcedAction = false;
-            currentHand->getGuiInterface()->getMyW()->myCheck();
+            currentHand->getGuiInterface()->getMyW()->neuroCheckCall();
         }
         else if (response.getName() == "allin") {
             resp = "You went all in";
             sendUnregisterActions(disposableActions);
             sendActionResult(response, true, resp);
             waitingForForcedAction = false;
-            currentHand->getGuiInterface()->getMyW()->myAllIn();
+            currentHand->getGuiInterface()->getMyW()->neuroAllIn();
         }
         else if (response.getName() == "bet") {
             try {
@@ -297,7 +297,7 @@ void LocalNeuro::handleMessage(NeuroResponse const &response) {
                 sendUnregisterActions(disposableActions);
                 sendActionResult(response, true, resp);
                 waitingForForcedAction = false;
-                currentHand->getGuiInterface()->getMyW()->mySet(bet);
+                currentHand->getGuiInterface()->getMyW()->neuroBetRaise(bet);
             } catch (nlohmann::json::exception &e) {
                 sendActionResult(response, false, "Invalid action format.");
             }
@@ -314,7 +314,7 @@ void LocalNeuro::handleMessage(NeuroResponse const &response) {
                 sendUnregisterActions(disposableActions);
                 sendActionResult(response, true, resp);
                 waitingForForcedAction = false;
-                currentHand->getGuiInterface()->getMyW()->mySet(bet);
+                currentHand->getGuiInterface()->getMyW()->neuroBetRaise(bet);
             } catch (nlohmann::json::exception &e) {
                 sendActionResult(response, false, "Invalid action format.");
             }

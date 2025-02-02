@@ -242,8 +242,6 @@ public slots:
 	void myCall();
 	void mySet();
 
-	void mySet(int betSize);
-
 	void myAllIn();
 
 	void myActionDone();
@@ -381,6 +379,13 @@ public slots:
 	void soundEvent_blindsWereSet(int);
 	void enableCallCheckPushButton();
 	void checkActionLabelPosition();
+
+    //Neuro methods
+    void neuroCheckCall();
+    void neuroBetRaise(int bet);
+    void neuroFold();
+    void neuroAllIn();
+
 
 #ifdef GUI_800x480
 	void tabsButtonClicked();

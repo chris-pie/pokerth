@@ -22,6 +22,7 @@ public:
     NeuroNotifier& operator=(const NeuroNotifier&) = delete;
 
     void killListeners();
+    void reEnable();
 
 
 

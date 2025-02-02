@@ -308,7 +308,7 @@ void settingsDialogImpl::prepareDialog()
     //Neuro
     lineEdit_uriNeuro->setText(QString::fromUtf8(myConfig->readConfigString("NeuroUri").c_str()));
     lineEdit_logNeuro->setText(QString::fromUtf8(myConfig->readConfigString("NeuroLogFile").c_str()));
-    spinBox_neuroTimeout->setValue(myConfig->readConfigInt("NeuroTimeout");
+    spinBox_neuroTimeout->setValue(myConfig->readConfigInt("NeuroTimeout"));
 
 	//S t y l e
 	//TABLE
