@@ -1,0 +1,54 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y \
+    wget \
+    make \
+    gcc \
+    g++ \
+    git \
+    unzip \
+    automake \
+    autoconf \
+    libtool \
+    pkg-config \
+    python3 \
+    python-is-python3 \
+    python3-mako \
+    bzip2 \
+    xz-utils \
+    cmake \
+    gperf \
+    intltool \
+    libtool-bin \
+    nasm \
+    curl \
+    flex \
+    perl \
+    g++-multilib \
+    libc6-dev-i386 \
+    p7zip-full \
+    autopoint \
+    bison \
+    gdk-pixbuf2.0-bin \
+    lzip \
+    ruby \
+    libssl-dev \
+    libpcre2-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /opt
+RUN git clone https://github.com/mxe/mxe.git mingw
+
+WORKDIR /opt/mingw
+
+RUN make gcc qt5 boost curl libgsasl sdl_mixer tinyxml libircclient protobuf gnutls
+
+ENV PATH="/opt/mingw/usr/x86_64-pc-linux-gnu/bin:/opt/mingw/usr/i686-w64-mingw32.static/bin:/opt/mingw/usr/bin:${PATH}"
+
+# Default workdir for mounting local code:
+WORKDIR /src/pokerth
+
+# Set default CMD to build PokerTH, using .pro file in the local project
+CMD ["bash", "-c", "i686-w64-mingw32.static-qmake-qt5 pokerth.pro && make release"]
