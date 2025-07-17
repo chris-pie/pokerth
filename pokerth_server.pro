@@ -134,14 +134,15 @@ win32 {
 	release:LIBPATH += release/lib
 
 	LIBS += -lssl -lcrypto -lssh2 -lgnutls -lhogweed -lgmp -lgcrypt -lgpg-error -lgsasl -lnettle -lidn -lintl -lprotobuf -ltinyxml -lsqlite3 -lntlm
-	LIBS += -lboost_thread_win32-mt
-	LIBS += -lboost_filesystem-mt
-	LIBS += -lboost_regex-mt
-	LIBS += -lboost_program_options-mt
-	LIBS += -lboost_iostreams-mt
-	LIBS += -lboost_random-mt
-	LIBS += -lboost_chrono-mt
-	LIBS += -lboost_system-mt
+    LIBS += -lboost_thread-mt-x32
+    LIBS += -lboost_filesystem-mt-x32
+    LIBS += -lboost_regex-mt-x32
+    LIBS += -lboost_iostreams-mt-x32
+    LIBS += -lboost_random-mt-x32
+    LIBS += -lboost_chrono-mt-x32
+    LIBS += -lboost_system-mt-x32
+    LIBS += -lboost_program_options-mt-x32
+
 
 	LIBS += -liconv \
 			-lz \
@@ -161,7 +162,7 @@ win32 {
 			-lws2_32 \
 			-ladvapi32 \
 			-lwldap32 \
-			-lcrypt32
+			-lcrypt32 -lbcrypt -lpsl -lnghttp2 -lgcrypt -lidn2 -lunistring -lgpg-error -lws2_32 -lzstd -lbrotlidec -lbrotlicommon -liconv
 }
 
 !win32 {
