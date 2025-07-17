@@ -1,12 +1,12 @@
-#ifndef LOCALNEURO_H
-#define LOCALNEURO_H
+#ifndef CLIENTNEURO_H
+#define CLIENTNEURO_H
 
 #include <neuroPokerClient.h>
-#include "localplayer.h"
+#include "clientplayer.h"
 
-class LocalNeuro : public LocalPlayer, public NeuroPlayer {
-  public:
-    LocalNeuro(
+class clientNeuro : public ClientPlayer, public NeuroPlayer  {
+public:
+    clientNeuro(
         ConfigFile *config_file,
         int id,
         unsigned uniqueId,
@@ -18,7 +18,7 @@ class LocalNeuro : public LocalPlayer, public NeuroPlayer {
         bool sotS,
         int mB
     );
-    ~LocalNeuro() override;
+    ~clientNeuro() override;
     void neuroFold() override;
     std::pair<nlohmann::json, std::vector<NeuroWebsocketpp::Action>> getStateAndActions() override;
     void neuroCheckCall() override;
@@ -37,4 +37,4 @@ private:
     Action allin;
 };
 
-#endif //LOCALNEURO_H
+#endif //CLIENTNEURO_H

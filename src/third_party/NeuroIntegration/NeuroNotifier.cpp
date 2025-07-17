@@ -10,9 +10,11 @@ NeuroNotifier::NeuroNotifier()
 
 }
 
-void NeuroNotifier::reEnable(){
+void NeuroNotifier::reEnable(NeuroPlayer* player){
   killed = false;
-  }
+  this->player = player;
+  conditionGameStart.notify_one();
+}
 
 void NeuroNotifier::sendChatMessage(const std::string& message)
 {
@@ -34,7 +36,6 @@ void NeuroNotifier::sendLogMessage(const std::string& message, bool silent)
 
 void NeuroNotifier::notifyTurnStart()
 {
-
         std::lock_guard<std::mutex> lock(mutexTurn);
         yourTurn = true;
         conditionTurn.notify_one();
@@ -70,6 +71,19 @@ void NeuroNotifier::awaitTurn()
  yourTurn = false;
 }
 
+NeuroPlayer* NeuroNotifier::awaitGameStart() {
+  std::unique_lock<std::mutex> lock(mutexGameStart);
+  conditionGameStart.wait(lock, [this]{return !killed;});
+  NeuroPlayer* ret = player;
+  player = nullptr;
+  return ret;
+}
+
+void NeuroNotifier::awaitGameEnd() {
+  std::unique_lock<std::mutex> lock(mutexGameEnd);
+  conditionGameEnd.wait(lock, [this]{return killed;});
+}
+
 void NeuroNotifier::killListeners()
 
 {
@@ -87,6 +101,8 @@ void NeuroNotifier::killListeners()
   conditionTurn.notify_one();
   conditionChat.notify_one();
   conditionLog.notify_one();
+  conditionGameStart.notify_one();
+  conditionGameEnd.notify_one();
 }
 
 bool NeuroNotifier::getAndClearSilent()
@@ -95,3 +111,7 @@ bool NeuroNotifier::getAndClearSilent()
   silent = true;
   return ret;
   }
+
+bool NeuroNotifier::isKilled() {
+  return killed;
+}

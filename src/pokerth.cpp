@@ -57,6 +57,8 @@
 #include <net/socket_startup.h>
 #include <third_party/qtsingleapplication/qtsingleapplication.h>
 
+#include "neuroPokerClient.h"
+
 #ifdef _MSC_VER
 #ifdef _DEBUG
 #define _CRTDBG_MAP_ALLOC
@@ -230,6 +232,10 @@ int main( int argc, char **argv )
 		splash.show();
 		splash.showMessage(QString("Version %1").arg(POKERTH_BETA_RELEASE_STRING), 0x0042, QColor(255,255,255));
 	}
+
+	//Start Neuro client
+	neuroPokerClient neuroClient(myConfig, "Poker");
+
 
 	//Set translations
 	QTranslator qtTranslator;

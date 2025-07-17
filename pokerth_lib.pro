@@ -131,11 +131,14 @@ HEADERS += \
 		src/engine/local_engine/localexception.h \
 		src/engine/local_engine/arraydata.h \
 		src/engine/log.h \
+		src/engine/NeuroPlayer.h \
+		src/engine/neuroPokerClient.h \
 		src/engine/network_engine/clientboard.h \
 		src/engine/network_engine/clientenginefactory.h \
 		src/engine/network_engine/clienthand.h \
 		src/engine/network_engine/clientplayer.h \
 		src/engine/network_engine/clientbero.h \
+		src/engine/network_engine/clientNeuro.h \
 		src/db/serverdbcallback.h \
 		src/db/serverdbfactory.h \
 		src/db/serverdbinterface.h \
@@ -153,8 +156,8 @@ HEADERS += \
 		src/net/uploadcallback.h \
 		src/net/websocket_defs.h \
 		src/net/websocketdata.h \
-		src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/NeuroGameSdkWebsocketpp.hpp \
-		src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/json.hpp \
+        src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/NeuroGameSdkWebsocketpp.hpp \
+        src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/json.hpp
 
 
 SOURCES += \
@@ -235,7 +238,6 @@ SOURCES += \
 		src/net/common/asioreceivebuffer.cpp \
 		src/net/common/webreceivebuffer.cpp \
 		src/net/common/uploadcallback.cpp
-
 !android:!android_test{
 	SOURCES += src/engine/local_engine/tools.cpp
 }

@@ -1,13 +1,14 @@
-#include "localNeuro.h"
+#include "clientNeuro.h"
 #include <gui/qt/gametable/gametableimpl.h>
 #include "handinterface.h"
 #include "configfile.h"
 #include "session.h"
 
-LocalNeuro::LocalNeuro(ConfigFile *config_file, int id, unsigned uniqueId, const PlayerType &type,
+
+clientNeuro::clientNeuro(ConfigFile *config_file, int id, unsigned uniqueId, const PlayerType &type,
                        const std::string &name,
                        const std::string &avatar, int sC, bool aS, bool sotS, int mB)
-    : LocalPlayer(config_file, id, uniqueId, type, name, avatar, sC, aS, sotS, mB),
+    : ClientPlayer(config_file, id, uniqueId, type, name, avatar, sC, aS, sotS, mB),
 call(Action("call", "Call", empty_schema)),
 raise(Action("raise", "Raise the bet", bet_schema)),
 fold(Action("fold", "Fold your hand", empty_schema)),
@@ -19,11 +20,11 @@ allin(Action("allin", "Go all in!", empty_schema))
     NeuroNotifier::getInstance().reEnable(this);
 }
 
-LocalNeuro::~LocalNeuro() {
+clientNeuro::~clientNeuro() {
     NeuroNotifier::getInstance().killListeners();
 }
 
-std::pair<nlohmann::json, std::vector<Action>> LocalNeuro::getStateAndActions() {
+std::pair<nlohmann::json, std::vector<Action>> clientNeuro::getStateAndActions() {
     nlohmann::json state;
     int cards[2];
     getMyCards(cards);
@@ -133,36 +134,36 @@ std::pair<nlohmann::json, std::vector<Action>> LocalNeuro::getStateAndActions() 
 
 }
 
-void LocalNeuro::neuroFold() {
+void clientNeuro::neuroFold() {
     currentHand->getGuiInterface()->getMyW()->neuroFold();
 }
 
-void LocalNeuro::neuroCheckCall() {
+void clientNeuro::neuroCheckCall() {
     currentHand->getGuiInterface()->getMyW()->neuroCheckCall();
 }
 
-void LocalNeuro::neuroAllIn() {
+void clientNeuro::neuroAllIn() {
     currentHand->getGuiInterface()->getMyW()->neuroAllIn();
 }
 
-bool LocalNeuro::neuroCanBet(int bet) {
+bool clientNeuro::neuroCanBet(int bet) {
     if (bet > getMyCash() || bet < currentHand->getCurrentBeRo()->getMinimumRaise()) {
         return false;
     }
     return true;
 }
 
-void LocalNeuro::neuroBet(int bet) {
+void clientNeuro::neuroBet(int bet) {
     currentHand->getGuiInterface()->getMyW()->neuroBetRaise(bet);
 }
 
-void LocalNeuro::neuroSendChat(std::string message) {
+void clientNeuro::neuroSendChat(std::string message) {
     currentHand->getGuiInterface()->getMyW()->getSession()->sendGameChatMessage(message);
 
 }
 
 
-std::string LocalNeuro::convertCardIntToString(int code) {
+std::string clientNeuro::convertCardIntToString(int code) {
     std::string tmp;
     if (code == -1)
         return "";

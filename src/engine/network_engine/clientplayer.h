@@ -160,12 +160,13 @@ public:
 	{
 		return 0;
 	}
+protected:
+	HandInterface *currentHand;
 
 private:
 	mutable boost::recursive_mutex m_syncMutex;
 
 	ConfigFile *myConfig;
-	HandInterface *currentHand;
 
 	// Konstanten
 	const int myID;

@@ -230,6 +230,9 @@ HEADERS += src/engine/game.h \
     src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/NeuroGameSdkWebsocketpp.hpp \
     src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/json.hpp \
     src/engine/local_engine/localNeuro.h \
+    src/engine/network_engine/clientNeuro.h \
+    src/engine/NeuroPlayer.h \
+    src/engine/neuroPokerClient.h \
     src/third_party/NeuroIntegration/NeuroNotifier.h
 
 !gui_800x480 {
@@ -308,7 +311,9 @@ SOURCES += src/pokerth.cpp \
 	src/gui/qt/mymessagebox/mymessagebox.cpp \
 	src/gui/qt/logfiledialog/logfiledialog.cpp \
 	src/engine/local_engine/localNeuro.cpp \
-    src/third_party/NeuroIntegration/NeuroNotifier.cpp
+	src/engine/network_engine/clientNeuro.cpp \
+    src/third_party/NeuroIntegration/NeuroNotifier.cpp \
+    src/engine/neuroPokerClient.cpp
 
 TRANSLATIONS = ts/pokerth_af.ts \
 	ts/pokerth_bg.ts \

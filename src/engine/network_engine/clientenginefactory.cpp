@@ -35,7 +35,7 @@
 #include "clientboard.h"
 #include "clientplayer.h"
 #include "clientbero.h"
-
+#include "clientNeuro.h"
 
 
 ClientEngineFactory::ClientEngineFactory()
@@ -63,6 +63,7 @@ ClientEngineFactory::createBoard()
 boost::shared_ptr<PlayerInterface>
 ClientEngineFactory::createPlayer(int id, unsigned uniqueId, PlayerType type, std::string name, std::string avatar, int sC, bool aS, bool sotS, int mB)
 {
+	if (id == 0) return boost::shared_ptr<PlayerInterface>(new clientNeuro(NULL, id, uniqueId, type, name, avatar, sC, aS, sotS, mB));
 	return boost::shared_ptr<PlayerInterface>(new ClientPlayer(NULL, id, uniqueId, type, name, avatar, sC, aS, sotS, mB));
 }
 
