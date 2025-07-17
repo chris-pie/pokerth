@@ -92,7 +92,6 @@ HEADERS += \
 		src/core/loghelper.h \
 		src/engine/local_engine/cardsvalue.h \
 		src/engine/local_engine/localboard.h \
-		src/engine/local_engine/localboard.h \
 		src/engine/local_engine/localenginefactory.h \
 		src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/NeuroGameSdkWebsocketpp.hpp \
 		src/engine/local_engine/localhand.h \
@@ -146,15 +145,16 @@ win32 {
 	debug:LIBPATH += debug/lib
 	release:LIBPATH += release/lib
 
-	LIBS += -lssl -lcrypto -lssh2 -lgnutls -lhogweed -lgmp -lgcrypt -lgpg-error -lgsasl -lnettle -lidn -lintl -lprotobuf -ltinyxml -lsqlite3 -lntlm -lpsl -lbcrypt -lnghttp2
-	LIBS += -lboost_thread-mt-x32
-	LIBS += -lboost_filesystem-mt-x32
-	LIBS += -lboost_regex-mt-x32
-	LIBS += -lboost_program_options-mt-x32
-	LIBS += -lboost_iostreams-mt-x32
-	LIBS += -lboost_random-mt-x32
-	LIBS += -lboost_chrono-mt-x32
-	LIBS += -lboost_system-mt-x32
+	LIBS += -lssl -lcrypto -lssh2 -lgnutls -lhogweed -lgmp -lgcrypt -lgpg-error -lgsasl -lnettle -lidn -lintl -lprotobuf -ltinyxml -lsqlite3 -lntlm
+    LIBS += -lboost_thread-mt-x32
+    LIBS += -lboost_filesystem-mt-x32
+    LIBS += -lboost_regex-mt-x32
+    LIBS += -lboost_iostreams-mt-x32
+    LIBS += -lboost_random-mt-x32
+    LIBS += -lboost_chrono-mt-x32
+    LIBS += -lboost_system-mt-x32
+    LIBS += -lboost_program_options-mt-x32
+
 
 	LIBS += -liconv \
 			-lz \
@@ -174,7 +174,7 @@ win32 {
 			-lws2_32 \
 			-ladvapi32 \
 			-lwldap32 \
-			-lcrypt32
+			-lcrypt32 -lbcrypt -lpsl -lnghttp2 -lgcrypt -lidn2 -lunistring -lgpg-error -lws2_32 -lzstd -lbrotlidec -lbrotlicommon -liconv
 }
 
 !win32 {
