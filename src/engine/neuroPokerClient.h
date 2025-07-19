@@ -1,6 +1,6 @@
 #ifndef NEUROPOKERCLIENT_H
 #define NEUROPOKERCLIENT_H
-#include <third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/NeuroGameSdkWebsocketpp.hpp>
+#include <third_party/neuro-sdk-websocketpp/NeuroGameSdkWebsocketpp.hpp>
 #include <NeuroNotifier.h>
 #include <fstream>
 #include <NeuroPlayer.h>

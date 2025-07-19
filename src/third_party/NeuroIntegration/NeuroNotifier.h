@@ -45,7 +45,7 @@ private:
     bool newChat = false;
     bool newLog = false;
     bool yourTurn = false;
-    bool killed = false;
+    bool killed = true;
     bool silent = true;
     NeuroPlayer* player = nullptr;
 };

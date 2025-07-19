@@ -39,7 +39,7 @@ INCLUDEPATH += . \
 		src/core \
 		src/third_party/websocketpp \
 		src/third_party/NeuroIntegration \
-		src/third_party/NeuroIntegration/Websocketpp \
+		src/third_party/neuro-sdk-websocketpp \
 
 DEPENDPATH += . \
 		src \
@@ -55,7 +55,7 @@ DEPENDPATH += . \
 		src/engine/network_engine \
 		src/net/common \
 		src/third_party/NeuroIntegration \
-        src/third_party/NeuroIntegration/Websocketpp
+        src/third_party/neuro-sdk-websocketpp
 
 # Input
 HEADERS += \
@@ -156,8 +156,8 @@ HEADERS += \
 		src/net/uploadcallback.h \
 		src/net/websocket_defs.h \
 		src/net/websocketdata.h \
-        src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/NeuroGameSdkWebsocketpp.hpp \
-        src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/json.hpp
+        src/third_party/neuro-sdk-websocketpp/NeuroGameSdkWebsocketpp.hpp \
+        src/third_party/neuro-sdk-websocketpp/json.hpp
 
 
 SOURCES += \

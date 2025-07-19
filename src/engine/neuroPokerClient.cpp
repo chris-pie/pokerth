@@ -54,11 +54,11 @@ neuroPokerClient::~neuroPokerClient() {
 }
 
 void neuroPokerClient::init() {
-    sendStartup();
     game_thread = std::thread(&neuroPokerClient::awaitGameStart, this);
 }
 
 void neuroPokerClient::awaitGameStart() {
+    sendStartup();
     while (!shutting_down) {
         player = notifier.awaitGameStart();
         if (shutting_down) {
@@ -78,6 +78,7 @@ void neuroPokerClient::awaitGameStart() {
         if (turn_thread.joinable()) {
             turn_thread.join();
         }
+        player = nullptr;
 
 
     }
@@ -104,7 +105,7 @@ void neuroPokerClient::listenForTurn() {
 
     while (!notifier.isKilled()) {
         notifier.awaitTurn();
-        if (!!notifier.isKilled()) {
+        if (!notifier.isKilled()) {
             auto stateActions = player->getStateAndActions();
             forceDisposableActions(stateActions.first.dump(), "Please make your move. Do not tell anyone what your hole cards are!", true, stateActions.second);
         }

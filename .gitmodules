@@ -1,3 +1,3 @@
-[submodule "src/third_party/NeuroIntegration/neuro-game-sdk"]
-	path = src/third_party/NeuroIntegration/neuro-game-sdk
-	url = https://github.com/chris-pie/neuro-game-sdk
+[submodule "src/third_party/neuro-sdk-websocketpp"]
+	path = src/third_party/neuro-sdk-websocketpp
+	url = https://github.com/chris-pie/neuro-sdk-websocketpp

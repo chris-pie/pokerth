@@ -2,8 +2,8 @@
 #define NEUROPLAYER_H
 
 #include <string>
-#include "neuro-game-sdk/Websocketpp/json.hpp"
-#include "neuro-game-sdk/Websocketpp/NeuroGameSdkWebsocketpp.hpp"
+#include <third_party/neuro-sdk-websocketpp/json.hpp>
+#include <third_party/neuro-sdk-websocketpp/NeuroGameSdkWebsocketpp.hpp>
 
 
 

@@ -40,7 +40,7 @@ INCLUDEPATH += . \
 		src/engine/network_engine \
 		src/config \
 		src/core \
-		src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp \
+		src/third_party/neuro-sdk-websocketpp \
 		src/third_party/NeuroIntegration
 
 DEPENDPATH += . \
@@ -56,7 +56,7 @@ DEPENDPATH += . \
 		src/engine/local_engine \
 		src/engine/network_engine \
 		src/net/common \
-		src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp \
+		src/third_party/neuro-sdk-websocketpp \
 		src/third_party/NeuroIntegration
 
 # Input
@@ -93,7 +93,7 @@ HEADERS += \
 		src/engine/local_engine/cardsvalue.h \
 		src/engine/local_engine/localboard.h \
 		src/engine/local_engine/localenginefactory.h \
-		src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/NeuroGameSdkWebsocketpp.hpp \
+		src/third_party/neuro-sdk-websocketpp/NeuroGameSdkWebsocketpp.hpp \
 		src/engine/local_engine/localhand.h \
 		src/engine/local_engine/localplayer.h \
 		src/engine/local_engine/localNeuro.h \

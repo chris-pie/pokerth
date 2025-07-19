@@ -84,7 +84,7 @@ INCLUDEPATH += . \
 	src/gui/qt/mymessagebox \
 	src/third_party/websocketpp \
     src/third_party/NeuroIntegration \
-    src/third_party/NeuroIntegration/Websocketpp
+    src/third_party/neuro-sdk-websocketpp
 
 DEPENDPATH += . \
 	src \
@@ -127,7 +127,7 @@ DEPENDPATH += . \
 	src/gui/qt/logfiledialog \
 	src/gui/qt/mymessagebox \
     src/third_party/NeuroIntegration \
-    src/third_party/NeuroIntegration/Websocketpp
+    src/third_party/neuro-sdk-websocketpp
 
 # Input
 HEADERS += src/engine/game.h \
@@ -227,8 +227,8 @@ HEADERS += src/engine/game.h \
 	src/gui/qt/mymessagebox/mymessagebox.h \
 	src/gui/qt/logfiledialog/logfiledialog.h \
 	src/net/websocketdata.h \
-    src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/NeuroGameSdkWebsocketpp.hpp \
-    src/third_party/NeuroIntegration/neuro-game-sdk/Websocketpp/json.hpp \
+    src/third_party/neuro-sdk-websocketpp/NeuroGameSdkWebsocketpp.hpp \
+    src/third_party/neuro-sdk-websocketpp/json.hpp \
     src/engine/local_engine/localNeuro.h \
     src/engine/network_engine/clientNeuro.h \
     src/engine/NeuroPlayer.h \

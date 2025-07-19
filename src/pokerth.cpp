@@ -46,6 +46,7 @@
 #endif
 #endif
 
+#include <boost/iostreams/filter/zlib.hpp>
 #include <curl/curl.h>
 
 #include "session.h"
@@ -234,7 +235,56 @@ int main( int argc, char **argv )
 	}
 
 	//Start Neuro client
-	neuroPokerClient neuroClient(myConfig, "Poker");
+	std::unique_ptr<neuroPokerClient> neuroClient;
+	while (true) {
+		try {
+			neuroClient = std::make_unique<neuroPokerClient>(myConfig, "Poker");
+
+
+			while (true) {
+				const int maxWaitMs = 5000;
+				const int pollIntervalMs = 50;
+				int waitedMs = 0;
+				while (!neuroClient->isConnected() && waitedMs < maxWaitMs) {
+					std::this_thread::sleep_for(std::chrono::milliseconds(pollIntervalMs));
+					waitedMs += pollIntervalMs;
+				}
+				if (!neuroClient->isConnected()) {
+
+					QMessageBox msgBox;
+					msgBox.setWindowTitle("Error");
+					msgBox.setIcon(QMessageBox::Critical);
+					msgBox.setText("Could not connect to Neuro-sama. Press retry to try again or ignore to continue and check settings.");
+					msgBox.setStandardButtons(QMessageBox::Retry | QMessageBox::Ignore);
+					msgBox.setDefaultButton(QMessageBox::Retry);
+					int ret = msgBox.exec();
+					if (ret != QMessageBox::Retry) {
+						break;
+					}
+				}
+				else {
+					break;
+				}
+			}
+
+			break;
+		}
+		catch (const std::exception& e) {
+			QMessageBox msgBox;
+			msgBox.setWindowTitle("Error");
+			msgBox.setIcon(QMessageBox::Critical);
+			msgBox.setText("Could not connect to Neuro-sama. Press retry to try again or ignore to continue and check settings.");
+			msgBox.setInformativeText(e.what());
+			msgBox.setStandardButtons(QMessageBox::Retry | QMessageBox::Ignore);
+			msgBox.setDefaultButton(QMessageBox::Retry);
+
+			int ret = msgBox.exec();
+
+			if (ret != QMessageBox::Retry) {
+				break;
+			}
+		}
+	}
 
 
 	//Set translations
