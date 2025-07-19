@@ -27,6 +27,8 @@ public:
     void neuroBet(int bet) override;
     void neuroSendChat(std::string message) override;
 
+    int getMinRaise();
+
 private:
     static std::string convertCardIntToString(int code);
     Action call;

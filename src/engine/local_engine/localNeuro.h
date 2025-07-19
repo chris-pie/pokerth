@@ -26,6 +26,7 @@ class LocalNeuro : public LocalPlayer, public NeuroPlayer {
     bool neuroCanBet(int bet) override;
     void neuroBet(int bet) override;
     void neuroSendChat(std::string message) override;
+    int getMinRaise();
 
 private:
     static std::string convertCardIntToString(int code);

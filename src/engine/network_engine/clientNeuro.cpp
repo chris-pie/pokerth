@@ -96,7 +96,7 @@ std::pair<nlohmann::json, std::vector<Action>> clientNeuro::getStateAndActions()
     if(currentHand->getCurrentRound() == 0) { // preflop
         if (getMyCash() + getMySet() > currentHand->getCurrentBeRo()->getHighestSet() && !currentHand->getCurrentBeRo()->getFullBetRule()) {
             actions.push_back(raise);
-            state["MinimumRaiseAmount"] = currentHand->getCurrentBeRo()->getHighestSet() - getMySet() + currentHand->getCurrentBeRo()->getMinimumRaise();
+            state["MinimumRaiseAmount"] = getMinRaise();
         }
 
         if (getMySet() == currentHand->getCurrentBeRo()->getHighestSet() &&  getMyButton() == 3) {
@@ -121,7 +121,7 @@ std::pair<nlohmann::json, std::vector<Action>> clientNeuro::getStateAndActions()
             actions.push_back(call);
             if (getMyCash()+getMySet() > currentHand->getCurrentBeRo()->getHighestSet() && !currentHand->getCurrentBeRo()->getFullBetRule()) {
                 actions.push_back(raise);
-                state["MinimumRaiseAmount"] = currentHand->getCurrentBeRo()->getHighestSet() - getMySet() + currentHand->getCurrentBeRo()->getMinimumRaise();
+                state["MinimumRaiseAmount"] = getMinRaise();
             }
         }
         if(!currentHand->getCurrentBeRo()->getFullBetRule()) {
@@ -147,7 +147,7 @@ void clientNeuro::neuroAllIn() {
 }
 
 bool clientNeuro::neuroCanBet(int bet) {
-    if (bet > getMyCash() || bet < currentHand->getCurrentBeRo()->getMinimumRaise()) {
+    if (bet > getMyCash() || bet < getMinRaise()) {
         return false;
     }
     return true;
@@ -162,6 +162,10 @@ void clientNeuro::neuroSendChat(std::string message) {
 
 }
 
+
+int clientNeuro::getMinRaise() {
+    return currentHand->getCurrentBeRo()->getHighestSet() - getMySet() + currentHand->getCurrentBeRo()->getMinimumRaise();
+}
 
 std::string clientNeuro::convertCardIntToString(int code) {
     std::string tmp;
@@ -219,7 +223,7 @@ std::string clientNeuro::convertCardIntToString(int code) {
                 tmp+= " of Hearts";
             break;
             case 2:
-                tmp+= " of Spaces";
+                tmp+= " of Spades";
             break;
             case 3:
                 tmp+= " of Clubs";
